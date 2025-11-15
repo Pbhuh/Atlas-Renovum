@@ -1579,6 +1579,12 @@ amersfoort = 22ce15
 tiel = aae01a
 geertruidenberg = 66c00b
 bergen_zoom = 8836d3
+winsum = a1e496
+haarlem = cad3dc
+gouda = ec3691
+zierikzee = 7a0507
+borculo = 20c14f
+gorinchem = 0f6f24
 
 #Belguium
 brussels = fff900
@@ -1619,6 +1625,7 @@ ath = 77e6ab
 maubeuge = 55be24
 orchimont = 664f0b
 enghien = 336210
+lier = 1bf9a3
 
 #Luxembourg
 luxembourg = 555a5b

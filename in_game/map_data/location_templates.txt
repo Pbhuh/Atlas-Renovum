@@ -775,7 +775,8 @@ jever = { topography = wetlands vegetation = grasslands climate = oceanic religi
 aurich = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = legumes}
 leer = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = fish natural_harbor_suitability = 0.50}
 appingedam = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = fish natural_harbor_suitability = 0.50}
-groningen = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = clay natural_harbor_suitability = 0.25}
+groningen = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = clay }
+winsum = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = livestock natural_harbor_suitability = 0.25}
 wedde = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = sand natural_harbor_suitability = 0.00}
 sloten = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = salt natural_harbor_suitability = 0.00}
 harlingen = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = fish natural_harbor_suitability = 0.25}
@@ -28576,7 +28577,6 @@ pacific_tasmania_current9 = { topography = deep_ocean climate = oceanic movement
 pacific_tasmania_current10 = { topography = deep_ocean climate = oceanic movement_assistance = { 36.95 86.86 }}
 zealandia_sea = { topography = ocean_wasteland climate = continental}
 eastern_southern_ocean = { topography = ocean_wasteland climate = oceanic}
-winsum = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = livestock natural_harbor_suitability = 0.75}
 haarlem = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock natural_harbor_suitability = 0.75}
 gouda = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock }
 gorinchem = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock }

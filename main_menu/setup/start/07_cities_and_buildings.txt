@@ -192,7 +192,7 @@ locations={
 	
 	#France
 	angers = { rank = city 		town_setup = french_city }
-	arras = { rank = city 		town_setup = french_city }
+	#arras = { rank = city 		town_setup = french_city } - low countries
 	bordeaux = { rank = city 	town_setup = french_city }
 	marseille = { rank = city 	town_setup = french_city }
 	metz = { rank = city 		town_setup = french_city }
@@ -200,7 +200,7 @@ locations={
 	narbonne = { rank = city 	town_setup = french_city }
 	paris = { rank = city 		town_setup = french_city }
 	rouen = { rank = city 		town_setup = french_city }
-	saint_omer = { rank = town 	town_setup = french_town }
+	#saint_omer = { rank = town 	town_setup = french_town } - low countries
 	toulouse = { rank = city 	town_setup = french_city }
 	tours = { rank = city 		town_setup = french_city }
 	troyes = { rank = city 		town_setup = french_city }
@@ -334,31 +334,52 @@ locations={
 	klagenfurt = { rank = town town_setup = german_town }
 	salzburg = { rank = town town_setup = german_town }
 
-	#Low Countries	
+	#Low Countries
+	#TODO: compare lowlands vs german vs french town
+	#used sources: Bairoch & Lourens en Lucassen
 	bruges = { rank = city 				town_setup = lowlands_coastal_city }
 	ghent = { rank = city 				town_setup = lowlands_city }
-	ypres = { rank = town 				town_setup = lowlands_town }
+	ypres = { rank = town 				town_setup = lowlands_town }	
+	valenciennes = { rank = town 		town_setup = lowlands_town } #1300: 25k, 1400 23k, 1500 15k, 1600 30k - may qualify for city 
+	arras = { rank = town 				town_setup = french_city } #1300: 30K - 1400: 10K - problematic
+
+	lille = { rank = town 				town_setup = lowlands_town } #1300: 30k, 1400 22k, 1500 26k, 1600 33k - may qualify for city 
+	tournai = { rank = town 			town_setup = lowlands_town } #1300: 20k, 1400: 40k, 1500: 35k - may qualify for city 
+	#douai = { rank = town 				town_setup = lowlands_town } #supposedly douai hit 30k pop, highly dubious, although could have died in the black death
 
 	antwerp = { rank = town 			town_setup = lowlands_costal_town }
-	the_hague = { rank = town 			town_setup = lowlands_costal_town }
-	amsterdam = { rank = town 			town_setup = lowlands_costal_town }
-	middelburg = { rank = town 			town_setup = lowlands_costal_town }
-	groningen = { rank = town 			town_setup = lowlands_costal_town }
+	the_hague = { rank = town 			town_setup = lowlands_costal_town } #using figures of Delft - bairoch figures for the hague off by a lot - Delft: 1300: 3k - 1400: 7k
+	#amsterdam = { rank = town 			town_setup = lowlands_costal_town } #1300: 1k, 1400: 3k/4.4k
+	haarlem = { rank = town 			town_setup = lowlands_costal_town } #1300: <2.5k, 1400: 7.5k
+	leiden = { rank = town 				town_setup = lowlands_costal_town } #1300: 3k - 1400: 6k
+	gouda = { rank = town 				town_setup = lowlands_costal_town } #1300: 3k - 1400: 6k
+	middelburg = { rank = town 			town_setup = lowlands_costal_town } #1400: 6.3k
+	#zierikzee = { rank = town 			town_setup = lowlands_costal_town } #unreliable: 1400: 6.3k
+	groningen = { rank = town 			town_setup = lowlands_town }
 	utrecht = { rank = town 			town_setup = lowlands_town }
-	zwolle = { rank = town 				town_setup = lowlands_town }
+	kampen = { rank = town 				town_setup = lowlands_town } #swapped for zwolle because of dubious 1300 stat of 13k - Kampen: 1400: 5k - 1500: 6.6k
+	saint_omer = { rank = town		 	town_setup = french_town } #1300: 35K, 1400: 13K - problematic - may qualify for city 
+	#sint_niklaas = { rank = town 		town_setup = lowlands_town } #lol what paradox?
+	#dendermonde = { rank = town 		town_setup = lowlands_town } #1300: 9k, 1500: 5k - odd
+	aalst = { rank = town 				town_setup = lowlands_town } #1300: 4k, 1500: 4k
+	#breda - 1400: 4.8k, - 1500: 5.7K - missing on bairoch
 
 	liege = { rank = town 				town_setup = lowlands_town }
 	brussels = { rank = town 			town_setup = lowlands_town }
+	#nivelles = { rank = town 			town_setup = lowlands_town } #1300: 5k, 1400: 6k, drop off after - suspicious
 	mons = { rank = town 				town_setup = lowlands_town }
-	tournai = { rank = town 			town_setup = lowlands_town }
-	leuven = { rank = town 				town_setup = lowlands_town }
-	sint_niklaas = { rank = town 		town_setup = lowlands_town }
-	namur = { rank = town 				town_setup = lowlands_town }
-	deventer = { rank = town 			town_setup = lowlands_town }
-	dordrecht = { rank = town 			town_setup = lowlands_town }
-	maastricht = { rank = town 			town_setup = lowlands_town }
-	zutphen = { rank = town 			town_setup = lowlands_town }
-	hertogenbosch = { rank = town 		town_setup = lowlands_town }
+	leuven = { rank = town 				town_setup = lowlands_town } 
+	#kortrijk = { rank = town 			town_setup = lowlands_town } #instinct tells me it was a town - based on siege of kortrijk / https://nl.wikipedia.org/wiki/Guldensporenslag - 1500: 6k, 1600: 10k
+	
+	mechelen = { rank = town 			town_setup = lowlands_town } #10k in 1300 13k in 1400
+	bergen_zoom = { rank = town 		town_setup = lowlands_town } #about 5.2k in 1400
+	namur = { rank = town 				town_setup = lowlands_town } #1400: 6k
+	deventer = { rank = town 			town_setup = lowlands_town } #1400: 4.5k - good enough, dubious figure for 1300: 13K
+	dordrecht = { rank = town 			town_setup = lowlands_town } #1300: 5k - 1400: 8k
+	maastricht = { rank = town 			town_setup = lowlands_town } #1300: 4k - 1400: 7k
+	roermond = { rank = town 			town_setup = lowlands_town } #1400: 6k
+	nijmegen = { rank = town 			town_setup = lowlands_town } #1300: 3k, 1400: 6k / more reliable estimate: 1400: 10.8K - free city status - likely on the higher end
+	hertogenbosch = { rank = town 		town_setup = lowlands_town } #1300: 3k, 1400: 9K on bairoch - higher estimates on Lourens en Lucassen: 1400: 14526
 
 	luxembourg = { rank = town town_setup = german_town }
 

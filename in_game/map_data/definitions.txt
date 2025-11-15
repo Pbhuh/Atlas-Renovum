@@ -224,7 +224,7 @@
 					maastricht venlo weert roermond
 				}
 				antwerp_province = {
-					antwerp bergen_zoom breda turnhout mechelen
+					antwerp bergen_zoom breda turnhout mechelen lier
 				}
 				kempenland_province = {
 					helmond cuijk hertogenbosch eindhoven
@@ -252,7 +252,7 @@
 					emden jever aurich leer
 				}
 				ommelanden_province = {
-					appingedam groningen wedde
+					appingedam groningen wedde winsum
 				}
 				friesland_province = {
 					sloten harlingen leeuwarden stavoren wolvega
@@ -266,13 +266,13 @@
 			}
 			holland_area = {
 				north_holland_province = {
-					amsterdam amersfoort alkmaar hoorn utrecht haarlemmermeer
+					amsterdam amersfoort alkmaar hoorn utrecht haarlemmermeer haarlem
 				}
 				south_holland_province = {
-					the_hague dordrecht geertruidenberg rotterdam leiden middelburg
+					the_hague dordrecht geertruidenberg rotterdam leiden middelburg gouda zierikzee gorinchem
 				}
 				gelderland_province = {
-					arnhem apeldoorn doetinchem harderwijk nijmegen tiel zutphen
+					arnhem apeldoorn doetinchem harderwijk nijmegen tiel zutphen borculo
 				}
 			}
 			wallonia_area = {

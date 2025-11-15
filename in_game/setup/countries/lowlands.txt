@@ -177,3 +177,17 @@ GRN = {
 	culture_definition = westphalian
 	religion_definition = catholic
 }
+
+GCH = {
+	color = rgb { 187 193 216 }
+
+	culture_definition = low_franconian
+	religion_definition = catholic
+}
+
+MCH = {
+	color = rgb { 108 153 153 }
+
+	culture_definition = low_franconian
+	religion_definition = catholic
+}

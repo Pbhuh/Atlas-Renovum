@@ -185,7 +185,7 @@ GRH = {
 	religion_definition = catholic
 }
 
-MHN = {
+MEH = {
 	color = rgb { 108 153 153 }
 
 	culture_definition = low_franconian

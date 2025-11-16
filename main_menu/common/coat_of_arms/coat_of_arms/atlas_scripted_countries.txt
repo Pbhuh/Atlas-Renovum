@@ -71,7 +71,7 @@ FRI_OMMELANDEN = { # Ommelanden
 	}
 }
 
-MHN = { # Mechelen
+MEH = { # Mechelen
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"
 	color2 = "black"

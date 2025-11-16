@@ -17486,7 +17486,7 @@ countries = {
 	}
 	
 	#Mechelen
-	MHN = {
+	MEH = {
 		own_control_core = {
 			mechelen
 		}
@@ -38953,9 +38953,9 @@ countries = {
 		capital = montmedy
 		dynasty = heinsberg_dynasty
 		government = {
-			ruler = loo_dietrich_iv_von_heinsberg
+			ruler = hbg_dietrich_iii_von_heinsberg
 
-			ruler_term = {	character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.1 regnal_number = 1	}
+			ruler_term = {	character = hbg_dietrich_iii_von_heinsberg start_date = 1336.1.1 regnal_number = 1	}
 
 			aristocracy_vs_plutocracy = -20
 			capital_economy_vs_traditional_economy = -10
@@ -39068,8 +39068,8 @@ countries = {
 		include = "german_principality"
 		government = {
 
-			ruler = loo_dietrich_iv_von_heinsberg
-			ruler_term = {	character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.1 regnal_number = 4	}
+			ruler = hbg_dietrich_iii_von_heinsberg
+			ruler_term = {	character = hbg_dietrich_iii_von_heinsberg start_date = 1336.1.1 regnal_number = 4	}
 
 			regnal_numbers = {
 				name_theodoric = 1
@@ -39084,7 +39084,7 @@ countries = {
 		dynasty = heinsberg_dynasty
 	}
 
-	VBG = { #Valkenburg - PU under Loon
+	VBG = { #Valkenburg
 		own_control_core = {
 			maastricht
 		}
@@ -39094,9 +39094,9 @@ countries = {
 		include = "catholic_monarchy_no_coast"
 		include = "german_principality"
 		capital = maastricht
-		dynasty = heinsberg_dynasty
+		dynasty = heinsberg_dynasty #valkenburg-heinsberg_dynasty
 		government = {
-			ruler = loo_dietrich_iv_von_heinsberg
+			ruler = vbg_dietrich_iv_von_valkenburg
 
 			aristocracy_vs_plutocracy = -20
 			capital_economy_vs_traditional_economy = -10
@@ -39121,7 +39121,7 @@ countries = {
 		include = "german_principality"
 		dynasty = heinsberg_dynasty
 		government = {
-			ruler = loo_dietrich_iv_von_heinsberg
+			ruler = hbg_dietrich_iii_von_heinsberg
 
 			aristocracy_vs_plutocracy = -20
 			capital_economy_vs_traditional_economy = -10

@@ -290,7 +290,7 @@ diplomacy_manager = {
     dependency = { first = HOL second = ZEE subject_type = fiefdom }
     dependency = { first = HOL second = GRH subject_type = fiefdom }
     #dependency = { first = UTR second = GRN subject_type = fiefdom }
-    dependency = { first = LIE second = MHN subject_type = fiefdom }
+    dependency = { first = LIE second = MEH subject_type = fiefdom }
 
     #-------Baltics-------
     dependency = { first = TEU second = ERM subject_type = vassal }

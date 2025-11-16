@@ -81922,8 +81922,33 @@ adm = 31 dip = 34 mil = 24
 		dynasty = reginar_dynasty
 		tag = FRA
 	}
-
-	#Berlaer Family, Lords of Helmond
+	
+	#Berthout Family, lords of Mechelen	
+	meh_floris_berthout = { #Last Lord
+		first_name = { name = name_florence }
+		last_name = { name = name_berthold }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1275.1.1
+		birth = mechelen
+		death_date = 1331.1.1
+		dynasty = berthout_dynasty
+		tag = MEH
+	}
+	meh_mathilde_von_der_mark = { # Spouse of Floris
+		first_name = { name = name_matilda }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1264.1.1 #estimate
+		birth = kleve
+		spouse = meh_floris_berthout
+		father = gmk_engelbert_i_von_der_mark
+		#mother = Elisabeth von valkenburg - daughter of dirk ii von valkenburg
+		dynasty = mark_dynasty
+		tag = MEH
+	}
+	#Berthout van Berlair Family, Lords of Helmond
 	brb_jan_ii_berthout_van_berlaer = { #Father of the Lord
 		first_name = { name = name_john }
 		last_name = { name = name_berthold }
@@ -81933,7 +81958,7 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1280.1.1
 		birth = helmond
 		death_date = 1328.1.1
-		dynasty = berlaer_dynasty
+		dynasty = berthout_dynasty #berlaer_dynasty
 		tag = BRB
 	}
 	brb_lodewijk_iii_berthout_van_berlaer = { #Lord of Helmond
@@ -81944,7 +81969,7 @@ adm = 31 dip = 34 mil = 24
 		estate = nobles_estate
 		birth_date = 1310.1.1
 		birth = helmond
-		dynasty = berlaer_dynasty
+		dynasty = berthout_dynasty #berlaer_dynasty
 		father = brb_jan_ii_berthout_van_berlaer
 		tag = BRB
 	}
@@ -81967,7 +81992,7 @@ adm = 31 dip = 34 mil = 24
 		estate = nobles_estate
 		birth_date = 1330.1.1
 		birth = helmond
-		dynasty = berlaer_dynasty
+		dynasty = berthout_dynasty #berlaer_dynasty
 		father = brb_lodewijk_iii_berthout_van_berlaer
 		mother = brb_johanna_van_dinther
 		tag = BRB
@@ -85313,11 +85338,13 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1300.1.1
 		birth = mechelen
 		death_date = 1329.5.6
+		father = meh_floris_berthout
+		mother = meh_mathilde_von_der_mark
 		dynasty = berthout_dynasty
 		tag = GEL
 	}
 	gel_mechteld_van_gelre = { #Daughter of Ruler
-		first_name = { name = Mechteld }
+		first_name = { name = Mechteld } #name_matilda
 		culture = low_franconian
 		religion = catholic
 		female = yes
@@ -85414,7 +85441,7 @@ adm = 31 dip = 34 mil = 24
 		father = kyb_eberhard_i_kyburg
 		tag = KLE
 	}
-	kle_otto_von_kleve = { #Previous Ruler
+	kle_otto_von_kleve = { #Previous Ruler / Brother
 		first_name = { name = name_otto }
 		culture = westphalian
 		religion = catholic
@@ -85424,6 +85451,19 @@ adm = 31 dip = 34 mil = 24
 		dynasty = kleve_dynasty
 		father = kle_dietrich_vi_von_kleve
 		mother = kle_margareta_kyburg
+		tag = KLE
+	}	
+	kle_adelheid_von_der_mark = { # Spouse of Otto I
+		first_name = { name = name_adelaide }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1262.1.1
+		birth = kleve
+		spouse = kle_otto_von_kleve
+		father = gmk_engelbert_i_von_der_mark
+		#mother = Elisabeth von valkenburg - daughter of dirk ii von valkenburg
+		dynasty = mark_dynasty
 		tag = KLE
 	}
 	kle_irmgard_von_kleve = { #Previous Ruler's daugther
@@ -85486,6 +85526,30 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	#Mark
+	gmk_adolf_i_von_der_mark = { #Greatgreatgrandfather of Ruler
+		first_name = { name = name_adolf }
+		culture = westphalian
+		religion = catholic
+		birth_date = 1182.1.1
+		birth = hamm
+		death_date = 1249.6.28
+		dynasty = mark_dynasty
+		#spouse = irmgard_van_gelre
+		tag = GMK
+	}
+	gmk_engelbert_i_von_der_mark = { #Greatgrandfather of Ruler
+		first_name = { name = name_engelbert }
+		culture = westphalian
+		religion = catholic
+		birth_date = 1225.1.1
+		birth = hamm
+		death_date = 1277.11.16
+		dynasty = mark_dynasty
+		father = gmk_adolf_i_von_der_mark
+		#mother = irmgard_van_gelre - father: otto i van gelre
+		#spouse = kunegonde von blieskastel
+		tag = GMK
+	}
 	gmk_eberhard_i_von_der_mark = { #Grandfather of Ruler
 		first_name = { name = name_everard }
 		culture = westphalian
@@ -85494,6 +85558,7 @@ adm = 31 dip = 34 mil = 24
 		birth = hamm
 		death_date = 1308.6.4
 		dynasty = mark_dynasty
+		father = gmk_engelbert_i_von_der_mark
 		tag = GMK
 	}
 	gmk_engelbert_ii_von_der_mark = { #Father of Ruler
@@ -86036,6 +86101,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	
 	#Valkenburg
+	#Engelbert II van Valkenburg - archbishop of cologne 1220 - 1274
 	vbg_reinoud_von_valkenburg = { #Father
 		first_name = { name = name_reginald }
 		culture = low_franconian

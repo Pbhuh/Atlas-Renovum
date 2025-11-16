@@ -17268,7 +17268,7 @@ countries = {
 
 			ruler_term = { character = fla_fernando_portugal start_date = 1212.1.1 end_date = 1223.7.27 regnal_number = 1 } # As Marital Co-Ruler
 
-			ruler_term = { character = fla_guillaume_iii_dampierre start_date = 1247.1.1 end_date = 1251.6.6 regnal_number = 3 } #Associated
+			ruler_term = { character = fla_guillaume_iii_dampierre start_date = 1247.21.1 end_date = 1251.6.6 regnal_number = 3 } #Associated
 
 			ruler_term = { character = fla_guy_i_dampierre start_date = 1279.1.1 end_date = 1305.3.7 regnal_number = 1 }
 			ruler_term = { character = fla_robert_iii_dampierre start_date = 1305.3.7 end_date = 1322.9.17 regnal_number = 3 }
@@ -17522,17 +17522,16 @@ countries = {
 		include = "catholic_monarchy"
 		include = "german_principality"
 		government = {
-			ruler = brb_jan_iii_van_brabant
-
-			#ruler_term = { character = brb_hendrik_i_van_brabant start_date = 1183.1.1 end_date = 1235.9.5 regnal_number = 1 }
+			ruler = fla_louis_i_dampierre
+			ruler_term = { character = meh_floris_berthout start_date = 1310.1.1 end_date = 1316.1.1 regnal_number = 1 }
+			ruler_term = { character = hai_guillaume_ii_de_hainault start_date = 1316.1.1 end_date = 1316.1.1 regnal_number = 1 }
+			ruler_term = { character = brb_jan_iii_van_brabant start_date = 1310.1.1 end_date = 1316.1.1 regnal_number = 1 }
 			#berthout dynasty
-			
-			heir = brb_johanna_van_brabant
 
 			aristocracy_vs_plutocracy = -20
 			land_vs_naval = -20
 		}
-		dynasty = reginar_dynasty
+		dynasty = dampierre_dynasty
 		capital = mechelen
 
 		tolerated_cultures = {
@@ -38300,13 +38299,13 @@ countries = {
 		government = {
 
 			ruler = kle_dietrich_vii_von_kleve
-			ruler_term = {	character = kle_dietrich_vi_von_kleve start_date = 1275.1.10 end_date = 1305.1.1 regnal_number = 6	}
+			ruler_term = {	character = kle_dietrich_vi_von_kleve start_date = 1275.1.10 end_date = 1305.1.1 regnal_number = 7	}
 			ruler_term = {	character = kle_otto_von_kleve start_date = 1305.1.10 end_date = 1310.1.1 regnal_number = 1	}
-			ruler_term = {	character = kle_dietrich_vii_von_kleve start_date = 1310.1.1 regnal_number = 7	}
+			ruler_term = {	character = kle_dietrich_vii_von_kleve start_date = 1310.1.1 regnal_number = 8	}
 
 			regnal_numbers = {
 				name_otto = 1
-				name_theodoric = 6
+				name_theodoric = 7
 			}
 		}
 		tolerated_cultures = {

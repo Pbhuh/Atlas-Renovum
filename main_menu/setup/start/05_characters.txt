@@ -85980,22 +85980,22 @@ adm = 31 dip = 34 mil = 24
 		tag = OLD
 	}
 
-	#Loon - Heinsberg - Chiny
-	hbg_dietrich_iii_von_heinsberg = { #Ruler
+	#Loon
+	loo_dietrich_iv_von_heinsberg = { #Ruler
 		first_name = { name = name_theodoric }
-		culture = low_franconian
+		culture = lower_saxon
 		religion = catholic
 		birth_date = 1300.1.1
 		birth = cologne
-		dynasty = heinsberg_dynasty #heinsberg-loon
-		tag = HBG
+		dynasty = heinsberg_dynasty
+		tag = CHN
 	}
 	loo_kunigunde_von_der_mark = { #Spouse of Ruler
 		first_name = { name = name_kunigunde }
 		culture = lower_saxon
 		religion = catholic
 		female = yes
-		spouse = hbg_dietrich_iii_von_heinsberg
+		spouse = loo_dietrich_iv_von_heinsberg
 		birth_date = 1300.1.1
 		birth = hamm
 		dynasty = mark_dynasty

@@ -235,14 +235,15 @@ appingedam;emms_estuary;8008;6509;x
 winsum;emms_estuary;8000;6518;x
 wedde;emms_estuary;8019;6502;x
 sloten;zuiderzee;7952;6473;x
-harlingen;wadden_sea;7929;6515;x
-leeuwarden;emms_estuary;7963;6513;x
+harlingen;west_frisian_islands;7929;6515;x
+leeuwarden;wadden_sea;7963;6513;x
 stavoren;wadden_sea;7935;6493;x
 wolvega;zuiderzee;7955;6472;x
 kampen;zuiderzee;7963;6461;x
 amsterdam;zuiderzee;7920;6442;x
 amersfoort;zuiderzee;7936;6437;x
 haarlem;holland_coast;7900;6459;x
+leiden;holland_coast;7900;6459;x
 alkmaar;zuiderzee;7900;6459;x
 hoorn;zuiderzee;7923;6460;x
 the_hague;rhine_estuary;7891;6411;x
@@ -250,6 +251,7 @@ dordrecht;rhine_estuary;7898;6411;x
 geertruidenberg;rhine_estuary;7899;6405;x
 rotterdam;rhine_estuary;7880;6404;x
 middelburg;rhine_estuary;7862;6392;x
+zierikzee;rhine_estuary;7862;6392;x
 harderwijk;zuiderzee;7949;6443;x
 lubeck;bay_lubeck;8187;6554;x
 heiligenhafen;bay_lubeck;8184;6579;x

@@ -38112,7 +38112,7 @@ countries = {
 
 	ZUT = {	#Zutphen
 		own_control_core = {
-			zutphen doetinchem borculo
+			zutphen doetinchem
 		}
 
 		starting_technology_level = 3
@@ -38953,9 +38953,9 @@ countries = {
 		capital = montmedy
 		dynasty = heinsberg_dynasty
 		government = {
-			ruler = hbg_dietrich_iii_von_heinsberg
+			ruler = loo_dietrich_iv_von_heinsberg
 
-			ruler_term = {	character = hbg_dietrich_iii_von_heinsberg start_date = 1336.1.1 regnal_number = 1	}
+			ruler_term = {	character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.1 regnal_number = 1	}
 
 			aristocracy_vs_plutocracy = -20
 			capital_economy_vs_traditional_economy = -10
@@ -39068,8 +39068,8 @@ countries = {
 		include = "german_principality"
 		government = {
 
-			ruler = hbg_dietrich_iii_von_heinsberg
-			ruler_term = {	character = hbg_dietrich_iii_von_heinsberg start_date = 1336.1.1 regnal_number = 4	}
+			ruler = loo_dietrich_iv_von_heinsberg
+			ruler_term = {	character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.1 regnal_number = 4	}
 
 			regnal_numbers = {
 				name_theodoric = 1
@@ -39121,7 +39121,7 @@ countries = {
 		include = "german_principality"
 		dynasty = heinsberg_dynasty
 		government = {
-			ruler = hbg_dietrich_iii_von_heinsberg
+			ruler = loo_dietrich_iv_von_heinsberg
 
 			aristocracy_vs_plutocracy = -20
 			capital_economy_vs_traditional_economy = -10

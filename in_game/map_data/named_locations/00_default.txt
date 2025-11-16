@@ -1583,7 +1583,7 @@ winsum = a1e496
 haarlem = cad3dc
 gouda = ec3691
 zierikzee = 7a0507
-borculo = 20c14f
+#borculo = 20c14f
 gorinchem = 0f6f24
 
 #Belguium
@@ -1626,6 +1626,7 @@ maubeuge = 55be24
 orchimont = 664f0b
 enghien = 336210
 lier = 1bf9a3
+#dendermonde = 50c14f
 
 #Luxembourg
 luxembourg = 555a5b

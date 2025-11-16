@@ -179,7 +179,7 @@ GRN = {
 }
 
 GRH = {
-	color = rgb { 187 193 216 }
+	color = rgb { 157 193 216 }
 
 	culture_definition = low_franconian
 	religion_definition = catholic

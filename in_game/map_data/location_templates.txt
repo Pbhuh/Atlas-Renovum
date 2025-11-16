@@ -779,10 +779,10 @@ groningen = { topography = wetlands vegetation = grasslands climate = oceanic re
 winsum = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = livestock natural_harbor_suitability = 0.25}
 wedde = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = sand natural_harbor_suitability = 0.00}
 sloten = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = salt natural_harbor_suitability = 0.00}
-harlingen = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = fish natural_harbor_suitability = 0.25}
-leeuwarden = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = sand natural_harbor_suitability = 0.00}
+harlingen = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = fish natural_harbor_suitability = 0.25}
+leeuwarden = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = livestock natural_harbor_suitability = 0.00}
 stavoren = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = millet natural_harbor_suitability = 0.00}
-wolvega = { topography = wetlands vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = livestock natural_harbor_suitability = 0.00}
+wolvega = { topography = wetlands vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = sand natural_harbor_suitability = 0.00}
 assen = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = low_franconian raw_material = horses}
 meppel = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = legumes}
 coevorden = { topography = wetlands vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = livestock}
@@ -790,25 +790,30 @@ zwolle = { topography = flatland vegetation = grasslands climate = oceanic relig
 kampen = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = wheat natural_harbor_suitability = 0.50}
 deventer = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = wheat}
 oldenzaal = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = sand}
-amsterdam = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock natural_harbor_suitability = 0.75}
-amersfoort = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = fruit natural_harbor_suitability = 0.00}
-alkmaar = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = fish natural_harbor_suitability = 0.00}
-hoorn = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = salt natural_harbor_suitability = 0.25}
-utrecht = { topography = wetlands vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = millet}
+amsterdam = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = fish natural_harbor_suitability = 0.50}
+amersfoort = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = fruit natural_harbor_suitability = 0.00}
+alkmaar = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock natural_harbor_suitability = 0.00}
+hoorn = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = salt natural_harbor_suitability = 0.75}
+utrecht = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = low_franconian raw_material = millet}
 haarlemmermeer = { topography = lakes climate = oceanic}
-the_hague = { topography = wetlands vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = dyes natural_harbor_suitability = 0.00}
+the_hague = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = dyes natural_harbor_suitability = 0.00}
 dordrecht = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = salt natural_harbor_suitability = 0.50}
-geertruidenberg = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = horses natural_harbor_suitability = 0.00}
+geertruidenberg = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = horses natural_harbor_suitability = 0.25}
 rotterdam = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = clay natural_harbor_suitability = 0.50}
-leiden = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = fish}
+leiden = { topography = wetlands vegetation = farmland climate = oceanic religion = catholic culture = low_franconian raw_material = fish natural_harbor_suitability = 0.25}
 middelburg = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = salt natural_harbor_suitability = 0.75}
 arnhem = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = low_franconian raw_material = wool}
 apeldoorn = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = low_franconian raw_material = wild_game}
 doetinchem = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = low_franconian raw_material = fiber_crops}
-harderwijk = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = fiber_crops natural_harbor_suitability = 0.25}
+harderwijk = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = fiber_crops natural_harbor_suitability = 0.50}
 nijmegen = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = wheat}
 tiel = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = wheat}
 zutphen = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = clay}
+haarlem = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock natural_harbor_suitability = 0.00}
+gouda = { topography = wetlands vegetation = farmland climate = oceanic religion = catholic culture = low_franconian raw_material = livestock }
+gorinchem = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock }
+zierikzee = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock natural_harbor_suitability = 0.50}
+lier = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock }
 luxembourg = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = walloon raw_material = iron}
 arlon = { topography = hills vegetation = forest climate = oceanic religion = catholic culture = walloon raw_material = iron}
 thionville = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = ripuarian_franconian raw_material = lumber}
@@ -28577,9 +28582,3 @@ pacific_tasmania_current9 = { topography = deep_ocean climate = oceanic movement
 pacific_tasmania_current10 = { topography = deep_ocean climate = oceanic movement_assistance = { 36.95 86.86 }}
 zealandia_sea = { topography = ocean_wasteland climate = continental}
 eastern_southern_ocean = { topography = ocean_wasteland climate = oceanic}
-haarlem = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock natural_harbor_suitability = 0.75}
-gouda = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock }
-gorinchem = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock }
-zierikzee = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock natural_harbor_suitability = 0.75}
-lier = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock }
-borculo = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock }

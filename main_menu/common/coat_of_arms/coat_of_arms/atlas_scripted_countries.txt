@@ -15,6 +15,74 @@
 @canton_scale_cross_x = @[ ( 333 / 768 ) + 0.001 ]
 @canton_scale_cross_y = @[ ( 205 / 512 ) + 0.001 ]
 
+
+#FRI = { # Frisia - Variant with waterlilies on bends, bendwise (more readable)
+#	pattern = "pattern_solid.dds"
+#	color1 = "white"
+#	color2 = "blue"
+#	color3 = "red"
+#
+#	colored_emblem = {
+#		texture = "ce_bends_03_waterlilies_frisia.dds"
+#		color1 = color1
+#		color2 = color2
+#		color3 = color3
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#}
+
+FRI = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_bends_03.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_waterlily_leaf.dds"
+		color1 = color3
+		color2 = color3
+		instance = { scale = { 0.30 0.30 } position = { 0.25 0.15 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.50 0.50 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.75 0.85 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.10 0.60 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.25 0.85 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.75 0.15 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.90 0.40 } }
+	}
+}
+
+FRI_OMMELANDEN = { # Ommelanden
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_bends_03.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { -1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_waterlily_leaf.dds"
+		color1 = color3
+		color2 = color3
+		instance = { scale = { 0.30 0.30 } position = { 0.25 0.15 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.50 0.50 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.75 0.85 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.10 0.60 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.25 0.85 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.75 0.15 } }
+		instance = { scale = { 0.30 0.30 } position = { 0.90 0.40 } }
+	}
+}
+
 MHN = { # Mechelen
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"
@@ -58,6 +126,18 @@ GRN = { # Groningen
 		color3 = color4
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }				
 	}
+	#colored_emblem = {
+	#	texture = "ce_shield_frame.dds"
+	#	color1 = color2
+	#	color2 = color2
+	#	instance = { position = { 0.5 0.51 } scale = { 0.40 0.40 } }		
+	#}		
+	#colored_emblem = {
+	#	texture = "ce_shield_heater_large_per_fess.dds" #change to tri color
+	#	color1 = color4
+	#	color2 = color5
+	#	instance = { position = { 0.5 0.498 } scale = { 0.345 0.385 } }		
+	#}	
 	colored_emblem = {
 		texture = "ce_tricolor_horizontal.dds"
 		color1 = color4
@@ -67,7 +147,35 @@ GRN = { # Groningen
 	}
 }
 
-GRH = { # Oldenburg
+#LUB = { # Lubeck - Arms of the city, since 16th c. (Same as the Hansa before)
+#	pattern = "pattern_solid.dds"
+#	color1 = "yellow"
+#	color2 = "black"
+#	color3 = "red"
+#	color4 = "white"
+#
+#	colored_emblem = {
+#		texture = "ce_eagle_doubleheaded_wide.dds"
+#		color1 = color2
+#		color2 = color3
+#		color3 = color4
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+#	}
+#	colored_emblem = {
+#		texture = "ce_shield_frame.dds"
+#		color1 = color2
+#		color2 = color2
+#		instance = { position = { 0.5 0.51 } scale = { 0.40 0.40 } }		
+#	}		
+#	colored_emblem = {
+#		texture = "ce_shield_heater_large_per_fess.dds"
+#		color1 = color4
+#		color2 = color3
+#		instance = { position = { 0.5 0.498 } scale = { 0.345 0.385 } }		
+#	}	
+#}
+
+GRH = { # Gorinchem
 	pattern = "pattern_solid.dds"
 	color1 = "white"
 	color2 = "red"

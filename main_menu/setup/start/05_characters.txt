@@ -85980,15 +85980,37 @@ adm = 31 dip = 34 mil = 24
 		tag = OLD
 	}
 
-	#Loon
+	#Loon - Heinsberg - Chiny
+	loo_lodewijk_iv_von_loon = { #Predecessor
+		first_name = { name = name_louis }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1275.1.1
+		death_date = 1336.1.22
+		birth = borgloon
+		dynasty = loon_dynasty
+		#father = arnold_v_van_loon
+		tag = CHN
+	}
+	hbg_godfried_i_von_heinsberg = { #Father #count of sponheim, lord of heinsberg & blankenburg
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1270.1.1
+		death_date = 1331.1.1
+		birth = heinsberg
+		dynasty = heinsberg_dynasty
+		tag = HBG
+	}
 	loo_dietrich_iv_von_heinsberg = { #Ruler
 		first_name = { name = name_theodoric }
-		culture = lower_saxon
+		culture = low_franconian
 		religion = catholic
 		birth_date = 1300.1.1
 		birth = cologne
 		dynasty = heinsberg_dynasty
-		tag = CHN
+		father = hbg_godfried_i_von_heinsberg
+		tag = HBG
 	}
 	loo_kunigunde_von_der_mark = { #Spouse of Ruler
 		first_name = { name = name_kunigunde }
@@ -86002,14 +86024,14 @@ adm = 31 dip = 34 mil = 24
 		father = gmk_eberhard_i_von_der_mark
 		tag = HBG
 	}
-	hbg_dietrich_iv_von_heinsberg = { #Heir
+	hbg_godfried_von_heinsberg = { #Heir - should die young - https://nl.wikipedia.org/wiki/Loonse_Successieoorlogen
 		first_name = { name = name_godfrey }
 		culture = low_franconian
 		religion = catholic
 		birth_date = 1320.1.1
 		birth = cologne
 		dynasty = heinsberg_dynasty
-		father = hbg_dietrich_iii_von_heinsberg
+		father = loo_dietrich_iv_von_heinsberg
 		tag = HBG
 	}
 	

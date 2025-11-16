@@ -17389,7 +17389,6 @@ countries = {
 			frisian
 		}
 
-		country_rank = rank_county #barony
 		capital = gorinchem
 	}
 
@@ -17448,7 +17447,8 @@ countries = {
 	BRB = {
 		own_control_core = {
 			brussels nivelles leuven antwerp turnhout lier
-			bergen_zoom breda hertogenbosch helmond eindhoven
+			hertogenbosch helmond eindhoven
+			bergen_zoom #breda 
 		}
 
 		starting_technology_level = 3
@@ -17485,6 +17485,32 @@ countries = {
 		}
 	}
 	
+	#Breda
+	BDA = {
+		own_control_core = {
+			#bergen_zoom 
+			breda
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = {
+			ruler = brb_jan_iii_van_brabant
+			heir = brb_johanna_van_brabant
+			aristocracy_vs_plutocracy = -20
+			land_vs_naval = -20
+		}
+		country_rank = rank_county
+		dynasty = reginar_dynasty
+		capital = brussels
+
+		tolerated_cultures = {
+			walloon
+		}
+	}
+	
 	#Mechelen
 	MEH = {
 		own_control_core = {
@@ -17496,29 +17522,18 @@ countries = {
 		include = "catholic_monarchy"
 		include = "german_principality"
 		government = {
-			ruler = brb_jan_iii_van_brabant #some lord
+			ruler = brb_jan_iii_van_brabant
 
-			ruler_term = { character = brb_hendrik_i_van_brabant start_date = 1183.1.1 end_date = 1235.9.5 regnal_number = 1 }
-			ruler_term = { character = brb_hendrik_ii_van_brabant start_date = 1235.9.5 end_date = 1248.2.1 regnal_number = 2 }
-			ruler_term = { character = brb_hendrik_iii_van_brabant start_date = 1248.2.1 end_date = 1261.2.28 regnal_number = 3 }
-			ruler_term = { character = brb_hendrik_iv_van_brabant start_date = 1261.2.28 end_date = 1267.1.1 regnal_number = 4 }
-			ruler_term = { character = brb_jan_i_van_brabant start_date = 1267.1.1 end_date = 1294.5.3 regnal_number = 1 }
-			ruler_term = { character = brb_jan_ii_van_brabant start_date = 1294.5.3 end_date = 1312.10.27 regnal_number = 2 }
-			ruler_term = { character = brb_jan_iii_van_brabant start_date = 1312.10.27 regnal_number = 3 }
-
-			regnal_numbers = {
-				name_henry = 4
-				name_john = 3
-			}
-
+			#ruler_term = { character = brb_hendrik_i_van_brabant start_date = 1183.1.1 end_date = 1235.9.5 regnal_number = 1 }
+			#berthout dynasty
+			
 			heir = brb_johanna_van_brabant
 
 			aristocracy_vs_plutocracy = -20
 			land_vs_naval = -20
 		}
-		country_rank = rank_county #barony
 		dynasty = reginar_dynasty
-		capital = brussels
+		capital = mechelen
 
 		tolerated_cultures = {
 			walloon
@@ -38955,7 +38970,8 @@ countries = {
 		government = {
 			ruler = loo_dietrich_iv_von_heinsberg
 
-			ruler_term = {	character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.1 regnal_number = 1	}
+			ruler_term = { character = loo_lodewijk_iv_von_loon start_date = 1323.1.1 end_date = 1336.1.22 regnal_number = 4 }
+			ruler_term = { character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.22 regnal_number = 3 }
 
 			aristocracy_vs_plutocracy = -20
 			capital_economy_vs_traditional_economy = -10
@@ -39067,9 +39083,9 @@ countries = {
 		include = "catholic_monarchy_no_coast"
 		include = "german_principality"
 		government = {
-
 			ruler = loo_dietrich_iv_von_heinsberg
-			ruler_term = {	character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.1 regnal_number = 4	}
+			ruler_term = { character = loo_lodewijk_iv_von_loon start_date = 1323.1.1 end_date = 1336.1.22 regnal_number = 4 }
+			ruler_term = { character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.22 regnal_number = 3 }
 
 			regnal_numbers = {
 				name_theodoric = 1
@@ -39097,6 +39113,8 @@ countries = {
 		dynasty = heinsberg_dynasty #valkenburg-heinsberg_dynasty
 		government = {
 			ruler = vbg_dietrich_iv_von_valkenburg
+			
+			ruler_term = { character = vbg_dietrich_iv_von_valkenburg start_date = 1333.1.1 regnal_number = 4 }
 
 			aristocracy_vs_plutocracy = -20
 			capital_economy_vs_traditional_economy = -10

@@ -90,7 +90,7 @@ MEH = { # Mechelen
 		color2 = color1
 		instance = { position = { 0.5 0.51 } scale = { 0.40 0.40 } }		
 	}
-	colored_emblem = { #look for double eagle
+	colored_emblem = {
 		texture = "ce_eagle_wide.dds"
 		color1 = color2
 		color2 = color3
@@ -208,4 +208,246 @@ ZEE_FLANDERS = { # Zeeland
 		color2 = color2
 		instance = { position = { 0.5 0.75 } scale = { 1.0 0.6 } }				
 	}
+}
+
+BDA = { # Breda
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_saltire_thin.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.32 0.28 } scale = { 0.25 0.25 }  }
+		instance = { position = { 0.68 0.28 } scale = { 0.25 0.25 }  }
+		instance = { position = { 0.5 0.70 } scale = { 0.25 0.25 }  }		
+	}	
+}
+
+HBG_loon_chiny = { #Heinsberg - Loon - Chiny
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color1
+		color2 = color1
+		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }		
+	}	
+	colored_emblem = {
+		texture = "ce_lion_queue_forchee_crowned_wide.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_barry_10.dds"
+		color1 = color1
+		color2 = color3
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_divider_quarterly.dds"
+		color1 = color1
+	}		
+}
+
+LOO_chiny = { #Loon - Chiny
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = hsv360 	{	20	20	50	} 	
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_barry_10.dds"
+		color1 = color1
+		color2 = color2
+		instance = { position = { 0.25 0.5 } scale = { 0.5 1.0 } }				
+	}
+	#colored_emblem = {
+	#	texture = "ce_solid.dds"
+	#	color1 = color4
+	#	color2 = color4
+	#	instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }				
+	#}	
+    sub = {
+        parent = "CHN" 
+		instance = { scale = { 0.75 0.5 } offset = { 0.5 1.0 } }
+    }	
+}
+
+HBG_loon = { #
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "red_secondary"
+
+    sub = {
+        parent = "LOO" # Q1-Q4 Nevers
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }
+    }
+    sub = {
+        parent = "HBG" # Q2-Q3 Flanders
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+    }
+    sub = {
+        parent = "sub_quartered_bold"
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }
+}
+
+#CHN = { # Chiny
+#	pattern = "pattern_solid.dds"
+#	color1 = "red"
+#	color2 = "yellow"
+#	color3 = hsv360 	{	20	20	50	} 	
+#	
+#	colored_emblem = {
+#		texture = "ce_cross_crosslet_fitchy.dds"
+#		color1 = color2
+#		color2 = color2
+#		instance = { position = { 0.07 0.15 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.40 0.15 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.60 0.15 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.93 0.15 } scale = { 0.22 0.22 } }	
+#		instance = { position = { 0.50 0.28 } scale = { 0.22 0.22 } }			
+#		instance = { position = { 0.14 0.35 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.50 0.54 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.86 0.35 } scale = { 0.22 0.22 } }	
+#		instance = { position = { 0.07 0.51 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.25 0.51 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.75 0.51 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.93 0.51 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.17 0.70 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.50 0.82 } scale = { 0.22 0.22 } }
+#		instance = { position = { 0.83 0.70 } scale = { 0.22 0.22 } }	
+#		instance = { position = { 0.07 0.86 } scale = { 0.22 0.22 } }		
+#		instance = { position = { 0.25 0.92 } scale = { 0.22 0.22 } }	
+#		instance = { position = { 0.75 0.92 } scale = { 0.22 0.22 } }			
+#		instance = { position = { 0.93 0.86 } scale = { 0.22 0.22 } }			
+#	}
+#	colored_emblem = {
+#		texture = "ce_barbels.dds"
+#		color1 = color2
+#		color2 = color2
+#		color3 = color3
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }				
+#	}
+#}
+
+#####################################################################
+
+test_coa_1 = { #for dynamic loading in
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_lion_queue_forchee_crowned_wide.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_barry_10.dds"
+		color1 = color1
+		color2 = color2
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_divider_quarterly.dds"
+		color1 = color1
+	}		
+}
+test_coa_2 = { #for dynamic loading in
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_lion_queue_forchee_crowned_wide.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_barry_10.dds"
+		color1 = color1
+		color2 = color2
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_divider_quarterly.dds"
+		color1 = color1
+	}		
+}
+test_coa_3 = { #for dynamic loading in
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_lion_queue_forchee_crowned_wide.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_barry_10.dds"
+		color1 = color1
+		color2 = color2
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_divider_quarterly.dds"
+		color1 = color1
+	}		
+}
+test_coa_4 = { #for dynamic loading in
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_lion_queue_forchee_crowned_wide.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_barry_10.dds"
+		color1 = color1
+		color2 = color2
+		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_divider_quarterly.dds"
+		color1 = color1
+	}		
 }

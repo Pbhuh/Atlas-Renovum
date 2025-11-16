@@ -27,6 +27,13 @@ BRB = {
 	religion_definition = catholic
 }
 
+BDA = {
+	color = rgb { 255 154 153 }
+
+	culture_definition = low_franconian
+	religion_definition = catholic
+}
+
 FLA = {
 	color = map_FLA
 	color2 = rgb { 43 141 172 }

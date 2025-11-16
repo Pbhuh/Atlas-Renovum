@@ -12609,20 +12609,20 @@ FRA_merchant = { # St Michel Merchant flag
 	}		
 }
 
-#FRI = { # Frisia - Variant with waterlilies on bends, bendwise (more readable)
-#	pattern = "pattern_solid.dds"
-#	color1 = "white"
-#	color2 = "blue"
-#	color3 = "red"
-#
-#	colored_emblem = {
-#		texture = "ce_bends_03_waterlilies_frisia.dds"
-#		color1 = color1
-#		color2 = color2
-#		color3 = color3
-#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
-#	}
-#}
+FRI_original = { # Frisia - Variant with waterlilies on bends, bendwise (more readable)
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_bends_03_waterlilies_frisia.dds"
+		color1 = color1
+		color2 = color2
+		color3 = color3
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
 
 FRT = { # Ferrette/Pfirt
 	pattern = "pattern_solid.dds"
@@ -22921,7 +22921,9 @@ LDB = { # Landsberg
 	}
 }
 
-MEI = { # Meissen TODO identical to Flanders & Julich
+MEI = { # Meissen TODO identical to Flanders & Julich -
+#Peter: tail looks different, might be coincidental - but that would disprove that they are identical.
+#use Berg? ce_lion_queue_forchee_crowned_wide
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"
 	color2 = "black"

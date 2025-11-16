@@ -1,7 +1,7 @@
 ﻿l_english:
  GRN: "Groningen"
  GRN_ADJ: "Groninger"
- GCH: "Arkel" #placeholder
- GCH_ADJ: "Arkelian" #placeholder
- MCH: "Mechelen"
- MCH_ADJ: "Mechelian"
+ GRH: "Arkel" #placeholder
+ GRH_ADJ: "Arkelian" #placeholder
+ MHN: "Mechelen"
+ MHN_ADJ: "Mechelian"

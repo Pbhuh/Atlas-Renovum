@@ -178,14 +178,14 @@ GRN = {
 	religion_definition = catholic
 }
 
-GCH = {
+GRH = {
 	color = rgb { 187 193 216 }
 
 	culture_definition = low_franconian
 	religion_definition = catholic
 }
 
-MCH = {
+MHN = {
 	color = rgb { 108 153 153 }
 
 	culture_definition = low_franconian

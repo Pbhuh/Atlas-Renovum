@@ -17343,7 +17343,7 @@ countries = {
 	}
 	
 	#to be determined - for now: Lordship of Arkel
-	GCH = {
+	GRH = {
 		own_control_core = {
 			gorinchem
 		}		
@@ -17486,7 +17486,7 @@ countries = {
 	}
 	
 	#Mechelen
-	MCH = {
+	MHN = {
 		own_control_core = {
 			mechelen
 		}

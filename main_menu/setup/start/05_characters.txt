@@ -78688,7 +78688,7 @@ adm = 31 dip = 34 mil = 24
 		culture = low_franconian #low_franconian - durk instead of diederik, mhhh
 		religion = catholic
 		birth_date = 1314.1.1
-		death_date = 1360.5.5
+		#death_date = 1360.5.5 lol this bugs out xD
 		birth = gorinchem
 		#dynasty = gerulfing_dynasty
 		#spouse = sophie luxemburg
@@ -85455,6 +85455,7 @@ adm = 31 dip = 34 mil = 24
 		religion = catholic
 		female = yes
 		spouse = spo_walram_ii_sponheim_kreuznach
+		dynasty = katzenelnbogen_dynasty
 		birth_date = 1300.1.1
 		birth = kreuznach
 		tag = SPO
@@ -85829,6 +85830,21 @@ adm = 31 dip = 34 mil = 24
 		father = gmk_engelbert_i_von_der_mark
 		tag = GMK
 	}
+	#irmgard von berg - spouse eberhard_i
+	gmk_maria_von_loon = { #Grandmother
+		first_name = { name = name_mary }
+		culture = low_franconian
+		female = yes
+		religion = catholic
+		birth_date = 1282.1.1
+		death_date = 1313.1.1
+		birth = borgloon
+		dynasty = loon_dynasty
+		father = loo_arnold_v_von_loon
+		#mother = marguerite van vianden
+		spouse = hbg_godfried_i_von_heinsberg
+		tag = GMK
+	}
 	gmk_engelbert_ii_von_der_mark = { #Father of Ruler
 		first_name = { name = name_engelbert }
 		culture = westphalian
@@ -85838,8 +85854,10 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1328.7.18
 		dynasty = mark_dynasty
 		father = gmk_eberhard_i_von_der_mark
+		mother = gmk_maria_von_loon
 		tag = GMK
 	}
+	#Margaretha, in 1299 gehuwd met graaf Gerard van Katzenelnbogen (-1312)
 	gmk_adolf_ii_von_der_mark = { #Ruler
 		first_name = { name = name_adolf }
 		culture = westphalian
@@ -85939,6 +85957,44 @@ adm = 31 dip = 34 mil = 24
 		father = gmk_adolf_ii_von_der_mark
 		mother = gmk_margarete_von_kleve
 		tag = GMK
+	}
+
+	#Katzenelnbogen	
+	ktz_gerhard_i_von_katzenelnbogen = { #Father
+		first_name = { name = name_john }
+		culture = rhine_franconian
+		religion = catholic
+		birth_date = 1380.1.1 #?
+		death_date = 1312.1.1 #?
+		dynasty = katzenelnbogen_dynasty
+		birth = katzenelnbogen
+		tag = KTZ
+	}
+	ktz_margaretha_von_der_mark = { #Mother
+		first_name = { name = name_margaret }
+		culture = lower_saxon
+		religion = catholic
+		female = yes
+		birth_date = 1280.1.1 #?
+		death_date = 1312.1.1 #?
+		birth = hamm
+		dynasty = mark_dynasty
+		father = gmk_eberhard_i_von_der_mark
+		spouse = ktz_gerhard_i_von_katzenelnbogen
+		tag = KTZ
+	}
+	#ktz_eberhard_ii_von_katzenelnbogen = { #brother of ruler death: 1329
+	ktz_johann_ii_von_katzenelnbogen = { #Ruler
+		first_name = { name = name_john }
+		culture = rhine_franconian
+		religion = catholic
+		birth_date = 1300.1.1
+		death_date = 1357.5.2
+		dynasty = katzenelnbogen_dynasty
+		birth = katzenelnbogen
+		father = ktz_gerhard_i_von_katzenelnbogen
+		mother = ktz_margaretha_von_der_mark
+		tag = KTZ
 	}
 
 	#Essen
@@ -86314,7 +86370,18 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	#Loon - Heinsberg - Chiny
-	loo_lodewijk_iv_von_loon = { #Predecessor
+	loo_arnold_v_von_loon = { #Predecessor
+		first_name = { name = name_arnold }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1250.1.1 #estimate
+		death_date = 1328.8.22 #resigned in 1313 in chiny, 1323 in loon respectively
+		birth = borgloon
+		dynasty = loon_dynasty
+		#father = arnold_v_van_loon
+		tag = CHN
+	}
+	loo_lodewijk_iv_von_loon = { #Maternal Uncle of Ruler
 		first_name = { name = name_louis }
 		culture = low_franconian
 		religion = catholic
@@ -86322,9 +86389,25 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1336.1.22
 		birth = borgloon
 		dynasty = loon_dynasty
-		#father = arnold_v_van_loon
+		father = loo_arnold_v_von_loon
+		#mother = marguerite van vianden
 		tag = CHN
 	}
+	loo_mathilde_von_loon = { #Mother
+		first_name = { name = name_matilda }
+		culture = low_franconian
+		female = yes
+		religion = catholic
+		birth_date = 1282.1.1
+		death_date = 1313.1.1
+		birth = borgloon
+		dynasty = loon_dynasty
+		father = loo_arnold_v_von_loon
+		#mother = marguerite van vianden
+		spouse = hbg_godfried_i_von_heinsberg
+		tag = CHN
+	}
+	#johanna von loon - mother of arnold van rummen ruler of chiny
 	hbg_godfried_i_von_heinsberg = { #Father #count of sponheim, lord of heinsberg & blankenburg
 		first_name = { name = name_theodoric }
 		culture = low_franconian
@@ -86335,7 +86418,7 @@ adm = 31 dip = 34 mil = 24
 		dynasty = heinsberg_dynasty
 		tag = HBG
 	}
-	loo_dietrich_iv_von_heinsberg = { #Ruler
+	loo_dietrich_iv_von_heinsberg = { #Ruler Dirk III
 		first_name = { name = name_theodoric }
 		culture = low_franconian
 		religion = catholic
@@ -86343,6 +86426,7 @@ adm = 31 dip = 34 mil = 24
 		birth = cologne
 		dynasty = heinsberg_dynasty
 		father = hbg_godfried_i_von_heinsberg
+		mother = loo_mathilde_von_loon
 		tag = HBG
 	}
 	loo_kunigunde_von_der_mark = { #Spouse of Ruler
@@ -86399,7 +86483,7 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1305.1.1
 		birth = middelburg #probably
 		#dynasty = voorne_dynasty - Den Briel
-		#father = gmk_eberhard_i_von_der_mark
+		#father = 
 		tag = VBG
 	}
 

@@ -17265,11 +17265,8 @@ countries = {
 			ruler_term = { character = fla_thierry_alsace start_date = 1128.7.28 end_date = 1168.1.17 regnal_number = 1 }
 			ruler_term = { character = fla_philippe_i_alsace start_date = 1168.1.17 end_date = 1191.6.1 regnal_number = 1 }
 			ruler_term = { character = fla_marguerite_i_alsace start_date = 1191.6.1 end_date = 1194.11.15 regnal_number = 1 }
-
 			ruler_term = { character = fla_fernando_portugal start_date = 1212.1.1 end_date = 1223.7.27 regnal_number = 1 } # As Marital Co-Ruler
-
-			ruler_term = { character = fla_guillaume_iii_dampierre start_date = 1247.21.1 end_date = 1251.6.6 regnal_number = 3 } #Associated
-
+			ruler_term = { character = fla_guillaume_iii_dampierre start_date = 1247.1.21 end_date = 1251.6.6 regnal_number = 3 } #Associated
 			ruler_term = { character = fla_guy_i_dampierre start_date = 1279.1.1 end_date = 1305.3.7 regnal_number = 1 }
 			ruler_term = { character = fla_robert_iii_dampierre start_date = 1305.3.7 end_date = 1322.9.17 regnal_number = 3 }
 			ruler_term = { character = fla_louis_i_dampierre start_date = 1322.9.17 regnal_number = 1 }
@@ -17307,9 +17304,7 @@ countries = {
 		include = "catholic_monarchy"
 		include = "german_principality"
 		government = {
-			ruler = hai_guillaume_de_hainault
-			
-			hol_jan_i_gerulfing
+			ruler = hol_jan_i_gerulfing
 
 			ruler_term = { character = hol_dirk_vi_gerulfing start_date = 1121.1.1 end_date = 1157.1.1 regnal_number = 4 }
 			ruler_term = { character = hol_floris_iii_gerulfing start_date = 1157.1.1 end_date = 1190.1.1 regnal_number = 3 }
@@ -34947,7 +34942,17 @@ countries = {
 		include = "catholic_monarchy_no_coast"
 		include = "expl_northern_europe"
 		include = "german_principality"
-		government = { ruler = random }
+		government = { 
+			ruler = ktz_johann_ii_von_katzenelnbogen
+
+			ruler_term = {	character = ktz_gerhard_i_von_katzenelnbogen start_date = 1311.1.1 end_date = 1312.1.1 regnal_number = 1 }
+			ruler_term = {	character = ktz_johann_ii_von_katzenelnbogen start_date = 1312.1.1 regnal_number = 2 } #
+			
+			regnal_numbers = {
+				name_john = 2
+				name_gerard = 1
+			}
+		}
 		country_rank = rank_county
 		capital = katzenelnbogen
 	}
@@ -38509,13 +38514,13 @@ countries = {
 
 			ruler = bnt_simon_i_gerulfing
 			#ruler_term = {	character = sophia start_date = 1149.1.1 end_date = 1176.1.1 regnal_number = 2 }
-			ruler_term = {	character = hol_dirk_vi_gerulfing start_date = 1149.1.1  = 1157.1.1 regnal_number = 6 }
-			ruler_term = {	character = bnt_otto_i_gerulfing start_date = 1176.1.1 end_date = 1207.1.1 regnal_number = 1 }
-			ruler_term = {	character = bnt_boudewijn_i_gerulfing start_date = 1207.1.1 end_date = 1247.1.1 }
-			ruler_term = {	character = bnt_otto_ii_gerulfing start_date = 1247.1.1 end_date = 1277.1.1 regnal_number = 2 }
-			ruler_term = {	character = bnt_egbert_i_gerulfing start_date = 1277.1.1 end_date = 1305.1.1 }
-			ruler_term = {	character = bnt_john_ii_gerulfing start_date = 1305.1.1 end_date = 1333.1.1 regnal_number = 2 }
-			ruler_term = {	character = bnt_simon_i_gerulfing start_date = 1333.1.1 regnal_number = 1	}
+			ruler_term = {	character = hol_dirk_vi_gerulfing 		start_date = 1149.1.1 end_date = 1157.1.1 regnal_number = 6 }
+			ruler_term = {	character = bnt_otto_i_gerulfing 		start_date = 1176.1.1 end_date = 1207.1.1 regnal_number = 1 }
+			ruler_term = {	character = bnt_boudewijn_i_gerulfing 	start_date = 1207.1.1 end_date = 1247.1.1 }
+			ruler_term = {	character = bnt_otto_ii_gerulfing 		start_date = 1247.1.1 end_date = 1277.1.1 regnal_number = 2 }
+			ruler_term = {	character = bnt_egbert_i_gerulfing 		start_date = 1277.1.1 end_date = 1305.1.1 }
+			ruler_term = {	character = bnt_john_ii_gerulfing 		start_date = 1305.1.1 end_date = 1333.1.1 regnal_number = 2 }
+			ruler_term = {	character = bnt_simon_i_gerulfing 		start_date = 1333.1.1 regnal_number = 1 }
 
 			regnal_numbers = {
 				name_baldwin = 1
@@ -38524,7 +38529,6 @@ countries = {
 				name_john = 2
 				name_otto = 2
 				name_simeon = 1
-
 				name_sophia = 1
 			}
 		}
@@ -38983,7 +38987,9 @@ countries = {
 		government = {
 			ruler = loo_dietrich_iv_von_heinsberg
 
-			ruler_term = { character = loo_lodewijk_iv_von_loon start_date = 1323.1.1 end_date = 1336.1.22 regnal_number = 4 }
+			#ruler_term = { character = lodewijk_v start_date = 12??.1.1 end_date = 12??.1.1 regnal_number = 5 } - paternal uncle of next ruler
+			ruler_term = { character = loo_arnold_v_von_loon start_date = 1299.1.1 end_date = 1313.1.1 regnal_number = 5 }
+			ruler_term = { character = loo_lodewijk_iv_von_loon start_date = 1323.1.1 end_date = 1336.1.22 regnal_number = 4 } #maternal uncle of next ruler
 			ruler_term = { character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.22 regnal_number = 3 }
 
 			aristocracy_vs_plutocracy = -20
@@ -39097,7 +39103,10 @@ countries = {
 		include = "german_principality"
 		government = {
 			ruler = loo_dietrich_iv_von_heinsberg
-			ruler_term = { character = loo_lodewijk_iv_von_loon start_date = 1323.1.1 end_date = 1336.1.22 regnal_number = 4 }
+			
+			#ruler_term = { character = jan_van_loon start_date = 12??.1.1 end_date = 12??.1.1 regnal_number = 1 }
+			ruler_term = { character = loo_arnold_v_von_loon start_date = 1279.1.1 end_date = 1323.1.1 regnal_number = 5 }
+			ruler_term = { character = loo_lodewijk_iv_von_loon start_date = 1323.1.1 end_date = 1336.1.22 regnal_number = 4 } #maternal uncle of next ruler
 			ruler_term = { character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.22 regnal_number = 3 }
 
 			regnal_numbers = {

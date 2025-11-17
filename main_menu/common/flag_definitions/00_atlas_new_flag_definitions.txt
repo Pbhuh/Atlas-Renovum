@@ -1,0 +1,84 @@
+﻿# common variables
+@coa_width = 768
+@coa_height = 512
+@canton_scale_cross_x = @[ ( 333 / coa_width ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / coa_height ) + 0.001 ]
+@canton_scale_sweden_x = @[ ( 255 / coa_width ) + 0.001 ]
+@canton_scale_sweden_y = @[ ( 204 / coa_height ) + 0.001 ]
+@canton_scale_norway_x = @[ ( 192 / coa_width ) + 0.001 ]
+@canton_scale_norway_y = @[ ( 192 / coa_height ) + 0.001 ]
+@canton_scale_denmark_x = @[ ( 220 / coa_width ) + 0.001 ]
+@canton_scale_denmark_y = @[ ( 220 / coa_height ) + 0.001 ]
+@third = @[1/3]
+@usa_canton_width = 0.5
+@usa_canton_height = @[ 1 / 13 * 7 ]
+
+# Age triggers :
+# 1342 - coa_def_renaissance_age_2_trigger
+# 1437 - coa_def_discovery_age_3_trigger
+# 1537 - coa_def_reformation_age_4_trigger
+# 1637 - coa_def_absolutism_age_5_trigger
+# 1737 - coa_def_revolutions_age_6_trigger
+
+# Colour codes for tinctures in summary :
+# A - Argent (White)
+# O - Or (Yellow)
+# B - Azure (Blue)
+# G - Gules (Red)
+# S - Sable (Black)
+# V - Vert/Sinople (Green)
+# P - Purple/Pourpre
+# M - Brown/Maroon
+# Z - Vair
+# E - Ermine
+# N - Orange
+
+######################
+#	Low Countries	 #
+######################
+
+HBG = { # Heinsberg
+	flag_definition = {
+		coa = HBG
+		priority = 1
+	}
+	flag_definition = {
+		coa = HBG_loon_chiny
+		priority = 50
+		trigger = {			
+			#coa_def_limburg_ownership_trigger = {
+				scope:actor ?= {
+					OR = {
+						owns = location:borgloon
+						any_subject = { owns = location:borgloon }
+					}	
+					OR = {
+						NOT = { country_exists = c:LOO }
+						any_subject_or_below = { this = c:LOO }
+					}
+					OR = {
+						owns = location:montmedy
+						any_subject = { owns = location:montmedy }
+					}	
+					OR = {
+						NOT = { country_exists = c:CHN }
+						any_subject_or_below = { this = c:CHN }
+					}
+				}
+			#}
+			
+			#coa_def_flanders_ownership_trigger = {
+				#scope:actor ?= {
+				#	OR = {
+				#		owns = location:bruges
+				#		any_subject = { owns = location:bruges }
+				#	}	
+				#	OR = {
+				#		NOT = { country_exists = c:FLA }
+				#		any_subject_or_below = { this = c:FLA }
+				#	}
+				#}
+			#}
+		}
+	}
+}

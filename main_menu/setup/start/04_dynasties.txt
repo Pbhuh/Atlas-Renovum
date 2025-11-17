@@ -2870,6 +2870,12 @@ dynasty_manager = {
 		home = hamm
 		dynasty_name_type = location
 	}
+	
+	katzenelnbogen_dynasty
+		name = { name = katzenelnbogen_dynasty }
+		home = katzenelnbogen
+		dynasty_name_type = location
+	}
 
 	oldenburg_dynasty = {
 		name = { name = oldenburg_dynasty }

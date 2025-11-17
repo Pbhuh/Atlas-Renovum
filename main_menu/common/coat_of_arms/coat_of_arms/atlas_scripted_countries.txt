@@ -214,15 +214,32 @@ BDA = { # Breda
 	pattern = "pattern_solid.dds"
 	color1 = "red"
 	color2 = "white"
+	color3 = "blue"
+	color4 = "yellow"
 
 	colored_emblem = {
-		texture = "ce_saltire_thin.dds"
+		#texture = "ce_vair_saltire.dds"
+		#texture = "ce_quinas_saltire.dds"
+		texture = "ce_saltire.dds"
 		color1 = color2
 		color2 = color2
-		instance = { position = { 0.32 0.28 } scale = { 0.25 0.25 }  }
-		instance = { position = { 0.68 0.28 } scale = { 0.25 0.25 }  }
-		instance = { position = { 0.5 0.70 } scale = { 0.25 0.25 }  }		
+		instance = { position = { 0.32 0.28 } scale = { 0.20 0.25 }  }
+		instance = { position = { 0.68 0.28 } scale = { 0.20 0.25 }  }
+		instance = { position = { 0.5 0.70 } scale = { 0.20	0.25 }  }		
 	}	
+	#colored_emblem = {
+	#	texture = "ce_barry_saltire.dds"
+	#	color1 = color2
+	#	color2 = color4			
+	#	instance = { position = { 0.75 0.70 } scale = { 0.20	0.25 }  }
+	#}		
+	#colored_emblem = {
+	#	texture = "ce_saltire_field.dds"
+	#	color1 = color3
+	#	color2 = color2			
+	#	mask = { 2 }
+	#	instance = { position = { 0.25 0.70 } scale = { 0.20	0.25 }  }
+	#}	
 }
 
 LOO_CHN = { #Loon - Chiny
@@ -345,55 +362,55 @@ test_coa_1 = { #for dynamic loading in
 	color3 = "red"
 
 	colored_emblem = {
-		texture = "ce_fleur_de_lis.dds"
+		texture = "ce_keys_saltire.dds"
 		color1 = color3
 		color2 = color3
 		instance = { position = { 0.62 0.20 } scale = { 0.38 0.36 }  }	
 	}	
 	colored_emblem = {
-		texture = "ce_fleur_de_lis.dds"
+		texture = "ce_fess.dds"
 		color1 = color3
 		color2 = color3
 		instance = { position = { 0.87 0.20 } scale = { 0.38 0.36 }  }
 	}	
 	colored_emblem = {
-		texture = "ce_fleur_de_lis.dds"
+		texture = "ce_laurel_wreath.dds"
 		color1 = color3
 		color2 = color3
 		instance = { position = { 0.87 0.53 } scale = { 0.38 0.36 }  }		
 	}	
 	colored_emblem = {
-		texture = "ce_fleur_de_lis.dds"
+		texture = "ce_sword_in_pale.dds"
 		color1 = color3
 		color2 = color3
 		instance = { position = { 0.38 0.80 } scale = { 0.38 0.36 }  }	
 	}	
 	colored_emblem = {
-		texture = "ce_fleur_de_lis.dds"
+		texture = "ce_deaths_head_skull_half.dds"
 		color1 = color3
 		color2 = color3
 		instance = { position = { 0.13 0.80 } scale = { 0.38 0.36 }  }	
 	}	
 	colored_emblem = {
-		texture = "ce_fleur_de_lis.dds"
+		texture = "ce_crescent_increscent.dds"
 		color1 = color3
 		color2 = color3
 		instance = { position = { 0.13 0.47 } scale = { 0.38 0.36 }  }		
 	}	
 	colored_emblem = {
-		texture = "ce_waterlily_leaf.dds"
+		texture = "ce_cross_thin.dds"
 		color1 = color3
 		color2 = color3
 		instance = { scale = { 0.25 0.25 } position = { 0.25 0.15 } }
 	}
 	colored_emblem = {
-		texture = "ce_waterlily_leaf.dds"
+		texture = "ce_crossed_sabres_arabic.dds"
 		color1 = color3
 		color2 = color3
 		instance = { scale = { 0.25 0.25 } position = { 0.50 0.50 } }
 	}
 	colored_emblem = {
-		texture = "ce_waterlily_leaf.dds"
+		texture = "pattern_canton_02.dds"
 		color1 = color3
 		color2 = color3
 		instance = { scale = { 0.25 0.25 } position = { 0.75 0.85 } }
@@ -414,9 +431,9 @@ test_coa_2 = { #for dynamic loading in
 		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }		
 	}
 	colored_emblem = {
-		texture = "ce_barry_10.dds"
-		color1 = color1
-		color2 = color2
+		texture = "ce_saltire.dds"
+		color1 = color3
+		color2 = color3
 		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
 		instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }
 	}
@@ -426,30 +443,35 @@ test_coa_2 = { #for dynamic loading in
 	}		
 }
 test_coa_3 = { #for dynamic loading in
-	pattern = "pattern_quarterly_flag.dds"
+	pattern = "pattern_solid.dds"
 	color1 = "red"
 	color2 = "white"
-	color3 = "yellow"
+	color3 = "blue"
+	color4 = "yellow"
 
 	colored_emblem = {
-		texture = "ce_lion_queue_forchee_crowned_wide.dds"
+		#texture = "ce_vair_saltire.dds"
+		#texture = "ce_quinas_saltire.dds"
+		#texture = "ce_quinas_saltire.dds"
 		color1 = color2
 		color2 = color2
-		color3 = color2
-		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
-		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }		
-	}
+		instance = { position = { 0.32 0.28 } scale = { 0.20 0.25 }  }
+		instance = { position = { 0.68 0.28 } scale = { 0.20 0.25 }  }
+		#instance = { position = { 0.5 0.70 } scale = { 0.20	0.25 }  }		
+	}	
 	colored_emblem = {
-		texture = "ce_barry_10.dds"
-		color1 = color1
-		color2 = color2
-		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
-		instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }
-	}
-	colored_emblem = {
-		texture = "ce_divider_quarterly.dds"
-		color1 = color1
+		texture = "ce_barry_saltire.dds"
+		color1 = color2
+		color2 = color4			
+		instance = { position = { 0.75 0.70 } scale = { 0.20	0.25 }  }
 	}		
+	colored_emblem = {
+		texture = "ce_saltire_field.dds"
+		color1 = color3
+		color2 = color2			
+		mask = { 2 }
+		instance = { position = { 0.25 0.70 } scale = { 0.20	0.25 }  }
+	}	
 }
 test_coa_4 = { #for dynamic loading in
 	pattern = "pattern_quarterly_flag.dds"

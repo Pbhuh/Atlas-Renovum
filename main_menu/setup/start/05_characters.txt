@@ -77485,6 +77485,7 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1300.1.1
 		birth = tecklenburg
 		father = tck_gunzelin_vi_tecklenburg
+		mother = tck_richardis_gerulfing
 		dynasty = schwerin_dynasty
 		tag = TCK
 	}
@@ -77505,6 +77506,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	bnt_boudewijn_i_gerulfing = { #greatGreatGrandfather of Ruler - ruler of bentheim, burgrave of utrecht, regent of holland
 		first_name = { name = name_baldwin }
+		nickname = { name = the_bold } #brave
 		culture = low_franconian
 		religion = catholic
 		birth_date = 1180.1.1
@@ -78672,7 +78674,7 @@ adm = 31 dip = 34 mil = 24
 	
 	hol_dirk_vi_gerulfing = { #Paternal of Bentheim, Holland and Tecklenburg
 		first_name = { name = name_theodoric }
-		culture = frisian
+		culture = frisian #low_franconian - durk instead of diederik, mhhh
 		religion = catholic
 		birth_date = 1114.1.1
 		death_date = 1157.8.5
@@ -78903,6 +78905,7 @@ adm = 31 dip = 34 mil = 24
 	# Count of Hainaut, Holland & Zeeland
 	hai_guillaume_de_hainault = {		
 		first_name = { name = name_william }
+		nickname = { name = the_good }
 		culture = picard
 		religion = catholic
 		estate = nobles_estate
@@ -85657,7 +85660,7 @@ adm = 31 dip = 34 mil = 24
 	#Cleves
 	kle_dietrich_vi_von_kleve = { #Father of Ruler
 		first_name = { name = name_theodoric }
-		culture = westphalian
+		culture = low_franconian
 		religion = catholic
 		birth_date = 1256.1.1
 		birth = kleve
@@ -85680,7 +85683,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	kle_otto_von_kleve = { #Previous Ruler / Brother
 		first_name = { name = name_otto }
-		culture = westphalian
+		culture = low_franconian
 		religion = catholic
 		birth_date = 1278.1.1
 		birth = kleve
@@ -85692,12 +85695,12 @@ adm = 31 dip = 34 mil = 24
 	}	
 	kle_adelheid_von_der_mark = { # Spouse of Otto I
 		first_name = { name = name_adelaide }
-		culture = low_franconian
+		culture = westphalian
 		religion = catholic
 		female = yes
 		birth_date = 1262.1.1
-		death_date = 1300.1.1 #estimate
-		birth = kleve
+		death_date = 1310.1.1 #estimate
+		birth = hamm
 		spouse = kle_otto_von_kleve
 		father = gmk_engelbert_i_von_der_mark
 		#mother = Elisabeth von valkenburg - daughter of dirk ii von valkenburg
@@ -85706,7 +85709,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	kle_irmgard_von_kleve = { #Previous Ruler's daugther
 		first_name = { name = Irmgard }
-		culture = westphalian
+		culture = low_franconian
 		religion = catholic
 		female = yes
 		birth_date = 1305.1.1
@@ -85718,7 +85721,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	kle_dietrich_vii_von_kleve = { #Ruler
 		first_name = { name = name_theodoric }
-		culture = westphalian
+		culture = low_franconian
 		religion = catholic
 		birth_date = 1291.1.1
 		birth = kleve
@@ -85742,7 +85745,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	kle_elisabeth_von_kleve = { #Daugther of Ruler
 		first_name = { name = name_elizabeth }
-		culture = westphalian
+		culture = low_franconian
 		religion = catholic
 		female = yes
 		birth_date = 1307.1.1
@@ -85754,7 +85757,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	kle_johann_von_kleve = { #Brother of Ruler
 		first_name = { name = name_john } 
-		culture = westphalian
+		culture = low_franconian
 		religion = catholic
 		birth_date = 1293.1.1
 		birth = kleve

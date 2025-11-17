@@ -38521,8 +38521,8 @@ countries = {
 		government = {
 
 			ruler = bnt_simon_i_gerulfing
-			ruler_term = {	character = hol_dirk_vi_gerulfing start_date = 1149.1.1 end_date = 1157.1.1 regnal_number = 6 }
 			#ruler_term = {	character = sophia start_date = 1149.1.1 end_date = 1176.1.1 regnal_number = 2 }
+			ruler_term = {	character = hol_dirk_vi_gerulfing start_date = 1149.1.1  = 1157.1.1 regnal_number = 6 }
 			ruler_term = {	character = bnt_otto_i_gerulfing start_date = 1176.1.1 end_date = 1207.1.1 regnal_number = 1 }
 			ruler_term = {	character = bnt_boudewijn_i_gerulfing start_date = 1207.1.1 end_date = 1247.1.1 }
 			ruler_term = {	character = bnt_otto_ii_gerulfing start_date = 1247.1.1 end_date = 1277.1.1 regnal_number = 2 }

@@ -25,19 +25,81 @@ FRI = {
 		texture = "ce_bends_03.dds"
 		color1 = color2
 		color2 = color2
-		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+		instance = { position = { 0.5 0.5 } rotation = -10 scale = { 1.0 1.0 } }
 	}
 	colored_emblem = {
 		texture = "ce_waterlily_leaf.dds"
 		color1 = color3
 		color2 = color3
-		instance = { scale = { 0.25 0.25 } position = { 0.25 0.15 } }
-		instance = { scale = { 0.25 0.25 } position = { 0.50 0.50 } }
-		instance = { scale = { 0.25 0.25 } position = { 0.75 0.85 } }
-		instance = { scale = { 0.25 0.25 } position = { 0.10 0.60 } }
-		instance = { scale = { 0.25 0.25 } position = { 0.25 0.85 } }
-		instance = { scale = { 0.25 0.25 } position = { 0.75 0.15 } }
-		instance = { scale = { 0.25 0.25 } position = { 0.90 0.40 } }
+		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.23 0.22 } } #middle line - topleft
+		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.50 0.50 } } #middle line - middle
+		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.77 0.76 } } #middle line - bottomright
+		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.10 0.68 } } #bottom line - left
+		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.28 0.84 } } #bottom line - right
+		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.73 0.14 } } #top line - left
+		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.90 0.32 } } #top line - right
+	}
+}
+
+#ce_bends_03_thin_bjalbo
+#ce_bends_03_thin_semy_bjalbo
+#ce_bends_03_waterlilies_frisia
+
+FRI_monarchy = { #Monarchy Friesland
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "red"
+
+	colored_emblem = {
+		texture = "ce_lion_passant_long_wide.dds" # Gelre lion (uncrowned)
+		#texture = "ce_lion_passant_guardant_long_wide.dds" - normandy
+		color1 = color3
+		color2 = color3
+		color3 = color1
+		instance = { position = { 0.5 0.21 } scale = { 0.80 0.75 } }
+		instance = { position = { 0.5 0.65 } scale = { 0.80 0.75 } }	
+	}
+	colored_emblem = {
+		texture = "ce_square.dds" 
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.1 0.1 } scale = { 0.2 0.2 } } #topleft	
+		instance = { position = { 0.9 0.1 } scale = { 0.2 0.2 } } #topright
+		instance = { position = { 0.1 0.5 } scale = { 0.2 0.2 } } #centerleft
+		instance = { position = { 0.9 0.5 } scale = { 0.2 0.2 } } #centerright
+		instance = { position = { 0.35 0.9 } scale = { 0.2 0.2 } } #bottomleft
+		instance = { position = { 0.5 0.95 } scale = { 0.2 0.2 } } #bottomcenter
+		instance = { position = { 0.65 0.9 } scale = { 0.2 0.2 } } #bottomright
+	}
+}
+
+FRI_westfriesland = { #Monarchy Friesland
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "red"
+
+	colored_emblem = {
+		#texture = "ce_lion_passant_long_wide.dds" # Gelre lion (uncrowned)
+		texture = "ce_lion_passant_guardant_long_wide.dds" #normandy
+		color1 = color3
+		color2 = color3
+		color3 = color1
+		instance = { position = { 0.5 0.21 } scale = { 0.80 0.75 } }
+		instance = { position = { 0.5 0.65 } scale = { 0.80 0.75 } }	
+	}
+	colored_emblem = {
+		texture = "ce_square.dds" 
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.1 0.1 } scale = { 0.2 0.2 } } #topleft	
+		instance = { position = { 0.9 0.1 } scale = { 0.2 0.2 } } #topright
+		instance = { position = { 0.1 0.5 } scale = { 0.2 0.2 } } #centerleft
+		instance = { position = { 0.9 0.5 } scale = { 0.2 0.2 } } #centerright
+		instance = { position = { 0.5 0.9 } scale = { 0.2 0.2 } } #bottomcenter
 	}
 }
 
@@ -70,6 +132,7 @@ FRI_OMMELANDEN = { # Ommelanden
 		instance = { scale = { 0.20 0.20 } position = { 0.86 0.92 } } #4
 	}
 }
+
 
 MEH = { # Mechelen
 	pattern = "pattern_solid.dds"
@@ -187,6 +250,18 @@ GRH = { # Gorinchem
 	}		
 }
 
+GRH_buren = { #Buren
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+	
+	colored_emblem = {
+		texture = "ce_fess_counter_embattled.dds"
+		color1 = color2
+		color2 = color2	
+	}		
+}
+
 ZEE_FLANDERS = { # Zeeland
 	pattern = "pattern_solid.dds"
 	color1 = "red"
@@ -210,6 +285,26 @@ ZEE_FLANDERS = { # Zeeland
 	}
 }
 
+GEL_van_wassenberg = { # Wassenberg
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+	color3 = "blue"
+	color4 = "red"
+	color5 = "green"
+
+	colored_emblem = {
+		#texture = "ce_vair_saltire.dds"
+		#texture = "ce_quinas_saltire.dds"
+		texture = "ce_rose_simple.dds"
+		color1 = color4
+		color2 = color5
+		color3 = color1
+		instance = { position = { 0.32 0.28 } scale = { 0.6 0.6 }  }
+		instance = { position = { 0.68 0.28 } scale = { 0.6 0.6 }  }
+		instance = { position = { 0.5 0.70 } scale = { 0.6 0.6 }  }	
+	}	
+}
 BDA = { # Breda
 	pattern = "pattern_solid.dds"
 	color1 = "red"
@@ -475,27 +570,16 @@ test_coa_3 = { #for dynamic loading in
 }
 test_coa_4 = { #for dynamic loading in
 	pattern = "pattern_quarterly_flag.dds"
-	color1 = "red"
+	color1 = "blue"
 	color2 = "white"
-	color3 = "yellow"
+	color3 = "red"
 
 	colored_emblem = {
-		texture = "ce_lion_queue_forchee_crowned_wide.dds"
-		color1 = color2
-		color2 = color2
-		color3 = color2
-		instance = { position = { 0.25 0.75 } scale = { 0.5 0.5 } }
-		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }		
+		texture = "ce_waterlily_leaf.dds"
+		color1 = color3
+		color2 = color3
+		instance = { scale = { 0.5 0.5 } rotation = 30 position = { 0.33 0.33 } }
+		instance = { scale = { 0.5 0.5 } rotation = 30 position = { 0.5 0.66 } }
+		instance = { scale = { 0.5 0.5 } rotation = 30 position = { 0.66 0.33 } }
 	}
-	colored_emblem = {
-		texture = "ce_barry_10.dds"
-		color1 = color1
-		color2 = color2
-		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
-		instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }
-	}
-	colored_emblem = {
-		texture = "ce_divider_quarterly.dds"
-		color1 = color1
-	}		
 }

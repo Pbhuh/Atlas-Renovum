@@ -1,0 +1,37 @@
+
+@five_sixths = @[5/6]
+@three_quarters = @[3/4]
+@two_thirds = @[2/3]
+@half = @[1/2]
+@third = @[1/3]
+@quarter = @[1/4]
+@sixth = @[1/6]
+
+default_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+
+	textured_emblem = {
+		texture = "te_mercenary.dds"
+	}
+}
+
+###
+
+wassenberg_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "red_mid"
+
+	colored_emblem = {
+		texture = "ce_lion_rampant_queue_forchee_crowned_shield.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color2
+		instance = { position = { 0.5 0.475 } scale = { 0.9 0.9 } }						
+	}
+}
+
+#arkel_dynasty tag = grh

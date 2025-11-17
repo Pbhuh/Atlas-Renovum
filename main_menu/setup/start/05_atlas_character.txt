@@ -1,0 +1,359 @@
+#Remember to write sons and daughters ALWAYS after their parents to avoid crashes
+
+character_db={
+	#Loon - Heinsberg - Chiny
+	loo_lodewijk_iv_von_loon = { #Predecessor
+		first_name = { name = name_louis }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1275.1.1
+		death_date = 1336.1.22
+		birth = borgloon
+		dynasty = loon_dynasty
+		#father = arnold_v_van_loon
+		tag = CHN
+	}
+	hbg_godfried_i_von_heinsberg = { #Father #count of sponheim, lord of heinsberg & blankenburg
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1270.1.1
+		death_date = 1331.1.1
+		birth = heinsberg
+		dynasty = heinsberg_dynasty
+		tag = HBG
+	}
+	
+	#Valkenburg
+	#Engelbert II van Valkenburg - archbishop of cologne 1220 - 1274
+	vbg_reinoud_von_valkenburg = { #Father
+		first_name = { name = name_reginald }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1283.1.1
+		birth = maastricht
+		death_date = 1333.7.15
+		dynasty = heinsberg_dynasty #valkenburg-heinsberg_dynasty
+		tag = VBG
+	}
+	vbg_dietrich_iv_von_valkenburg = { #Ruler
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1310.1.1
+		birth = maastricht
+		dynasty = heinsberg_dynasty #valkenburg-heinsberg_dynasty
+		father = vbg_reinoud_von_valkenburg
+		tag = VBG
+	}
+	vbg_machteld_van_voorne = { #Spouse of Ruler
+		first_name = { name = name_matilda }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		spouse = vbg_dietrich_iv_von_valkenburg
+		birth_date = 1305.1.1
+		birth = middelburg #probably
+		#dynasty = voorne_dynasty - Den Briel
+		#father = gmk_eberhard_i_von_der_mark
+		tag = VBG
+	}
+	#Tecklenburg	
+	tck_otto_iii_gerulfing = { #Father
+		first_name = { name = name_otto }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1250.1.1
+		birth = tecklenburg
+		death_date = 1285.1.1
+		dynasty = gerulfing_dynasty
+		father = bnt_otto_ii_gerulfing
+		#mother = heilwich von tecklenburg
+		tag = TCK
+	}
+	tck_richarda_von_der_mark = { # Spouse of otto III
+		first_name = { name = name_ricarda } #? name_richilda
+		culture = low_franconian
+		female = yes
+		religion = catholic
+		female = yes
+		birth_date = 1255.1.1 #estimate
+		death_date = 1285.1.1
+		birth = kleve
+		spouse = tck_otto_iii_gerulfing
+		father = gmk_engelbert_i_von_der_mark
+		#mother = Elisabeth von valkenburg - daughter of dirk ii von valkenburg
+		dynasty = mark_dynasty
+		tag = MEH
+	}
+	tck_otto_iv_gerulfing = { #Father
+		first_name = { name = name_otto }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1278.1.1
+		birth = tecklenburg
+		death_date = 1307.1.1
+		dynasty = gerulfing_dynasty
+		father = tck_otto_iii_gerulfing
+		mother = tck_richarda_von_der_mark # (von_der_mark) - father: gmk_engelbert_i_von_der_mark
+		#spouse = beatrix von Rietberg
+		tag = TCK
+	}
+	tck_otto_v_gerulfing = { #Predecessor
+		first_name = { name = name_otto }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1298.1.1
+		birth = tecklenburg
+		death_date = 1321.1.1
+		father = tck_otto_iv_gerulfing
+		dynasty = gerulfing_dynasty
+		#spouse = Cunegonde van Dale-Diepenheim - 1317
+		tag = TCK
+	}
+	tck_gunzelin_vi_tecklenburg = { #Father of Ruler
+		first_name = { name = Gunzelin }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1275.1.1
+		birth = tecklenburg
+		death_date = 1327.1.1
+		father = swr_niklot_i
+		dynasty = schwerin_dynasty
+		tag = TCK
+	}
+	tck_richardis_gerulfing = { #mother of ruler / sister of previous dynasty
+		first_name = { name = name_ricarda }
+		female = yes
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1298.1.1
+		birth = tecklenburg
+		death_date = 1330.1.1
+		father = tck_otto_iv_gerulfing
+		dynasty = gerulfing_dynasty
+		spouse = tck_gunzelin_vi_tecklenburg
+		tag = TCK
+	}
+	tck_nikolaus_i_tecklenburg = { #Ruler
+		first_name = { name = Nikolaus }
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1300.1.1
+		birth = tecklenburg
+		father = tck_gunzelin_vi_tecklenburg
+		mother = tck_richardis_gerulfing
+		dynasty = schwerin_dynasty
+		tag = TCK
+	}
+
+	#Bentheim	
+	bnt_otto_i_gerulfing = { #greatgreatGreatGrandfather of Ruler - ruler of bentheim, burgrave of utrecht, regent of holland
+		first_name = { name = name_otto }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1135.1.1
+		death_date = 1208.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		#mother: sophie luxemburg - countess of bentheim
+		father = hol_dirk_vi_gerulfing
+		#spouse alveradis van cuijk
+		tag = BNT
+	}
+	bnt_boudewijn_i_gerulfing = { #greatGreatGrandfather of Ruler - ruler of bentheim, burgrave of utrecht, regent of holland
+		first_name = { name = name_baldwin }
+		nickname = { name = the_bold } #brave
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1180.1.1
+		death_date = 1248.1.1
+		birth = bentheim
+		dynasty = gerulfing_dynasty
+		#spouse: jutta van limburg
+		father = bnt_otto_i_gerulfing
+		#mother alveradis van cuijk
+		tag = BNT
+	}
+	bnt_otto_ii_gerulfing = { #GreatGrandfather of Ruler - ruler of bentheim 12??-1279 ruler of tec. 126?-1279
+		first_name = { name = name_otto }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1210.1.1
+		death_date = 1379.1.1
+		birth = bentheim
+		dynasty = gerulfing_dynasty
+		#spouse = heilwich von tecklenburg
+		father = bnt_boudewijn_i_gerulfing
+		#mother jutta van limburg
+		tag = BNT
+	}
+	bnt_egbert_i_gerulfing = { #Grandfather of Ruler 1279-1311
+		first_name = { name = Egbert }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1250.1.1
+		death_date = 1311.1.1
+		birth = bentheim
+		father = bnt_otto_ii_gerulfing
+		dynasty = gerulfing_dynasty
+		tag = BNT
+	}
+	bnt_john_ii_gerulfing = { #Father of Ruler 1311-1333
+		first_name = { name = name_john }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1280.1.1
+		death_date = 1333.7.21
+		birth = bentheim
+		father = bnt_egbert_i_gerulfing
+		dynasty = gerulfing_dynasty
+		tag = BNT
+	}
+
+	bnt_simon_i_gerulfing = { #Ruler
+		first_name = { name = name_simeon }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1308.1.1 #unknown
+		birth = bentheim
+		father = bnt_john_ii_gerulfing
+		dynasty = gerulfing_dynasty
+		tag = BNT
+	}
+	
+	# Land van Arkel / Gorinchem
+	grh_jan_iii_van_arkel = { #father
+		first_name = { name = name_john }
+		culture = low_franconian #low_franconian - durk instead of diederik, mhhh
+		religion = catholic
+		birth_date = 1275.1.1
+		death_date = 1324.12.24
+		birth = gorinchem
+		#dynasty = gerulfing_dynasty
+		#spouse = sophie luxemburg
+		#father Dirk VI gerulfing
+		tag = GRH
+	}
+	grh_jan_iv_van_arkel = {
+		first_name = { name = name_john }
+		culture = low_franconian #low_franconian - durk instead of diederik, mhhh
+		religion = catholic
+		birth_date = 1314.1.1
+		death_date = 1360.5.5
+		birth = gorinchem
+		#dynasty = gerulfing_dynasty
+		#spouse = sophie luxemburg
+		father = grh_jan_iii_van_arkel
+		tag = GRH
+	}
+	
+	# Holland Gerulfing
+	
+	hol_dirk_vi_gerulfing = { #Paternal of Bentheim, Holland and Tecklenburg
+		first_name = { name = name_theodoric }
+		culture = frisian #low_franconian - durk instead of diederik, mhhh
+		religion = catholic
+		birth_date = 1114.1.1
+		death_date = 1157.8.5
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		#spouse = sophie luxemburg
+		#father Dirk VI gerulfing
+		tag = HOL
+	}	
+	hol_floris_iii_gerulfing = {
+		first_name = { name = name_florence }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1141.1.1
+		death_date = 1190.8.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		#spouse = sophie luxemburg
+		father = hol_dirk_vi_gerulfing
+		tag = HOL
+	}	
+	hol_dirk_vii_gerulfing = {
+		first_name = { name = name_florence }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1165.1.1
+		death_date = 1203.11.4
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		#spouse = adelaide of cleves
+		father = hol_floris_iii_gerulfing
+		tag = HOL
+	}	
+	hol_ada_gerulfing = {
+		first_name = { name = name_adelaide }
+		culture = low_franconian
+		female = yes
+		religion = catholic
+		birth_date = 1188.1.1
+		death_date = 1223.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		#spouse = louis_i
+		father = hol_dirk_vii_gerulfing
+		tag = HOL
+	}	
+	hol_willem_i_gerulfing = {
+		first_name = { name = name_william }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1168.1.1
+		death_date = 1222.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		father = hol_floris_iii_gerulfing
+		tag = HOL
+	}	
+	hol_floris_iv_gerulfing = {
+		first_name = { name = name_florence }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1210.1.1
+		death_date = 1234.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		father = hol_willem_i_gerulfing
+		tag = HOL
+	}
+	hol_willem_ii_gerulfing = {
+		first_name = { name = name_william }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1227.1.1
+		death_date = 1256.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		father = hol_floris_iv_gerulfing
+		tag = HOL
+	}	
+	hol_floris_v_gerulfing = {
+		first_name = { name = name_florence }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1254.1.1
+		death_date = 1296.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		father = hol_willem_ii_gerulfing
+		tag = HOL
+	}
+	hol_jan_i_gerulfing = {
+		first_name = { name = name_john }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1284.1.1
+		death_date = 1299.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		father = hol_floris_v_gerulfing
+		tag = HOL
+	}
+	
+	
+}

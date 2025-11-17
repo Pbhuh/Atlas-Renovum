@@ -17364,27 +17364,13 @@ countries = {
 		include = "catholic_monarchy"
 		include = "german_principality"
 		government = {
-			ruler = hai_guillaume_de_hainault #John 4 - lord of arkel 
+			ruler = grh_jan_iv_van_arkel #John 4 - lord of arkel 
 
-			ruler_term = { character = hai_jean_ii_de_hainault start_date = 1299.11.10 end_date = 1304.8.22 regnal_number = 2 }
-			ruler_term = { character = hai_guillaume_de_hainault start_date = 1304.8.22 regnal_number = 5 }
+			ruler_term = { character = grh_jan_iii_van_arkel start_date = 1297.1.1 end_date = 1324.12.24 regnal_number = 3 }
+			ruler_term = { character = grh_jan_iv_van_arkel start_date = 1326.1.1 regnal_number = 4 }
 
 			regnal_numbers = {
-				name_baldwin = 5
-				name_arnulf = 1
-				name_robert = 2
-				name_charles = 1
-				name_william = 5
-				name_theodoric = 2
-				name_florence = 3
-				name_philip = 1
-				name_margaret = 2
-				name_ada = 1
-				name_joanna = 1
-				name_ferdinand = 1
-				name_thomas = 1
-				name_wido = 1
-				name_john = 2
+				name_john = 3
 			}
 
 			aristocracy_vs_plutocracy = 20
@@ -38129,6 +38115,7 @@ countries = {
 		dynasty = wassenberg_dynasty
 
 		country_rank = rank_county
+		#country_rank = rank_duchy from 1339
 
 		tolerated_cultures = {
 			westphalian

@@ -16979,20 +16979,20 @@ washizu_dynasty = { # Washizu
 	}
 }
 
-wassenberg_dynasty = {
-	pattern = "pattern_solid.dds"
-	color1 = "blue"
-	color2 = "yellow"
-	color3 = "red_mid"
-
-	colored_emblem = {
-		texture = "ce_lion_rampant_queue_forchee_crowned_shield.dds"
-		color1 = color2
-		color2 = color3
-		color3 = color2
-		instance = { position = { 0.5 0.475 } scale = { 0.9 0.9 } }						
-	}
-}
+#wassenberg_dynasty = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "blue"
+#	color2 = "yellow"
+#	color3 = "red_mid"
+#
+#	colored_emblem = {
+#		texture = "ce_lion_rampant_queue_forchee_crowned_shield.dds"
+#		color1 = color2
+#		color2 = color3
+#		color3 = color2
+#		instance = { position = { 0.5 0.475 } scale = { 0.9 0.9 } }						
+#	}
+#}
 
 watanabe_dynasty = { # Watanabe
 	pattern = "pattern_solid.dds"

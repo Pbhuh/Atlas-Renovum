@@ -86314,6 +86314,27 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	#Loon - Heinsberg - Chiny
+	loo_lodewijk_iv_von_loon = { #Predecessor
+		first_name = { name = name_louis }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1275.1.1
+		death_date = 1336.1.22
+		birth = borgloon
+		dynasty = loon_dynasty
+		#father = arnold_v_van_loon
+		tag = CHN
+	}
+	hbg_godfried_i_von_heinsberg = { #Father #count of sponheim, lord of heinsberg & blankenburg
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1270.1.1
+		death_date = 1331.1.1
+		birth = heinsberg
+		dynasty = heinsberg_dynasty
+		tag = HBG
+	}
 	loo_dietrich_iv_von_heinsberg = { #Ruler
 		first_name = { name = name_theodoric }
 		culture = low_franconian
@@ -86345,7 +86366,42 @@ adm = 31 dip = 34 mil = 24
 		dynasty = heinsberg_dynasty
 		father = loo_dietrich_iv_von_heinsberg
 		tag = HBG
-	}	
+	}
+	
+	#Valkenburg
+	#Engelbert II van Valkenburg - archbishop of cologne 1220 - 1274
+	vbg_reinoud_von_valkenburg = { #Father
+		first_name = { name = name_reginald }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1283.1.1
+		birth = maastricht
+		death_date = 1333.7.15
+		dynasty = heinsberg_dynasty #valkenburg-heinsberg_dynasty
+		tag = VBG
+	}
+	vbg_dietrich_iv_von_valkenburg = { #Ruler
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1310.1.1
+		birth = maastricht
+		dynasty = heinsberg_dynasty #valkenburg-heinsberg_dynasty
+		father = vbg_reinoud_von_valkenburg
+		tag = VBG
+	}
+	vbg_machteld_van_voorne = { #Spouse of Ruler
+		first_name = { name = name_matilda }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		spouse = vbg_dietrich_iv_von_valkenburg
+		birth_date = 1305.1.1
+		birth = middelburg #probably
+		#dynasty = voorne_dynasty - Den Briel
+		#father = gmk_eberhard_i_von_der_mark
+		tag = VBG
+	}
 
 	#Vianden Family
 

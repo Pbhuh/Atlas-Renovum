@@ -38,6 +38,39 @@ wassenberg_dynasty = {
 	}	
 }
 
+arkel_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_bars_02_counter_embattled.dds"
+		color1 = color2
+		color2 = color2		
+	}
+}
+
+virneburg_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_lozenge_random.dds"
+		color1 = color2
+		color2 = color2
+		#top row
+		instance = { position = { 0.32 0.3 } scale = { 0.30 0.30 }  }
+		instance = { position = { 0.44 0.3 } scale = { 0.30 0.30 }  }
+		instance = { position = { 0.56 0.3 } scale = { 0.30 0.30 }  }
+		instance = { position = { 0.68 0.3 } scale = { 0.30 0.30 }  }
+		#bottom row                                     
+		instance = { position = { 0.39 0.6 } scale = { 0.30 0.30 }  }
+		instance = { position = { 0.50 0.6 } scale = { 0.30 0.30 }  }
+		instance = { position = { 0.61 0.6 } scale = { 0.30 0.30 }  }
+	}
+}
+
 katzenelnbogen_dynasty = { #same as holland/gerulfing
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"

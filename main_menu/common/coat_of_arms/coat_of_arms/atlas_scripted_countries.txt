@@ -449,6 +449,27 @@ HBG_loon = { #
 #	}
 #}
 
+flag_virneburg_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_lozenge_random.dds"
+		color1 = color2
+		color2 = color2
+		#top row
+		instance = { position = { 0.22 0.3 } scale = { 0.4 0.4 }  }
+		instance = { position = { 0.41 0.3 } scale = { 0.4 0.4 }  }
+		instance = { position = { 0.59 0.3 } scale = { 0.4 0.4 }  }
+		instance = { position = { 0.78 0.3 } scale = { 0.4 0.4 }  }
+		#bottom row                                     
+		instance = { position = { 0.31 0.66 } scale = { 0.4 0.4 }  }
+		instance = { position = { 0.50 0.66 } scale = { 0.4 0.4 }  }
+		instance = { position = { 0.69 0.66 } scale = { 0.4 0.4 }  }
+	}
+}
+
 #####################################################################
 
 test_coa_1 = { #for dynamic loading in

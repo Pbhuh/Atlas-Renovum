@@ -5055,6 +5055,7 @@ BRG_grand_duchy = { # Berg - Gd Duchy
 	}
 } 
 BRG_Julich = { # Berg-Jülich (inversion of the design)
+#pete note: fixed it, wasn't correct in vanilla
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"
 	color2 = "black"
@@ -5066,9 +5067,9 @@ BRG_Julich = { # Berg-Jülich (inversion of the design)
         parent = "sub_lion_cr_qf_flag" # Q1 Q4 Berg
 		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
 		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }
-		color1 = "yellow"
-		color2 = "black"
-		color3 = "red_secondary"
+		color1 = "white"
+		color2 = "red"
+		color3 = "blue" #"red_secondary"
     }
     sub = {
         parent = "sub_lion_flag" # Q2 Q3 Jülich

@@ -2887,6 +2887,16 @@ dynasty_manager = {
 		name = { name = loon_dynasty }
 		home = limbourg
 	}
+	
+	arkel_dynasty = {
+		name = { name = arkel_dynasty }
+		home = gorinchem
+	}
+	
+	virneburg_dynasty = {
+		name = { name = virneburg_dynasty }
+		home = mayen
+	}
 
 	heinsberg_dynasty = {
 		name = { name = heinsberg_dynasty }

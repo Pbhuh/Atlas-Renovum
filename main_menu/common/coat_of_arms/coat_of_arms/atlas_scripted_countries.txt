@@ -28,16 +28,17 @@ FRI = {
 		instance = { position = { 0.5 0.5 } rotation = -10 scale = { 1.0 1.0 } }
 	}
 	colored_emblem = {
-		texture = "ce_waterlily_leaf.dds"
+		#texture = "ce_waterlily_leaf.dds"
+		texture = "ce_pompebled.dds"
 		color1 = color3
 		color2 = color3
-		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.23 0.22 } } #middle line - topleft
-		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.50 0.50 } } #middle line - middle
-		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.77 0.76 } } #middle line - bottomright
-		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.10 0.68 } } #bottom line - left
-		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.28 0.84 } } #bottom line - right
-		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.73 0.14 } } #top line - left
-		instance = { scale = { 0.20 0.25 } rotation = 30 position = { 0.90 0.32 } } #top line - right
+		instance = { scale = { 0.25 0.25 } position = { 0.23 0.22 } } #middle line - topleft
+		instance = { scale = { 0.25 0.25 } position = { 0.50 0.50 } } #middle line - middle
+		instance = { scale = { 0.25 0.25 } position = { 0.77 0.76 } } #middle line - bottomright
+		instance = { scale = { 0.25 0.25 } position = { 0.10 0.67 } } #bottom line - left
+		instance = { scale = { 0.25 0.25 } position = { 0.28 0.84 } } #bottom line - right
+		instance = { scale = { 0.25 0.25 } position = { 0.73 0.14 } } #top line - left
+		instance = { scale = { 0.25 0.25 } position = { 0.90 0.32 } } #top line - right
 	}
 }
 
@@ -315,12 +316,12 @@ BDA = { # Breda
 	colored_emblem = {
 		#texture = "ce_vair_saltire.dds"
 		#texture = "ce_quinas_saltire.dds"
-		texture = "ce_saltire.dds"
+		texture = "ce_dutch_saltire.dds"
 		color1 = color2
 		color2 = color2
-		instance = { position = { 0.32 0.28 } scale = { 0.20 0.25 }  }
-		instance = { position = { 0.68 0.28 } scale = { 0.20 0.25 }  }
-		instance = { position = { 0.5 0.70 } scale = { 0.20	0.25 }  }		
+		instance = { position = { 0.32 0.28 } scale = { 0.5 0.5 }  }
+		instance = { position = { 0.68 0.28 } scale = { 0.5 0.5 }  }
+		instance = { position = { 0.5 0.75 } scale = { 0.5	0.5 }  }		
 	}	
 	#colored_emblem = {
 	#	texture = "ce_barry_saltire.dds"

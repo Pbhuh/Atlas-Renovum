@@ -74000,7 +74000,7 @@ adm = 31 dip = 34 mil = 24
 		birth = kleve
 		spouse = wde_henry_iv_von_waldeck
 		father = kle_dietrich_vi_von_kleve
-		dynasty = kleve_dynasty
+		dynasty = wassenberg_dynasty
 		tag = WDE
 	}
 
@@ -83925,7 +83925,21 @@ adm = 31 dip = 34 mil = 24
 		dynasty = wittelsbach_dynasty # Should be dynasty = wittelsbach_niederbayern_dynasty
 		tag = LBV
 	}
-
+	lbv_richardis_julich = { #spouse of otto iv
+		first_name = { name = name_mary }
+		female = yes
+		culture = westphalian
+		religion = catholic
+		birth_date = 1305.1.1 #around the date of her brother
+		#death_date = 1360.1.1
+		birth = duren
+		dynasty = julich_dynasty
+		father = jul_gerhard_v_julich
+		mother = jul_elisabeth_van_brabant
+		spouse = lbv_otto_iv_wittelsbach
+		#2nd spouse = kle_dietrich_vii_von_kleve
+		tag = JUL
+	}
 	mai_konrad_i_wittelsbach = {
 		first_name = { name = name_conrad }
 		culture = danube_bavarian
@@ -85577,6 +85591,21 @@ adm = 31 dip = 34 mil = 24
 		mother = jul_elisabeth_van_brabant
 		tag = JUL
 	}
+	jul_marie_julich = { #Sister of ruler
+		first_name = { name = name_mary }
+		female = yes
+		culture = westphalian
+		religion = catholic
+		birth_date = 1299.1.1 #around the date of her brother
+		#death_date = 1353.1.1
+		birth = duren
+		dynasty = julich_dynasty
+		father = jul_gerhard_v_julich
+		mother = jul_elisabeth_van_brabant
+		#spouse = heinrich_ii_von_virneburg - died 1338
+		#2nd spouse = kle_dietrich_vii_von_kleve
+		tag = JUL
+	}
 	jul_gerhard_vi_julich = { #Son of Ruler
 		first_name = { name = name_gerard }
 		culture = westphalian
@@ -85588,16 +85617,183 @@ adm = 31 dip = 34 mil = 24
 		mother = jul_jeanne_de_hainaut
 		tag = JUL
 	}
-
+	#Wassenberg - (Heinsberg-ish)
+	cam_rutger_de_cambrai = { #
+		first_name = { name = name_gerard }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 955.1.1
+		birth = cambrai
+		death_date = 1042.1.1
+		dynasty = wassenberg_dynasty
+		tag = HBG
+	}
+	hbg_gerard_i_van_wassenberg = {
+		first_name = { name = name_gerard }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 980.1.1
+		birth = cambrai
+		death_date = 1042.1.1
+		dynasty = wassenberg_dynasty
+		father = cam_rutger_de_cambrai
+		tag = HBG
+	}
+	hbg_gerard_ii_van_wassenberg = {
+		first_name = { name = name_gerard }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1000.1.1
+		birth = heinsberg
+		death_date = 1052.1.1
+		dynasty = wassenberg_dynasty
+		father = hbg_gerard_i_van_wassenberg
+		tag = HBG
+	}
+	hbg_gerard_iii_van_wassenberg = {
+		first_name = { name = name_gerard }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1022.1.1
+		birth = heinsberg
+		death_date = 1075.1.1
+		dynasty = wassenberg_dynasty
+		father = hbg_gerard_ii_van_wassenberg
+		tag = HBG
+	}
+	hbg_dirk_i_van_wassenberg = {
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1025.1.1
+		birth = heinsberg
+		death_date = 1082.10.19
+		dynasty = wassenberg_dynasty
+		father = hbg_gerard_iii_van_wassenberg
+		tag = HBG
+	}
+	hbg_goswin_i_van_wassenberg = {
+		first_name = { name = "goswin" }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1060.1.1
+		birth = heinsberg
+		death_date = 1128.4.1
+		dynasty = wassenberg_dynasty
+		father = hbg_dirk_i_van_wassenberg
+		tag = HBG
+	}
 	#Guelders
+	gel_gerard_i_van_gelre = { #first count of gelre
+		first_name = { name = name_gerard }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1060.1.1
+		birth = geldern
+		death_date = 1129.3.8
+		dynasty = wassenberg_dynasty
+		father = hbg_dirk_i_van_wassenberg
+		tag = GEL
+	}
+	gel_gerard_ii_van_gelre = {
+		first_name = { name = name_gerard }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1090.1.1
+		birth = geldern
+		death_date = 1133.10.16
+		dynasty = wassenberg_dynasty
+		father = gel_gerard_i_van_gelre
+		#mother = clementia_of_aquitaine - disputed
+		tag = GEL
+	}
+	gel_jutta_van_gelre = { #countess of wassenberg
+		first_name = { name = name_judith }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1087.1.1
+		birth = geldern
+		death_date = 1151.1.1
+		dynasty = wassenberg_dynasty
+		father = gel_gerard_i_van_gelre
+		#mother = clementia_of_aquitaine - disputed
+		#spouse = waleran_ii_duke_of_limburg
+		tag = GEL
+	}
+	gel_ermgard_van_zutphen = { #Last ruler of Zutphen
+		first_name = { name = name_ermengard }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1255.1.1
+		birth = geldern
+		death_date = 1138.1.1
+		#dynasty = zutphen_dynasty
+		#father = zut_otto_ii_van_zutphen
+		spouse = gel_gerard_ii_van_gelre
+		tag = GEL	
+	}
+	gel_henry_i_van_gelre = { 
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1117.1.1
+		birth = geldern
+		death_date = 1182.9.10
+		dynasty = wassenberg_dynasty
+		father = gel_gerard_ii_van_gelre
+		mother = gel_ermgard_van_zutphen
+		tag = GEL
+	}
+	gel_otto_i_van_gelre = {
+		first_name = { name = name_otto }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1150.1.1
+		birth = geldern
+		death_date = 1207.4.30
+		dynasty = wassenberg_dynasty
+		father = gel_henry_i_van_gelre
+		#mother = Agnes of Arnstein
+		tag = GEL
+	}
+	gel_gerard_iii_van_gelre = { #GreatGrandfather of Ruler
+		first_name = { name = name_gerard }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1185.1.1
+		birth = geldern
+		death_date = 1229.10.22
+		dynasty = wassenberg_dynasty
+		father = gel_otto_i_van_gelre
+		#mother = richardis of bavaria
+		tag = GEL
+	}
+	gel_otto_ii_van_gelre = { #Grandfather of Ruler
+		first_name = { name = name_otto }
+		nickname = { name = "the lame" }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1215.1.1
+		birth = geldern
+		death_date = 1271.1.10
+		dynasty = wassenberg_dynasty
+		father = gel_gerard_iii_van_gelre
+		#mother = margaret of brabant
+		tag = GEL
+	}
 	gel_reinoud_i_van_gelre = { #Father of Ruler
 		first_name = { name = name_reginald }
+		#nickname = { name = "the bellicose" }
 		culture = low_franconian
 		religion = catholic
 		birth_date = 1255.1.1
 		birth = geldern
 		death_date = 1326.10.9
 		dynasty = wassenberg_dynasty
+		father = gel_otto_ii_van_gelre
+		#mother = Philippa of Dammartin
 		tag = GEL
 	}
 
@@ -85702,7 +85898,421 @@ adm = 31 dip = 34 mil = 24
 		tag = GEL
 	}
 
+	  #
+	  # 
+	  #
+   #To DO
+	  #
+	  #
+	# # #
+	 #V#
+	  #
+	  
 	#Cleves
+	
+	kle_rutger_van_wassenberg = {
+		first_name = { name = "Rutger" }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 970.1.1
+		birth = cambrai
+		death_date = 1050.1.1
+		dynasty = wassenberg_dynasty
+		father = cam_rutger_de_cambrai
+		tag = KLE
+	}
+	kle_eberhard_ii_van_kleve = {
+		first_name = { name = name_everard }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1000.1.1
+		birth = kleve
+		death_date = 1074.1.1
+		dynasty = wassenberg_dynasty
+		father = kle_rutger_van_wassenberg
+		tag = KLE
+	}
+	kle_rutger_ii_van_kleve = {
+		first_name = { name = "Rutger" }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1000.1.1
+		birth = kleve
+		death_date = 1075.1.1
+		dynasty = wassenberg_dynasty
+		father = kle_rutger_van_wassenberg
+		tag = KLE
+	}
+	kle_dirk_i_van_kleve = {
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1050.1.1
+		birth = kleve
+		death_date = 1092.1.1
+		dynasty = wassenberg_dynasty
+		father = kle_eberhard_ii_van_kleve
+		tag = KLE
+	}
+	kle_dirk_ii_van_kleve = {
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1070.1.1
+		birth = kleve
+		death_date = 1120.1.1
+		dynasty = wassenberg_dynasty
+		father = kle_dirk_i_van_kleve
+		tag = KLE
+	}
+	kle_arnold_van_kleve = {
+		first_name = { name = name_arnold }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1090.1.1
+		birth = kleve
+		death_date = 1147.2.20
+		dynasty = wassenberg_dynasty
+		father = kle_dirk_ii_van_kleve
+		#spouse = ida van leuven
+		#mother = 
+		tag = KLE
+	}
+	kle_dirk_iii_van_kleve = { #iii / v
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1125.1.1
+		birth = kleve
+		death_date = 1172.4.27
+		dynasty = wassenberg_dynasty
+		father = kle_arnold_van_kleve
+		#mother = ida van leuven
+		#spouse = adelaide of sulzbach
+		tag = KLE
+	}
+	kle_dirk_iv_van_kleve = {
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1160.1.1
+		birth = kleve
+		death_date = 1198.1.1
+		dynasty = wassenberg_dynasty
+		father = kle_dirk_iii_van_kleve
+		#spouse = Margaret of Holland
+		#mother = adelaide of sulzbach
+		tag = KLE
+	}
+	kle_arnold_ii_van_kleve = { #Regency of Arnold II of Cleves, Lord of Heinsberg [it] (1198-1201)
+		first_name = { name = name_arnold }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1168.1.1 #before '72
+		birth = kleve
+		death_date = 1199.1.1 #1200.5.24
+		dynasty = wassenberg_dynasty
+		father = kle_dirk_iii_van_kleve
+		#spouse = 
+		#mother = adelaide of sulzbach
+		tag = KLE
+	}
+	#Kleve Intermission
+	
+	#Loon-Heinsberg-Chiny
+	#johanna von loon - mother of arnold van rummen ruler of chiny
+	#Heinsberg
+	#hbg_goswin_i_van_wassenberg look up gelre
+	#hbg_gerard_i_von_heinsberg = { father = hbg_goswin_i_van_wassenberg = confusion with -? #hbg_gerard_ii_von_heinsberg = { father = goswin_i
+	#hbg_goswin_ii_von_heinsberg  = { father = hbg_goswin_i_van_wassenberg    #(and valkenburg)
+	#hbg_siegfried_von_heinsberg = { father = gerard i or ii
+	#hbg_godfried_von_heinsberg = { father = goswin_ii
+	#hbg_mechtilde_von_heinsberg = { father = goswin_ii		
+	
+	hbg_goswin_ii_von_heinsberg = {
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1105.1.1
+		death_date = 1167.4.8
+		birth = heinsberg
+		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
+		father = hbg_goswin_i_van_wassenberg
+		mother = hbg_adelheid_von_heinsberg
+		#spouse = isolda of limburg - sister of jutta of limburg
+		#spouse = beatrice of kyrburg-dhaun
+		tag = HBG
+	}	
+	hbg_goswin_ii_von_heinsberg = {
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1105.1.1
+		death_date = 1167.4.8
+		birth = heinsberg
+		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
+		father = hbg_goswin_i_van_wassenberg
+		mother = hbg_adelheid_von_heinsberg
+		#spouse = isolda of limburg - sister of jutta of limburg
+		#spouse = beatrice of kyrburg-dhaun
+		tag = HBG
+	}	
+	hbg_godfried_von_heinsberg = {
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1190.1.1
+		death_date = 1227.11.4
+		birth = heinsberg
+		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
+		father = hbg_goswin_ii_von_heinsberg
+		mother = hbg_adelheid_von_heinsberg
+		#spouse = isolda of limburg - sister of jutta of limburg
+		#spouse = beatrice of kyrburg-dhaun
+		tag = HBG
+	}	
+	hbg_adelheid_von_heinsberg = { # Spouse of Arnold ii van kleve
+		first_name = { name = name_adelaide }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1172.1.1
+		death_date = 1227.11.4
+		birth = heinsberg
+		spouse = kle_arnold_ii_van_kleve
+		father = hbg_godfried_von_heinsberg
+		#mother = sophia of loon
+		#child: agnes_of_cleves
+		#child: arnold of cleves d. 1218 damietta
+		dynasty = wassenberg_dynasty
+		tag = KLE
+	}
+	
+	hbg_dirk_i_von_heinsberg = { #Last male ruler of wassenberg
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1190.1.1
+		death_date = 1227.11.4
+		birth = heinsberg
+		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
+		father = kle_arnold_ii_van_kleve
+		mother = hbg_adelheid_von_heinsberg
+		#spouse = isolda of limburg - sister of jutta of limburg
+		#spouse = beatrice of kyrburg-dhaun
+		tag = HBG
+	}
+	#Valkenburg
+	#Engelbert II van Valkenburg - archbishop of cologne 1220 - 1274
+	#vbg_goswin_iii_von_heinsberg - father: hbg_goswin_ii_von_heinsberg
+	#vbg_goswin_iv_von_heinsberg - died childless, inherited by son of cousin - married jutta van limburg daughter of hendrik 3 van limburg
+	vbg_dirk_ii_von_valkenburg = {
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1221.1.1
+		birth = maastricht
+		death_date = 1268.10.15
+		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
+		father = hbg_dirk_i_von_heinsberg
+		tag = VBG		
+	}
+	vbg_waleran_the_red = { #GrandFather
+		first_name = { name = name_waleram }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1254.1.1
+		birth = maastricht
+		death_date = 1302.9.5
+		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
+		father = vbg_dirk_ii_von_valkenburg
+		tag = VBG		
+	}
+	#phillipa of guelders - spouse, paternal grandmother
+	vbg_dirk_iii_von_valkenburg = { #Uncle
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1270.1.1
+		birth = maastricht
+		death_date = 1305.6.16
+		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
+		father = vbg_waleran_the_red
+		tag = VBG
+	}
+	vbg_reinoud_von_valkenburg = { #Father
+		first_name = { name = name_reginald }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1283.1.1
+		birth = maastricht
+		death_date = 1333.7.18
+		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
+		father = vbg_waleran_the_red
+		tag = VBG
+	}
+	vbg_dietrich_iv_von_valkenburg = { #Ruler
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1310.1.1
+		birth = maastricht
+		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty
+		father = vbg_reinoud_von_valkenburg
+		tag = VBG
+	}
+	vbg_machteld_van_voorne = { #Spouse of Ruler
+		first_name = { name = name_matilda }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		spouse = vbg_dietrich_iv_von_valkenburg
+		birth_date = 1305.1.1
+		birth = middelburg #probably
+		#dynasty = voorne_dynasty - Den Briel
+		#father = 
+		tag = VBG
+	}
+	
+	#Sponheim-Heinsberg	
+	hbg_hendrik_von_sponheim = { #first count of Sponheim-Heinsberg
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1215.1.1 #estimate?
+		death_date = 1259.1.1
+		birth = cologne
+		dynasty = heinsberg_dynasty #of sponheim
+		#father = godfried_iii_von_sponheim
+		#mother = adelheid_von_sayn
+		tag = HBG
+	}
+	hbg_agnes_von_heinsberg = { #Last ruler of wassenberg
+		first_name = { name = name_agnes }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1215.1.1
+		death_date = 1267.1.1
+		birth = heinsberg
+		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
+		father = hbg_dirk_i_von_heinsberg
+		spouse = hbg_hendrik_von_sponheim
+		tag = HBG
+	}
+	hbg_dirk_ii_van_heinsberg = { #    Dietrich I Graf von Sponheim Edelherr von Heinsberg und Blankenburg - Dirk II, Heer van Heinsberg & Blankenberg
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1232.1.1
+		death_date = 1303.1.1
+		birth = cologne
+		dynasty = heinsberg_dynasty #of sponheim
+		father = hbg_hendrik_von_sponheim
+		mother = hbg_agnes_von_heinsberg
+		#spouse = johanna_van_brabant
+		tag = HBG
+	}
+	hbg_godfried_i_van_heinsberg = { #Father https://www.wikidata.org/wiki/Q31192013 - count of Sponheim, Lord of Heinsburg and Blankenburg
+		first_name = { name = name_godfrey }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1270.1.1
+		death_date = 1331.1.1
+		birth = heinsberg
+		dynasty = heinsberg_dynasty #of sponheim
+		father = hbg_dirk_ii_van_heinsberg
+		#mother = johanna_van_brabant
+		tag = HBG
+	}
+	#Loon
+	loo_arnold_v_von_loon = { #Predecessor
+		first_name = { name = name_arnold }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1250.1.1 #estimate
+		death_date = 1328.8.22 #resigned in 1313 in chiny, 1323 in loon respectively
+		birth = borgloon
+		dynasty = loon_dynasty
+		#father = arnold_v_van_loon
+		tag = CHN
+	}
+	loo_lodewijk_iv_von_loon = { #Maternal Uncle of Ruler
+		first_name = { name = name_louis }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1275.1.1
+		death_date = 1336.1.22
+		birth = borgloon
+		dynasty = loon_dynasty
+		father = loo_arnold_v_von_loon
+		#mother = marguerite van vianden
+		tag = CHN
+	}
+	#
+	loo_dietrich_iv_von_heinsberg = { #Ruler Dirk III - https://nl.wikipedia.org/wiki/Dirk_III_van_Loon-Heinsberg
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1300.1.1
+		birth = cologne
+		dynasty = heinsberg_dynasty #of sponheim
+		father = hbg_godfried_i_van_heinsberg
+		mother = gmk_maria_von_loon
+		tag = HBG
+	}
+	loo_kunigunde_von_der_mark = { #Spouse of Ruler
+		first_name = { name = name_kunigunde }
+		culture = lower_saxon
+		religion = catholic
+		female = yes
+		spouse = loo_dietrich_iv_von_heinsberg
+		birth_date = 1300.1.1
+		birth = hamm
+		dynasty = mark_dynasty
+		father = gmk_eberhard_i_von_der_mark
+		tag = HBG
+	}
+	hbg_godfried_von_heinsberg = { #Heir - should die young - https://nl.wikipedia.org/wiki/Loonse_Successieoorlogen
+		first_name = { name = name_godfrey }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1320.1.1
+		birth = cologne
+		dynasty = heinsberg_dynasty #of sponheim
+		father = loo_dietrich_iv_von_heinsberg
+		tag = HBG
+	}
+	
+	#Kleve Continue	
+	kle_dirk_v_van_kleve = {
+		first_name = { name = name_theodoric }
+		#nickname = { name = "Nust" }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1185.1.1
+		birth = kleve
+		death_date = 1260.5.24
+		dynasty = wassenberg_dynasty
+		father = kle_dirk_iv_van_kleve
+		#mother = Margaret of Holland
+		#spouse = matilda of dinslaken
+		#spouse = hedwig of meissen
+		tag = KLE
+	}
+	kle_dirk_vi_van_kleve = { #True Dirk VI #Grandfather of Ruler - Of Meissen
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1226.1.1
+		birth = kleve
+		death_date = 1275.3.18
+		dynasty = wassenberg_dynasty
+		father = kle_dirk_v_van_kleve
+		#spouse = Adelaide of Sponheim-Heinsberg
+		#mother = hedwig of meissen
+		tag = KLE
+	}
 	kle_dietrich_vi_von_kleve = { #Father of Ruler
 		first_name = { name = name_theodoric }
 		culture = low_franconian
@@ -85710,7 +86320,10 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1256.1.1
 		birth = kleve
 		death_date = 1305.10.4
-		dynasty = kleve_dynasty
+		dynasty = wassenberg_dynasty
+		father = kle_dirk_vi_van_kleve
+		#mother = Adelaide of Sponheim-Heinsberg
+		#spouse = margaret of guelders
 		tag = KLE
 	}
 	kle_margareta_kyburg = { #Mother of Ruler
@@ -85722,18 +86335,19 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1260.1.1
 		birth = frutigen
 		death_date = 1333.10.4
-		dynasty = neu_kyburg_dynasty
+		dynasty = neu_kyburg_dynasty # habsburg-kyburg
 		father = kyb_eberhard_i_kyburg
 		tag = KLE
 	}
 	kle_otto_von_kleve = { #Previous Ruler / Brother
 		first_name = { name = name_otto }
+		#nickname = { the_peaceful }
 		culture = low_franconian
 		religion = catholic
 		birth_date = 1278.1.1
 		birth = kleve
 		death_date = 1310.1.1
-		dynasty = kleve_dynasty
+		dynasty = wassenberg_dynasty
 		father = kle_dietrich_vi_von_kleve
 		mother = kle_margareta_kyburg
 		tag = KLE
@@ -85759,18 +86373,18 @@ adm = 31 dip = 34 mil = 24
 		female = yes
 		birth_date = 1305.1.1
 		birth = kleve
-		dynasty = kleve_dynasty
+		dynasty = wassenberg_dynasty
 		father = kle_otto_von_kleve
 		mother = kle_adelheid_von_der_mark
 		tag = KLE
 	}
-	kle_dietrich_vii_von_kleve = { #Ruler
+	kle_dietrich_vii_von_kleve = { #Ruler - ruler number is 8
 		first_name = { name = name_theodoric }
 		culture = low_franconian
 		religion = catholic
 		birth_date = 1291.1.1
 		birth = kleve
-		dynasty = kleve_dynasty
+		dynasty = wassenberg_dynasty
 		father = kle_dietrich_vi_von_kleve
 		mother = kle_margareta_kyburg
 		tag = KLE
@@ -85782,12 +86396,14 @@ adm = 31 dip = 34 mil = 24
 		female = yes
 		spouse = kle_dietrich_vii_von_kleve
 		birth_date = 1292.1.1
+		death_date = 1333.1.1
 		birth = geldern
 		dynasty = wassenberg_dynasty
 		father = gel_reinoud_i_van_gelre
 		mother = gel_marguerite_dampierre
 		tag = KLE
 	}
+	#kle_maria_von_julich = { #second spouse - married 1340
 	kle_elisabeth_von_kleve = { #Daugther of Ruler
 		first_name = { name = name_elizabeth }
 		culture = low_franconian
@@ -85795,7 +86411,7 @@ adm = 31 dip = 34 mil = 24
 		female = yes
 		birth_date = 1307.1.1
 		birth = kleve
-		dynasty = kleve_dynasty
+		dynasty = wassenberg_dynasty
 		father = kle_dietrich_vii_von_kleve
 		mother = kle_margaretha_van_gelre
 		tag = KLE
@@ -85806,7 +86422,7 @@ adm = 31 dip = 34 mil = 24
 		religion = catholic
 		birth_date = 1293.1.1
 		birth = kleve
-		dynasty = kleve_dynasty
+		dynasty = wassenberg_dynasty
 		father = kle_dietrich_vi_von_kleve
 		mother = kle_margareta_kyburg
 		tag = KLE
@@ -85863,6 +86479,20 @@ adm = 31 dip = 34 mil = 24
 		spouse = hbg_godfried_i_von_heinsberg
 		tag = GMK
 	}
+	#loo_mathilde_von_loon = { #Mother https://www.wikidata.org/wiki/Q76263869
+	#	first_name = { name = name_matilda }
+	#	culture = low_franconian
+	#	female = yes
+	#	religion = catholic
+	#	birth_date = 1282.1.1
+	#	death_date = 1313.1.1
+	#	birth = borgloon
+	#	dynasty = loon_dynasty
+	#	father = loo_arnold_v_von_loon
+	#	#mother = marguerite van vianden
+	#	spouse = hbg_godfried_i_von_heinsberg
+	#	tag = CHN
+	#}
 	gmk_engelbert_ii_von_der_mark = { #Father of Ruler
 		first_name = { name = name_engelbert }
 		culture = westphalian
@@ -85914,7 +86544,7 @@ adm = 31 dip = 34 mil = 24
 		spouse = gmk_adolf_ii_von_der_mark
 		birth_date = 1310.1.1
 		birth = kleve
-		dynasty = kleve_dynasty
+		dynasty = wassenberg_dynasty
 		father = kle_dietrich_vii_von_kleve
 		mother = kle_margaretha_van_gelre
 		tag = GMK
@@ -86387,123 +87017,6 @@ adm = 31 dip = 34 mil = 24
 		tag = OLD
 	}
 
-	#Loon - Heinsberg - Chiny
-	loo_arnold_v_von_loon = { #Predecessor
-		first_name = { name = name_arnold }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1250.1.1 #estimate
-		death_date = 1328.8.22 #resigned in 1313 in chiny, 1323 in loon respectively
-		birth = borgloon
-		dynasty = loon_dynasty
-		#father = arnold_v_van_loon
-		tag = CHN
-	}
-	loo_lodewijk_iv_von_loon = { #Maternal Uncle of Ruler
-		first_name = { name = name_louis }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1275.1.1
-		death_date = 1336.1.22
-		birth = borgloon
-		dynasty = loon_dynasty
-		father = loo_arnold_v_von_loon
-		#mother = marguerite van vianden
-		tag = CHN
-	}
-	loo_mathilde_von_loon = { #Mother
-		first_name = { name = name_matilda }
-		culture = low_franconian
-		female = yes
-		religion = catholic
-		birth_date = 1282.1.1
-		death_date = 1313.1.1
-		birth = borgloon
-		dynasty = loon_dynasty
-		father = loo_arnold_v_von_loon
-		#mother = marguerite van vianden
-		spouse = hbg_godfried_i_von_heinsberg
-		tag = CHN
-	}
-	#johanna von loon - mother of arnold van rummen ruler of chiny
-	hbg_godfried_i_von_heinsberg = { #Father #count of sponheim, lord of heinsberg & blankenburg
-		first_name = { name = name_theodoric }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1270.1.1
-		death_date = 1331.1.1
-		birth = heinsberg
-		dynasty = heinsberg_dynasty
-		tag = HBG
-	}
-	loo_dietrich_iv_von_heinsberg = { #Ruler Dirk III
-		first_name = { name = name_theodoric }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1300.1.1
-		birth = cologne
-		dynasty = heinsberg_dynasty
-		father = hbg_godfried_i_von_heinsberg
-		mother = loo_mathilde_von_loon
-		tag = HBG
-	}
-	loo_kunigunde_von_der_mark = { #Spouse of Ruler
-		first_name = { name = name_kunigunde }
-		culture = lower_saxon
-		religion = catholic
-		female = yes
-		spouse = loo_dietrich_iv_von_heinsberg
-		birth_date = 1300.1.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_eberhard_i_von_der_mark
-		tag = HBG
-	}
-	hbg_godfried_von_heinsberg = { #Heir - should die young - https://nl.wikipedia.org/wiki/Loonse_Successieoorlogen
-		first_name = { name = name_godfrey }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1320.1.1
-		birth = cologne
-		dynasty = heinsberg_dynasty
-		father = loo_dietrich_iv_von_heinsberg
-		tag = HBG
-	}
-	
-	#Valkenburg
-	#Engelbert II van Valkenburg - archbishop of cologne 1220 - 1274
-	vbg_reinoud_von_valkenburg = { #Father
-		first_name = { name = name_reginald }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1283.1.1
-		birth = maastricht
-		death_date = 1333.7.15
-		dynasty = heinsberg_dynasty #valkenburg-heinsberg_dynasty
-		tag = VBG
-	}
-	vbg_dietrich_iv_von_valkenburg = { #Ruler
-		first_name = { name = name_theodoric }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1310.1.1
-		birth = maastricht
-		dynasty = heinsberg_dynasty #valkenburg-heinsberg_dynasty
-		father = vbg_reinoud_von_valkenburg
-		tag = VBG
-	}
-	vbg_machteld_van_voorne = { #Spouse of Ruler
-		first_name = { name = name_matilda }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		spouse = vbg_dietrich_iv_von_valkenburg
-		birth_date = 1305.1.1
-		birth = middelburg #probably
-		#dynasty = voorne_dynasty - Den Briel
-		#father = 
-		tag = VBG
-	}
 
 	#Vianden Family
 

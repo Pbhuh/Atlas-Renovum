@@ -39200,7 +39200,10 @@ countries = {
 		government = {
 			ruler = vbg_dietrich_iv_von_valkenburg
 			
-			ruler_term = { character = vbg_dietrich_iv_von_valkenburg start_date = 1333.1.1 regnal_number = 4 }
+			ruler_term = { character = vbg_waleran_the_red start_date = 1268.10.15 end_date = 1302.9.5 }
+			ruler_term = { character = vbg_dirk_iii_von_valkenburg start_date = 1302.9.5 end_date = 1305.6.16 regnal_number = 3 }
+			ruler_term = { character = vbg_reinoud_von_valkenburg start_date = 1305.6.16 end_date = 1333.7.18 }
+			ruler_term = { character = vbg_dietrich_iv_von_valkenburg start_date = 1333.7.18 regnal_number = 4 }
 
 			aristocracy_vs_plutocracy = -20
 			capital_economy_vs_traditional_economy = -10

@@ -2871,7 +2871,7 @@ dynasty_manager = {
 		dynasty_name_type = location
 	}
 	
-	katzenelnbogen_dynasty
+	katzenelnbogen_dynasty = {
 		name = { name = katzenelnbogen_dynasty }
 		home = katzenelnbogen
 		dynasty_name_type = location

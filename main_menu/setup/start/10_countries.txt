@@ -17557,7 +17557,11 @@ countries = {
 		include = "catholic_bishopric_no_coast"
 		government = {
 			ruler = lie_adolf_ii_von_der_mark
-
+			
+			ruler_term = { character = lie_albert_van_cuijk start_date = 1194.1.1 end_date = 1200.1.1 regnal_number = 1 }
+			
+			ruler_term = { character = wde_adolph_ii_von_waldeck start_date = 1301.1.1 end_date = 1302.12.13 regnal_number = 2 }
+			ruler_term = { character = lie_thibaut_of_bar start_date = 1302.12.13 end_date = 1313.1.1 regnal_number = 1 }
 			ruler_term = { character = lie_adolf_ii_von_der_mark start_date = 1313.1.1 regnal_number = 3 }
 
 			regnal_numbers = {
@@ -38044,6 +38048,7 @@ countries = {
 			ruler = kol_walram_von_julich
 			
 			ruler_term = { character = kol_engelbert_ii_van_valkenburg start_date = 1261.1.1 end_date = 1274.1.1 regnal_number = 2 }
+			
 			ruler_term = { character = kol_heinrich_ii_von_virneburg start_date = 1304.1.1 end_date = 1332.1.1 regnal_number = 2 }
 			ruler_term = { character = kol_walram_von_julich start_date = 1332.1.1 }
 
@@ -38186,7 +38191,7 @@ countries = {
 			ruler_term = {	character = gel_gerard_i_van_gelre start_date = 1096.1.1 end_date = 1129.3.8 regnal_number = 1 }
 			ruler_term = {	character = gel_gerard_ii_van_gelre start_date = 1129.3.8 end_date = 1133.10.16 regnal_number = 2 }
 			ruler_term = {	character = gel_henry_i_van_gelre start_date = 1133.10.16 end_date = 1182.9.10 regnal_number = 1 }
-			ruler_term = {	character = gel_otto_i_van_gelre start_date = 1182.9.10 end_date = 1207.4.30 regnal_number = 3 }
+			ruler_term = {	character = gel_otto_i_van_gelre start_date = 1182.9.10 end_date = 1207.4.30 regnal_number = 1 }
 			ruler_term = {	character = gel_gerard_iii_van_gelre start_date = 1207.4.30 end_date = 1229.10.22  regnal_number = 3 }
 			ruler_term = {	character = gel_otto_ii_van_gelre start_date = 1229.10.22 end_date = 1271.1.10 regnal_number = 2 }
 			ruler_term = {	character = gel_reinoud_i_van_gelre start_date = 1271.1.10 end_date = 1326.1.1 regnal_number = 1 }
@@ -38435,8 +38440,13 @@ countries = {
 		government = {
 
 			ruler = anb_wilhelm_i_arnsberg
-			ruler_term = {	character = anb_ludwig_i_arnsberg start_date = 1282.1.1 end_date = 1313.1.1 regnal_number = 1	}
-			ruler_term = {	character = anb_wilhelm_i_arnsberg start_date = 1313.1.1 regnal_number = 1	}
+			ruler_term = {	character = anb_ida_von_werl_arnsberg start_date = 1100.1.1 end_date = 1128.1.1 regnal_number = 1 }
+			ruler_term = {	character = anb_godfried_i_van_cuijk start_date = 1100.1.1 end_date = 1128.1.1 regnal_number = 1 }
+			ruler_term = {	character = anb_hendrik_i_van_arnsberg start_date = 1128.1.1 end_date = 1200.6.4 regnal_number = 1 }
+			ruler_term = {	character = anb_gottfried_ii_von_arnsberg start_date = 1200.6.4 end_date = 1236.1.1 regnal_number = 2 }
+			ruler_term = {	character = anb_gottfried_iii_von_arnsberg start_date = 1236.1.1 end_date = 1282.1.1 regnal_number = 3 }
+			ruler_term = {	character = anb_ludwig_i_arnsberg start_date = 1282.1.1 end_date = 1313.1.1 regnal_number = 1 }
+			ruler_term = {	character = anb_wilhelm_i_arnsberg start_date = 1313.1.1 regnal_number = 1 }
 
 			regnal_numbers = {
 				name_louis = 1
@@ -38538,7 +38548,8 @@ countries = {
 		include = "expl_northern_europe"
 		government = {
 			ruler = mdn_ludwig_von_braunschweig_luneburg
-
+			
+			ruler_term = { character = mdn_gottfried_von_waldeck start_date = 1304.1.1 end_date = 1324.5.14 regnal_number = 1 }
 			ruler_term = { character = mdn_ludwig_von_braunschweig_luneburg start_date = 1324.5.14 regnal_number = 1 }
 			
 			reforms = {
@@ -39353,11 +39364,18 @@ countries = {
 		government = {
 
 			ruler = cjk_otto_van_cuijk
+			
+			ruler_term = {	character = cjk_hendrik_i_van_cuijk start_date = 1080.1.1 end_date = 1108.1.1 regnal_number = 1	}
+			ruler_term = {	character = cjk_herman_van_cuijk start_date = 1108.1.1 end_date = 1170.1.1 regnal_number = 1	}
+			ruler_term = {	character = cjk_hendrik_ii_van_cuijk start_date = 1170.1.1 end_date = 1204.1.1 regnal_number = 2	}
+			ruler_term = {	character = cjk_hendrik_iii_van_cuijk start_date = 1204.1.1 end_date = 1250.1.1 regnal_number = 3	}
+			
 			ruler_term = {	character = cjk_jan_i_van_cuijk start_date = 1285.1.1 end_date = 1320.1.1 regnal_number = 1	}
 			ruler_term = {	character = cjk_otto_van_cuijk start_date = 1320.1.1 regnal_number = 1	}
 
 			regnal_numbers = {
 				name_otto = 1
+				name_henry = 3
 				name_john = 1
 			}
 
@@ -39386,8 +39404,21 @@ countries = {
 		government = {
 			ruler = utr_jan_van_diest
 
+			ruler_term = { character = utr_andries_van_cuijk start_date = 1127.1.1 end_date = 1139.1.1 regnal_number = 1 }
+			
+			#ruler_term = { character = utr_dirk_van_holland start_date = 1197.1.1 end_date = 1197.1.1 regnal_number = 1 }
+			#ruler_term = { character = utr_dirk_van_are start_date = 1197.1.1 end_date = 1212.1.1 regnal_number = 1 }
+			ruler_term = { character = utr_otto_van_gelre start_date = 1212.1.1 end_date = 1215.9.1 regnal_number = 1 }
+			#ruler_term = { character = utr_otto_van_lippe start_date = 1216.1.1 end_date = 1227.1.1 regnal_number = 2 }
+			#ruler_term = { character = utr_wilbrand_van_oldenburg start_date = 1227.1.1 end_date = 1233.1.1 regnal_number = 1 }
+			ruler_term = { character = utr_otto_van_holland start_date = 1233.1.1 end_date = 1249.3.27 regnal_number = 3 }
+			#ruler_term = { character = utr_gozewijn_van_randerath start_date = 1249.3.27 end_date = 1250.1.1 regnal_number = 2 }
+			#ruler_term = { character = utr_henry_van_vianden start_date = 1250.1.1 end_date = 1267.1.1 regnal_number = 2 }
+			#ruler_term = { character = utr_john_van_sierck start_date = 1290.1.1 end_date = 1296.1.1 regnal_number = 2 }
+			ruler_term = { character = utr_willem_van_berthout start_date = 1296.1.1 end_date = 1301.7.4 regnal_number = 2 }
 			ruler_term = { character = utr_guy_de_hainault start_date = 1301.7.4 end_date = 1317.5.29 regnal_number = 1 }
-
+			#ruler_term = { character = utr_frederick_van_sierck start_date = 1317.5.29 end_date = 1322.1.1 regnal_number = 2 }
+			#ruler_term = { character = utr_jacob_van_oudshoorn start_date = 1322.1.1 end_date = 1322.7.20 regnal_number = 1 }
 			ruler_term = { character = utr_jan_van_diest start_date = 1322.7.20 regnal_number = 3 }
 
 			regnal_numbers = {

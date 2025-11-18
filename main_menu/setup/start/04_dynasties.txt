@@ -2887,16 +2887,6 @@ dynasty_manager = {
 		name = { name = loon_dynasty }
 		home = limbourg
 	}
-	
-	arkel_dynasty = {
-		name = { name = arkel_dynasty }
-		home = gorinchem
-	}
-	
-	virneburg_dynasty = {
-		name = { name = virneburg_dynasty }
-		home = mayen
-	}
 
 	heinsberg_dynasty = {
 		name = { name = heinsberg_dynasty }
@@ -8519,5 +8509,17 @@ dynasty_manager = {
 	rtr_han_dynasty = { #Han Shantong
 		name = { name = name_han2 }
 		home = qiaoxian
+	}
+	
+	arkel_dynasty = {
+		name = { name = arkel_dynasty }
+		home = gorinchem
+		dynasty_name_type = location
+	}
+	
+	virneburg_dynasty = {
+		name = { name = virneburg_dynasty }
+		home = mayen
+		dynasty_name_type = location
 	}
 }

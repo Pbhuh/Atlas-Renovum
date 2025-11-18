@@ -77494,8 +77494,20 @@ adm = 31 dip = 34 mil = 24
 		dynasty = gerulfing_dynasty
 		#mother: sophie luxemburg - countess of bentheim
 		father = hol_dirk_vi_gerulfing
-		#spouse alveradis van cuijk
+		spouse = bnt_alveradis_van_cuijk
 		tag = BNT
+	}
+	bnt_alveradis_van_cuijk = {
+		first_name = { name = "Alveradis" }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1128.1.1
+		birth = cuijk
+		death_date = 1205.1.1
+		father = anb_godfried_i_van_cuijk
+		dynasty = cuijk_dynasty
+		tag = ANB
 	}
 	bnt_boudewijn_i_gerulfing = { #greatGreatGrandfather of Ruler - ruler of bentheim, burgrave of utrecht, regent of holland
 		first_name = { name = name_baldwin }
@@ -77508,7 +77520,7 @@ adm = 31 dip = 34 mil = 24
 		dynasty = gerulfing_dynasty
 		#spouse: jutta van limburg
 		father = bnt_otto_i_gerulfing
-		#mother alveradis van cuijk
+		mother = bnt_alveradis_van_cuijk
 		tag = BNT
 	}
 	bnt_otto_ii_gerulfing = { #GreatGrandfather of Ruler - ruler of bentheim 12??-1279 ruler of tec. 126?-1279
@@ -78786,7 +78798,21 @@ adm = 31 dip = 34 mil = 24
 		dynasty = gerulfing_dynasty
 		father = hol_floris_iii_gerulfing
 		tag = HOL
-	}	
+	}
+	hol_aleid_van_gelre = {
+		first_name = { name = name_adelaide }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1185.1.1 #estimate
+		death_date = 1218.2.12
+		birth = geldern
+		father = gel_otto_i_van_gelre
+		spouse = hol_willem_i_gerulfing
+		#mother = richardis wittelsbach
+		dynasty = wassenberg_dynasty
+		tag = HOL
+	}
 	hol_floris_iv_gerulfing = {
 		first_name = { name = name_florence }
 		culture = low_franconian
@@ -82198,22 +82224,6 @@ adm = 31 dip = 34 mil = 24
 		general_trait = defensive_planner
 	}
 
-	# Mother of the Count of Julich
-	jul_elisabeth_van_brabant = {
-		first_name = { name = name_elizabeth }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1283.1.1
-		birth = brussels
-		father = brb_godfried_van_brabant_aerschot
-		#mother = Jeanne Isabeau de Verzau
-		spouse = jul_gerhard_v_julich
-		dynasty = reginar_dynasty
-		tag = JUL
-	}
-
 	fra_blanca_van_brabant = {
 		first_name = { name = name_blanche }
 		culture = low_franconian
@@ -83086,6 +83096,17 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	# Bishop of Minden & Brother of the Prince of Lüneburg
+	mdn_gottfried_von_waldeck = { # Predecessor
+		first_name = { name = name_godfrey }
+		culture = rhine_franconian
+		religion = catholic
+		birth_date = 1255.1.1
+		birth = korbach
+		death_date = 1324.5.14
+		father = wde_henry_iii_von_waldeck
+		dynasty = waldeck_dynasty
+		tag = MDN
+	}
 	mdn_ludwig_von_braunschweig_luneburg = {
 		first_name = { name = name_louis }
 		culture = lower_saxon
@@ -83950,7 +83971,7 @@ adm = 31 dip = 34 mil = 24
 		tag = LBV
 	}
 	lbv_richardis_julich = { #spouse of otto iv
-		first_name = { name = name_mary }
+		first_name = { name = name_ricarda }
 		female = yes
 		culture = westphalian
 		religion = catholic
@@ -85591,6 +85612,20 @@ adm = 31 dip = 34 mil = 24
 		dynasty = julich_dynasty
 		tag = JUL
 	}
+	jul_elisabeth_van_brabant = { # Mother of the Count of Julich
+		first_name = { name = name_elizabeth }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1283.1.1
+		birth = brussels
+		father = brb_godfried_van_brabant_aerschot
+		#mother = Jeanne Isabeau de Verzau
+		spouse = jul_gerhard_v_julich
+		dynasty = reginar_dynasty
+		tag = JUL
+	}
 	jul_wilhelm_i_julich = { #Ruler
 		first_name = { name = name_william }
 		culture = westphalian
@@ -86521,7 +86556,7 @@ adm = 31 dip = 34 mil = 24
 		female = yes
 		birth_date = 1185.1.1
 		death_date = 1230.1.1
-		birth = maastricht
+		birth = geldern
 		father = gel_otto_i_van_gelre
 		spouse = gmk_adolf_i_von_der_mark
 		#mother = richardis wittelsbach
@@ -86646,6 +86681,7 @@ adm = 31 dip = 34 mil = 24
 	gmk_engelbert_iii_von_der_mark_kologne = { #Brother of Ruler, https://de.wikipedia.org/wiki/Engelbert_III._von_der_Mark_(K%C3%B6ln)
 		first_name = { name = name_engelbert }
 		culture = westphalian
+		estate = clergy_estate #
 		religion = catholic
 		birth_date = 1304.1.1
 		birth = hamm
@@ -86762,31 +86798,6 @@ adm = 31 dip = 34 mil = 24
 		tag = KTZ
 	}
 
-	#Essen
-	ess_katharina_von_der_mark = { #Ruler
-		first_name = { name = Katharina }
-		culture = westphalian
-		religion = catholic
-		female = yes
-		birth_date = 1302.1.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_engelbert_ii_von_der_mark
-		tag = ESS
-	}
-
-	#Liege
-	lie_adolf_ii_von_der_mark = { #Ruler
-		first_name = { name = name_adolf }
-		culture = westphalian
-		religion = catholic
-		birth_date = 1288.8.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_eberhard_i_von_der_mark
-		tag = LIE
-	}
-
 	#Wittgenstein
 	wtg_werner_iii_wittgenstein = { #Father of Ruler
 		first_name = { name = name_werner }
@@ -86870,28 +86881,6 @@ adm = 31 dip = 34 mil = 24
 		dynasty = mors_dynasty
 		father = mrs_dietrich_iii_moers
 		tag = MRS
-	}
-
-	#Arnsberg
-	anb_ludwig_i_arnsberg = { #Father of Ruler
-		first_name = { name = name_louis }
-		culture = lower_saxon
-		religion = catholic
-		birth_date = 1258.1.1
-		birth = arnsberg
-		death_date = 1313.1.1
-		dynasty = arnsberg_dynasty
-		tag = ANB
-	}
-	anb_wilhelm_i_arnsberg = { #Ruler
-		first_name = { name = name_william }
-		culture = lower_saxon
-		religion = catholic
-		birth_date = 1277.1.1
-		birth = arnsberg
-		dynasty = arnsberg_dynasty
-		father = anb_ludwig_i_arnsberg
-		tag = ANB
 	}
 
 	#Osnabrück
@@ -87277,14 +87266,96 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	#Cuijk
+	cjk_herman_i_van_malsen = {
+		first_name = { name = name_herman }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1030.1.1
+		birth = cuijk
+		death_date = 1080.1.1
+		dynasty = cuijk_dynasty
+		#spouse = ida of boulogne - daughter of Eustache II of Boulogne
+		tag = CJK
+	}
+	cjk_hendrik_i_van_cuijk = {
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1070.1.1
+		birth = cuijk
+		death_date = 1108.1.1
+		dynasty = cuijk_dynasty
+		father = cjk_herman_i_van_malsen
+		tag = CJK
+	}	
+	cjk_herman_van_cuijk = {
+		first_name = { name = name_herman }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1100.1.1
+		birth = cuijk
+		death_date = 1170.1.1
+		dynasty = cuijk_dynasty
+		father = cjk_hendrik_i_van_cuijk
+		#spouse = onbekende dochter van Otto II van Chiny en Adelheid van Namen
+		tag = CJK
+	}
+	cjk_hendrik_ii_van_cuijk = {
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1140.1.1
+		birth = cuijk
+		death_date = 1204.1.1
+		dynasty = cuijk_dynasty
+		father = cjk_herman_van_cuijk
+		tag = CJK
+	}	
+	cjk_albert_van_cuijk = { #
+		first_name = { name = name_albert }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1170.1.1
+		birth = cuijk
+		death_date = 1233.1.1
+		dynasty = cuijk_dynasty
+		father = cjk_herman_van_cuijk
+		tag = CJK
+		#spouse = hadewych van meerheim
+	}
+	cjk_hendrik_iii_van_cuijk = { #GrandFather of Ruler
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1200.1.1
+		birth = cuijk
+		death_date = 1250.1.1
+		dynasty = cuijk_dynasty
+		father = cjk_hendrik_ii_van_cuijk
+		tag = CJK
+	}
 	cjk_jan_i_van_cuijk = { #Father of Ruler
 		first_name = { name = name_john }
 		culture = low_franconian
 		religion = catholic
-		birth_date = 1270.1.1
+		birth_date = 1230.1.1
 		birth = cuijk
-		death_date = 1320.1.1
+		death_date = 1308.7.13
 		dynasty = cuijk_dynasty
+		father = cjk_hendrik_iii_van_cuijk
+		tag = CJK
+	}
+	cjk_jutta_von_nassau = {
+		first_name = { name = name_otto }
+		female = yes
+		culture = westphalian
+		religion = catholic
+		birth_date = 1230.1.1 #Unknown
+		birth = dillenburg
+		father = nsa_henry_ii_nassau
+		spouse = cjk_jan_i_van_cuijk
+		death_date = 1313.1.1
+		dynasty = nassau_dynasty
 		tag = CJK
 	}
 	cjk_otto_van_cuijk = { #Ruler
@@ -87295,6 +87366,7 @@ adm = 31 dip = 34 mil = 24
 		birth = cuijk
 		dynasty = cuijk_dynasty
 		father = cjk_jan_i_van_cuijk
+		mother = cjk_jutta_von_nassau
 		tag = CJK
 	}
 	cjk_jan_ii_van_cuijk = { #Brother of Ruler
@@ -87307,6 +87379,90 @@ adm = 31 dip = 34 mil = 24
 		father = cjk_jan_i_van_cuijk
 		tag = CJK
 	}
+	
+	#Arnsberg
+	anb_godfried_i_van_cuijk = {
+		first_name = { name = name_godfrey }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1100.1.1
+		birth = cuijk
+		death_date = 1157.1.1
+		dynasty = cuijk_dynasty
+		father = cjk_hendrik_i_van_cuijk
+		tag = ANB
+	}
+	#Frederik van Werl-Arnsberg
+	anb_ida_von_werl_arnsberg = { #last ruler of werl-arnsberg
+		first_name = { name = name_ida }
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1100.1.1 #estimate
+		birth = arnsberg
+		death_date = 1154.1.1
+		dynasty = arnsberg_dynasty
+		spouse = anb_godfried_i_van_cuijk
+		tag = ANB
+	}
+	anb_hendrik_i_van_arnsberg = {
+		first_name = { name = name_henry }
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1128.1.1
+		birth = cuijk
+		death_date = 1200.6.4
+		father = anb_godfried_i_van_cuijk
+		mother = anb_ida_von_werl_arnsberg
+		dynasty = cuijk_dynasty
+		tag = ANB
+	}
+	anb_gottfried_ii_von_arnsberg = {
+		first_name = { name = name_godfrey }
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1157.1.1
+		birth = cuijk
+		death_date = 1236.1.1
+		father = anb_hendrik_i_van_arnsberg
+		dynasty = cuijk_dynasty
+		tag = ANB
+	}
+	anb_gottfried_iii_von_arnsberg = {
+		first_name = { name = name_godfrey }
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1205.1.1
+		birth = cuijk
+		death_date = 1282.1.1
+		father = anb_gottfried_ii_von_arnsberg
+		#spouse = adelheid von blieskastel
+		dynasty = cuijk_dynasty
+		tag = ANB
+	}	
+	anb_ludwig_i_arnsberg = { #Father of Ruler
+		first_name = { name = name_louis }
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1258.1.1
+		birth = arnsberg
+		death_date = 1313.1.1
+		dynasty = cuijk_dynasty
+		father = anb_gottfried_iii_von_arnsberg
+		#spouse = anb_petronella_von_julich
+		tag = ANB
+	}
+	anb_wilhelm_i_arnsberg = { #Ruler
+		first_name = { name = name_william }
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1277.1.1
+		birth = arnsberg
+		dynasty = cuijk_dynasty
+		father = anb_ludwig_i_arnsberg
+		#mother = anb_petronella_von_julich
+		tag = ANB
+	}
+
 
 	#-------------------------- Mesoamerica ----------------------------
 	#Pꞌurhépecherio (Tarascan Empire) - TAR
@@ -100854,6 +101010,106 @@ adm = 31 dip = 34 mil = 24
 		dynasty = kaimana_dynasty
 		tag = KAM
 	}
+	##############################################################
+	#Bishops/Abotts at the bottom? can only have fathers/mothers
+	
+	utr_andries_van_cuijk = {
+		first_name = { name = name_andrew }
+		culture = low_franconian
+		estate = clergy_estate
+		religion = catholic
+		birth_date = 1070.1.1
+		birth = cuijk
+		death_date = 1139.1.1
+		father = cjk_herman_i_van_malsen
+		dynasty = cuijk_dynasty
+		tag = UTR
+	}
+	utr_otto_van_gelre = {
+		first_name = { name = name_otto }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1185.1.1 #estimate
+		death_date = 1215.9.1
+		birth = geldern
+		father = gel_otto_i_van_gelre
+		#mother = richardis wittelsbach
+		dynasty = wassenberg_dynasty
+		tag = UTR
+	}
+	utr_otto_van_holland = {
+		first_name = { name = name_otto }
+		culture = low_franconian
+		religion = catholic
+		estate = clergy_estate
+		birth_date = 1180.1.1 #no idea
+		death_date = 1249.3.27
+		birth = mechelen
+		father = hol_willem_i_gerulfing
+		#mother = hol_ada_van_gelre
+		dynasty = gerulfing_dynasty
+		tag = UTR
+	}
+	utr_willem_van_berthout = {
+		first_name = { name = name_william }
+		culture = low_franconian
+		religion = catholic
+		estate = clergy_estate
+		birth_date = 1245.1.1
+		death_date = 1301.7.4
+		birth = mechelen
+		#father = hai_jean_i_avesnes
+		dynasty = berthout_dynasty
+		tag = UTR
+	}
+
+	#Essen
+	ess_katharina_von_der_mark = { #Ruler
+		first_name = { name = Katharina }
+		culture = westphalian
+		religion = catholic
+		female = yes
+		birth_date = 1302.1.1
+		birth = hamm
+		dynasty = mark_dynasty
+		father = gmk_engelbert_ii_von_der_mark
+		tag = ESS
+	}
+
+	#Liege
+	lie_albert_van_cuijk = { #bishop of liege
+		first_name = { name = name_albert }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1140.1.1
+		birth = cuijk
+		death_date = 1200.1.1
+		dynasty = cuijk_dynasty
+		father = cjk_herman_van_cuijk
+		tag = CJK
+	}
+	lie_thibaut_of_bar = {
+		first_name = { name = name_theobald }
+		culture = lorrain
+		religion = catholic
+		birth_date = 1263.1.1
+		death_date = 1313.1.1
+		birth = bar_le_duc
+		dynasty = de_bar_dynasty
+		father = bar_thiebaut_ii_scarpone
+		#mother = Jeanne de Toucy
+		tag = LIE		
+	}
+	lie_adolf_ii_von_der_mark = { #Ruler
+		first_name = { name = name_adolf }
+		culture = westphalian
+		religion = catholic
+		birth_date = 1288.8.1
+		birth = hamm
+		dynasty = mark_dynasty
+		father = gmk_eberhard_i_von_der_mark
+		tag = LIE
+	}
 
 	#Cologne
 	kol_engelbert_ii_van_valkenburg = {
@@ -100863,7 +101119,7 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1220.1.1
 		birth = heinsberg #aprox.
 		death_date = 1274.1.1
-		father = hbg_dirk_i_van_heinsberg
+		father = hbg_dirk_i_von_heinsberg
 		dynasty = wassenberg_dynasty
 		tag = KOL
 	}

@@ -263,6 +263,21 @@ GRH_buren = { #Buren
 	}		
 }
 
+GRH_vianen = { #Vianen
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+	
+	colored_emblem = {
+		texture = "ce_zule_column.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.32 0.28 } scale = { 0.5 0.5 }  }
+		instance = { position = { 0.68 0.28 } scale = { 0.5 0.5 }  }
+		instance = { position = { 0.5 0.70 } scale = { 0.5 0.5 }  }		
+	}	
+}
+
 ZEE_FLANDERS = { # Zeeland
 	pattern = "pattern_solid.dds"
 	color1 = "red"
@@ -306,6 +321,7 @@ GEL_van_wassenberg = { # Wassenberg
 		instance = { position = { 0.5 0.70 } scale = { 0.6 0.6 }  }	
 	}	
 }
+
 BDA = { # Breda
 	pattern = "pattern_solid.dds"
 	color1 = "red"
@@ -336,6 +352,34 @@ BDA = { # Breda
 	#	mask = { 2 }
 	#	instance = { position = { 0.25 0.70 } scale = { 0.20	0.25 }  }
 	#}	
+}
+
+BDA_Polanen = { # Polanen
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+	
+	colored_emblem = {
+		texture = "ce_crescent_charge_canton.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.32 0.28 } scale = { 0.5 0.5 }  }
+		instance = { position = { 0.68 0.28 } scale = { 0.5 0.5 }  }
+		instance = { position = { 0.5 0.70 } scale = { 0.5 0.5 }  }		
+	}	
+}
+
+HOL_egmond = {	#egmond
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_chevrons_03.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+	}
 }
 
 LOO_CHN = { #Loon - Chiny

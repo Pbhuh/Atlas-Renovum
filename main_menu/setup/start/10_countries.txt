@@ -38168,8 +38168,21 @@ countries = {
 		government = {
 
 			ruler = gel_reinoud_ii_van_gelre
-			ruler_term = {	character = gel_reinoud_i_van_gelre start_date = 1271.1.10 end_date = 1326.1.1 regnal_number = 1	}
-			ruler_term = {	character = gel_reinoud_ii_van_gelre start_date = 1326.1.1 regnal_number = 2	}
+			#ruler_term = { character = kle_arnold_van_kleve start_date = 1120.1.1 end_date = 1147.2.20 regnal_number = 1 }
+			#ruler_term = { character = kle_dirk_iii_van_kleve start_date = 1125.1.1 end_date = 1172.4.27 regnal_number = 3 }
+			#ruler_term = { character = hbg_gerard_i_van_wassenberg start_date = 1022.1.1 end_date = 1042.1.1 }
+			#ruler_term = { character = hbg_gerard_ii_van_wassenberg start_date = 1042.1.1 end_date = 1052.1.1 }
+			#ruler_term = { character = hbg_gerard_iii_van_wassenberg start_date = 1052.1.1 end_date = 1075.1.1 }
+			#ruler_term = { character = hbg_dirk_i_van_wassenberg start_date = 1075.1.1 end_date = 1082.10.19 }			
+			#county of gelre created
+			ruler_term = {	character = gel_gerard_i_van_gelre start_date = 1096.1.1 end_date = 1129.3.8 regnal_number = 1 }
+			ruler_term = {	character = gel_gerard_ii_van_gelre start_date = 1129.3.8 end_date = 1133.10.16 regnal_number = 2 }
+			ruler_term = {	character = gel_henry_i_van_gelre start_date = 1133.10.16 end_date = 1182.9.10 regnal_number = 1 }
+			ruler_term = {	character = gel_otto_i_van_gelre start_date = 1182.9.10 end_date = 1207.4.30 regnal_number = 3 }
+			ruler_term = {	character = gel_gerard_iii_van_gelre start_date = 1207.4.30 end_date = 1229.10.22  regnal_number = 3 }
+			ruler_term = {	character = gel_otto_ii_van_gelre start_date = 1229.10.22 end_date = 1271.1.10 regnal_number = 2 }
+			ruler_term = {	character = gel_reinoud_i_van_gelre start_date = 1271.1.10 end_date = 1326.1.1 regnal_number = 1 }
+			ruler_term = {	character = gel_reinoud_ii_van_gelre start_date = 1326.1.1 regnal_number = 2 }
 
 			regnal_numbers = {
 				name_reginald = 2
@@ -38202,6 +38215,13 @@ countries = {
 		government = {
 
 			ruler = gel_reinoud_ii_van_gelre
+			#otto 2 van zutphen - vader
+			#hendrik van zutphen - broer
+			ruler_term = {	character = gel_ermgard_van_zutphen start_date = 1118.1.1 end_date = 1133.10.16 regnal_number = 2 } #+gerard 2 van gelre
+			ruler_term = {	character = gel_henry_i_van_gelre start_date = 1133.10.16 end_date = 1182.9.10 regnal_number = 1 }
+			ruler_term = {	character = gel_otto_i_van_gelre start_date = 1182.9.10 end_date = 1207.4.30 regnal_number = 3 }
+			ruler_term = {	character = gel_gerard_iii_van_gelre start_date = 1207.4.30 end_date = 1229.10.22  regnal_number = 3 }
+			ruler_term = {	character = gel_otto_ii_van_gelre start_date = 1229.10.22 end_date = 1271.1.10 regnal_number = 2 }
 			ruler_term = {	character = gel_reinoud_i_van_gelre start_date = 1271.1.10 end_date = 1326.1.1 regnal_number = 1	}
 			ruler_term = {	character = gel_reinoud_ii_van_gelre start_date = 1326.1.1 regnal_number = 2	}
 
@@ -38364,9 +38384,20 @@ countries = {
 		government = {
 
 			ruler = kle_dietrich_vii_von_kleve
-			ruler_term = {	character = kle_dietrich_vi_von_kleve start_date = 1275.1.10 end_date = 1305.1.1 regnal_number = 7	}
-			ruler_term = {	character = kle_otto_von_kleve start_date = 1305.1.10 end_date = 1310.1.1 regnal_number = 1	}
-			ruler_term = {	character = kle_dietrich_vii_von_kleve start_date = 1310.1.1 regnal_number = 8	}
+			#lordship kleve
+			ruler_term = {	character = kle_rutger_van_wassenberg start_date = 1021.1.1	end_date = 1074.1.1 regnal_number = 1 }
+			#upgraded to county of kleve
+			ruler_term = {	character = kle_eberhard_ii_van_kleve start_date = 1050.1.1	end_date = 1074.1.1 regnal_number = 1 }
+			ruler_term = {	character = kle_dirk_i_van_kleve 	start_date = 1074.1.1 end_date = 1092.1.1 regnal_number = 1 }
+			ruler_term = {	character = kle_dirk_ii_van_kleve 	start_date = 1092.1.1 end_date = 1120.1.1 regnal_number = 2 }
+			ruler_term = {	character = kle_arnold_van_kleve 	start_date = 1120.1.1 end_date = 1147.2.20 regnal_number = 1 }
+			ruler_term = {	character = kle_dirk_iii_van_kleve 	start_date = 1147.2.20 end_date = 1172.4.27 regnal_number = 3 }
+			ruler_term = {	character = kle_dirk_iv_van_kleve 	start_date = 1172.4.27  end_date = 1198.1.1 regnal_number = 4 }
+			ruler_term = {	character = kle_dirk_v_van_kleve 	start_date = 1198.1.1 end_date = 1260.5.24 regnal_number = 5 }
+			ruler_term = {	character = kle_dirk_vi_van_kleve 	start_date = 1260.5.24 end_date = 1275.3.18 regnal_number = 6 }
+			ruler_term = {	character = kle_dietrich_vi_von_kleve 	start_date = 1275.3.18 end_date = 1305.1.1 regnal_number = 7 }
+			ruler_term = {	character = kle_otto_von_kleve 		start_date = 1305.1.10 end_date = 1310.1.1 regnal_number = 1 }
+			ruler_term = {	character = kle_dietrich_vii_von_kleve 	start_date = 1310.1.1 regnal_number = 8	}
 
 			regnal_numbers = {
 				name_otto = 1
@@ -39200,6 +39231,11 @@ countries = {
 		government = {
 			ruler = vbg_dietrich_iv_von_valkenburg
 			
+			ruler_term = { character = hbg_godfried_von_heinsberg_valkenburg start_date = 1167.4.8 end_date = 1180.1.1 regnal_number = 1 } #+ wife
+			ruler_term = { character = hbg_adelheid_von_heinsberg start_date = 1180.1.1 end_date = 1217.2.11 }
+			#inherited by cleves branch
+			ruler_term = { character = hbg_dirk_i_von_heinsberg start_date = 1217.2.11 end_date = 1227.11.4 regnal_number = 1 }
+			ruler_term = { character = vbg_dirk_ii_von_valkenburg start_date = 1227.11.4 end_date = 1268.10.15 regnal_number = 2 }
 			ruler_term = { character = vbg_waleran_the_red start_date = 1268.10.15 end_date = 1302.9.5 }
 			ruler_term = { character = vbg_dirk_iii_von_valkenburg start_date = 1302.9.5 end_date = 1305.6.16 regnal_number = 3 }
 			ruler_term = { character = vbg_reinoud_von_valkenburg start_date = 1305.6.16 end_date = 1333.7.18 }
@@ -39229,6 +39265,27 @@ countries = {
 		dynasty = heinsberg_dynasty
 		government = {
 			ruler = loo_dietrich_iv_von_heinsberg
+			
+			#ruler_term = { character = kle_arnold_van_kleve start_date = 1120.1.1 end_date = 1147.2.20 regnal_number = 1 }
+			#ruler_term = { character = kle_dirk_iii_van_kleve start_date = 1125.1.1 end_date = 1172.4.27 regnal_number = 3 }
+			#creation of lordship of wassenberg, closest to heinsberg - fix later as unique place
+			ruler_term = { character = hbg_gerard_i_van_wassenberg start_date = 1022.1.1 end_date = 1042.1.1 regnal_number = 1 }
+			ruler_term = { character = hbg_gerard_ii_van_wassenberg start_date = 1042.1.1 end_date = 1052.1.1 regnal_number = 2 }
+			ruler_term = { character = hbg_gerard_iii_van_wassenberg start_date = 1052.1.1 end_date = 1075.1.1 regnal_number = 3 }
+			ruler_term = { character = hbg_dirk_i_van_wassenberg start_date = 1075.1.1 end_date = 1082.10.19 regnal_number = 1 }			
+			#creation of Lordship of Heinsberg
+			ruler_term = { character = hbg_goswin_i_van_wassenberg start_date = 1082.10.19 end_date = 1128.4.1 regnal_number = 1 }
+			ruler_term = { character = hbg_goswin_ii_von_heinsberg start_date = 1128.4.1 end_date = 1167.4.8 regnal_number = 2 }
+			ruler_term = { character = hbg_godfried_von_heinsberg_valkenburg start_date = 1167.4.8 end_date = 1180.1.1 regnal_number = 1 } #+ wife
+			#ruler_term = { character = kle_arnold_ii_van_kleve start_date = 1180.1.1 end_date = 1199.1.1 regnal_number = 2 } #+ wife
+			#inherited by cleves branch of the family
+			ruler_term = { character = hbg_adelheid_von_heinsberg start_date = 1180.1.1 end_date = 1217.2.11 }
+			ruler_term = { character = hbg_dirk_i_von_heinsberg start_date = 1217.2.11 end_date = 1227.11.4 regnal_number = 1 }
+			ruler_term = { character = hbg_hendrik_von_sponheim start_date = 1227.11.4 end_date = 1259.1.1 }
+			ruler_term = { character = hbg_agnes_von_heinsberg start_date = 1259.1.1 end_date = 1267.1.1 }
+			ruler_term = { character = hbg_dirk_ii_van_heinsberg start_date = 1267.1.1 end_date = 1303.1.1 regnal_number = 2 }
+			ruler_term = { character = hbg_godfried_i_van_heinsberg start_date = 1303.1.1 end_date = 1331.1.1 }
+			ruler_term = { character = loo_dietrich_iv_von_heinsberg start_date = 1300.1.1 regnal_number = 3 }
 
 			aristocracy_vs_plutocracy = -20
 			capital_economy_vs_traditional_economy = -10

@@ -136,7 +136,7 @@ types DynastyTreeLateralView
 
 
                             widget = {
-                                size = { 260 139 }
+                                size = { 260 210 }
                                 datacontext = "[DynastyNodeItem.GetCharacter]"
                                 visible = "[Not(DynastyNodeItem.ShowSimplifiedVersion)]"
                                 allow_outside = yes
@@ -149,6 +149,7 @@ types DynastyTreeLateralView
                                         visible = "[Not(ObjectsEqual(Character.GetDynasty.Self, DynastyTreeView.GetDynasty.Self ))]"
                                         size = { 100% 100% }
                                         parentanchor = hcenter|top
+										position = {0 50}
 
                                         character_frame_medium = {
                                             parentanchor = hcenter|top
@@ -326,7 +327,8 @@ types DynastyTreeLateralView
                                 # OTHER DYNASTY COAT
                                 dynasty_shield_mid = {
                                     parentanchor = bottom|right
-                                    position = {-15 -4}
+                                    position = {-80 -150}
+									size = {100 65}
                                     visible = "[DynastyNodeItem.IsFromOtherDynasty]"
                                     datacontext = "[Character.GetDynasty]"
                                 }

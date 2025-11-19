@@ -50,6 +50,18 @@ arkel_dynasty = {
 	}
 }
 
+berg_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+	
+	colored_emblem = {
+		texture = "ce_bars_02_counter_embattled.dds"
+		color1 = color2
+		color2 = color2		
+	}
+}
+
 virneburg_dynasty = {
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"

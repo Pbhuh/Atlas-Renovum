@@ -77419,7 +77419,7 @@ adm = 31 dip = 34 mil = 24
 		birth = kleve
 		spouse = tck_otto_iii_gerulfing
 		father = gmk_engelbert_i_von_der_mark
-		#mother = Elisabeth von valkenburg - daughter of dirk ii von valkenburg
+		mother = gmk_elisabeth_von_valkenburg
 		dynasty = mark_dynasty
 		tag = MEH
 	}
@@ -77867,24 +77867,172 @@ adm = 31 dip = 34 mil = 24
 		tag = NSW
 	}
 	#Berg
-	brg_heinrich_von_windeck = { #Father of Ruler
-		first_name = { name = name_henry }
-		culture = westphalian
+	#house of ezzonen
+	#hermann I count palatine lotharingia
+	#adolf I of lotharingia
+	#adolf II of lotharingia
+	#berg
+	#adolf I
+	#adolf II
+	#adolf III
+	#adolf IV
+	#adolf V
+	brg_adolf_iv_berg = {	
+		first_name = { name = name_adolf }
+		culture = ripuarian_franconian
 		religion = catholic
-		birth_date = 1240.1.1
+		birth_date = 1095.1.1 #~aprox.
+		death_date = 1160.1.1
 		birth = dusseldorf
-		death_date = 1298.1.1
+		#spouse adelheid von arnsberg (altena)
+		dynasty = berg_dynasty #mark/altena dynasty
+		tag = BRG
+	}	
+	brg_adolf_v_berg = {	
+		first_name = { name = name_adolf }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1120.1.1 #before
+		death_date = 1148.1.1
+		birth = dusseldorf
+		father = brg_adolf_iv_berg
+		dynasty = berg_dynasty #mark/altena dynasty
+		tag = BRG
+	}	
+	brg_engelbert_i_berg = {	
+		first_name = { name = name_engelbert }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1160.1.1 #before
+		death_date = 1189.1.1
+		birth = dusseldorf
+		father = brg_adolf_iv_berg
+		dynasty = berg_dynasty #mark/altena dynasty
+		tag = BRG
+	}	
+	brg_adolf_vi_berg = {	
+		first_name = { name = name_adolf }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1176.1.1 #before
+		death_date = 1218.8.7
+		birth = dusseldorf
+		father = brg_engelbert_i_berg
+		dynasty = berg_dynasty #mark/altena dynasty
+		tag = BRG
+	}	
+	kol_engelbert_ii_berg = { #move to koln
+		first_name = { name = name_engelbert }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1185.1.1 #before
+		death_date = 1225.11.7
+		birth = dusseldorf #schloss berg
+		father = brg_engelbert_i_berg
+		dynasty = berg_dynasty #mark/altena dynasty
+		tag = BRG
+	}	
+	#limbourg-Berg
+	lim_heinrich_iv_of_limbourg = {
+		first_name = { name = name_henry }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1195.1.1
+		death_date = 1247.2.25
+		birth = dusseldorf
+		#father = waleran_iii
 		dynasty = limbourg_dynasty
 		tag = BRG
 	}
-
-	brg_adolf_ix_berg = { #Ruler
-		first_name = { name = name_adolf }
-		culture = westphalian
+	brg_irmgard_berg = { #last heiress
+		first_name = { name = name_ermengard }
+		female = yes
+		culture = ripuarian_franconian
 		religion = catholic
-		birth_date = 1288.1.1
+		birth_date = 1205.1.1 #estimate
+		death_date = 1248.1.1
 		birth = dusseldorf
-		father = brg_heinrich_von_windeck
+		father = brg_adolf_vi_berg
+		spouse = lim_heinrich_iv_of_limbourg
+		#mother = berta von sayn
+		dynasty = berg_dynasty
+		tag = BRG
+	}
+	brg_adolf_vii_berg = { #grandfather
+		first_name = { name = name_adolf }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1220.1.1
+		death_date = 1259.4.22
+		birth = dusseldorf
+		father = lim_heinrich_iv_of_limbourg
+		mother = brg_irmgard_berg
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}
+	brg_adolf_viii_berg = { #Uncle / Ruler
+		first_name = { name = name_adolf }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1240.1.1
+		death_date = 1296.9.28
+		birth = dusseldorf
+		father = brg_adolf_vii_berg
+		#mother = margaret of hochstaden - daughter of lothar I of hochstaden
+		#uncle = waleran 4 of limbourg - daughter: ermengarde - wife of reginald of gelre
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}
+	brg_william_i_berg = { #Uncle / Ruler
+		first_name = { name = name_william }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1242.1.1
+		death_date = 1308.1.1
+		birth = dusseldorf
+		father = brg_adolf_vii_berg
+		#mother = margaret of hochstaden - daughter of lothar I of hochstaden
+		#uncle = waleran 4 of limbourg - daughter: ermengarde - wife of reginald of gelre
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}
+	brg_heinrich_von_windeck = { #Father of Ruler
+		first_name = { name = name_henry }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1247.1.1 #before
+		death_date = 1298.1.1
+		#death_date = 1290.3.8 #or '96
+		birth = dusseldorf
+		father = brg_adolf_vii_berg
+		#mother = margaret of hochstaden - daughter of lothar I of hochstaden
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}
+	#look up mark
+	#Limburg	
+	lim_waleran_of_limbourg = { #walaran IV
+		first_name = { name = name_waleram }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1220.1.1
+		death_date = 1279.1.1
+		birth = dusseldorf
+		father = lim_heinrich_iv_of_limbourg
+		mother = brg_irmgard_berg
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}
+	lim_irmgard_of_limbourg = {
+		first_name = { name = name_ermengard }
+		female = yes
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1245.1.1
+		death_date = 1283.1.1
+		birth = dusseldorf
+		father = lim_waleran_of_limbourg
+		spouse = gel_reinoud_i_van_gelre
 		dynasty = limbourg_dynasty
 		tag = BRG
 	}
@@ -78809,7 +78957,7 @@ adm = 31 dip = 34 mil = 24
 		birth = geldern
 		father = gel_otto_i_van_gelre
 		spouse = hol_willem_i_gerulfing
-		#mother = richardis wittelsbach
+		mother = gel_richardis_von_wittelsbach
 		dynasty = wassenberg_dynasty
 		tag = HOL
 	}
@@ -82262,7 +82410,7 @@ adm = 31 dip = 34 mil = 24
 		birth = kleve
 		spouse = meh_floris_berthout
 		father = gmk_engelbert_i_von_der_mark
-		#mother = Elisabeth von valkenburg - daughter of dirk ii von valkenburg
+		mother = gmk_elisabeth_von_valkenburg
 		dynasty = mark_dynasty
 		tag = MEH
 	}
@@ -85287,6 +85435,18 @@ adm = 31 dip = 34 mil = 24
 	}
 
 	#Münster
+	mun_conrad_berg = { 
+		first_name = { name = name_conrad }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1247.1.1 #after
+		death_date = 1313.5.25
+		birth = dusseldorf
+		father = brg_adolf_vii_berg
+		#mother = margaret of hochstaden - daughter of lothar I of hochstaden
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}
 	mun_ludwig_ii_hessen = { #Ruler
 		first_name = { name = name_louis }
 		culture = rhine_franconian
@@ -85845,6 +86005,20 @@ adm = 31 dip = 34 mil = 24
 		#mother = Agnes of Arnstein
 		tag = GEL
 	}
+	gel_richardis_von_wittelsbach = {
+		first_name = { name = name_ricarda } #name_richilda }
+		female = yes
+		culture = danube_bavarian
+		religion = catholic
+		birth_date = 1173.1.1
+		birth = geldern
+		death_date = 1231.12.7
+		dynasty = wittelsbach_dynasty
+		spouse = gel_henry_i_van_gelre
+		father = bav_otto_i_wittelsbach
+		#mother = agnes_loon
+		tag = GEL
+	}
 	gel_gerard_iii_van_gelre = { #GreatGrandfather of Ruler
 		first_name = { name = name_gerard }
 		culture = westphalian
@@ -85854,7 +86028,7 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1229.10.22
 		dynasty = wassenberg_dynasty
 		father = gel_otto_i_van_gelre
-		#mother = richardis of bavaria
+		mother = gel_richardis_von_wittelsbach
 		tag = GEL
 	}
 	gel_otto_ii_van_gelre = { #Grandfather of Ruler
@@ -86538,6 +86712,46 @@ adm = 31 dip = 34 mil = 24
 		tag = KLE
 	}
 
+	
+	#Altena
+	gmk_eberhard_von_berg = {		
+		first_name = { name = name_everard }
+		culture = westphalian
+		religion = catholic
+		birth_date = 1140.1.1
+		birth = hamm
+		death_date = 1180.1.23
+		dynasty = mark_dynasty
+		father = brg_adolf_iv_berg
+		#mother = irmgard von schwarzenberg?
+		tag = GMK
+	}
+	gmk_adelheid_van_cuijk = { # Mother of Friedrich
+		first_name = { name = name_adelaide }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1134.1.1
+		death_date = 1200.1.1
+		birth = arnsberg
+		father = anb_godfried_i_van_cuijk
+		mother = anb_ida_von_werl_arnsberg
+		spouse = gmk_eberhard_von_berg
+		dynasty = cuijk_dynasty
+		tag = GMK
+	}
+	gmk_friedrich_von_altena = { #
+		first_name = { name = name_frederick }
+		culture = westphalian
+		religion = catholic
+		birth_date = 1149.1.1
+		birth = hamm
+		death_date = 1199.1.1
+		dynasty = mark_dynasty
+		father = gmk_eberhard_von_berg
+		mother = gmk_adelheid_van_cuijk
+		tag = GMK
+	}
 	#Mark
 	gmk_adolf_i_von_der_mark = { #Greatgreatgrandfather of Ruler
 		first_name = { name = name_adolf }
@@ -86547,6 +86761,7 @@ adm = 31 dip = 34 mil = 24
 		birth = hamm
 		death_date = 1249.6.28
 		dynasty = mark_dynasty
+		father = gmk_friedrich_von_altena
 		tag = GMK
 	}
 	gmk_irmgard_van_gelre = { # Spouse of Adolf I
@@ -86559,7 +86774,7 @@ adm = 31 dip = 34 mil = 24
 		birth = geldern
 		father = gel_otto_i_van_gelre
 		spouse = gmk_adolf_i_von_der_mark
-		#mother = richardis wittelsbach
+		mother = gel_richardis_von_wittelsbach
 		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
 		tag = GMK
 	}
@@ -86576,6 +86791,39 @@ adm = 31 dip = 34 mil = 24
 		#spouse = kunegonde von blieskastel
 		tag = GMK
 	}	
+	
+	#BERG INTERMISSION
+	
+	brg_agnes_von_der_mark = {
+		first_name = { name = name_agnes }
+		female = yes
+		culture = westphalian
+		religion = catholic
+		birth_date = 1255.1.1 #between 1250-1260
+		death_date = 1290.1.1 #atleast
+		birth = dusseldorf
+		father = gmk_engelbert_i_von_der_mark
+		spouse = brg_heinrich_von_windeck
+		#mother = kunigunde von blieskastel
+		dynasty = mark_dynasty
+		tag = BRG
+	}
+	brg_adolf_ix_berg = { #Ruler
+		first_name = { name = name_adolf }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1280.1.1
+		#death_date = 1348.4.3
+		birth = dusseldorf
+		father = brg_heinrich_von_windeck
+		mother = brg_agnes_von_der_mark
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}
+	
+	#END INTERMISSION
+	
+	
 	gmk_elisabeth_von_valkenburg = { # Spouse of Engelbert I
 		first_name = { name = name_elizabeth }
 		culture = low_franconian
@@ -86590,19 +86838,6 @@ adm = 31 dip = 34 mil = 24
 		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
 		tag = GMK
 	}
-	gmk_eberhard_i_von_der_mark = { #Grandfather of Ruler
-		first_name = { name = name_everard }
-		culture = westphalian
-		religion = catholic
-		birth_date = 1250.1.1
-		birth = hamm
-		death_date = 1308.6.4 #1308.7.4
-		dynasty = mark_dynasty
-		father = gmk_engelbert_i_von_der_mark
-		#mother = cunigunde - daughter of henry of blieskastel
-		tag = GMK
-	}
-	#irmgard von berg - spouse eberhard_i
 	kle_adelheid_von_der_mark = { # Spouse of Otto I
 		first_name = { name = name_adelaide }
 		culture = westphalian
@@ -86617,7 +86852,44 @@ adm = 31 dip = 34 mil = 24
 		dynasty = mark_dynasty
 		tag = KLE
 	}
-	gmk_maria_von_loon = { #Grandmother
+	gmk_eberhard_i_von_der_mark = { #Grandfather of Ruler
+		first_name = { name = name_everard }
+		culture = westphalian
+		religion = catholic
+		birth_date = 1250.1.1
+		birth = hamm
+		death_date = 1308.6.4 #1308.7.4
+		dynasty = mark_dynasty
+		father = gmk_engelbert_i_von_der_mark
+		#mother = cunigunde - daughter of henry of blieskastel
+		tag = GMK
+	}	
+    #Margaret (c.1280–after 14 August 1327), married in 1299 Gerhard of Katzenelnbogen (c.1270–1311/12)
+    #Kunigunde († after 25 February 1343), married in 1320 Dietrich II of Heinsberg-Blankenburg († 1361)
+    #Irmgard
+    #Konrad (1291/94–1353), married Elisabeth of Cleves
+    #Catharine, abbess of Froendenberg (born c.1293)
+	brg_irmgard_von_berg = {
+		first_name = { name = name_ermengard }
+		female = yes
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1256.1.1
+		death_date = 1294.3.24
+		birth = dusseldorf
+		father = brg_adolf_vii_berg
+		spouse = gmk_eberhard_i_von_der_mark
+		#mother = margaret of hochstaden - daughter of lothar I of hochstaden
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}
+	
+	#Eberhard married second Maria of Looz and had:
+	#
+    #Richarda, married John III of Reifferscheidt-Bedburg
+    #Johanna, married Philip IV of Reifferscheidt-Wildenberg
+    #Engelbert I, Lord of Loverval	
+	gmk_maria_von_loon = { #second wife
 		first_name = { name = name_mary }
 		culture = low_franconian
 		female = yes
@@ -86628,7 +86900,8 @@ adm = 31 dip = 34 mil = 24
 		dynasty = loon_dynasty
 		father = loo_arnold_v_von_loon
 		#mother = marguerite van vianden
-		spouse = hbg_godfried_i_van_heinsberg
+		#spouse = hbg_godfried_i_van_heinsberg #?
+		spouse = gmk_eberhard_i_von_der_mark
 		tag = GMK
 	}
 	#loo_mathilde_von_loon = { #Mother https://www.wikidata.org/wiki/Q76263869
@@ -86654,7 +86927,7 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1328.7.18
 		dynasty = mark_dynasty
 		father = gmk_eberhard_i_von_der_mark
-		mother = gmk_maria_von_loon
+		mother = brg_irmgard_von_berg
 		tag = GMK
 	}
 	#Margaretha, in 1299 gehuwd met graaf Gerard van Katzenelnbogen (-1312)
@@ -86666,6 +86939,7 @@ adm = 31 dip = 34 mil = 24
 		birth = hamm
 		dynasty = mark_dynasty
 		father = gmk_engelbert_ii_von_der_mark
+		mother = brg_irmgard_von_berg
 		tag = GMK
 	}
 	gmk_eberhard_i_von_der_marck_arenberg = { #Brother of Ruler
@@ -87319,7 +87593,7 @@ adm = 31 dip = 34 mil = 24
 		birth = cuijk
 		death_date = 1233.1.1
 		dynasty = cuijk_dynasty
-		father = cjk_herman_van_cuijk
+		father = cjk_hendrik_ii_van_cuijk
 		tag = CJK
 		#spouse = hadewych van meerheim
 	}
@@ -87331,7 +87605,7 @@ adm = 31 dip = 34 mil = 24
 		birth = cuijk
 		death_date = 1250.1.1
 		dynasty = cuijk_dynasty
-		father = cjk_hendrik_ii_van_cuijk
+		father = cjk_albert_van_cuijk
 		tag = CJK
 	}
 	cjk_jan_i_van_cuijk = { #Father of Ruler
@@ -101033,7 +101307,7 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1215.9.1
 		birth = geldern
 		father = gel_otto_i_van_gelre
-		#mother = richardis wittelsbach
+		mother = gel_richardis_von_wittelsbach
 		dynasty = wassenberg_dynasty
 		tag = UTR
 	}

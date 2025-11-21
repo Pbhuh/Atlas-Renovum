@@ -432,6 +432,26 @@ HBG_loon_chiny = { #Heinsberg - Loon - Chiny
     }
 }
 
+Kerch = { #
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "red_secondary"
+
+	colored_emblem = {
+		texture = "ce_griffin_wide.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.4 } scale = { 0.75 0.75 } }
+	}
+	colored_emblem = {
+		texture = "ce_key_in_pale_short.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.8 } rotation = -90 scale = { 0.4 0.4 } }
+	}
+}
+
 HBG_loon = { #
 	pattern = "pattern_solid.dds"
 	color1 = "red"

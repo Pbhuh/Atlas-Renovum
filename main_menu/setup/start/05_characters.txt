@@ -141,7 +141,7 @@ character_db={
 	
 	hol_dirk_vi_gerulfing = { #Paternal of Bentheim, Holland and Tecklenburg
 		first_name = { name = name_theodoric.dutch_dialect.alternative }
-		culture = dutch #low_franconian - durk instead of diederik, mhhh
+		culture = dutch #forcing the name for now
 		religion = catholic
 		birth_date = 1114.1.1
 		death_date = 1157.8.5
@@ -159,7 +159,7 @@ character_db={
 		death_date = 1190.8.1
 		birth = the_hague
 		dynasty = gerulfing_dynasty
-		#spouse = sophie luxemburg
+		#spouse = Ada of Scotland - daughter of henry, earl of huntingdon m.1162
 		father = hol_dirk_vi_gerulfing
 		tag = HOL
 	}	
@@ -543,7 +543,82 @@ character_db={
 		spouse = anb_godfried_i_van_cuijk
 		tag = ANB
 	}
+	
+	# HOUSE OF REGINAR (Counts of Leuven (& Dukes of Brabant) - Dukes of Lower Lorraine)
 
+	brb_hendrik_ii_van_leuven = {
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1020.1.1
+		death_date = 1078.1.1
+		birth = leuven
+		#father = brb_lambert_ii_balderik
+		#spouse = adela_van_teisterbant
+		#mother = oda_van_verdun
+		dynasty = reginar_dynasty
+		tag = BRB
+	}
+	brb_hendrik_iii_van_leuven = {
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1060.1.1 #estimate
+		death_date = 1095.1.1
+		birth = leuven
+		father = brb_hendrik_ii_van_leuven
+		#mother = adela_van_teisterbant
+		#spouse = 
+		dynasty = reginar_dynasty
+		tag = BRB
+	}
+	brb_godfried_i_van_leuven = {
+		first_name = { name = name_godfrey }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1063.1.1
+		death_date = 1139.1.25
+		birth = leuven
+		father = brb_hendrik_ii_van_leuven
+		#mother = adela_van_teisterbant
+		#spouse = ida_van_chiny
+		dynasty = reginar_dynasty
+		tag = BRB
+	}
+	brb_godfried_ii_van_leuven = {
+		first_name = { name = name_godfrey }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1105.1.1
+		death_date = 1142.6.13
+		birth = leuven
+		father = brb_godfried_i_van_leuven
+		#spouse = lutgardis_von_sulzbag
+		#mother = ida_van_chiny
+		dynasty = reginar_dynasty
+		tag = BRB
+	}
+	brb_godfried_iii_van_leuven = {
+		first_name = { name = name_godfrey }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1140.1.1
+		death_date = 1190.8.21
+		birth = leuven
+		father = brb_godfried_ii_van_leuven
+		#mother = lutgardis_von_sulzbag
+		#spouse = margaretha_limbourg
+		#spouse = imagina_van_loon
+		dynasty = reginar_dynasty
+		tag = BRB
+		ruler_trait = bold_fighter
+		ruler_trait = zealot
+	}
 	#################################################################
 	#							 1200-1300							#
 	#################################################################
@@ -662,8 +737,7 @@ character_db={
 		spouse = gel_reinoud_i_van_gelre
 		dynasty = limbourg_dynasty
 		tag = BRG
-	}
-	
+	}	
 	
 	#Holland Gerulfing
 	
@@ -688,7 +762,7 @@ character_db={
 		death_date = 1223.1.1
 		birth = the_hague
 		dynasty = gerulfing_dynasty
-		#spouse = louis_i
+		#spouse = louis_ii_loon
 		father = hol_dirk_vii_gerulfing
 		tag = HOL
 	}	
@@ -726,6 +800,23 @@ character_db={
 		birth = the_hague
 		dynasty = gerulfing_dynasty
 		father = hol_willem_i_gerulfing
+		mother = hol_aleid_van_gelre
+		tag = HOL
+		#he married Mathilde of brabant, a daughter of Henri I and Matilde of Flanders
+	}
+	hol_machteld_van_brabant = {
+		first_name = { name = name_matilda }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1200.1.1
+		death_date = 1267.2.1
+		birth = brussels
+		father = brb_hendrik_i_van_brabant
+		#spouse = bru_henry_vi_von_brunswick
+		spouse = hol_floris_iv_gerulfing
+		#mother = Mathilde de Boulogne
+		dynasty = reginar_dynasty
 		tag = HOL
 	}
 	hol_willem_ii_gerulfing = {
@@ -737,6 +828,34 @@ character_db={
 		birth = the_hague
 		dynasty = gerulfing_dynasty
 		father = hol_floris_iv_gerulfing
+		mother = hol_machteld_van_brabant
+		tag = HOL
+		#Married Elisabeth, daughter of Otto I of brunswik and Mathilde Ascania
+	}	
+	hol_elisabeth_braunschweig = {
+		first_name = { name = name_elizabeth } 
+		female = yes
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1230.1.1
+		death_date = 1266.5.27
+		birth = einbeck
+		father = bru_otto_i_braunschweig
+		#mother = Mathilde von Brandenburg
+		spouse = hol_willem_ii_gerulfing
+		dynasty = welfen_dynasty
+		tag = HOL
+	}
+	hol_floris_de_voogd_gerulfing = {
+		first_name = { name = name_florence }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1228.1.1
+		death_date = 1258.3.26
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		father = hol_floris_iv_gerulfing
+		mother = hol_machteld_van_brabant
 		tag = HOL
 	}	
 	hol_floris_v_gerulfing = {
@@ -748,6 +867,23 @@ character_db={
 		birth = the_hague
 		dynasty = gerulfing_dynasty
 		father = hol_willem_ii_gerulfing
+		mother = hol_elisabeth_braunschweig
+		tag = HOL
+	}
+	#Graaf Floris V van Holland streed in oktober 1295 met Vlaanderen om Zeeland Bewesterschelde. Dit verdrag tussen Engeland en Vlaanderen en de verplaatsing van de wolstapel leidde er toe dat Floris V op 9 januari 1296 de kant koos van Filips IV. Voorheen stond Floris V aan de Engelse kant. Hij werd nu leenman van de Franse koning. Eduard I liet Jan I van Cuijk een centrale rol spelen om een bondgenootschap te vormen van oude tegenstanders van de Hollandse graaf. Het plan was Floris V naar Engeland te ontvoeren en zijn zoon Jan I, opgevoed aan het Engelse hof en toekomstige schoonzoon van de koning, op de grafelijke troon van Holland te plaatsen. Floris V werd 23 juni 1296 ontvoerd en in het Muiderslot vastgehouden. Op de vijfde dag, 27 juni 1296 werd hij tijdens een vluchtpoging door Gerard van Velsen doodgestoken. Jan I kwam in januari 1297 naar Holland, stierf jong aan dysenterie en werd opgevolgd door de Fransgezinde Henegouwse Jan II van Avesnes.[2]
+	hol_beatrix_dampierre = {
+		first_name = { name = name_beatrix }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1253.1.1
+		death_date = 1296.3.23
+		birth = bruges
+		father = fla_guy_i_dampierre
+		#mother = Mahaut de Béthune
+		spouse = hol_floris_v_gerulfing
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
 		tag = HOL
 	}
 	hol_jan_i_gerulfing = {
@@ -760,6 +896,28 @@ character_db={
 		dynasty = gerulfing_dynasty
 		father = hol_floris_v_gerulfing
 		tag = HOL
+	}
+	#hol_margaretha_van_holland = {
+	#	first_name = { name = name_margaret }
+	#	culture = low_franconian
+	#	religion = catholic
+	#	birth_date = 1284.1.1
+	#	death_date = 1299.1.1
+	#	birth = the_hague
+	#	dynasty = gerulfing_dynasty
+	#	father = hol_floris_v_gerulfing
+	#	tag = HOL
+	#}
+	hol_elisabeth_of_england = {
+		first_name = { name = name_elizabeth }
+		culture = english
+		religion = catholic
+		birth_date = 1283.8.7
+		death_date = 1316.5.5
+		birth = denbigh #rhuddlan
+		father = eng_edward_i
+		spouse = hol_jan_i_gerulfing
+		#spouse = humprey_de_bohun - 4th count of hereford & essex
 	}
 	
 	#
@@ -994,12 +1152,7 @@ character_db={
 		tag = ANB
 	}	
 	
-	
-	#1200?-1300?
-	  
 	#Cleves
-	
-	#Kleve Intermission
 	
 	#Loon-Heinsberg-Chiny
 	#johanna von loon - mother of arnold van rummen ruler of chiny
@@ -1092,6 +1245,93 @@ character_db={
 		dynasty = cuijk_dynasty
 		father = cjk_albert_van_cuijk
 		tag = CJK
+	}
+	
+	# HOUSE OF REGINAR (Dukes of Brabant & Limburg)
+
+	brb_hendrik_i_van_brabant = {
+		first_name = { name = name_henry }
+		nickname = { name = nick_the_courageous }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 39 dip = 26 mil = 75
+		birth_date = 1165.1.1
+		death_date = 1235.9.5
+		birth = leuven
+		father = brb_godfried_iii_van_leuven
+		#mother = Marguerite de Limbourg
+		#spouse = mathilde van flanders
+		dynasty = reginar_dynasty
+		tag = BRB
+		ruler_trait = bold_fighter
+		ruler_trait = zealot
+	}
+
+	brb_hendrik_ii_van_brabant = {
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 63 dip = 35 mil = 41
+		birth_date = 1207.1.1
+		death_date = 1248.2.1
+		birth = brussels
+		father = brb_hendrik_i_van_brabant
+		#mother = Mathilde de Boulogne
+		dynasty = reginar_dynasty
+		tag = BRB
+		ruler_trait = lawgiver
+	}
+
+	brb_hendrik_iii_van_brabant = {
+		first_name = { name = name_henry }
+		nickname = { name = nick_the_gallant }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 40 dip = 56 mil = 35
+		birth_date = 1231.1.1
+		death_date = 1261.2.28
+		birth = brussels
+		father = brb_hendrik_ii_van_brabant
+		#mother = Maria von Staufen
+		dynasty = reginar_dynasty
+		tag = BRB
+		ruler_trait = calm
+	}
+
+	brb_hendrik_iv_van_brabant = {
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		estate = clergy_estate
+		birth_date = 1251.1.1
+		death_date = 1272.4.29
+		birth = brussels
+		father = brb_hendrik_iii_van_brabant
+		mother = brb_adelaide_burgundian
+		dynasty = reginar_dynasty
+		tag = BRB
+	}
+
+	# Grandfather of the Duke of Brabant & Limburg & Former Duke of Brabant
+	brb_jan_i_van_brabant = {
+		first_name = { name = name_john }
+		nickname = { name = nick_the_victorious }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 25 dip = 73 mil = 71
+		birth_date = 1253.1.1
+		death_date = 1294.5.3
+		birth = leuven
+		father = brb_hendrik_iii_van_brabant
+		mother = brb_adelaide_burgundian
+		dynasty = reginar_dynasty
+		tag = BRB
+		ruler_trait = conqueror
+		ruler_trait = bold_fighter
 	}
 	
 ######################################################################
@@ -1895,6 +2135,8 @@ character_db={
 		father = eng_henry_iii
 		tag = ENG
 	}
+	#infante_eleonora_of_castille - daughter of ferdinand_iii
+	#spouse = eng_edward_i
 
 	eng_edmund_crouchback = {
 		first_name = { name = name_edmond }
@@ -20143,11 +20385,12 @@ character_db={
 
 	fla_guillaume_termonde = {
 		first_name = { name = name_william }
+		#nickname = { name = nick_lackland }
 		culture = champenais
 		religion = catholic
 		estate = nobles_estate
 		adm = 26 dip = 60 mil = 27
-		birth_date = 1248.1.1
+		birth_date = 1249.1.1 #second son, should be younger than first son?
 		death_date = 1311.1.1
 		birth = bruges
 		father = fla_guy_i_dampierre
@@ -76357,7 +76600,22 @@ adm = 31 dip = 34 mil = 24
 		tag = BRC
 	}
 
-	#Henneberg
+	#Henneberg	
+	#hnb_margaretha_of_holland = {
+	#	first_name = { name = name_margaret }
+	#	culture = low_franconian
+	#	female = yes
+	#	religion = catholic
+	#	birth_date = 1234.1.1
+	#	death_date = 1276.1.1
+	#	father = hol_floris_iv_gerulfing
+	#	mother = hol_machteld_van_brabant
+	#	birth = the_hague
+	#	dynasty = gerulfing_dynasty
+	#	spouse = hnb_hermann_i_henneberg_coburg
+	#	tag = HAI
+	#}	
+	#hnb_hermann_i_henneberg_coburg
 	hnb_berthold_iv_henneberg_schleusingen = { #Ruler
 		first_name = { name = name_berthold }
 		nickname = { name = "the_wise" }
@@ -79723,6 +79981,7 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1230.1.1
 		death_date = 1284.1.1 #burial date
 		father = hol_floris_iv_gerulfing
+		mother = hol_machteld_van_brabant
 		birth = the_hague
 		dynasty = gerulfing_dynasty
 		spouse = hai_jean_i_avesnes
@@ -82709,231 +82968,6 @@ adm = 31 dip = 34 mil = 24
 		#mother = Matilda of Saxony
 		dynasty = mecklenburg_dynasty
 		tag = MKL
-	}
-
-	# HOUSE OF REGINAR (Dukes of Brabant & Limburg)
-
-	brb_hendrik_i_van_brabant = {
-		first_name = { name = name_henry }
-		nickname = { name = nick_the_courageous }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 39 dip = 26 mil = 75
-		birth_date = 1165.1.1
-		death_date = 1235.9.5
-		birth = leuven
-		#father = Godfried van Leuven
-		#mother = Marguerite de Limbourg
-		dynasty = reginar_dynasty
-		tag = BRB
-		ruler_trait = bold_fighter
-		ruler_trait = zealot
-	}
-
-	brb_hendrik_ii_van_brabant = {
-		first_name = { name = name_henry }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 63 dip = 35 mil = 41
-		birth_date = 1207.1.1
-		death_date = 1248.2.1
-		birth = brussels
-		father = brb_hendrik_i_van_brabant
-		#mother = Mathilde de Boulogne
-		dynasty = reginar_dynasty
-		tag = BRB
-		ruler_trait = lawgiver
-	}
-
-	brb_hendrik_iii_van_brabant = {
-		first_name = { name = name_henry }
-		nickname = { name = nick_the_gallant }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 40 dip = 56 mil = 35
-		birth_date = 1231.1.1
-		death_date = 1261.2.28
-		birth = brussels
-		father = brb_hendrik_ii_van_brabant
-		#mother = Maria von Staufen
-		dynasty = reginar_dynasty
-		tag = BRB
-		ruler_trait = calm
-	}
-
-	brb_hendrik_iv_van_brabant = {
-		first_name = { name = name_henry }
-		culture = low_franconian
-		religion = catholic
-		estate = clergy_estate
-		birth_date = 1251.1.1
-		death_date = 1272.4.29
-		birth = brussels
-		father = brb_hendrik_iii_van_brabant
-		mother = brb_adelaide_burgundian
-		dynasty = reginar_dynasty
-		tag = BRB
-	}
-
-	# Grandfather of the Duke of Brabant & Limburg & Former Duke of Brabant
-	brb_jan_i_van_brabant = {
-		first_name = { name = name_john }
-		nickname = { name = nick_the_victorious }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 25 dip = 73 mil = 71
-		birth_date = 1253.1.1
-		death_date = 1294.5.3
-		birth = leuven
-		father = brb_hendrik_iii_van_brabant
-		mother = brb_adelaide_burgundian
-		dynasty = reginar_dynasty
-		tag = BRB
-		ruler_trait = conqueror
-		ruler_trait = bold_fighter
-	}
-
-	# Father of the Duke of Brabant & Limburg & Previous Duke
-	brb_jan_ii_van_brabant = {
-		first_name = { name = name_john }
-		nickname = { name = the_peaceful }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 51 dip = 43 mil = 51
-		birth_date = 1275.9.27
-		death_date = 1312.10.27
-		birth = brussels
-		father = brb_jan_i_van_brabant
-		mother = brb_marguerite_dampierre
-		dynasty = reginar_dynasty
-		tag = BRB
-		ruler_trait = lawgiver
-	}
-	
-	# Mother of the Duke of Brabant & Limburg
-	brb_margaret_of_england = {
-		first_name = { name = name_margaret }
-		culture = english
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		spouse = brb_jan_ii_van_brabant
-		birth_date = 1275.3.15
-		birth = windsor
-		death_date = 1333.1.1
-		dynasty = plantagenet_dynasty
-		father = eng_edward_i
-		mother = eng_leonor_burgundy
-		#mother = https://en.wikipedia.org/wiki/Eleanor_of_Castile
-		tag = BRB
-	}
-
-	# Duke of Brabant & Limburg
-	brb_jan_iii_van_brabant = {
-		first_name = { name = name_john }
-		nickname = { name = nick_the_triumphant }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1300.11.1
-		birth = brussels
-		father = brb_jan_ii_van_brabant
-		mother = brb_margaret_of_england
-		dynasty = reginar_dynasty
-		tag = BRB
-		ruler_trait = embezzler
-	}
-
-	# Daughters of the Duke of Brabant & Limburg
-	brb_johanna_van_brabant = {
-		first_name = { name = name_joanna }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 40 dip = 55 mil = 22
-		female = yes
-		birth_date = 1322.6.24
-		birth = brussels
-		father = brb_jan_iii_van_brabant
-		mother = brb_marie_evreux
-		spouse = hai_guillaume_ii_de_hainault
-		dynasty = reginar_dynasty
-		tag = HAI
-	}
-
-	brb_margaretha_van_brabant = {
-		first_name = { name = name_margaret }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1323.2.9
-		birth = brussels
-		father = brb_jan_iii_van_brabant
-		mother = brb_marie_evreux
-		dynasty = reginar_dynasty
-		tag = BRB
-	}
-
-	brb_maria_van_brabant = {
-		first_name = { name = name_mary }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1325.1.1
-		birth = brussels
-		father = brb_jan_iii_van_brabant
-		mother = brb_marie_evreux
-		dynasty = reginar_dynasty
-		tag = BRB
-	}
-
-	# Sons of the Duke of Brabant & Limburg
-	brb_jan_van_brabant = {
-		first_name = { name = name_john }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1327.11.24
-		death_date = 1335.1.1
-		birth = brussels
-		father = brb_jan_iii_van_brabant
-		mother = brb_marie_evreux
-		dynasty = reginar_dynasty
-		tag = BRB
-	}
-
-	brb_hendrik_van_brabant = {
-		first_name = { name = name_henry }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1330.1.1 #Unknown
-		birth = brussels
-		father = brb_jan_iii_van_brabant
-		mother = brb_marie_evreux
-		dynasty = reginar_dynasty
-		tag = BRB
-	}
-
-	brb_godfried_van_brabant = {
-		first_name = { name = name_godfrey }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 3 dip = 3 mil = 3
-		birth_date = 1333.1.1 #Unknown
-		birth = brussels
-		father = brb_jan_iii_van_brabant
-		mother = brb_marie_evreux
-		dynasty = reginar_dynasty
-		tag = BRB
 	}
 	
 	# Mother of the King of Bohemia & Count of Luxembourg
@@ -100504,6 +100538,44 @@ adm = 31 dip = 34 mil = 24
 	
 	
 	#Jülich
+	jul_wilhelm_iv_julich = {
+		first_name = { name = name_william }
+		culture = westphalian
+		religion = catholic
+		birth_date = 1210.1.1
+		birth = duren
+		death_date = 1278.3.16
+		dynasty = julich_dynasty
+		tag = JUL
+		#father = jul_wilhelm_iii_julich
+		#spouse = richardis_van_gelre / margaret_of_gelre - daughters of gel_gerard_iii_van_gelre & margaret_of_brabant
+	}
+	jul_wilhelm_v_coruler_julich = {
+		first_name = { name = name_william }
+		culture = westphalian
+		religion = catholic
+		birth_date = 1240.1.1
+		birth = duren
+		death_date = 1278.3.16
+		dynasty = julich_dynasty
+		father = jul_wilhelm_iv_julich
+		tag = JUL
+	}
+	jul_maria_dampierre = {
+		first_name = { name = name_mary }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1253.1.1
+		death_date = 1297.1.1
+		birth = bruges
+		father = fla_guy_i_dampierre
+		#mother = Mahaut de Béthune
+		spouse = jul_wilhelm_v_coruler_julich
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = JUL
+	}
 	jul_gerhard_v_julich = { #Father of Ruler
 		first_name = { name = name_gerard }
 		culture = westphalian
@@ -100512,6 +100584,7 @@ adm = 31 dip = 34 mil = 24
 		birth = duren
 		death_date = 1328.1.1
 		dynasty = julich_dynasty
+		father = jul_wilhelm_iv_julich
 		tag = JUL
 	}
 	jul_elisabeth_van_brabant = { # Mother of the Count of Julich
@@ -101330,7 +101403,149 @@ adm = 31 dip = 34 mil = 24
 		tag = ANB
 	}
 	
-	#Bishops/Abotts at the bottom? can only have fathers/mothers
+	# Father of the Duke of Brabant & Limburg & Previous Duke
+	brb_jan_ii_van_brabant = {
+		first_name = { name = name_john }
+		nickname = { name = the_peaceful }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 51 dip = 43 mil = 51
+		birth_date = 1275.9.27
+		death_date = 1312.10.27
+		birth = brussels
+		father = brb_jan_i_van_brabant
+		mother = brb_marguerite_dampierre
+		dynasty = reginar_dynasty
+		tag = BRB
+		ruler_trait = lawgiver
+	}
+	
+	# Mother of the Duke of Brabant & Limburg
+	brb_margaret_of_england = {
+		first_name = { name = name_margaret }
+		culture = english
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		spouse = brb_jan_ii_van_brabant
+		birth_date = 1275.3.15
+		birth = windsor
+		death_date = 1333.1.1
+		dynasty = plantagenet_dynasty
+		father = eng_edward_i
+		mother = eng_leonor_burgundy
+		#mother = https://en.wikipedia.org/wiki/Eleanor_of_Castile
+		tag = BRB
+	}
+
+	# Duke of Brabant & Limburg
+	brb_jan_iii_van_brabant = {
+		first_name = { name = name_john }
+		nickname = { name = nick_the_triumphant }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1300.11.1
+		birth = brussels
+		father = brb_jan_ii_van_brabant
+		mother = brb_margaret_of_england
+		dynasty = reginar_dynasty
+		tag = BRB
+		ruler_trait = embezzler
+	}
+
+	# Daughters of the Duke of Brabant & Limburg
+	brb_johanna_van_brabant = {
+		first_name = { name = name_joanna }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 40 dip = 55 mil = 22
+		female = yes
+		birth_date = 1322.6.24
+		birth = brussels
+		father = brb_jan_iii_van_brabant
+		mother = brb_marie_evreux
+		spouse = hai_guillaume_ii_de_hainault
+		dynasty = reginar_dynasty
+		tag = HAI
+	}
+
+	brb_margaretha_van_brabant = {
+		first_name = { name = name_margaret }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1323.2.9
+		birth = brussels
+		father = brb_jan_iii_van_brabant
+		mother = brb_marie_evreux
+		dynasty = reginar_dynasty
+		tag = BRB
+	}
+
+	brb_maria_van_brabant = {
+		first_name = { name = name_mary }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1325.1.1
+		birth = brussels
+		father = brb_jan_iii_van_brabant
+		mother = brb_marie_evreux
+		dynasty = reginar_dynasty
+		tag = BRB
+	}
+
+	# Sons of the Duke of Brabant & Limburg
+	brb_jan_van_brabant = {
+		first_name = { name = name_john }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1327.11.24
+		death_date = 1335.1.1
+		birth = brussels
+		father = brb_jan_iii_van_brabant
+		mother = brb_marie_evreux
+		dynasty = reginar_dynasty
+		tag = BRB
+	}
+
+	brb_hendrik_van_brabant = {
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1330.1.1 #Unknown
+		birth = brussels
+		father = brb_jan_iii_van_brabant
+		mother = brb_marie_evreux
+		dynasty = reginar_dynasty
+		tag = BRB
+	}
+
+	brb_godfried_van_brabant = {
+		first_name = { name = name_godfrey }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		adm = 3 dip = 3 mil = 3
+		birth_date = 1333.1.1 #Unknown
+		birth = brussels
+		father = brb_jan_iii_van_brabant
+		mother = brb_marie_evreux
+		dynasty = reginar_dynasty
+		tag = BRB
+	}
+	
+	#########################################
+	#					Clergy				#
+	#@bottom? can only have fathers/mothers #
+	#########################################
 	
 	utr_andries_van_cuijk = {
 		first_name = { name = name_andrew }

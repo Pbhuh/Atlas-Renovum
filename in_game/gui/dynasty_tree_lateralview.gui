@@ -306,7 +306,7 @@ types DynastyTreeLateralView
                                     }
                                 }
 
-                                # RULED COUNTRIES
+                                # RULED COUNTRIES								
                                 overlappingitembox = {
                                     size = { 180 24 }
                                     parentanchor = bottom|left
@@ -323,6 +323,61 @@ types DynastyTreeLateralView
                                     }
                                 }
 
+								
+								# SPOUSE
+                                overlappingitembox = {
+                                    size = { 180 100 }
+                                    parentanchor = bottom|right
+                                    position = {120 -20}
+                                    datamodel = "[Character.GetSpouses]"									
+									item = {
+										widget = {
+											size = {100 100}
+											visible = "[always]"
+			
+											character_frame_small = {
+												blockoverride "character_frame_size" {
+													size = { 100 100 }
+													parentanchor = center
+													position = {3 0}
+												}
+												blockoverride "character_frame_estate_visible" {
+													visible = no
+												}
+												blockoverride "portrait_datacontext" {
+													datacontext = "[Character]"
+												}
+												blockoverride "character_portrait_visible" {
+													visible = yes
+												}
+												blockoverride "character_portrait_ani_visible" {
+													visible = no
+												}
+												blockoverride "portrait_position" {position = { 0 0 }}
+											}
+											character_ribbon_3 = {
+												datacontext = "[Character]"
+												visible = "[And(Not(Character.IsAlive), Character.WasRuler)]"
+												blockoverride "ribbon color" {
+													modify_texture = {
+														using = color_black_texture
+														blend_mode = overlay
+														alpha = 0.2
+													}
+												}
+												blockoverride "stretchable" {}
+											}
+			
+											character_ribbon_3 = {
+												datacontext = "[Character]"
+												visible = "[And(Character.IsAlive, Character.IsRuler)]"										
+												#visible = "[And(Character.IsAlive, Character.IsRuler)]"										
+												blockoverride "stretchable" {}
+											}
+										}
+									}
+                                }
+								
                                 # Cadet Branch?
                                 dynasty_shield_big = {
                                     parentanchor = bottom|right
@@ -330,6 +385,8 @@ types DynastyTreeLateralView
                                     visible = "[DynastyNodeItem.IsFromOtherDynasty]"
                                     datacontext = "[Character.GetDynasty]"
                                 }
+								
+								#expanding list? / checkbox
 								
 								widget = {
 										visible = "[DynastyNodeItem.IsFromOtherDynasty]"

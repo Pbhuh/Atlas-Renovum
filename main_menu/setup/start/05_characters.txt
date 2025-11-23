@@ -282,20 +282,6 @@ character_db={
 		#mother = clementia_of_aquitaine - disputed
 		tag = GEL
 	}
-	gel_jutta_van_gelre = { #countess of wassenberg
-		first_name = { name = name_judith }
-		female = yes
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1087.1.1
-		birth = geldern
-		death_date = 1151.1.1
-		dynasty = wassenberg_dynasty
-		father = gel_gerard_i_van_gelre
-		#mother = clementia_of_aquitaine - disputed
-		#spouse = waleran_ii_duke_of_limburg
-		tag = GEL
-	}
 	gel_ermgard_van_zutphen = { #Last ruler of Zutphen
 		first_name = { name = name_ermengard }
 		female = yes
@@ -619,11 +605,198 @@ character_db={
 		ruler_trait = bold_fighter
 		ruler_trait = zealot
 	}
+	
+	#Limbourg
+	lim_waleran_ii_of_limbourg = {
+		first_name = { name = name_waleram }
+		nickname = { name = "the_pagan" }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1085.1.1
+		death_date = 1139.8.6
+		birth = limbourg
+		#father = 
+		dynasty = limbourg_dynasty
+		#spouse = gel_jutta_van_gelre - daughter of gel_gerard_i_van_gelre
+		tag = LIM
+	}
+	lim_jutta_van_gelre = { #countess of wassenberg
+		first_name = { name = name_judith }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1087.1.1
+		birth = geldern
+		death_date = 1151.1.1
+		dynasty = wassenberg_dynasty
+		father = gel_gerard_i_van_gelre
+		#mother = clementia_of_aquitaine - disputed
+		spouse = lim_waleran_ii_of_limbourg
+		tag = GEL
+	}
+	lim_heinrich_ii_of_limbourg = {
+		first_name = { name = name_henry }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1111.1.1
+		death_date = 1167.8.1
+		birth = limbourg
+		father = lim_waleran_ii_of_limbourg
+		mother = lim_jutta_van_gelre
+		dynasty = limbourg_dynasty
+		tag = LIM
+	}
+	
 	#################################################################
 	#							 1200-1300							#
 	#################################################################
 
-	#1200-1300
+	# HOUSE OF DAMPIERRE (COUNTS OF FLANDERS & NAMUR)
+
+	chp_guy_ii_dampierre = {
+		first_name = { name = name_wido }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		adm = 57 dip = 56 mil = 81
+		birth_date = 1155.1.1
+		death_date = 1216.1.18
+		birth = troyes
+		#father = Guillaume I de Dampierre
+		#mother = Ermengarde de Toucy
+		dynasty = dampierre_dynasty
+		tag = CHP
+		general_trait = glory_seeker
+	}
+
+	# Line of the Counts of Bourbon
+
+	bou_archambaud_viii_bourbon = {
+		first_name = { name = name_archibald }
+		culture = berrichon
+		religion = catholic
+		estate = nobles_estate
+		adm = 60 dip = 71 mil = 28
+		birth_date = 1193.1.1 # Between 1189 & 1197
+		death_date = 1242.7.23
+		birth = troyes
+		father = chp_guy_ii_dampierre
+		#mother = Mathilde I de Bourbon
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty # Founder of the Bourbon line of the House of Dampierre
+		tag = BOU
+		ruler_trait = lawgiver
+	}
+
+	bou_archambaud_ix_bourbon = {
+		first_name = { name = name_archibald }
+		nickname = { name = the_young }
+		culture = berrichon
+		religion = catholic
+		estate = nobles_estate
+		adm = 60 dip = 39 mil = 46
+		birth_date = 1212.1.1
+		death_date = 1249.1.22
+		birth = bourbon
+		father = bou_archambaud_viii_bourbon
+		#mother = Béatrice de Montluçon
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
+		tag = BOU
+		ruler_trait = midas_touched
+	}
+
+	bou_mathilde_ii_bourbon = {
+		first_name = { name = name_matilda }
+		culture = berrichon
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1234.1.1
+		death_date = 1262.1.1
+		birth = bourbon
+		father = bou_archambaud_ix_bourbon
+		mother = bou_yolande_chatillon
+		spouse = bur_eudes_burgundian
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
+		tag = BOU
+	}
+
+	bur_agnes_bourbon = {
+		first_name = { name = name_agnes }
+		culture = berrichon
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1237.1.1
+		death_date = 1287.1.1
+		birth = bourbon
+		father = bou_archambaud_ix_bourbon
+		mother = bou_yolande_chatillon
+		spouse = bur_jean_burgundian
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
+		tag = BUR
+	}
+
+	dre_marie_bourbon = {
+		first_name = { name = name_mary }
+		culture = berrichon
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1220.1.1
+		death_date = 1274.1.1
+		birth = bourbon
+		father = bou_archambaud_viii_bourbon
+		#mother = Béatrice de Montluçon
+		spouse = dre_jean_i_dreux
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
+		tag = BOU
+	}
+
+	fla_guillaume_ii_dampierre = {
+		first_name = { name = name_william }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		adm = 43 dip = 76 mil = 58
+		birth_date = 1196.1.1
+		death_date = 1231.9.3
+		birth = troyes
+		father = chp_guy_ii_dampierre
+		#mother = Mathilde I de Bourbon
+		dynasty = dampierre_dynasty
+		tag = FLA
+	}
+
+	fla_guillaume_iii_dampierre = {
+		first_name = { name = name_william }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1224.1.1
+		death_date = 1251.6.6
+		birth = bruges
+		father = fla_guillaume_ii_dampierre
+		#mother = Marguerite II of Flanders
+		dynasty = dampierre_dynasty
+		tag = FLA
+	}
+
+	fla_guy_i_dampierre = {
+		first_name = { name = name_wido }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		adm = 26 dip = 51 mil = 52
+		birth_date = 1226.1.1
+		death_date = 1305.3.7
+		birth = bruges
+		father = fla_guillaume_ii_dampierre
+		#mother = Marguerite II of Flanders
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty # Founder of the Flanders line of the House of Dampierre
+		tag = FLA
+		ruler_trait = bold_fighter
+		ruler_trait = babbling_buffoon
+	}
 	
 	#BERG
 	brg_adolf_vi_berg = {	
@@ -648,15 +821,76 @@ character_db={
 		dynasty = berg_dynasty #mark/altena dynasty
 		tag = BRG
 	}	
-	#limbourg-Berg
+	#Limbourg
+	lim_heinrich_iii_of_limbourg = {
+		first_name = { name = name_henry }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1140.1.1
+		death_date = 1221.6.21
+		birth = limbourg
+		father = lim_heinrich_ii_of_limbourg
+		dynasty = limbourg_dynasty
+		tag = LIM
+	}
+	lim_waleran_iii_of_limbourg = {
+		first_name = { name = name_waleram }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1165.1.1
+		death_date = 1226.7.2
+		birth = limbourg
+		father = lim_heinrich_iii_of_limbourg
+		dynasty = limbourg_dynasty
+		#spouse = cunigunda of lorraine
+		#spouse = ermensinde of luxembourg
+		tag = LIM
+	}
+	
+	# HOUSE OF Limburg-Luxemburg (Kings of Bohemia & Counts (Dukes) of Luxembourg)
+
+	lux_henri_v_luxembourg = {
+		first_name = { name = name_henry }
+		nickname = { name = nick_the_blonde }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		adm = 38 dip = 61 mil = 72
+		birth_date = 1216.1.1
+		death_date = 1281.12.24
+		birth = arlon
+		father = lim_waleran_iii_of_limbourg
+		#mother = Ermessinde de Luxembourg
+		dynasty = luxembourg_dynasty
+		tag = LUX
+		ruler_trait = bold_fighter
+	}
+
+	# Grandfather of the King of Bohemia & Count of Luxembourg
+	lux_henry_vi_luxembourg = {
+		first_name = { name = name_henry }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		adm = 24 dip = 40 mil = 53
+		birth_date = 1240.1.1
+		death_date = 1288.6.5
+		birth = luxembourg
+		father = lux_henri_v_luxembourg
+		mother = lux_marguerite_scarpone
+		dynasty = luxembourg_dynasty
+		tag = LUX
+		ruler_trait = bold_fighter
+	}
+	#Limbourg-Berg
 	lim_heinrich_iv_of_limbourg = {
 		first_name = { name = name_henry }
 		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1195.1.1
 		death_date = 1247.2.25
-		birth = dusseldorf
-		#father = waleran_iii
+		birth = limbourg
+		father = lim_waleran_iii_of_limbourg
 		dynasty = limbourg_dynasty
 		tag = BRG
 	}
@@ -713,7 +947,7 @@ character_db={
 		tag = BRG
 	}
 	#Limburg	
-	lim_waleran_of_limbourg = { #walaran IV
+	lim_waleran_iv_of_limbourg = { #walaran IV
 		first_name = { name = name_waleram }
 		culture = ripuarian_franconian
 		religion = catholic
@@ -733,7 +967,7 @@ character_db={
 		birth_date = 1245.1.1
 		death_date = 1283.1.1
 		birth = dusseldorf
-		father = lim_waleran_of_limbourg
+		father = lim_waleran_iv_of_limbourg
 		spouse = gel_reinoud_i_van_gelre
 		dynasty = limbourg_dynasty
 		tag = BRG
@@ -1333,6 +1567,24 @@ character_db={
 		ruler_trait = conqueror
 		ruler_trait = bold_fighter
 	}
+
+	# Grandmother of the Duke of Brabant
+	brb_marguerite_dampierre = {
+		first_name = { name = name_margaret }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1251.1.1
+		death_date = 1285.7.3
+		birth = bruges
+		father = fla_guy_i_dampierre
+		#mother = Mahaut de Béthune
+		spouse = brb_jan_i_van_brabant
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = BRB
+	}
+
 	
 ######################################################################
 
@@ -20096,573 +20348,6 @@ character_db={
 		spouse = rou_jean_ii_pierrepont
 		dynasty = dammartin_dynasty
 		tag = ROU
-	}
-
-	# HOUSE OF DAMPIERRE (COUNTS OF FLANDERS & NAMUR)
-
-	chp_guy_ii_dampierre = {
-		first_name = { name = name_wido }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		adm = 57 dip = 56 mil = 81
-		birth_date = 1155.1.1
-		death_date = 1216.1.18
-		birth = troyes
-		#father = Guillaume I de Dampierre
-		#mother = Ermengarde de Toucy
-		dynasty = dampierre_dynasty
-		tag = CHP
-		general_trait = glory_seeker
-	}
-
-	# Line of the Counts of Bourbon
-
-	bou_archambaud_viii_bourbon = {
-		first_name = { name = name_archibald }
-		culture = berrichon
-		religion = catholic
-		estate = nobles_estate
-		adm = 60 dip = 71 mil = 28
-		birth_date = 1193.1.1 # Between 1189 & 1197
-		death_date = 1242.7.23
-		birth = troyes
-		father = chp_guy_ii_dampierre
-		#mother = Mathilde I de Bourbon
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty # Founder of the Bourbon line of the House of Dampierre
-		tag = BOU
-		ruler_trait = lawgiver
-	}
-
-	bou_archambaud_ix_bourbon = {
-		first_name = { name = name_archibald }
-		nickname = { name = the_young }
-		culture = berrichon
-		religion = catholic
-		estate = nobles_estate
-		adm = 60 dip = 39 mil = 46
-		birth_date = 1212.1.1
-		death_date = 1249.1.22
-		birth = bourbon
-		father = bou_archambaud_viii_bourbon
-		#mother = Béatrice de Montluçon
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
-		tag = BOU
-		ruler_trait = midas_touched
-	}
-
-	bou_mathilde_ii_bourbon = {
-		first_name = { name = name_matilda }
-		culture = berrichon
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1234.1.1
-		death_date = 1262.1.1
-		birth = bourbon
-		father = bou_archambaud_ix_bourbon
-		mother = bou_yolande_chatillon
-		spouse = bur_eudes_burgundian
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
-		tag = BOU
-	}
-
-	bur_agnes_bourbon = {
-		first_name = { name = name_agnes }
-		culture = berrichon
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1237.1.1
-		death_date = 1287.1.1
-		birth = bourbon
-		father = bou_archambaud_ix_bourbon
-		mother = bou_yolande_chatillon
-		spouse = bur_jean_burgundian
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
-		tag = BUR
-	}
-
-	dre_marie_bourbon = {
-		first_name = { name = name_mary }
-		culture = berrichon
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1220.1.1
-		death_date = 1274.1.1
-		birth = bourbon
-		father = bou_archambaud_viii_bourbon
-		#mother = Béatrice de Montluçon
-		spouse = dre_jean_i_dreux
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
-		tag = BOU
-	}
-
-	fla_guillaume_ii_dampierre = {
-		first_name = { name = name_william }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		adm = 43 dip = 76 mil = 58
-		birth_date = 1196.1.1
-		death_date = 1231.9.3
-		birth = troyes
-		father = chp_guy_ii_dampierre
-		#mother = Mathilde I de Bourbon
-		dynasty = dampierre_dynasty
-		tag = FLA
-	}
-
-	fla_guillaume_iii_dampierre = {
-		first_name = { name = name_william }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1224.1.1
-		death_date = 1251.6.6
-		birth = bruges
-		father = fla_guillaume_ii_dampierre
-		#mother = Marguerite II of Flanders
-		dynasty = dampierre_dynasty
-		tag = FLA
-	}
-
-	# Line of the Counts of Flanders
-
-	fla_guy_i_dampierre = {
-		first_name = { name = name_wido }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		adm = 26 dip = 51 mil = 52
-		birth_date = 1226.1.1
-		death_date = 1305.3.7
-		birth = bruges
-		father = fla_guillaume_ii_dampierre
-		#mother = Marguerite II of Flanders
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty # Founder of the Flanders line of the House of Dampierre
-		tag = FLA
-		ruler_trait = bold_fighter
-		ruler_trait = babbling_buffoon
-	}
-
-	# Grandfather of the Count of Flanders, Nevers & Rethel & Previous Count of Flanders
-	fla_robert_iii_dampierre = {
-		first_name = { name = name_robert }
-		nickname = { name = the_lion }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		adm = 37 dip = 34 mil = 71
-		birth_date = 1249.1.1
-		death_date = 1322.9.17
-		birth = bruges
-		father = fla_guy_i_dampierre
-		#mother = Mahaut de Béthune
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = FLA
-		ruler_trait = sinner
-		ruler_trait = cruel
-	}
-
-	# Father of the Count of Flanders, Nevers & Rethel & Previous Count of Nevers
-	nev_louis_i_dampierre = {
-		first_name = { name = name_louis }
-		culture = burgundian
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1272.1.1
-		death_date = 1322.7.22
-		birth = bruges
-		father = fla_robert_iii_dampierre
-		mother = nev_yolande_i_burgundian
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = NEV
-	}
-
-	# Count of Flanders, Nevers & Rethel
-	fla_louis_i_dampierre = {
-		first_name = { name = name_louis }
-		culture = burgundian
-		religion = catholic
-		estate = nobles_estate
-		adm = 26 dip = 27 mil = 54
-		birth_date = 1304.1.1
-		birth = nevers
-		father = nev_louis_i_dampierre
-		mother = ret_joan_rethel
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = NEV
-	}
-
-	# Son & Heir of the Count of Flanders, Nevers & Rethel
-	fla_louis_ii_dampierre = {
-		first_name = { name = name_louis }
-		culture = burgundian
-		religion = catholic
-		estate = nobles_estate
-		adm = 36 dip = 16 mil = 8
-		birth_date = 1330.10.25
-		birth = nevers
-		father = fla_louis_i_dampierre
-		mother = fla_marguerite_capet
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = NEV
-		child_trait = child_intelligent
-	}
-
-	# Lady Consort of Monfort & Sister of the Count of Flanders, Nevers & Rethel
-	mon_jeanne_dampierre = {
-		first_name = { name = name_joanna }
-		nickname = { name = Flamme }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		adm = 24 dip = 38 mil = 65
-		female = yes
-		birth_date = 1295.1.1
-		birth = nevers
-		father = nev_louis_i_dampierre
-		mother = ret_joan_rethel
-		spouse = mon_jean_montfort
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = MON
-		ruler_trait = bold_fighter
-		ruler_trait = inspiring_leader
-	}
-
-	# Uncle of the Count of Flanders, Nevers & Rethel
-	fla_robert_cassel = {
-		first_name = { name = name_robert }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		adm = 84 dip = 73 mil = 40
-		birth_date = 1278.1.1
-		death_date = 1331.6.26
-		birth = nevers
-		father = fla_robert_iii_dampierre
-		mother = nev_yolande_i_burgundian
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = FLA
-	}
-
-	# Countess Consort of Bar
-	bar_isabelle_dampierre = {
-		first_name = { name = name_elizabeth }
-		culture = champenais
-		religion = catholic
-		adm = 34 dip = 43 mil = 23
-		female = yes
-		birth_date = 1326.9.15
-		birth = cassel
-		father = fla_robert_cassel
-		mother = fla_janed_dreux
-		spouse = bar_henry_iv_de_bar
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = BAR
-		child_trait = child_prodigy
-	}
-
-	hai_yolande_dampierre = {
-		first_name = { name = name_yolande }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1274.1.1 # Unknown
-		death_date = 1313.1.1
-		birth = bruges
-		father = fla_robert_iii_dampierre
-		mother = nev_yolande_i_burgundian
-		#spouse = hai_gautier_ii_de_enghien
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = HAI
-	}
-
-	#Lords of Termonde
-
-	fla_guillaume_termonde = {
-		first_name = { name = name_william }
-		#nickname = { name = nick_lackland }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		adm = 26 dip = 60 mil = 27
-		birth_date = 1249.1.1 #second son, should be younger than first son?
-		death_date = 1311.1.1
-		birth = bruges
-		father = fla_guy_i_dampierre
-		#mother = Mahaut de Béthune
-		dynasty = dampierre_dynasty
-		tag = FLA
-	}
-
-	# Robert VII of Auvergne's Second Spouse
-	auv_marie_termonde = {
-		first_name = { name = name_mary }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1290.1.1
-		birth = ghent
-		father = fla_guillaume_termonde
-		#mother = fla_alix_clermont
-		spouse = auv_robert_vii_auvergne
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = AUV
-	}
-
-	fla_jean_dampierre = {
-		first_name = { name = name_john }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1295.1.1
-		death_date = 1325.5.2
-		birth = ghent
-		father = fla_guillaume_termonde
-		#mother = fla_alix_clermont
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = FLA
-	}
-
-	ale_marguerite_dampierre = {
-		first_name = { name = name_margaret }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1322.1.1 # Married 1341
-		birth = arras
-		father = fla_jean_dampierre
-		mother = fla_beatrice_chatillon
-		spouse = ale_guillaume_i_craon
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = ALE
-	}
-
-	# Mother of the Count of Blois
-	bls_beatrice_dampierre = {
-		first_name = { name = name_beatrix }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1276.1.1 # Unknown
-		death_date = 1303.1.1
-		birth = namur
-		father = fla_guy_i_dampierre
-		mother = fla_isabelle_luxembourg
-		spouse = bls_hugues_ii_chatillon
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = BLS
-	}
-
-	# Grandmother of the Duke of Brabant
-	brb_marguerite_dampierre = {
-		first_name = { name = name_margaret }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1251.1.1
-		death_date = 1285.7.3
-		birth = bruges
-		father = fla_guy_i_dampierre
-		#mother = Mahaut de Béthune
-		spouse = brb_jan_i_van_brabant
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = BRB
-	}
-
-	# Mother of the Count of Gelre & Zutphen
-	gel_marguerite_dampierre = {
-		first_name = { name = name_margaret }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1274.1.1 # Unknown
-		death_date = 1329.1.1
-		birth = namur
-		father = fla_guy_i_dampierre
-		mother = fla_isabelle_luxembourg
-		spouse = gel_reinoud_i_van_gelre
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = GEL
-	}
-
-	# Line of the Counts of Namur
-
-	# Father of the Count of Namur & Former Count
-	nam_jean_i_dampierre = {
-		first_name = { name = name_john }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1267.1.1
-		death_date = 1330.1.31
-		birth = diepholz
-		father = fla_guy_i_dampierre
-		mother = fla_isabelle_luxembourg
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty # Founder of the Namur line of the House of Dampierre
-		tag = NAM
-		ruler_trait = craven
-		ruler_trait = loose_lips
-	}	
-
-	# Brother of the Count of Namur & Former Count
-	nam_jean_ii_dampierre = {
-		first_name = { name = name_john }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1311.1.1
-		death_date = 1335.4.2
-		birth = namur
-		father = nam_jean_i_dampierre
-		mother = nam_marie_artois
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
-		tag = NAM
-	}
-
-	# Brother of the Count of Namur & Previous Count
-	nam_guido_ii_dampierre = {
-		first_name = { name = name_wido }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1312.1.1
-		death_date = 1336.3.12
-		birth = namur
-		father = nam_jean_i_dampierre
-		mother = nam_marie_artois
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
-		tag = NAM
-	}
-
-	# Count of Namur
-	nam_philippe_iii_dampierre = {
-		first_name = { name = name_philip }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1319.1.1
-		birth = namur
-		father = nam_jean_i_dampierre
-		mother = nam_marie_artois
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
-		tag = NAM
-		fertility = 20
-	}
-
-	# Brother of the Count of Namur & Heir
-	nam_guillaume_i_dampierre = {
-		first_name = { name = name_william }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		adm = 51 dip = 43 mil = 21
-		birth_date = 1324.1.1
-		birth = namur
-		father = nam_jean_i_dampierre
-		mother = nam_marie_artois
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
-		tag = NAM
-		child_trait = child_intelligent
-	}
-
-	#Other Ruler's Siblings	
-	swe_blanka = {
-		first_name = { name = name_blanche }
-		culture = champenais
-		religion = catholic	
-		estate = nobles_estate
-		adm = 45 dip = 34 mil = 7
-		female = yes
-		birth_date = 1320.7.1
-		birth = namur
-		father = nam_jean_i_dampierre
-		mother = nam_marie_artois
-		spouse = swe_magnus_eriksson	
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
-		tag = SWE
-	}
-
-	nam_marguerite_dampierre = {
-		first_name = { name = name_margaret }
-		culture = walloon
-		religion = catholic
-		estate = clergy_estate
-		adm = 30 dip = 48 mil = 12
-		female = yes
-		birth_date = 1323.1.1
-		birth = namur
-		father = nam_jean_i_dampierre
-		mother = nam_marie_artois
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
-		tag = NAM
-		child_trait = child_gregarious
-	}
-
-	nam_robert_dampierre = {
-		first_name = { name = name_robert }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		adm = 25 dip = 37 mil = 40
-		birth_date = 1325.1.1
-		birth = namur
-		father = nam_jean_i_dampierre
-		mother = nam_marie_artois
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
-		tag = NAM
-		child_trait = child_gallant
-	}
-
-	nam_louis_dampierre = {
-		first_name = { name = name_louis }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1325.1.1
-		birth = namur
-		father = nam_jean_i_dampierre
-		mother = nam_marie_artois
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
-		tag = NAM
-	}
-
-	nam_elisabeth_dampierre = {
-		first_name = { name = name_elizabeth } # Should be alternative: Elisabeth
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1329.1.1
-		birth = namur
-		father = nam_jean_i_dampierre
-		mother = nam_marie_artois
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
-		tag = NAM
-	}
-
-	via_marie_dampierre = {
-		first_name = { name = name_mary }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1322.1.1
-		birth = namur
-		father = nam_jean_i_dampierre
-		mother = nam_marie_artois
-		spouse = via_heinrich_ii_von_vianden
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
-		tag = LUX
 	}
 
 	# HOUSE OF DONZY (Former Counts od Nevers, Auxerre & Tonnerre)
@@ -79009,6 +78694,18 @@ adm = 31 dip = 34 mil = 24
 		dynasty = nassau_dynasty
 		tag = NSS
 	}
+	nss_adelheid_von_vianden = {
+		first_name = { name = name_adelaide }
+		female = yes
+		culture = walloon
+		religion = catholic
+		birth_date = 1310.1.1 
+		spouse = nss_otto_ii_nassau
+		birth = vianden
+		dynasty = vianden_dynasty #house of sponheim
+		father = via_philip_ii_von_vianden
+		tag = NSS
+	}	
 
 	#Nassau Dillenburg
 	nsd_johann_i_nassau = { #Ruler
@@ -80267,41 +79964,6 @@ adm = 31 dip = 34 mil = 24
 		tag = HAI
 	}
 	
-	# HOUSE OF LUXEMBOURG (Kings of Bohemia & Counts of Luxembourg)
-
-	lux_henri_v_luxembourg = {
-		first_name = { name = name_henry }
-		nickname = { name = nick_the_blonde }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		adm = 38 dip = 61 mil = 72
-		birth_date = 1216.1.1
-		death_date = 1281.12.24
-		birth = arlon
-		#father = Waleram II de Limbourg
-		#mother = Ermessinde de Luxembourg
-		dynasty = luxembourg_dynasty
-		tag = LUX
-		ruler_trait = bold_fighter
-	}
-
-	# Grandfather of the King of Bohemia & Count of Luxembourg
-	lux_henry_vi_luxembourg = {
-		first_name = { name = name_henry }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		adm = 24 dip = 40 mil = 53
-		birth_date = 1240.1.1
-		death_date = 1288.6.5
-		birth = luxembourg
-		father = lux_henri_v_luxembourg
-		mother = lux_marguerite_scarpone
-		dynasty = luxembourg_dynasty
-		tag = LUX
-		ruler_trait = bold_fighter
-	}
 
 	# Father of the King of Bohemia & Count of Luxembourg & Former Count. First Luxembourg Emperor of the HRE
 	lux_henry_vii_luxembourg = { # https://en.wikipedia.org/wiki/Henry_VII,_Holy_Roman_Emperor
@@ -100318,7 +99980,400 @@ adm = 31 dip = 34 mil = 24
 	
 	#############################
 	#		Atlas Dynasties		#
-	#			BERG			#
+	
+	
+	
+	# Line of the Counts of Flanders
+
+	# Grandfather of the Count of Flanders, Nevers & Rethel & Previous Count of Flanders
+	fla_robert_iii_dampierre = {
+		first_name = { name = name_robert }
+		nickname = { name = the_lion }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		adm = 37 dip = 34 mil = 71
+		birth_date = 1249.1.1
+		death_date = 1322.9.17
+		birth = bruges
+		father = fla_guy_i_dampierre
+		#mother = Mahaut de Béthune
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = FLA
+		ruler_trait = sinner
+		ruler_trait = cruel
+	}
+
+	# Father of the Count of Flanders, Nevers & Rethel & Previous Count of Nevers
+	nev_louis_i_dampierre = {
+		first_name = { name = name_louis }
+		culture = burgundian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1272.1.1
+		death_date = 1322.7.22
+		birth = bruges
+		father = fla_robert_iii_dampierre
+		mother = nev_yolande_i_burgundian
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = NEV
+	}
+
+	# Count of Flanders, Nevers & Rethel
+	fla_louis_i_dampierre = {
+		first_name = { name = name_louis }
+		culture = burgundian
+		religion = catholic
+		estate = nobles_estate
+		adm = 26 dip = 27 mil = 54
+		birth_date = 1304.1.1
+		birth = nevers
+		father = nev_louis_i_dampierre
+		mother = ret_joan_rethel
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = NEV
+	}
+
+	# Son & Heir of the Count of Flanders, Nevers & Rethel
+	fla_louis_ii_dampierre = {
+		first_name = { name = name_louis }
+		culture = burgundian
+		religion = catholic
+		estate = nobles_estate
+		adm = 36 dip = 16 mil = 8
+		birth_date = 1330.10.25
+		birth = nevers
+		father = fla_louis_i_dampierre
+		mother = fla_marguerite_capet
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = NEV
+		child_trait = child_intelligent
+	}
+
+	# Lady Consort of Monfort & Sister of the Count of Flanders, Nevers & Rethel
+	mon_jeanne_dampierre = {
+		first_name = { name = name_joanna }
+		nickname = { name = Flamme }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		adm = 24 dip = 38 mil = 65
+		female = yes
+		birth_date = 1295.1.1
+		birth = nevers
+		father = nev_louis_i_dampierre
+		mother = ret_joan_rethel
+		spouse = mon_jean_montfort
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = MON
+		ruler_trait = bold_fighter
+		ruler_trait = inspiring_leader
+	}
+
+	# Uncle of the Count of Flanders, Nevers & Rethel
+	fla_robert_cassel = {
+		first_name = { name = name_robert }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		adm = 84 dip = 73 mil = 40
+		birth_date = 1278.1.1
+		death_date = 1331.6.26
+		birth = nevers
+		father = fla_robert_iii_dampierre
+		mother = nev_yolande_i_burgundian
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = FLA
+	}
+
+	# Countess Consort of Bar
+	bar_isabelle_dampierre = {
+		first_name = { name = name_elizabeth }
+		culture = champenais
+		religion = catholic
+		adm = 34 dip = 43 mil = 23
+		female = yes
+		birth_date = 1326.9.15
+		birth = cassel
+		father = fla_robert_cassel
+		mother = fla_janed_dreux
+		spouse = bar_henry_iv_de_bar
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = BAR
+		child_trait = child_prodigy
+	}
+
+	hai_yolande_dampierre = {
+		first_name = { name = name_yolande }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1274.1.1 # Unknown
+		death_date = 1313.1.1
+		birth = bruges
+		father = fla_robert_iii_dampierre
+		mother = nev_yolande_i_burgundian
+		#spouse = hai_gautier_ii_de_enghien
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = HAI
+	}
+
+	#Lords of Termonde
+
+	fla_guillaume_termonde = {
+		first_name = { name = name_william }
+		#nickname = { name = nick_lackland }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		adm = 26 dip = 60 mil = 27
+		birth_date = 1249.1.1 #second son, should be younger than first son?
+		death_date = 1311.1.1
+		birth = bruges
+		father = fla_guy_i_dampierre
+		#mother = Mahaut de Béthune
+		dynasty = dampierre_dynasty
+		tag = FLA
+	}
+
+	# Robert VII of Auvergne's Second Spouse
+	auv_marie_termonde = {
+		first_name = { name = name_mary }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1290.1.1
+		birth = ghent
+		father = fla_guillaume_termonde
+		#mother = fla_alix_clermont
+		spouse = auv_robert_vii_auvergne
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = AUV
+	}
+
+	fla_jean_dampierre = {
+		first_name = { name = name_john }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1295.1.1
+		death_date = 1325.5.2
+		birth = ghent
+		father = fla_guillaume_termonde
+		#mother = fla_alix_clermont
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = FLA
+	}
+
+	ale_marguerite_dampierre = {
+		first_name = { name = name_margaret }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1322.1.1 # Married 1341
+		birth = arras
+		father = fla_jean_dampierre
+		mother = fla_beatrice_chatillon
+		spouse = ale_guillaume_i_craon
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = ALE
+	}
+
+	# Mother of the Count of Blois
+	bls_beatrice_dampierre = {
+		first_name = { name = name_beatrix }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1276.1.1 # Unknown
+		death_date = 1303.1.1
+		birth = namur
+		father = fla_guy_i_dampierre
+		mother = fla_isabelle_luxembourg
+		spouse = bls_hugues_ii_chatillon
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = BLS
+	}
+	
+	# Mother of the Count of Gelre & Zutphen
+	gel_marguerite_dampierre = {
+		first_name = { name = name_margaret }
+		culture = champenais
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1274.1.1 # Unknown
+		death_date = 1329.1.1
+		birth = namur
+		father = fla_guy_i_dampierre
+		mother = fla_isabelle_luxembourg
+		spouse = gel_reinoud_i_van_gelre
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = GEL
+	}
+
+	# Line of the Counts of Namur
+
+	# Father of the Count of Namur & Former Count
+	nam_jean_i_dampierre = {
+		first_name = { name = name_john }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1267.1.1
+		death_date = 1330.1.31
+		birth = diepholz
+		father = fla_guy_i_dampierre
+		mother = fla_isabelle_luxembourg
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty # Founder of the Namur line of the House of Dampierre
+		tag = NAM
+		ruler_trait = craven
+		ruler_trait = loose_lips
+	}	
+
+	# Brother of the Count of Namur & Former Count
+	nam_jean_ii_dampierre = {
+		first_name = { name = name_john }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1311.1.1
+		death_date = 1335.4.2
+		birth = namur
+		father = nam_jean_i_dampierre
+		mother = nam_marie_artois
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
+		tag = NAM
+	}
+
+	# Brother of the Count of Namur & Previous Count
+	nam_guido_ii_dampierre = {
+		first_name = { name = name_wido }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1312.1.1
+		death_date = 1336.3.12
+		birth = namur
+		father = nam_jean_i_dampierre
+		mother = nam_marie_artois
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
+		tag = NAM
+	}
+
+	# Count of Namur
+	nam_philippe_iii_dampierre = {
+		first_name = { name = name_philip }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1319.1.1
+		birth = namur
+		father = nam_jean_i_dampierre
+		mother = nam_marie_artois
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
+		tag = NAM
+		fertility = 20
+	}
+
+	# Brother of the Count of Namur & Heir
+	nam_guillaume_i_dampierre = {
+		first_name = { name = name_william }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		adm = 51 dip = 43 mil = 21
+		birth_date = 1324.1.1
+		birth = namur
+		father = nam_jean_i_dampierre
+		mother = nam_marie_artois
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
+		tag = NAM
+		child_trait = child_intelligent
+	}
+
+	#Other Ruler's Siblings	
+	swe_blanka = {
+		first_name = { name = name_blanche }
+		culture = champenais
+		religion = catholic	
+		estate = nobles_estate
+		adm = 45 dip = 34 mil = 7
+		female = yes
+		birth_date = 1320.7.1
+		birth = namur
+		father = nam_jean_i_dampierre
+		mother = nam_marie_artois
+		spouse = swe_magnus_eriksson	
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
+		tag = SWE
+	}
+
+	nam_marguerite_dampierre = {
+		first_name = { name = name_margaret }
+		culture = walloon
+		religion = catholic
+		estate = clergy_estate
+		adm = 30 dip = 48 mil = 12
+		female = yes
+		birth_date = 1323.1.1
+		birth = namur
+		father = nam_jean_i_dampierre
+		mother = nam_marie_artois
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
+		tag = NAM
+		child_trait = child_gregarious
+	}
+
+	nam_robert_dampierre = {
+		first_name = { name = name_robert }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		adm = 25 dip = 37 mil = 40
+		birth_date = 1325.1.1
+		birth = namur
+		father = nam_jean_i_dampierre
+		mother = nam_marie_artois
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
+		tag = NAM
+		child_trait = child_gallant
+	}
+
+	nam_louis_dampierre = {
+		first_name = { name = name_louis }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1325.1.1
+		birth = namur
+		father = nam_jean_i_dampierre
+		mother = nam_marie_artois
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
+		tag = NAM
+	}
+
+	nam_elisabeth_dampierre = {
+		first_name = { name = name_elizabeth } # Should be alternative: Elisabeth
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1329.1.1
+		birth = namur
+		father = nam_jean_i_dampierre
+		mother = nam_marie_artois
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
+		tag = NAM
+	}
+
+
+	#Berg
+	
 	
 	brg_william_i_berg = { #Uncle / Ruler
 		first_name = { name = name_william }
@@ -100538,7 +100593,7 @@ adm = 31 dip = 34 mil = 24
 	
 	
 	#Jülich
-	jul_wilhelm_iv_julich = {
+	jul_wilhelm_iv_julich = { #Grandfather
 		first_name = { name = name_william }
 		culture = westphalian
 		religion = catholic
@@ -100550,7 +100605,7 @@ adm = 31 dip = 34 mil = 24
 		#father = jul_wilhelm_iii_julich
 		#spouse = richardis_van_gelre / margaret_of_gelre - daughters of gel_gerard_iii_van_gelre & margaret_of_brabant
 	}
-	jul_wilhelm_v_coruler_julich = {
+	jul_wilhelm_v_coruler_julich = { #Uncle of Ruler
 		first_name = { name = name_william }
 		culture = westphalian
 		religion = catholic
@@ -100574,6 +100629,30 @@ adm = 31 dip = 34 mil = 24
 		#mother = Mahaut de Béthune
 		spouse = jul_wilhelm_v_coruler_julich
 		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
+		tag = JUL
+	}
+	fla_wilhelm_von_julich = { #cousin of Ruler of Julich - fought in guldensporenslag 1302
+		first_name = { name = name_william }
+		nickname = { name = nick_the_younger }
+		culture = westphalian
+		religion = catholic
+		birth_date = 1275.1.1
+		birth = duren
+		death_date = 1304.8.18
+		dynasty = julich_dynasty
+		father = jul_wilhelm_iv_julich
+		mother = jul_maria_dampierre
+		tag = FLA
+	}
+	jul_walram_julich = { #Uncle of Ruler
+		first_name = { name = name_waleram }
+		culture = westphalian
+		religion = catholic
+		birth_date = 1245.1.1
+		birth = duren
+		death_date = 1297.1.1
+		dynasty = julich_dynasty
+		father = jul_wilhelm_iv_julich
 		tag = JUL
 	}
 	jul_gerhard_v_julich = { #Father of Ruler
@@ -100687,6 +100766,33 @@ adm = 31 dip = 34 mil = 24
 		father = vbg_reinoud_von_valkenburg
 		tag = VBG
 	}
+	zee_gerard_van_voorne = {
+		first_name = { name = name_albert }
+		culture = low_franconian
+		estate = nobles_estate
+		religion = catholic
+		birth_date = 1270.1.1
+		death_date = 1337.4.20
+		birth = middelburg #voorne
+		dynasty = voorne_dynasty
+		#spouse = heilwig van borselen
+		#spouse = elisabeth_van_kleve
+		tag = ZEE
+	}
+	zee_albert_van_voorne = { #
+		first_name = { name = name_albert }
+		culture = low_franconian
+		estate = nobles_estate
+		religion = catholic
+		birth_date = 1300.1.1
+		death_date = 1331.9.25
+		birth = middelburg #voorne
+		dynasty = voorne_dynasty
+		father = zee_gerard_van_voorne
+		#spouse = Mechteld/Mathilde van Wesemaele.
+		#mother = heilwig van borselen
+		tag = ZEE
+	}
 	vbg_machteld_van_voorne = { #Spouse of Ruler
 		first_name = { name = name_matilda }
 		culture = low_franconian
@@ -100694,11 +100800,37 @@ adm = 31 dip = 34 mil = 24
 		female = yes
 		spouse = vbg_dietrich_iv_von_valkenburg
 		birth_date = 1305.1.1
-		birth = middelburg #probably
-		#dynasty = voorne_dynasty - Den Briel
-		#father = 
+		birth = rotterdam #voorne
+		father = zee_gerard_van_voorne
+		dynasty = voorne_dynasty #Den Briel
 		tag = VBG
 	}
+	vbg_jan_von_valkenburg = { #Heir
+		first_name = { name = name_john }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1313.1.1
+		#death_date = 1352.8.10
+		birth = maastricht
+		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty
+		father = vbg_reinoud_von_valkenburg
+		tag = VBG
+	}
+	vbg_joanna_van_voorne = { #future spouse of heir
+		first_name = { name = name_joanna }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		#spouse = vbg_jan_von_valkenburg - 1340
+		birth_date = 1325.1.1
+		#death_date = 1349
+		birth = middelburg #voorne
+		dynasty = voorne_dynasty #Den Briel
+		father = zee_albert_van_voorne 
+		tag = VBG
+	}
+	
+	#Heinsberg
 	
 	hbg_dirk_ii_van_heinsberg = { #    Dietrich I Graf von Sponheim Edelherr von Heinsberg und Blankenburg - Dirk II, Heer van Heinsberg & Blankenberg
 		first_name = { name = name_theodoric }
@@ -100726,15 +100858,55 @@ adm = 31 dip = 34 mil = 24
 		tag = HBG
 	}
 	#Loon
+	loo_arnold_iv_von_loon = {
+		first_name = { name = name_arnold }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1227.1.1 #estimate
+		death_date = 1273.2.22
+		birth = borgloon
+		dynasty = loon_dynasty
+		#spouse = jeanne_countess_of_chiny
+		tag = CHN
+		#diplomat trait
+	}
+	loo_jan_von_loon = {
+		first_name = { name = name_john }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1230.1.1 #estimate
+		death_date = 1278.1.1 #or 1279
+		birth = borgloon
+		dynasty = loon_dynasty
+		father = loo_arnold_iv_von_loon
+		#mother = jeanne_countess_of_chiny
+		#spouse = matilda_of_julich daughter of william_iv_of_julich
+		tag = CHN
+	}
+	chn_lodewijk_v_chiny = {
+		first_name = { name = name_louis }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1235.1.1 #estimate
+		death_date = 1299.1.1
+		birth = borgloon
+		dynasty = loon_dynasty
+		father = loo_arnold_iv_von_loon
+		#mother = jeanne_countess_of_chiny
+		#spouse = johanna 1225-1299 daughter of henry_ii_of_bar
+		tag = CHN
+	}
 	loo_arnold_v_von_loon = { #Predecessor
 		first_name = { name = name_arnold }
 		culture = low_franconian
 		religion = catholic
-		birth_date = 1250.1.1 #estimate
+		birth_date = 1258.1.1
 		death_date = 1328.8.22 #resigned in 1313 in chiny, 1323 in loon respectively
 		birth = borgloon
 		dynasty = loon_dynasty
-		#father = arnold_v_van_loon
+		father = loo_jan_von_loon
+		#mother = matilda_of_julich
+		#spouse = margaret_of_salm_vianden
 		tag = CHN
 	}
 	loo_lodewijk_iv_von_loon = { #Maternal Uncle of Ruler
@@ -101194,17 +101366,57 @@ adm = 31 dip = 34 mil = 24
 	
 	#Vianden Family
 
+	via_philip_ii_von_vianden = {
+		first_name = { name = name_philip }
+		culture = walloon
+		religion = catholic
+		birth_date = 1280.1.1
+		death_date = 1316.1.1 #between 1315.1.9 - 1317.1.8
+		birth = vianden
+		dynasty = vianden_dynasty
+		tag = VIA
+	}	
+	via_adelheid_arnsberg = {
+		first_name = { name = name_adelaide }
+		female = yes
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1277.1.1
+		#death_date = 1315.1.1
+		birth = arnsberg
+		dynasty = cuijk_dynasty
+		father = anb_ludwig_i_arnsberg
+		spouse = via_philip_ii_von_vianden
+		#mother = anb_petronella_von_julich
+		tag = VIA
+	}
 	via_heinrich_ii_von_vianden = {
 		first_name = { name = name_henry }
 		culture = walloon
 		religion = catholic
 		adm = 56 dip = 59 mil = 47
-		birth_date = 1317.1.1
-		birth = luxembourg
+		birth_date = 1306.1.1 #? before 1315.1.1
+		#death_date = 1337.9.1
+		birth = vianden
 		dynasty = vianden_dynasty
-		tag = LUX
+		father = via_philip_ii_von_vianden
+		mother = via_adelheid_arnsberg
+		tag = VIA
+	}	
+	via_marie_dampierre = {
+		first_name = { name = name_mary }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1322.1.1
+		birth = namur
+		father = nam_jean_i_dampierre
+		mother = nam_marie_artois
+		spouse = via_heinrich_ii_von_vianden
+		dynasty = dampierre_dynasty # Should be dynasty = dampierre_namur_dynasty
+		tag = VIA
 	}
-
 	via_maria_von_vianden = {
 		first_name = { name = name_mary }
 		culture = walloon
@@ -101216,8 +101428,10 @@ adm = 31 dip = 34 mil = 24
 		dynasty = vianden_dynasty
 		father = via_heinrich_ii_von_vianden
 		mother = via_marie_dampierre
-		tag = LUX
+		tag = VIA
 	}
+	#Sponheim-Vianden
+	
 
 	#Horne
 	hrn_gerard_i_van_horne = { #Father of Ruler

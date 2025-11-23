@@ -8528,4 +8528,10 @@ dynasty_manager = {
 		home = dusseldorf
 		dynasty_name_type = location
 	}
+	
+	voorne_dynasty = {
+		name = { name = voorne_dynasty }
+		home = rotterdam #brielle / voorne
+		dynasty_name_type = location
+	}
 }

@@ -52,6 +52,41 @@ LUX = {
 	religion_definition = catholic
 }
 
+LLR = {
+	color = rgb { 200 240 173 }
+
+	culture_definition = moselle_franconian
+	religion_definition = catholic
+}
+
+LRO = {
+	color = rgb { 53 28 73 }
+
+	culture_definition = moselle_franconian
+	religion_definition = catholic
+}
+
+ARL = {
+	color = rgb { 18 140 92 }
+
+	culture_definition = moselle_franconian
+	religion_definition = catholic
+}
+
+VIA = {
+	color = rgb { 24 172 73 }
+
+	culture_definition = moselle_franconian
+	religion_definition = catholic
+}
+
+BGZ = {
+	color = rgb { 77 108 73 }
+
+	culture_definition = low_franconian
+	religion_definition = catholic
+}
+
 LIE = {
 	color = map_LIE
 	color2 = rgb { 149 186 37 }

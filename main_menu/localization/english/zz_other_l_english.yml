@@ -1,0 +1,16 @@
+﻿l_english:
+ arkel_dynasty: "Arkel"
+ virneburg_dynasty: "Virneburg"
+ berg_dynasty: "Berg"
+ voorne_dynasty: "Voorne"
+ #
+ nick_hierosolymita: "Hierosolymita"
+ nick_the_frisian: "the Frisian"
+ #
+ OUTLINER_CATEGORY_MILITARY_RAISE_LEVIES:1 "[Root.RaiseLevies_Militia]"
+ raise_levies_normal: "Raise Levies"
+ raise_levies_peasants_militia: "Raise Militia"
+ #
+ rank_county_lordship:1 "Lordship"
+ rank_duchy_bishopric:1 "Archbishopric"
+ rank_duchy_bishopric_ruler_male:1 "Archbishop"

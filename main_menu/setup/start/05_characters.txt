@@ -74,6 +74,22 @@ character_db={
 		tag = BGN
 	}
 
+	#Flanders-Hainaut
+	
+	hai_boudewijn_v_hainaut = {		
+		first_name = { name = name_baldwin }
+		culture = flemish
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1150.1.1
+		death_date = 1195.12.7
+		birth = bruges
+		#father = fla_boudewijn_iv_hainaut
+		#mother = alice_of_namur
+		dynasty = vlaanderen_dynasty #boudewijn_dynasty flanders_dynasty
+		tag = FLA
+	}
+	
 	fla_marguerite_i_alsace = {
 		first_name = { name = name_margaret }
 		culture = lorrain
@@ -86,7 +102,7 @@ character_db={
 		birth = bruges
 		father = fla_thierry_alsace
 		#mother = Sybille d'Anjou
-		#spouse = Baudouin V of Hainaut
+		spouse = hai_boudewijn_v_hainaut
 		dynasty = alsace_dynasty # Should be dynasty = alsace_flanders_dynasty
 		tag = FLA
 		ruler_trait = naive
@@ -139,16 +155,114 @@ character_db={
 		
 	# Holland Gerulfing
 	
+	hol_dirk_i_gerulfing = { #starts getting really confusing after this
+		first_name = { name = name_theodoric.dutch_dialect.alternative }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 875.1.1
+		death_date = 939.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		#father = gerulf_ii or gerulf of west frisia
+		#spouse = 
+		tag = HOL
+	}	
+	hol_dirk_ii_gerulfing = {
+		first_name = { name = name_theodoric.dutch_dialect.alternative }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 932.1.1
+		death_date = 988.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		#father = hol_floris_i_gerulfing
+		#spouse = 
+		tag = HOL
+	}	
+	hol_arnulf_gerulfing = {
+		first_name = { name = name_arnold }
+		culture = frisian
+		religion = catholic
+		birth_date = 951.1.1
+		death_date = 993.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		#father = hol_floris_i_gerulfing
+		#spouse = 
+		tag = HOL
+	}	
+	hol_dirk_iii_gerulfing = {
+		first_name = { name = name_theodoric.dutch_dialect.alternative }
+		nickname = { name = nick_hierosolymita }
+		culture = frisian
+		religion = catholic
+		birth_date = 982.1.1
+		death_date = 1039.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		#father = hol_floris_i_gerulfing
+		#spouse = 
+		tag = HOL
+	}	
+	hol_dirk_iv_gerulfing = {
+		first_name = { name = name_theodoric.dutch_dialect.alternative }
+		culture = frisian
+		religion = catholic
+		birth_date = 1015.1.1
+		death_date = 1049.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		father = hol_dirk_iii_gerulfing
+		#spouse = 
+		tag = HOL
+	}	
+	hol_floris_i_gerulfing = {
+		first_name = { name = name_florence }
+		culture = frisian
+		religion = catholic
+		birth_date = 1025.1.1
+		death_date = 1061.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		father = hol_dirk_iv_gerulfing
+		#spouse = 
+		tag = HOL
+	}	
+	hol_dirk_v_gerulfing = {
+		first_name = { name = name_theodoric.dutch_dialect.alternative }
+		culture = low_franconian #making the swap here to dutch
+		religion = catholic
+		birth_date = 1054.1.1
+		death_date = 1091.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		father = hol_floris_i_gerulfing
+		#spouse = 
+		#regent = gertrude_of_saxony & robert_the_frisian_of_flanders
+		tag = HOL
+	}	
+	hol_floris_ii_gerulfing = {
+		first_name = { name = name_florence }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1084.1.1
+		death_date = 1121.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		father = hol_dirk_v_gerulfing
+		#spouse = 
+		tag = HOL
+	}	
 	hol_dirk_vi_gerulfing = { #Paternal of Bentheim, Holland and Tecklenburg
 		first_name = { name = name_theodoric.dutch_dialect.alternative }
-		culture = dutch #forcing the name for now
+		culture = low_franconian #forcing the name for now
 		religion = catholic
 		birth_date = 1114.1.1
 		death_date = 1157.8.5
 		birth = the_hague
 		dynasty = gerulfing_dynasty
 		#spouse = sophie luxemburg
-		#father Dirk VI gerulfing
+		father = hol_floris_ii_gerulfing
 		tag = HOL
 	}	
 	hol_floris_iii_gerulfing = {
@@ -752,7 +866,7 @@ character_db={
 		tag = BOU
 	}
 
-	fla_guillaume_ii_dampierre = {
+	fla_guillaume_ii_dampierre = { #ruler through wife - isn't counted as regnal number
 		first_name = { name = name_william }
 		culture = champenais
 		religion = catholic
@@ -766,6 +880,38 @@ character_db={
 		dynasty = dampierre_dynasty
 		tag = FLA
 	}
+	
+	fla_boudewijn_ix_van_vlaanderen = {		
+		first_name = { name = name_baldwin }
+		culture = flemish
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1172.7.1
+		death_date = 1205.1.1
+		birth = bruges
+		father = hai_boudewijn_v_hainaut
+		mother = fla_marguerite_i_alsace
+		#spouse = marie_of_champagne
+		dynasty = vlaanderen_dynasty #boudewijn_dynasty flanders_dynasty
+		tag = FLA
+	}
+	
+	fla_margaretha_ii_van_vlaanderen = { #of constantinople
+		first_name = { name = name_margaret }
+		nickname = { name = nick_the_black }
+		female = yes
+		culture = flemish
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1202.1.1
+		death_date = 1280.2.10
+		birth = bruges
+		father = fla_boudewijn_ix_van_vlaanderen #I of constantinople, VI of hainaut
+		spouse = fla_guillaume_ii_dampierre
+		#spouse = bouchard_iv_avesnes
+		dynasty = vlaanderen_dynasty #boudewijn_dynasty flanders_dynasty
+		tag = FLA
+	}
 
 	fla_guillaume_iii_dampierre = {
 		first_name = { name = name_william }
@@ -776,7 +922,7 @@ character_db={
 		death_date = 1251.6.6
 		birth = bruges
 		father = fla_guillaume_ii_dampierre
-		#mother = Marguerite II of Flanders
+		mother = fla_margaretha_ii_van_vlaanderen
 		dynasty = dampierre_dynasty
 		tag = FLA
 	}
@@ -791,7 +937,7 @@ character_db={
 		death_date = 1305.3.7
 		birth = bruges
 		father = fla_guillaume_ii_dampierre
-		#mother = Marguerite II of Flanders
+		mother = fla_margaretha_ii_van_vlaanderen
 		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty # Founder of the Flanders line of the House of Dampierre
 		tag = FLA
 		ruler_trait = bold_fighter
@@ -1198,7 +1344,7 @@ character_db={
 	}
 	gel_otto_ii_van_gelre = { #Grandfather of Ruler
 		first_name = { name = name_otto }
-		nickname = { name = "the lame" } #fix later
+		nickname = { name = lame }
 		culture = low_franconian
 		religion = catholic
 		birth_date = 1215.1.1
@@ -13402,7 +13548,7 @@ character_db={
 		ruler_trait = entrepreneur
 		ruler_trait = bold_fighter
 	}
-
+	
 	por_afonso_ii_portugal = {	
 		first_name = { name = name_alphonse }
 		nickname = { name = the_fat }
@@ -13419,6 +13565,8 @@ character_db={
 		tag = POR
 		ruler_trait = lawgiver
 	}
+		
+	#portugal continue
 
 	por_sancho_ii_portugal = {	
 		first_name = { name = name_sancho }
@@ -13588,13 +13736,29 @@ character_db={
 		estate = nobles_estate
 		adm = 52 dip = 41 mil = 38
 		birth_date = 1188.3.24
-		death_date = 1223.7.27
+		death_date = 1233.7.27
 		birth = coimbra
 		father = por_sancho_i_portugal
 		#mother = Dolça d'Aragó
 		dynasty = burgundy_portuguese_dynasty
 		tag = FLA
 		ruler_trait = lawgiver
+	}
+	
+	fla_johanna_van_vlaanderen = { #of constantinople
+		first_name = { name = name_joanna }
+		female = yes
+		culture = flemish
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1194.1.1 #between and 1200
+		death_date = 1244.12.5
+		birth = bruges
+		father = fla_boudewijn_ix_van_vlaanderen #I of constantinople, VI of hainaut
+		spouse = fla_fernando_portugal
+		#spouse = sav_thomas_ii_piedmont - second marriage
+		dynasty = vlaanderen_dynasty #boudewijn_dynasty flanders_dynasty
+		tag = FLA
 	}
 
 	# Robertian Dukes of Burgundy
@@ -100793,6 +100957,48 @@ adm = 31 dip = 34 mil = 24
 		#mother = heilwig van borselen
 		tag = ZEE
 	}
+	bgz_gerard_wesemale = { #first heer of bergen op zoom
+		first_name = { name = name_gerard }
+		female = yes
+		culture = low_franconian
+		estate = nobles_estate
+		religion = catholic
+		birth_date = 1253.1.1 #before
+		death_date = 1309.1.1
+		birth = bergen_zoom
+		dynasty = wezemale_dynasty
+		#father = arnold van wesemale
+		#father = beatrix van breda
+		tag = BGZ
+	}
+	bgz_arnold_wesemale = { #
+		first_name = { name = name_arnold }
+		female = yes
+		culture = low_franconian
+		estate = nobles_estate
+		religion = catholic
+		birth_date = 1270.1.1
+		death_date = 1312.1.1
+		birth = bergen_zoom
+		dynasty = wezemale_dynasty
+		father = bgz_gerard_wesemale
+		tag = BGZ
+	}
+	bgz_mathilde_wesemale = { #
+		first_name = { name = name_matilda }
+		female = yes
+		culture = low_franconian
+		estate = nobles_estate
+		religion = catholic
+		birth_date = 1310.1.1
+		death_date = 1337.1.1 #unknown
+		birth = bergen_zoom
+		dynasty = wezemale_dynasty
+		father = bgz_arnold_wesemale
+		spouse = zee_albert_van_voorne
+		#mother = heilwig van borselen
+		tag = BGZ
+	}
 	vbg_machteld_van_voorne = { #Spouse of Ruler
 		first_name = { name = name_matilda }
 		culture = low_franconian
@@ -100827,6 +101033,7 @@ adm = 31 dip = 34 mil = 24
 		birth = middelburg #voorne
 		dynasty = voorne_dynasty #Den Briel
 		father = zee_albert_van_voorne 
+		mother = bgz_mathilde_wesemale
 		tag = VBG
 	}
 	

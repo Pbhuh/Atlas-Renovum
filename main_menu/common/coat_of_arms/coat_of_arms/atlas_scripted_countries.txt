@@ -178,32 +178,46 @@ GRN = { # Groningen
 		color3 = color4
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }				
 	}
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = color4
-		color2 = color5
-		color3 = color4
-		instance = { position = { 0.5 0.575 } scale = { 0.22 0.20 } }
-	}
 	#colored_emblem = {
-	#	texture = "ce_shield_frame.dds"
-	#	color1 = color2
-	#	color2 = color2
-	#	instance = { position = { 0.5 0.51 } scale = { 0.40 0.40 } }		
-	#}		
-	#colored_emblem = {
-	#	texture = "ce_bars_02_checky_shield.dds" #change to tri color
-	#	color1 = color4
-	#	color2 = color5
-	#	instance = { position = { 0.5 0.498 } scale = { 0.345 0.385 } }		
-	#}	
-	#colored_emblem = {
-	#	texture = "ordinaries_shield_tricolor.dds"
+	#	texture = "ce_tricolor_horizontal.dds"
 	#	color1 = color4
 	#	color2 = color5
 	#	color3 = color4
 	#	instance = { position = { 0.5 0.575 } scale = { 0.22 0.20 } }
 	#}
+	colored_emblem = {
+		texture = "ce_shield_frame.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.51 } scale = { 0.40 0.40 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_escutcheon_charge_fess.dds" #change to tri color
+		color1 = color4
+		color2 = color5
+		instance = { position = { 0.5 0.498 } scale = { 0.345 0.385 } }		
+	}	
+}
+
+GRN_ommelanden = { #provincial coat of arms
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+	
+    sub = {
+        parent = "GRN" # Q1-Q4 Nevers
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }
+    }
+    sub = {
+        parent = "FRI_OMMELANDEN" # Q2-Q3 Flanders
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+    }
+    sub = {
+        parent = "sub_quartered_bold"
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }
 }
 
 #LUB = { # Lubeck - Arms of the city, since 16th c. (Same as the Hansa before)

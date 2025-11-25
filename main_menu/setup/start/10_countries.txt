@@ -12460,6 +12460,8 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 
+			ruler_term = { character = fla_boudewijn_ix_van_vlaanderen start_date = 1204.1.1 end_date = 1205.1.1 regnal_number = 1 }
+			#ruler_term = { character = henry_of_flanders start_date = 1205.1.1 end_date = 1216.6.11 }
 			ruler_term = { character = lat_pierre_ii_courtenay start_date = 1216.6.11 end_date = 1217.1.1 regnal_number = 1 }
 			ruler_term = { character = lat_robert_i_courtenay start_date = 1219.8.1 end_date = 1228.1.1 regnal_number = 1 }
 			ruler_term = { character = lat_baudouin_ii_courtenay start_date = 1228.1.1 end_date = 1229.4.9 regnal_number = 2 }
@@ -17359,7 +17361,10 @@ countries = {
 		include = "german_principality"
 		government = {
 			ruler = hai_guillaume_de_hainault
-
+			
+			ruler_term = { character = hai_boudewijn_v_hainaut end_date = 1195.12.7 regnal_number = 5 }
+			ruler_term = { character = fla_boudewijn_ix_van_vlaanderen start_date = 1195.12.7 end_date = 1205.1.1 regnal_number = 6 }
+			
 			ruler_term = { character = hai_jean_i_avesnes start_date = 1253.11.29 end_date = 1257.12.24 regnal_number = 1 }
 
 			ruler_term = { character = hai_jean_ii_de_hainault start_date = 1280.1.1 end_date = 1304.8.22 regnal_number = 2 }
@@ -17423,12 +17428,26 @@ countries = {
 			ruler_term = { character = fla_thierry_alsace start_date = 1128.7.28 end_date = 1168.1.17 regnal_number = 1 }
 			ruler_term = { character = fla_philippe_i_alsace start_date = 1168.1.17 end_date = 1191.6.1 regnal_number = 1 }
 			ruler_term = { character = fla_marguerite_i_alsace start_date = 1191.6.1 end_date = 1194.11.15 regnal_number = 1 }
-
-			ruler_term = { character = fla_fernando_portugal start_date = 1212.1.1 end_date = 1223.7.27 regnal_number = 1 } # As Marital Co-Ruler
-
-			ruler_term = { character = fla_guillaume_iii_dampierre start_date = 1247.1.1 end_date = 1251.6.6 regnal_number = 3 } #Associated
-
-			ruler_term = { character = fla_guy_i_dampierre start_date = 1279.1.1 end_date = 1305.3.7 regnal_number = 1 }
+			ruler_term = { character = fla_boudewijn_ix_van_vlaanderen start_date = 1194.11.15 end_date = 1205.1.1 regnal_number = 9 }
+			ruler_term = { character = fla_johanna_van_vlaanderen start_date = 1205.1.1 end_date = 1212.1.1 regnal_number = 1 }
+			ruler_term = { #marriage
+				character = fla_johanna_van_vlaanderen start_date = 1205.1.1 end_date = 1233.7.27 regnal_number = 1
+				character = fla_fernando_portugal start_date = 1212.1.1 end_date = 1233.7.27 regnal_number = 1 
+			}
+			ruler_term = { #marriage
+				character = fla_johanna_van_vlaanderen start_date = 1233.7.27 end_date = 1244.12.5 regnal_number = 1
+				character = sav_thomas_ii_piedmont start_date = 1233.7.27 end_date = 1244.12.5 regnal_number = 1 
+			}
+			ruler_term = { character = fla_margaretha_ii_van_vlaanderen start_date = 1244.12.5 end_date = 1247.1.1 regnal_number = 2 } 
+			ruler_term = { #with her son
+				character = fla_margaretha_ii_van_vlaanderen start_date = 1244.12.5 end_date = 1251.6.6 regnal_number = 2
+				character = fla_guillaume_iii_dampierre start_date = 1247.1.1 end_date = 1251.6.6 regnal_number = 2 
+			}
+			ruler_term = { #with her son
+				character = fla_margaretha_ii_van_vlaanderen start_date = 1251.6.6 end_date = 1278.12.29 regnal_number = 2
+				character = fla_guy_i_dampierre start_date = 1251.6.6 end_date = 1278.12.29 regnal_number = 1
+			}			
+			ruler_term = { character = fla_guy_i_dampierre start_date = 1251.6.6 end_date = 1305.3.7 regnal_number = 1 }
 			ruler_term = { character = fla_robert_iii_dampierre start_date = 1305.3.7 end_date = 1322.9.17 regnal_number = 3 }
 			ruler_term = { character = fla_louis_i_dampierre start_date = 1322.9.17 regnal_number = 1 }
 
@@ -17466,13 +17485,24 @@ countries = {
 		include = "catholic_monarchy"
 		include = "german_principality"
 		government = {
-			ruler = hol_jan_i_gerulfing
+			ruler = hai_guillaume_de_hainault
 
-			ruler_term = { character = hol_dirk_vi_gerulfing start_date = 1121.1.1 end_date = 1157.1.1 regnal_number = 4 }
+			ruler_term = { character = hol_dirk_i_gerulfing start_date = 896.1.1 end_date = 939.1.1 regnal_number = 1 }
+			ruler_term = { character = hol_dirk_ii_gerulfing start_date = 939.1.1 end_date = 988.1.1 regnal_number = 2 }
+			ruler_term = { character = hol_arnulf_gerulfing start_date = 988.1.1 end_date = 993.1.1 regnal_number = 1 }
+			ruler_term = { character = hol_dirk_iii_gerulfing start_date = 993.1.1 end_date = 1039.1.1 regnal_number = 3 }
+			ruler_term = { character = hol_dirk_iv_gerulfing start_date = 1039.1.1 end_date = 1049.1.1 regnal_number = 4 }
+			ruler_term = { character = hol_floris_i_gerulfing start_date = 1049.1.1 end_date = 1061.1.1 regnal_number = 1 }
+			ruler_term = { character = hol_dirk_v_gerulfing start_date = 1061.1.1 end_date = 1091.1.1 regnal_number = 5 }
+			ruler_term = { character = hol_floris_ii_gerulfing start_date = 1091.1.1 end_date = 1121.1.1 regnal_number = 2 }
+			ruler_term = { character = hol_dirk_vi_gerulfing start_date = 1121.1.1 end_date = 1157.1.1 regnal_number = 6 }
 			ruler_term = { character = hol_floris_iii_gerulfing start_date = 1157.1.1 end_date = 1190.1.1 regnal_number = 3 }
 			ruler_term = { character = hol_dirk_vii_gerulfing start_date = 1190.1.1 end_date = 1203.1.1 regnal_number = 7 }
-			ruler_term = { character = hol_ada_gerulfing start_date = 1203.1.1 end_date = 1207.1.1 } #overlap
-			ruler_term = { character = hol_willem_i_gerulfing start_date = 1203.1.1 end_date = 1222.1.1 regnal_number = 1 }
+			ruler_term = {
+				character = hol_ada_gerulfing start_date = 1203.1.1 end_date = 1207.1.1  
+				character = hol_willem_i_gerulfing start_date = 1203.1.1 end_date = 1222.1.1 regnal_number = 1			
+			}
+			ruler_term = { character = hol_willem_i_gerulfing start_date = 1207.1.1 end_date = 1222.1.1 regnal_number = 1 }
 			ruler_term = { character = hol_floris_iv_gerulfing start_date = 1222.1.1 end_date = 1234.1.1 regnal_number = 4 }
 			ruler_term = { character = hol_willem_ii_gerulfing start_date = 1235.1.1 end_date = 1256.1.1 regnal_number = 2 }
 			ruler_term = { character = hol_floris_v_gerulfing start_date = 1256.1.1 end_date = 1296.1.1 regnal_number = 5 }
@@ -17755,10 +17785,18 @@ countries = {
 		include = "catholic_monarchy"
 		include = "german_principality"
 		government = {
-			ruler = brb_jan_iii_van_brabant
+			ruler = vbg_joanna_van_voorne
 			
+			#Creation, before part of Breda
+			ruler_term = { character = bgz_gerard_wesemale start_date = 1290.1.1 end_date = 1309.1.1 regnal_number = 1 }
+			ruler_term = { character = bgz_arnold_wesemale start_date = 1309.1.1 end_date = 1312.1.1 regnal_number = 1 }
 			ruler_term = { 
-				character = brb_jan_iii_van_brabant start_date = 1312.10.27 regnal_number = 3 
+				character = bgz_mathilde_wesemale start_date = 1313.1.1 end_date = 1337.1.1 regnal_number = 1
+				character = zee_albert_van_voorne start_date = 1313.1.1 end_date = 1331.9.25 regnal_number = 1
+			}
+			ruler_term = { 
+				character = vbg_joanna_van_voorne start_date = 1331.9.25 regnal_number = 1
+				#vbg_jan_von_valkenburg
 			}
 						
 			heir = brb_johanna_van_brabant
@@ -17838,7 +17876,7 @@ countries = {
 			champenais
 		}
 
-		country_rank = rank_duchy
+		country_rank = rank_county
 		capital = liege
 	}
 
@@ -39416,7 +39454,7 @@ countries = {
 			ruler_term = {	character = lim_heinrich_iii_of_limbourg start_date = 1167.8.1 end_date = 1221.6.21 regnal_number = 3 }
 			ruler_term = {	character = lim_waleran_iii_of_limbourg start_date = 1221.6.21 end_date = 1226.7.2 regnal_number = 3 }
 			ruler_term = {	character = lim_heinrich_iv_of_limbourg start_date = 1226.7.2 end_date = 1247.1.1 regnal_number = 4 }
-			ruler_term = {	character = lim_waleran_of_limbourg start_date = 1247.11.7 end_date = 1279.1.1 regnal_number = 4 }
+			ruler_term = {	character = lim_waleran_iv_of_limbourg start_date = 1247.11.7 end_date = 1279.1.1 regnal_number = 4 }
 			ruler_term = {	character = lim_irmgard_of_limbourg start_date = 1279.1.1 end_date = 1283.1.1 regnal_number = 1	}
 			ruler_term = {	character = gel_reinoud_i_van_gelre start_date = 1283.11.7 end_date = 1288.6.5 regnal_number = 1 }
 						

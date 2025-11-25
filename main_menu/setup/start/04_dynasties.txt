@@ -8511,6 +8511,16 @@ dynasty_manager = {
 		home = qiaoxian
 	}
 	
+	#############################
+	#		Atlas Dynasties		#
+	#############################
+	
+	vlaanderen_dynasty = {
+		name = { name = vlaanderen_dynasty }
+		home = brugge
+		dynasty_name_type = location
+	}
+	
 	arkel_dynasty = {
 		name = { name = arkel_dynasty }
 		home = gorinchem
@@ -8534,4 +8544,10 @@ dynasty_manager = {
 		home = rotterdam #brielle / voorne
 		dynasty_name_type = location
 	}
+	
+	wezemale_dynasty = {
+		name = { name = wezemale_dynasty }
+		home = bergen_zoom
+	}
+	
 }

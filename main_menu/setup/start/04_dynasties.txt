@@ -8517,9 +8517,11 @@ dynasty_manager = {
 	
 	vlaanderen_dynasty = {
 		name = { name = vlaanderen_dynasty }
-		home = brugge
+		home = bruges
 		dynasty_name_type = location
 	}
+	
+	#vlaanderen_hainaut_dynasty = {
 	
 	arkel_dynasty = {
 		name = { name = arkel_dynasty }
@@ -8545,9 +8547,8 @@ dynasty_manager = {
 		dynasty_name_type = location
 	}
 	
-	wezemale_dynasty = {
-		name = { name = wezemale_dynasty }
+	wesemale_dynasty = {
+		name = { name = wesemale_dynasty }
 		home = bergen_zoom
 	}
-	
 }

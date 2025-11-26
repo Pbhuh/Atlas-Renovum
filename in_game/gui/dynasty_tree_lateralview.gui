@@ -151,6 +151,7 @@ types DynastyTreeLateralView
                                     position = {-8 0}
 									#visible = "[DynastyNodeItem.GetCharacter.IsFromOtherDynasty]"
 									#visible = "[DynastyNodeItem.GetCharacter.GetFather.IsReal]"
+                                    visible = "[DynastyNodeItem.GetFather.IsFromOtherDynasty]"
 
                                     widget = {
                                         visible = "[Not(ObjectsEqual(Character.GetDynasty.Self, DynastyTreeView.GetDynasty.Self ))]"
@@ -334,7 +335,219 @@ types DynastyTreeLateralView
                                 dynasty_shield_mid = {
                                     parentanchor = bottom|left
                                     position = {-30 -35}
-                                    visible = "[DynastyNodeItem.IsFromOtherDynasty]"
+                                    visible = "[DynastyNodeItem.GetFather.IsFromOtherDynasty]"
+                                    datacontext = "[Character.GetDynasty]"
+                                }
+
+                                lowborn_coat_of_arms = {
+                                    parentanchor = bottom|left
+                                    position = {-8 -4}
+                                }
+                            }
+							
+							
+							#Mother
+                            widget = {
+                                size = { 100 100 }
+                                datacontext = "[DynastyNodeItem.GetCharacter.GetMother]"
+                                visible = "[Not(DynastyNodeItem.ShowSimplifiedVersion)]"
+								#visible = "[DynastyNodeItem.GetCharacter.GetFather.IsValid]"
+								#visible = "[DynastyNodeItem.GetCharacter.GetFather.IsFromOtherDynasty]"
+								#visible = "[DynastyNodeItem.GetCharacter.GetFather.IsValid]"
+								#visible = "[DynastyNodeItem.GetCharacter.GetFather.IsValid]"
+                                allow_outside = yes
+
+                                widget = {
+                                    size = { 100 100 }
+                                    parentanchor = top|left
+                                    position = {-8 0}
+									#visible = "[DynastyNodeItem.GetCharacter.IsFromOtherDynasty]"
+									#visible = "[DynastyNodeItem.GetCharacter.GetFather.IsReal]"
+                                    #visible = "[DynastyNodeItem.GetMother.IsFromOtherDynasty]"
+
+                                    widget = {
+                                        visible = "[Not(ObjectsEqual(Character.GetDynasty.Self, DynastyTreeView.GetDynasty.Self ))]"
+                                        size = { 100% 100% }
+                                        parentanchor = hcenter|top
+
+                                        character_frame_medium = {
+                                            parentanchor = hcenter|top
+
+                                            blockoverride "character_portrait_visible" {
+                                                visible = "[DynastyNodeItem.ShouldPortraitBeRendered]"
+                                            }
+
+                                            blockoverride "character_frame_size" {
+                                                size = { 100 100 }
+                                            }
+
+                                            datacontext = "[DynastyNodeItem.GetCharacter.GetMother]"
+                                            blockoverride "character_frame_texture" {
+                                                texture = "gfx/interface/component_decoration/character_frames/character_non_stretchable_frame_2.dds"
+                                            }
+											blockoverride "character_ribbon" {
+												character_ribbon_3 = {
+													visible = "[DynastyNodeItem.IsRuler]"
+													blockoverride "ribbon color" {
+														modify_texture = {
+															visible = "[Character.IsAlive]"
+															using = color_crown_texture
+															blend_mode = overlay
+														}
+														modify_texture = {
+															visible = "[Not(Character.IsAlive)]"
+															using = color_black_texture
+															blend_mode = add
+															alpha = 0.2
+														}
+													}
+													blockoverride "stretchable" {}
+												}
+											}
+                                            blockoverride "character_frame_texture_color" {
+                                                modify_texture = {
+                                                    visible = "[Not(DynastyNodeItem.GetCharacter.IsAlive)]"
+                                                    using = color_black_texture
+                                                    blend_mode = multiply
+                                                    alpha = 0.2
+                                                }
+                                            }
+                                        }
+
+                                        gender_dynasty_button = {
+                                            visible = "[And(Not(DynastyNodeItem.ShouldPortraitBeRendered), Not(Character.IsFemale))]"
+                                            blockoverride "gender_dynasty_button_size" {
+                                                size = { 100 100 }
+                                            }
+                                        }
+
+                                        gender_dynasty_button = {
+                                            visible = "[And(Not(DynastyNodeItem.ShouldPortraitBeRendered), Character.IsFemale)]"
+                                            blockoverride "gender_dynasty_button_size" {
+                                                size = { 100 100 }
+                                            }
+                                            blockoverride "gender_dynasty_button_texture" {
+                                                texture = "gfx/interface/icons/ruler/female.dds"
+                                            }
+                                        }
+                                    }
+
+                                    widget = {
+                                        visible = "[ObjectsEqual(Character.GetDynasty.Self, DynastyTreeView.GetDynasty.Self )]"
+                                        size = { 100% 100% }
+                                        parentanchor = hcenter|top
+
+                                        character_frame_medium = {
+											
+                                            parentanchor = hcenter|top
+                                            blockoverride "character_portrait_visible" {
+                                                visible = "[DynastyNodeItem.ShouldPortraitBeRendered]"
+                                            }
+                                            
+                                            blockoverride "character_frame_size" {
+                                                size = { 124 148 }
+                                            }
+                                            blockoverride "portrait_datacontext" {
+                                                datacontext = "[DynastyNodeItem.GetCharacter]"
+                                            }
+                                            blockoverride "character_contextmenu" {
+                                                datacontext = "[DynastyNodeItem.GetCharacter]"
+                                                contextmenu_enabled = "[Character.IsValid]"
+                                                contextmenu_widget = {
+                                                    CharacterContextMenu = {
+                                                        blockoverride "open_dynasty_entry" { using = pan_to_character_contextmenu_entry }
+                                                    }
+                                                }
+                                            }
+                                            blockoverride "character_frame_texture_color" {
+                                                modify_texture = {
+                                                    visible = "[Not(Character.IsAlive)]"
+                                                    using = color_black_texture
+                                                    blend_mode = add
+                                                    alpha = 0.2
+                                                }
+                                            }
+
+											blockoverride "character_ribbon" {
+												character_ribbon_3 = {
+													visible = "[DynastyNodeItem.IsRuler]"
+													blockoverride "ribbon color" {
+														modify_texture = {
+															visible = "[Character.IsAlive]"
+															using = color_crown_texture
+															blend_mode = overlay
+														}
+														modify_texture = {
+															visible = "[Not(Character.IsAlive)]"
+															using = color_black_texture
+															blend_mode = add
+															alpha = 0.2
+														}
+													}
+													blockoverride "stretchable" {}
+												}
+											}
+                                        }
+
+                                        # male
+                                        gender_dynasty_button = {
+                                            visible = "[And(Not(DynastyNodeItem.ShouldPortraitBeRendered), Not(Character.IsFemale))]"
+                                            blockoverride "gender_dynasty_button_size" {
+                                                size = { 100 100 }
+                                            }
+                                            blockoverride "gender_dynasty_button_contextmenu" {
+                                                contextmenu_enabled = "[Character.IsValid]"
+                                                contextmenu_widget = {
+                                                    CharacterContextMenu = {
+                                                        blockoverride "open_dynasty_entry" { using = pan_to_character_contextmenu_entry }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        # female
+                                        gender_dynasty_button = {
+                                            visible = "[And(Not(DynastyNodeItem.ShouldPortraitBeRendered), Character.IsFemale)]"
+                                            blockoverride "gender_dynasty_button_size" {
+                                                size = { 100 100 }
+                                            }
+                                            blockoverride "gender_dynasty_button_texture" {
+                                                texture = "gfx/interface/icons/ruler/female.dds"
+                                            }
+                                            blockoverride "gender_dynasty_button_contextmenu" {
+                                                contextmenu_enabled = "[Character.IsValid]"
+                                                contextmenu_widget = {
+                                                    CharacterContextMenu = {
+                                                        blockoverride "open_dynasty_entry" { using = pan_to_character_contextmenu_entry }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                # RULED COUNTRIES
+                                overlappingitembox = {
+                                    size = { 180 24 }
+                                    parentanchor = bottom|left
+                                    position = {8 0}
+                                    datamodel = "[Character.GetAllTitles]"
+                                    item = {
+                                        country_flag_small = {
+                                            visible = "[RulerTerm.RuledIsCountry]"
+                                            datacontext = "[RulerTerm.GetRuledCountry]"
+                                            blockoverride "tooltip" {
+                                                tooltip = "[RulerTerm.GetNameAndTitleInfo]"
+                                            }
+                                        }
+                                    }
+                                }
+
+                                # OTHER DYNASTY COAT
+                                dynasty_shield_mid = {
+                                    parentanchor = bottom|left
+                                    position = {-30 -35}
+                                    visible = "[DynastyNodeItem.GetFather.IsFromOtherDynasty]"
                                     datacontext = "[Character.GetDynasty]"
                                 }
 

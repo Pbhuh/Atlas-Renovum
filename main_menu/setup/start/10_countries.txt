@@ -39739,8 +39739,9 @@ countries = {
 		include = "catholic_monarchy_no_coast"
 		include = "german_principality"
 		government = {
-
 			ruler = hrn_willem_iv_van_horne
+			
+			ruler_term = {	character = hrn_diederik_loon start_date = 1040.1.1 end_date = 1095.1.2 regnal_number = 1	}
 			ruler_term = {	character = hrn_gerard_i_van_horne start_date = 1301.1.1 end_date = 1330.1.1 regnal_number = 1	}
 			ruler_term = {	character = hrn_willem_iv_van_horne start_date = 1330.1.1 regnal_number = 4	}
 

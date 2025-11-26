@@ -12461,8 +12461,9 @@ countries = {
 			heir_selection = cognatic_primogeniture
 
 			ruler_term = { character = fla_boudewijn_ix_van_vlaanderen start_date = 1204.1.1 end_date = 1205.1.1 regnal_number = 1 }
-			#ruler_term = { character = henry_of_flanders start_date = 1205.1.1 end_date = 1216.6.11 }
+			ruler_term = { character = lat_hendrik_van_vlaanderen start_date = 1205.1.1 end_date = 1216.6.11 }
 			ruler_term = { character = lat_pierre_ii_courtenay start_date = 1216.6.11 end_date = 1217.1.1 regnal_number = 1 }
+			ruler_term = { character = lat_yolanda_van_vlaanderen start_date = 1217.1.1 end_date = 1219.8.1 regnal_number = 1 }
 			ruler_term = { character = lat_robert_i_courtenay start_date = 1219.8.1 end_date = 1228.1.1 regnal_number = 1 }
 			ruler_term = { character = lat_baudouin_ii_courtenay start_date = 1228.1.1 end_date = 1229.4.9 regnal_number = 2 }
 			ruler_term = { character = lat_jean_i_brienne start_date = 1229.4.9 end_date = 1237.3.27 regnal_number = 1 } # Co-Ruler during the minority of Baldwin II
@@ -17186,10 +17187,14 @@ countries = {
 		government = {
 			ruler = boh_john_luxembourg
 
-			ruler_term = { character = fcb_otton_hohenstaufen start_date = 1196.8.14 end_date = 1197.1.1 regnal_number = 1 }
-
-			ruler_term = { character = lux_henri_v_luxembourg start_date = 1247.2.17 end_date = 1281.12.24 regnal_number = 5 }
-			ruler_term = { character = lux_henry_vi_luxembourg start_date = 1281.12.24 end_date = 1288.6.5 regnal_number = 6 }
+			
+			#ruler_term = { character = conrad_i_luxembourg start_date = 1059.1.1 end_date = 1086.8.8 regnal_number = 1 } # deposed 1190, title lost 1195, died 1196
+			ruler_term = { character = nam_ermesinde_luxembourg start_date = 1086.8.8 end_date = 1139.8.19 regnal_number = 1 }
+			ruler_term = { character = nam_henry_i_namur 		start_date = 1139.8.19  end_date = 1196.8.14 regnal_number = 4 }
+			ruler_term = { character = fcb_otton_hohenstaufen 	start_date = 1196.8.14 end_date = 1197.1.1 regnal_number = 1 }
+			ruler_term = { character = lim_ermensinde_namur start_date = 1197.1.1 end_date = 1247.2.17  regnal_number = 2 }
+			ruler_term = { character = lux_henri_v_luxembourg 	start_date = 1247.2.17 end_date = 1281.12.24 regnal_number = 5 }
+			ruler_term = { character = lux_henry_vi_luxembourg	start_date = 1281.12.24 end_date = 1288.6.5 regnal_number = 6 }
 			ruler_term = { character = lux_henry_vii_luxembourg start_date = 1288.6.5 end_date = 1313.8.24 regnal_number = 7 }
 			ruler_term = { character = boh_john_luxembourg start_date = 1313.8.24 regnal_number = 1 }
 
@@ -17231,9 +17236,10 @@ countries = {
 		include = "german_principality"
 		government = {
 			ruler = boh_john_luxembourg
-
-			ruler_term = { character = fcb_otton_hohenstaufen start_date = 1196.8.14 end_date = 1197.1.1 regnal_number = 1 }
-
+			
+			ruler_term = { character = nam_henry_i_namur 		start_date = 1139.8.19  end_date = 1196.8.14 regnal_number = 4 }
+			ruler_term = { character = fcb_otton_hohenstaufen 	start_date = 1196.8.14 end_date = 1197.1.1 regnal_number = 1 }
+			ruler_term = { character = lim_ermensinde_namur start_date = 1197.1.1 end_date = 1247.2.17  regnal_number = 2 }
 			ruler_term = { character = lux_henri_v_luxembourg start_date = 1247.2.17 end_date = 1281.12.24 regnal_number = 5 }
 			ruler_term = { character = lux_henry_vi_luxembourg start_date = 1281.12.24 end_date = 1288.6.5 regnal_number = 6 }
 			ruler_term = { character = lux_henry_vii_luxembourg start_date = 1288.6.5 end_date = 1313.8.24 regnal_number = 7 }
@@ -17278,14 +17284,11 @@ countries = {
 		government = {
 			ruler = boh_john_luxembourg
 			
-			ruler_term = {	character = lim_waleran_ii_of_limbourg start_date = 1119.1.1 end_date = 1139.8.6 regnal_number = 2 }
-			ruler_term = {	character = lim_heinrich_ii_of_limbourg start_date = 1139.8.6 end_date = 1167.8.1 regnal_number = 2 }
-			ruler_term = {	character = lim_heinrich_iii_of_limbourg start_date = 1167.8.1 end_date = 1221.6.21 regnal_number = 3 }
-			ruler_term = {	character = lim_waleran_iii_of_limbourg start_date = 1221.6.21 end_date = 1226.7.2 regnal_number = 3 }
-
-			ruler_term = { character = fcb_otton_hohenstaufen start_date = 1196.8.14 end_date = 1197.1.1 regnal_number = 1 }
-
-			ruler_term = { character = lux_henri_v_luxembourg start_date = 1247.2.17 end_date = 1281.12.24 regnal_number = 5 }
+			ruler_term = { character = lim_waleran_ii_of_limbourg start_date = 1119.1.1 end_date = 1139.8.6 regnal_number = 2 }
+			ruler_term = { character = lim_heinrich_ii_of_limbourg start_date = 1139.8.6 end_date = 1167.8.1 regnal_number = 2 }
+			ruler_term = { character = lim_heinrich_iii_of_limbourg start_date = 1167.8.1 end_date = 1221.6.21 regnal_number = 3 }
+			ruler_term = { character = lim_waleran_iii_of_limbourg start_date = 1221.6.21 end_date = 1226.7.2 regnal_number = 3 }
+			ruler_term = { character = lux_henri_v_luxembourg start_date = 1226.7.2 end_date = 1281.12.24 regnal_number = 5 }
 			ruler_term = { character = lux_henry_vi_luxembourg start_date = 1281.12.24 end_date = 1288.6.5 regnal_number = 6 }
 			ruler_term = { character = lux_henry_vii_luxembourg start_date = 1288.6.5 end_date = 1313.8.24 regnal_number = 7 }
 			ruler_term = { character = boh_john_luxembourg start_date = 1313.8.24 regnal_number = 1 }
@@ -34160,7 +34163,14 @@ countries = {
 		dynasty = rieneck_dynasty
 		government = {
 			ruler = rie_udelhild_rieneck
-
+			
+			#arnold_ii was son of adelaide_of_metz, only daughter of gerard burgrave of metz and count of rieneck
+			ruler_term = { character = loo_arnold_ii_loon  	start_date = 1126.1.1	end_date = 1139.4.11	regnal_number = 2 } 
+			ruler_term = { character = loo_lodewijk_i_loon  start_date = 1139.4.11	end_date = 1171.8.11 	regnal_number = 1 }
+			ruler_term = { character = loo_gerard_loon     	start_date = 1171.8.11 	end_date = 1194.1.1		regnal_number = 1 } 
+			ruler_term = { character = loo_gerard_rheineck_loon start_date = 1194.1.1 end_date = 1216.1.1 	regnal_number = 2 }
+			ruler_term = { character = loo_arnold_iii_loon 	start_date = 1216.1.1	end_date = 1221.5.24 	regnal_number = 3 }
+			ruler_term = { character = loo_lodewijk_iii_loon  start_date = 1221.5.24 end_date = 1243.5.15	regnal_number = 2 }			
 			ruler_term = { character = rie_ludwig_iii_rieneck start_date = 1243.1.1 end_date = 1289.1.1 regnal_number = 3 }
 			ruler_term = { character = rie_thomas_i_rieneck start_date = 1289.1.1 end_date = 1293.1.1 regnal_number = 1 }
 			ruler_term = { character = rie_ludwig_v_rieneck start_date = 1293.1.1 end_date = 1333.7.3 regnal_number = 5 }
@@ -39457,10 +39467,14 @@ countries = {
 		dynasty = heinsberg_dynasty
 		government = {
 			ruler = loo_dietrich_iv_von_heinsberg
-
-			#ruler_term = { character = lodewijk_v start_date = 12??.1.1 end_date = 12??.1.1 regnal_number = 5 } - paternal uncle of next ruler
-			ruler_term = { character = loo_arnold_v_von_loon start_date = 1299.1.1 end_date = 1313.1.1 regnal_number = 5 }
-			ruler_term = { character = loo_lodewijk_iv_von_loon start_date = 1323.1.1 end_date = 1336.1.22 regnal_number = 4 } #maternal uncle of next ruler
+			
+			#ruler_term = { character = chn_louis_iv_chiny 	birth_date = 1173.1.1 	end_date = 1226.10.7 	regnal_number = 4 }
+			#ruler_term = { character = joan_chiny  	birth_date = 1205.1.1 	end_date = 1271.1.17		regnal_number = 3 } # minor, regency
+			ruler_term = { character = loo_arnold_iv_loon  	start_date = 1227.12.31	end_date = 1268.1.19 	regnal_number = 4 } # or 1273.4.22
+			#ruler_term = { character = loo_jan_loon     	start_date = 1272.4.22 	end_date = 1279.1.19 	regnal_number = 1 }
+			ruler_term = { character = chn_lodewijk_v_chiny 	start_date = 1268.1.19 	end_date = 1299.1.1 	regnal_number = 5 }
+			ruler_term = { character = loo_arnold_v_loon start_date = 1299.1.1 end_date = 1313.1.1 regnal_number = 5 }
+			ruler_term = { character = loo_lodewijk_iv_loon start_date = 1313.1.1 end_date = 1336.1.22 regnal_number = 6 } #maternal uncle of next ruler
 			ruler_term = { character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.22 regnal_number = 3 }
 
 			aristocracy_vs_plutocracy = -20
@@ -39537,14 +39551,24 @@ countries = {
 		government = {
 
 			ruler = nam_philippe_iii_dampierre
+			
+			# Succession terms for the County of Namur (House of Namur only)
 
+			ruler_term = { character = nam_berengar_namur      start_date = 946.1.1    end_date = 946.12.31   regnal_number = 0 }
+			ruler_term = { character = nam_robert_i_namur      start_date = 946.12.31  end_date = 981.12.31   regnal_number = 1 }
+			ruler_term = { character = nam_albert_i_namur      start_date = 981.12.31  end_date = 1011.12.31  regnal_number = 1 }
+			ruler_term = { character = nam_albert_ii_namur     start_date = 1011.12.31 end_date = 1063.7.1    regnal_number = 2 }
+			ruler_term = { character = nam_albert_iii_namur    start_date = 1063.7.1   end_date = 1102.6.22   regnal_number = 3 }
+			ruler_term = { character = nam_godfrey_i_namur     start_date = 1102.6.22  end_date = 1139.8.19   regnal_number = 1 }
+			ruler_term = { character = nam_henry_i_namur       start_date = 1139.8.19  end_date = 1190.1.1  regnal_number = 1 } # deposed 1190, title lost 1195, died 1196
+			ruler_term = { character = hai_boudewijn_v_hainaut start_date = 1190.1.1 end_date = 1195.12.7 regnal_number = 5 }
+			ruler_term = { character = nam_philip_van_vlaanderen start_date = 1195.12.7 end_date = 1212.10.9 regnal_number = 1 }
+			ruler_term = { character = lat_yolanda_van_vlaanderen start_date = 1212.10.9 end_date = 1219.8.1 regnal_number = 1 }
 			ruler_term = { character = nam_philippe_ii_courtenay start_date = 1212.10.9 end_date = 1226.1.1 regnal_number = 2 }
 			ruler_term = { character = nam_henri_ii_courtenay start_date = 1226.1.1 end_date = 1229.1.1 regnal_number = 2 }
 			ruler_term = { character = lux_marguerite_courtenay start_date = 1229.1.1 end_date = 1237.1.1 regnal_number = 1 }
 			ruler_term = { character = lat_baudouin_ii_courtenay start_date = 1237.1.1 end_date = 1256.1.1 regnal_number = 2 }
-
 			ruler_term = { character = lux_henri_v_luxembourg start_date = 1256.1.1 end_date = 1263.1.1 regnal_number = 3 }
-
 			ruler_term = { character = fla_guy_i_dampierre start_date = 1263.1.1 end_date = 1305.3.7 regnal_number = 1 }
 			ruler_term = { character = nam_jean_i_dampierre start_date = 1305.3.7 end_date = 1330.1.31 regnal_number = 1 }
 			ruler_term = { character = nam_jean_ii_dampierre start_date = 1330.1.31 end_date = 1335.4.2 regnal_number = 2 }
@@ -39573,6 +39597,7 @@ countries = {
 	}
 
 	LOO = { #Loon
+	#https://nl.wikipedia.org/wiki/Graafschap_Rieneck
 		own_control_core = {
 			hasselt bree borgloon
 		}
@@ -39582,12 +39607,21 @@ countries = {
 		include = "catholic_monarchy_no_coast"
 		include = "german_principality"
 		government = {
-
 			ruler = loo_dietrich_iv_von_heinsberg
 			
-			#ruler_term = { character = jan_van_loon start_date = 12??.1.1 end_date = 12??.1.1 regnal_number = 1 }
-			ruler_term = { character = loo_arnold_v_von_loon start_date = 1279.1.1 end_date = 1323.1.1 regnal_number = 5 }
-			ruler_term = { character = loo_lodewijk_iv_von_loon start_date = 1323.1.1 end_date = 1336.1.22 regnal_number = 4 } #maternal uncle of next ruler
+			ruler_term = { character = loo_emmo_loon      	start_date = 1046.1.1	end_date = 1078.4.16 	regnal_number = 1 }
+			ruler_term = { character = loo_arnold_i_loon   	start_date = 1078.4.16 	end_date = 1126.1.1		regnal_number = 1 }
+			ruler_term = { character = loo_arnold_ii_loon  	start_date = 1126.1.1	end_date = 1139.4.11	regnal_number = 2 } 
+			ruler_term = { character = loo_lodewijk_i_loon  start_date = 1139.4.11	end_date = 1171.8.11 	regnal_number = 1 }
+			ruler_term = { character = loo_gerard_loon     	start_date = 1171.8.11 	end_date = 1194.1.1		regnal_number = 1 } 
+			ruler_term = { character = loo_lodewijk_ii_loon start_date = 1194.1.1	end_date = 1218.4.29 	regnal_number = 2 }
+			ruler_term = { character = loo_hendrik_loon 	start_date = 1218.4.29 	end_date = 1218.8.2 	regnal_number = 3 }
+			ruler_term = { character = loo_arnold_iii_loon 	start_date = 1218.8.2	end_date = 1221.5.24 	regnal_number = 3 }
+			ruler_term = { character = loo_lodewijk_iii_loon  	start_date = 1221.5.24 	end_date = 1227.1.1		regnal_number = 3 } # minor, regency
+			ruler_term = { character = loo_arnold_iv_loon  	start_date = 1227.12.31	end_date = 1272.4.22 	regnal_number = 4 } # or 1273.4.22
+			ruler_term = { character = loo_jan_loon     	start_date = 1272.4.22 	end_date = 1279.1.19 	regnal_number = 1 }
+			ruler_term = { character = loo_arnold_v_loon 	start_date = 1279.1.19 	end_date = 1323.1.1 	regnal_number = 5 } #resigned in 1313 in chiny, 1323 in loon respectively
+			ruler_term = { character = loo_lodewijk_iv_loon start_date = 1323.1.1 	end_date = 1336.1.22 	regnal_number = 4 } #maternal uncle of next ruler
 			ruler_term = { character = loo_dietrich_iv_von_heinsberg start_date = 1336.1.22 regnal_number = 3 }
 
 			regnal_numbers = {
@@ -39619,9 +39653,16 @@ countries = {
 			ruler = vbg_dietrich_iv_von_valkenburg
 			heir = vbg_jan_von_valkenburg
 			
-			ruler_term = { character = hbg_godfried_von_heinsberg_valkenburg start_date = 1167.4.8 end_date = 1180.1.1 regnal_number = 1 } #+ wife
-			ruler_term = { character = hbg_adelheid_von_heinsberg start_date = 1180.1.1 end_date = 1217.2.11 }
-			#inherited by cleves branch
+			#ruler_term = { character = vbg_ermgard_van_verdun start_date = 1041.1.1 end_date = 1041.1.1 regnal_number = 1 }
+			#ruler_term = { character = vbg_irmintrude_van_zutphen start_date = 1041.1.1 end_date = 1083.1.1 regnal_number = 1 }
+			#ruler_term = { character = vbg_guda_van_valkenburg start_date = 1083.1.1 end_date = 1118.1.1 regnal_number = 1 }
+			#oda of walbeck, heiress of guda_van_valkenburg married goswin, 
+			ruler_term = { character = hbg_goswin_i_van_wassenberg start_date = 1106.1.1 end_date = 1128.4.1 regnal_number = 1 }
+			ruler_term = { character = hbg_goswin_ii_von_heinsberg start_date = 1128.4.1 end_date = 1167.4.8 regnal_number = 2 }
+			ruler_term = { character = vbg_goswin_iii_von_heinsberg_valkenburg start_date = 1170.1.1 end_date = 1188.1.1 regnal_number = 3 }
+			ruler_term = { character = vbg_goswin_iv_von_heinsberg_valkenburg start_date = 1188.1.1 end_date = 1212.1.1 regnal_number = 4 }
+			ruler_term = { character = hbg_adelheid_von_heinsberg start_date = 1212.1.1 end_date = 1217.2.11 }
+			#inherited by cleves branch through son of adelheid
 			ruler_term = { character = hbg_dirk_i_von_heinsberg start_date = 1217.2.11 end_date = 1227.11.4 regnal_number = 1 }
 			ruler_term = { character = vbg_dirk_ii_von_valkenburg start_date = 1227.11.4 end_date = 1268.10.15 regnal_number = 2 }
 			ruler_term = { character = vbg_waleran_the_red start_date = 1268.10.15 end_date = 1302.9.5 }

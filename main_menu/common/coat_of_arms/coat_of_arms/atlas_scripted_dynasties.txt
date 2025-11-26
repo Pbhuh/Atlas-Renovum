@@ -172,4 +172,64 @@ voorne_dynasty = {
 	}
 }
 
+julich_hengebach_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red"
+	
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red_secondary"
+	color4 = "white"
+	color5 = "red"
+
+	colored_emblem = {
+		texture = "ce_lion_wide.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color4
+		instance = { position = { 0.25 0.5 } scale = { 0.85 0.95 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.75 0.5 } scale = { 0.5 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_eagle_long.dds"
+		color1 = color5
+		color2 = "yellow_mid"
+		color3 = color4
+		instance = { position = { 0.75 0.51 } scale = { 0.90 0.925 } }
+	}
+    sub = {
+        parent = "sub_div_per_pale"
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }
+}
+
+namur_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red"
+	
+	colored_emblem = {
+		texture = "ce_lion_rampant_shield.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color1
+		instance = { position = { 0.5 0.475 } scale = { 0.9 0.9 } }
+	}
+	colored_emblem = {
+		texture = "ce_bend_01_shield.dds"
+		color1 = color1
+		color2 = color3
+		instance = { position = { 0.5 0.475 } scale = { 1 1 } }
+	}
+}
+
 #arkel_dynasty tag = grh

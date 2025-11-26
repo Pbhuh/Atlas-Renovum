@@ -288,10 +288,12 @@ diplomacy_manager = {
 
     #-------Low Lands-------
     dependency = { first = HOL second = ZEE subject_type = fiefdom }
-    dependency = { first = BRB second = BDA subject_type = fiefdom }
+    dependency = { first = BRB second = BDA subject_type = fiefdom } #vassal
+    dependency = { first = BRB second = BGZ subject_type = vassal }
     dependency = { first = HOL second = GRH subject_type = vassal }
-    #dependency = { first = UTR second = GRN subject_type = fiefdom }
     dependency = { first = LIE second = MEH subject_type = vassal }
+    #dependency = { first = UTR second = GRN subject_type = fiefdom }
+    #dependency = { first = LUX second = VIA subject_type = vassal }
 
     #-------Baltics-------
     dependency = { first = TEU second = ERM subject_type = vassal }

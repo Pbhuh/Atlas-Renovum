@@ -1,0 +1,20 @@
+﻿l_english:
+ GRN: "Groningen"
+ GRN_ADJ: "Groninger"
+ GRH: "Arkel" #placeholder
+ GRH_ADJ: "Arkelian" #placeholder
+ MEH: "Mechelen"
+ MEH_ADJ: "Mechelian"
+ BDA: "Breda"
+ BDA_ADJ: "Bredaian"
+ ARL: "Arlon"
+ ARL_ADJ: "Arlonian"
+ VIA: "Vianden"
+ VIA_ADJ: "Viandener"
+ LRO: "La Roche"
+ LRO_ADJ: "La Rochian"
+ LLR: "Lower Lotharingia"
+ LLR_lothiers: "Lothiers"
+ LLR_ADJ: "Lower Lotharingian"
+ BGZ: "Bergen op Zoom"
+ BGZ_ADJ: "Bergener"

@@ -19,6 +19,64 @@ default_dynasty = {
 
 ###
 
+vlaanderen_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_gironny_12_shield.dds"
+		color1 = color1
+		color2 = color2	
+		instance = { position = { 0.5 0.5 } scale = { 1 1 } }				
+	}		
+	
+	#colored_emblem = {
+	#	texture = "ce_gironny_escutcheon_shield.dds"
+	#	color1 = color1
+	#	color2 = color2			
+	#	color3 = color3			
+	#	instance = { position = { 0.5 0.5 } scale = { 1 1 } }				
+	#}		
+	
+	colored_emblem = {
+		texture = "ce_escutcheon_shield.dds"
+		color1 = color3
+		color2 = color3			
+		instance = { position = { 0.5 0.495 } scale = { 0.9 0.9 } }				
+	}		
+}
+
+vlaanderen_hainaut_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+
+	colored_emblem = {
+		texture = "ce_chevrons_03_shield.dds"
+		color1 = color2
+		color2 = color2	
+		instance = { position = { 0.5 0.5 } scale = { 1 1 } }				
+	}
+}
+
+wesemale_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_fleur_de_lis.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.38 0.28 } scale = { 0.47 0.47 }  }
+		instance = { position = { 0.62 0.28 } scale = { 0.47 0.47 }  }
+		instance = { position = { 0.5 0.70 } scale = { 0.47 0.47 }  }		
+	}		
+}
+
 wassenberg_dynasty = {
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"
@@ -95,6 +153,81 @@ katzenelnbogen_dynasty = { #same as holland/gerulfing
 		color2 = color3
 		color3 = color1
 		instance = { position = { 0.5 0.475 } scale = { 0.9 0.9 } }			
+	}
+}
+
+voorne_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "blue_mid"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_lion_rampant_guardant_shield.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color4
+		instance = { position = { 0.5 0.475 } scale = { 0.9 0.9 } }			
+	}
+}
+
+julich_hengebach_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red"
+	
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red_secondary"
+	color4 = "white"
+	color5 = "red"
+
+	colored_emblem = {
+		texture = "ce_lion_wide.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color4
+		instance = { position = { 0.38 0.45 } scale = { 0.40 0.40 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.75 0.5 } scale = { 0.5 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_eagle_long.dds"
+		color1 = color5
+		color2 = "yellow_mid"
+		color3 = color4
+		instance = { position = { 0.62 0.45 } scale = { 0.40 0.40 } }
+	}
+    sub = {
+        parent = "sub_div_per_pale"
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }
+}
+
+namur_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red"
+	
+	colored_emblem = {
+		texture = "ce_lion_rampant_shield.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color1
+		instance = { position = { 0.5 0.475 } scale = { 0.9 0.9 } }
+	}
+	colored_emblem = {
+		texture = "ce_bend_bendlet_shield.dds"
+		color1 = color3
+		instance = { position = { 0.5 0.475 } scale = { 1 1 } }
 	}
 }
 

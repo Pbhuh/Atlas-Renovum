@@ -1,0 +1,11 @@
+﻿RaiseLevies_Militia = {
+	type = country
+	text = {
+		localization_key = raise_levies_peasants_militia
+		trigger = { has_reform = government_reform:peasants_free_peasantry }
+	}
+	text = {
+		localization_key = raise_levies_normal
+		fallback = yes
+	}
+}

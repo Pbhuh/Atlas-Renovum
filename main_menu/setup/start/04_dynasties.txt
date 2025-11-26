@@ -2577,6 +2577,7 @@ dynasty_manager = {
 		name = { name = kleve_dynasty }
 		home = kleve
 		dynasty_name_type = location
+		#parent = wassenberg_dynasty
 	}
 
 	berthout_dynasty = {
@@ -2858,9 +2859,15 @@ dynasty_manager = {
 		home = heilbronn #Ehrenberg
 		dynasty_name_type = location
 	}
-
+	
 	julich_dynasty = {
 		name = { name = julich_dynasty }
+		home = duren #Jülich
+		dynasty_name_type = location
+	}
+
+	julich_hengebach_dynasty = { #julich-hengebach
+		name = { name = julich_hengebach_dynasty }
 		home = duren #Jülich
 		dynasty_name_type = location
 	}
@@ -2885,7 +2892,8 @@ dynasty_manager = {
 
 	loon_dynasty = {
 		name = { name = loon_dynasty }
-		home = limbourg
+		home = borgloon
+		dynasty_name_type = location
 	}
 
 	heinsberg_dynasty = {
@@ -8511,6 +8519,18 @@ dynasty_manager = {
 		home = qiaoxian
 	}
 	
+	#############################
+	#		Atlas Dynasties		#
+	#############################
+	
+	vlaanderen_dynasty = {
+		name = { name = vlaanderen_dynasty }
+		home = bruges
+		dynasty_name_type = location
+	}
+	
+	#vlaanderen_hainaut_dynasty = {
+	
 	arkel_dynasty = {
 		name = { name = arkel_dynasty }
 		home = gorinchem
@@ -8526,6 +8546,23 @@ dynasty_manager = {
 	berg_dynasty = {
 		name = { name = berg_dynasty }
 		home = dusseldorf
+		dynasty_name_type = location
+	}
+	
+	voorne_dynasty = {
+		name = { name = voorne_dynasty }
+		home = rotterdam #brielle / voorne
+		dynasty_name_type = location
+	}
+	
+	wesemale_dynasty = {
+		name = { name = wesemale_dynasty }
+		home = bergen_zoom
+	}
+	
+	namur_dynasty = {
+		name = { name = namur_dynasty }
+		home = namur
 		dynasty_name_type = location
 	}
 }

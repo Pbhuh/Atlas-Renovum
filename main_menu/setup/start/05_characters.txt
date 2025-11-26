@@ -16,11 +16,10 @@ character_db={
 		estate = nobles_estate
 		birth_date = 1012.1.1
 		death_date = 1067.9.1
-		birth = mons
+		birth = bruges
 		#father = fla_boudewijn_iv_van_vlaanderen
 		#mother = Ogive of Luxembourg
-		#spouse = adela_of_france daughter of fra_robert_ii_capet
-		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
+		dynasty = vlaanderen_dynasty
 		tag = FLA		
 	}
 	
@@ -31,11 +30,26 @@ character_db={
 		estate = nobles_estate
 		birth_date = 1030.1.1
 		death_date = 1070.7.17
-		birth = mons
+		birth = bruges
 		father = fla_boudewijn_v_van_vlaanderen
-		#spouse = hai_richilde_hainaut
-		#mother = adela_of_france daughter of fra_robert_ii_capet
-		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
+		mother = fla_adela_capet
+		dynasty = vlaanderen_dynasty
+		tag = FLA		
+	}
+	
+	hai_richilde_hainaut = { #Marquise of valenciennes, Countess Consort of Mons, Countess Consort of Flanders
+		first_name = { name = name_richilda }
+		female = yes
+		culture = picard
+		religion = catholic
+		birth_date = 1018.1.1
+		death_date = 1086.3.15
+		birth = valenciennes
+		#father = Reinier of Hasnon - Marquis of valenciennes
+		spouse = fla_boudewijn_vi_van_vlaanderen
+		#spouse = herman_of_mons
+		#mother = 
+		#dynasty = hasnon_dynasty
 		tag = FLA		
 	}
 	
@@ -46,27 +60,57 @@ character_db={
 		estate = nobles_estate
 		birth_date = 1055.1.1
 		death_date = 1071.2.22
-		birth = mons
-		#father = fla_boudewijn_vi_van_vlaanderen
-		#mother = hai_richilde_hainaut
+		birth = bruges
+		father = fla_boudewijn_vi_van_vlaanderen
+		mother = hai_richilde_hainaut
 		#spouse = ida_of_louvain daughter of brb_hendrik_ii_van_leuven
-		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
+		dynasty = vlaanderen_dynasty 
 		tag = FLA
 	}
 	
 	fla_robrecht_i_van_vlaanderen = {
 		first_name = { name = name_robert }
 		nickname = { name = nick_the_frisian }
-		culture = low_franconian #walloon #picard
+		culture = low_franconian #frisian for memes?
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 1032.1.1
 		death_date = 1093.10.13
-		birth = mons
+		birth = bruges
 		father = fla_boudewijn_v_van_vlaanderen
-		#spouse = hai_richilde_hainaut
-		#mother = adela_of_france daughter of fra_robert_ii_capet
-		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
+		#spouse = gertrude_of_saxony
+		mother = fla_adela_capet
+		dynasty = vlaanderen_dynasty
+		tag = FLA		
+	}
+	
+	fla_robrecht_ii_van_vlaanderen = {
+		first_name = { name = name_robert }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1065.1.1
+		death_date = 1111.10.5
+		birth = bruges
+		father = fla_robrecht_i_van_vlaanderen
+		#mother = gertrude_of_saxony
+		#spouse = clementia_of_burgundy - sister of pope callistus II - daughter of bur_william_i_of_burgundy
+		dynasty = vlaanderen_dynasty
+		tag = FLA		
+	}
+	
+	fla_boudewijn_vii_van_vlaanderen = {
+		first_name = { name = name_baldwin }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1093.1.1
+		death_date = 1119.7.17
+		birth = bruges
+		father = fla_robrecht_ii_van_vlaanderen
+		#mother = clementia_of_burgundy - sister of pope callistus II - daughter of bur_william_i_of_burgundy
+		#spouse = 
+		dynasty = vlaanderen_dynasty
 		tag = FLA		
 	}
 	
@@ -143,7 +187,7 @@ character_db={
 		birth_date = 1070.1.1
 		death_date = 1117.1.1
 		birth = bruges
-		#father = robert_the_frisian_of_flanders
+		father = fla_robrecht_i_van_vlaanderen
 		#mother = geertruida_van_saksen - daughter of bernhard_of_saxony
 		dynasty = vlaanderen_dynasty
 		spouse = brb_hendrik_iii_van_leuven
@@ -265,7 +309,7 @@ character_db={
 		birth_date = 1056.1.1
 		death_date = 1098.1.1
 		birth = mons
-		#father = fla_boudewijn_vi_van_vlaanderen
+		father = fla_boudewijn_vi_van_vlaanderen
 		#mother = hai_richilde_hainaut
 		#spouse = ida_of_louvain daughter of brb_hendrik_ii_van_leuven
 		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
@@ -445,7 +489,7 @@ character_db={
 	}	
 	hol_floris_i_gerulfing = {
 		first_name = { name = name_florence }
-		culture = frisian
+		culture = low_franconian
 		religion = catholic
 		birth_date = 1025.1.1 #1017?
 		death_date = 1061.6.28
@@ -1002,7 +1046,7 @@ character_db={
 	
 	jul_gerhard_ii_julichgau = { #gerlach van wickrack? - count of zulpichgau
 		first_name = { name = name_gerard }
-		culture = low_franconian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1030.1.1
 		death_date = 1081.1.1
@@ -1015,9 +1059,9 @@ character_db={
 	
 	jul_gerhard_i_julich = {
 		first_name = { name = name_gerard }
-		culture = low_franconian
+		culture = ripuarian_franconian
 		religion = catholic
-		birth_date = 1030.1.1
+		birth_date = 1030.1.2 #fix later?
 		death_date = 1114.1.1
 		birth = duren
 		father = jul_gerhard_ii_julichgau
@@ -1028,9 +1072,9 @@ character_db={
 
 	jul_gerhard_ii_julich = {
 		first_name = { name = name_gerard }
-		culture = low_franconian
+		culture = ripuarian_franconian
 		religion = catholic
-		birth_date = 1029.1.1
+		birth_date = 1032.1.1 #fix later?
 		death_date = 1127.1.1
 		birth = duren
 		father = jul_gerhard_i_julich
@@ -1041,9 +1085,9 @@ character_db={
 
 	jul_gerhard_iii_julich = {
 		first_name = { name = name_gerard }
-		culture = low_franconian
+		culture = ripuarian_franconian
 		religion = catholic
-		birth_date = 1060.1.1
+		birth_date = 1060.1.1 #fix later?
 		death_date = 1139.1.1
 		birth = duren
 		father = jul_gerhard_ii_julich
@@ -1054,7 +1098,7 @@ character_db={
 	
 	jul_gerhard_iv_julich = {
 		first_name = { name = name_gerard }
-		culture = low_franconian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1090.1.1 #1128
 		death_date = 1143.1.1
@@ -1068,9 +1112,9 @@ character_db={
 	
 	#gerhard_v - conflicting reports - born before supposed father
 
-	jul_wilhelm_i_julich = {
+	jul_wilhelm_i_julich_count = {
 		first_name = { name = name_william }
-		culture = low_franconian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1120.1.1
 		death_date = 1176.1.1
@@ -1085,12 +1129,12 @@ character_db={
 	jul_wilhelm_ii_julich = {
 		first_name = { name = name_william }
 		nickname = { name = nick_the_great }
-		culture = low_franconian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1138.1.1
 		death_date = 1207.1.1
 		birth = duren
-		father = jul_wilhelm_i_julich
+		father = jul_wilhelm_i_julich_count
 		#mother = ermengarde von arenberg von julich
 		#spouse = Alveradis von Saffenberg-Nörvenich
 		dynasty = julich_dynasty
@@ -1100,12 +1144,12 @@ character_db={
 	jul_jutta_julich = {
 		first_name = { name = name_judith }
 		female = yes
-		culture = low_franconian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1145.1.1
 		death_date = 1218.1.1
 		birth = duren
-		father = jul_wilhelm_i_julich
+		father = jul_wilhelm_i_julich_count
 		#mother = ermengarde von arenberg von julich
 		#spouse = eberhard_i_von_hengebach
 		dynasty = julich_dynasty
@@ -1114,7 +1158,7 @@ character_db={
 	
 	jul_wilhelm_iii_julich = {
 		first_name = { name = name_william }
-		culture = low_franconian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1187.1.1
 		death_date = 1219.1.1
@@ -1272,8 +1316,8 @@ character_db={
 		death_date = 1280.2.10
 		birth = bruges
 		father = fla_boudewijn_ix_van_vlaanderen #I of constantinople, VI of hainaut
+		spouse = hai_bouchard_avesnes
 		spouse = fla_guillaume_ii_dampierre
-		#spouse = bouchard_iv_avesnes
 		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
 		tag = FLA
 	}
@@ -2818,6 +2862,32 @@ character_db={
 		dynasty = normandy_dynasty
 		father = eng_william_the_conquerer
 		tag = ENG
+	}
+	
+	nrm_robert_ii_curthose = {
+		first_name = { name = name_robert }
+		nickname = { name = "Curthose" }
+		culture = norman
+		religion = catholic
+		birth = caen
+		birth_date = 1051.1.1
+		death_date = 1134.2.3
+		dynasty = normandy_dynasty
+		father = eng_william_the_conquerer
+		tag = NRM
+	}
+	
+	fla_william_clito = {		
+		first_name = { name = name_william }
+		nickname = { name = "Clito" }
+		culture = norman
+		religion = catholic
+		birth = caen
+		birth_date = 1102.10.25
+		death_date = 1128.7.28
+		dynasty = normandy_dynasty
+		father = nrm_robert_ii_curthose
+		tag = NRM
 	}
 	
 	eng_henry_i = {
@@ -7426,6 +7496,38 @@ character_db={
 		dynasty = estrid_dynasty
 		tag = DAN
 	}
+		
+	dan_adela_van_vlaanderen = {
+		first_name = { name = name_adela }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1064.1.1
+		death_date = 1115.4.1
+		birth = bruges
+		father = fla_robrecht_i_van_vlaanderen
+		#mother = gertrude_of_saxony
+		spouse = dan_canute_iv
+		#spouse = apulia_roger_borsa
+		dynasty = vlaanderen_dynasty
+		tag = FLA
+	}
+	
+	fla_karel_van_vlaanderen = {
+		first_name = { name = name_charles }
+		nickname = { name = nick_the_good }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1084.1.1
+		death_date = 1127.3.2
+		birth = aarhus
+		father = dan_canute_iv
+		mother = dan_adela_van_vlaanderen
+		#spouse = amiens_margaret_clermont daughter of renaud_ii_clermont
+		dynasty = estrid_dynasty
+		tag = FLA		
+	}
 
 	dan_olaf_hunger = {
 		first_name = { name = name_olaf }
@@ -10584,6 +10686,23 @@ character_db={
 		ruler_trait = pious
 		ruler_trait = zealot
 		ruler_trait = conqueror
+	}
+	
+	fla_adela_capet = {
+		first_name = { name = name_adela }
+		nickname = { name = nick_the_holy }
+		female = yes
+		culture = french
+		religion = catholic
+		birth_date = 1009.1.1 #round about
+		death_date = 1076.1.1
+		birth = reims
+		father = fra_robert_ii_capet
+		#mother = Constance Bosonid
+		#spouse = richard_iii_normandy
+		spouse = fla_boudewijn_v_van_vlaanderen
+		dynasty = capet_dynasty
+		tag = FRA
 	}
 
 	fra_henri_i_capet = {
@@ -80111,7 +80230,7 @@ adm = 31 dip = 34 mil = 24
 		death_date = 1257.12.24
 		birth = bastogne
 		father = hai_bouchard_avesnes
-		#mother = Marguerite II of Flanders
+		mother = fla_margaretha_ii_van_vlaanderen
 		dynasty = avesnes_dynasty
 		tag = HAI
 	}
@@ -101015,7 +101134,7 @@ adm = 31 dip = 34 mil = 24
 	
 	jul_wilhelm_iv_julich = { #Grandfather
 		first_name = { name = name_william }
-		culture = westphalian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1210.1.1
 		birth = duren
@@ -101027,7 +101146,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	jul_wilhelm_v_coruler_julich = { #Uncle of Ruler
 		first_name = { name = name_william }
-		culture = westphalian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1240.1.1
 		birth = duren
@@ -101054,7 +101173,7 @@ adm = 31 dip = 34 mil = 24
 	fla_wilhelm_von_julich = { #cousin of Ruler of Julich - fought in guldensporenslag 1302
 		first_name = { name = name_william }
 		nickname = { name = nick_the_younger }
-		culture = westphalian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1275.1.1
 		birth = duren
@@ -101066,7 +101185,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	jul_walram_julich = { #Uncle of Ruler
 		first_name = { name = name_waleram }
-		culture = westphalian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1245.1.1
 		birth = duren
@@ -101077,7 +101196,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	jul_gerhard_v_julich = { #Father of Ruler
 		first_name = { name = name_gerard }
-		culture = westphalian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1250.1.1
 		birth = duren
@@ -101102,7 +101221,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	jul_wilhelm_i_julich = { #Ruler
 		first_name = { name = name_william }
-		culture = westphalian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1299.1.1
 		birth = duren
@@ -101114,7 +101233,7 @@ adm = 31 dip = 34 mil = 24
 	jul_marie_julich = { #Sister of ruler
 		first_name = { name = name_mary }
 		female = yes
-		culture = westphalian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1299.1.1 #around the date of her brother
 		#death_date = 1353.1.1
@@ -101128,7 +101247,7 @@ adm = 31 dip = 34 mil = 24
 	}
 	jul_gerhard_vi_julich = { #Son of Ruler
 		first_name = { name = name_gerard }
-		culture = westphalian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1330.1.1
 		birth = duren
@@ -101215,7 +101334,6 @@ adm = 31 dip = 34 mil = 24
 	}
 	bgz_gerard_wesemale = { #first heer of bergen op zoom
 		first_name = { name = name_gerard }
-		female = yes
 		culture = low_franconian
 		estate = nobles_estate
 		religion = catholic
@@ -101229,7 +101347,6 @@ adm = 31 dip = 34 mil = 24
 	}
 	bgz_arnold_wesemale = { #
 		first_name = { name = name_arnold }
-		female = yes
 		culture = low_franconian
 		estate = nobles_estate
 		religion = catholic
@@ -102022,7 +102139,7 @@ adm = 31 dip = 34 mil = 24
 		tag = CJK
 	}
 	cjk_jutta_von_nassau = {
-		first_name = { name = name_otto }
+		first_name = { name = name_judith }
 		female = yes
 		culture = westphalian
 		religion = catholic
@@ -102391,7 +102508,7 @@ adm = 31 dip = 34 mil = 24
 	#utr_arnold_i_von_isenburg
 
 	utr_dirk_van_holland = {
-		first_name = { name = name_dietrich }
+		first_name = { name = name_theodoric }
 		culture = low_franconian
 		religion = catholic
 		birth_date = 1140.1.1
@@ -102613,7 +102730,7 @@ adm = 31 dip = 34 mil = 24
 	
 	lie_alexander_julich = {
 		first_name = { name = name_alexander }
-		culture = low_franconian
+		culture = ripuarian_franconian
 		religion = catholic
 		birth_date = 1060.1.1
 		death_date = 1135.5.21

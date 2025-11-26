@@ -16869,6 +16869,7 @@ countries = {
 			ruler = fra_jean_ii_valois
 
 			ruler_term = { character = eng_william_the_conquerer start_date = 1035.7.2 end_date = 1087.9.9 regnal_number = 1 }
+			ruler_term = { character = nrm_robert_ii_curthose start_date = 1087.9.9 end_date = 1106.9.28 regnal_number = 2 }
 			ruler_term = { character = eng_henry_i start_date = 1106.9.28 end_date = 1135.12.1 regnal_number = 1 }
 
 			ruler_term = { character = eng_stephen_i start_date = 1135.12.22 end_date = 1144.1.19 regnal_number = 1 }
@@ -17362,17 +17363,30 @@ countries = {
 		government = {
 			ruler = hai_guillaume_de_hainault
 			
-			#hai_richilde_hainaut	
+			#marquis of valenciennes: reinier of hasnon
+			#count of mons: herman_of_mons
+			#union of county of mons and march of valenciennes	
+			ruler_term = { character = hai_richilde_hainaut start_date = 1050.1.1 end_date = 1086.3.15 regnal_number = 1 }
 			ruler_term = { character = fla_boudewijn_vi_van_vlaanderen start_date = 1051.1.1 end_date = 1070.7.17 regnal_number = 1 }
-			ruler_term = { character = fla_arnulf_iii_van_vlaanderen start_date = 1070.7.17 end_date = 1071.2.22 regnal_number = 2 }
+			ruler_term = { character = fla_arnulf_iii_van_vlaanderen start_date = 1070.7.17 end_date = 1071.2.22 regnal_number = 1 }
 			ruler_term = { character = hai_boudewijn_ii_hainaut start_date = 1071.2.22 end_date = 1098.1.1 regnal_number = 2 }
 			ruler_term = { character = hai_boudewijn_iii_hainaut start_date = 1098.1.1 end_date = 1120.1.1 regnal_number = 3 }
 			ruler_term = { character = hai_boudewijn_iv_hainaut start_date = 1120.1.1 end_date = 1171.11.9 regnal_number = 4 }
 			ruler_term = { character = hai_boudewijn_v_hainaut start_date = 1171.11.9 end_date = 1195.12.7 regnal_number = 5 }
 			ruler_term = { character = fla_boudewijn_ix_van_vlaanderen start_date = 1195.12.7 end_date = 1205.1.1 regnal_number = 6 }
-			
+			ruler_term = { character = fla_johanna_van_vlaanderen start_date = 1205.1.1 end_date = 1212.1.1 regnal_number = 1 }
+			ruler_term = { #marriage
+				character = fla_johanna_van_vlaanderen start_date = 1205.1.1 end_date = 1233.7.27 regnal_number = 1
+				character = fla_fernando_portugal start_date = 1212.1.1 end_date = 1233.7.27 regnal_number = 1 
+			}
+			ruler_term = { #marriage
+				character = fla_johanna_van_vlaanderen start_date = 1233.7.27 end_date = 1244.12.5 regnal_number = 1
+				character = sav_thomas_ii_piedmont start_date = 1233.7.27 end_date = 1244.12.5 regnal_number = 1 
+			} 
+			#hai_bouchard_avesnes
+			ruler_term = { character = fla_margaretha_ii_van_vlaanderen start_date = 1244.12.5 end_date = 1253.11.29 regnal_number = 1 } 
 			ruler_term = { character = hai_jean_i_avesnes start_date = 1253.11.29 end_date = 1257.12.24 regnal_number = 1 }
-
+			ruler_term = { character = fla_margaretha_ii_van_vlaanderen start_date = 1257.12.24 end_date = 1280.1.1 regnal_number = 1 }
 			ruler_term = { character = hai_jean_ii_de_hainault start_date = 1280.1.1 end_date = 1304.8.22 regnal_number = 2 }
 			ruler_term = { character = hai_guillaume_de_hainault start_date = 1304.8.22 regnal_number = 1 }
 
@@ -17425,15 +17439,14 @@ countries = {
 			heir_selection = cognatic_primogeniture
 			ruler = fla_louis_i_dampierre
 			
+			ruler_term = { character = fla_boudewijn_v_van_vlaanderen start_date = 1035.5.30 end_date = 1051.1.1 regnal_number = 5 }
 			ruler_term = { character = fla_boudewijn_vi_van_vlaanderen start_date = 1051.1.1 end_date = 1070.7.17 regnal_number = 6 }
 			ruler_term = { character = fla_arnulf_iii_van_vlaanderen start_date = 1070.7.17 end_date = 1071.2.22 regnal_number = 3 }
 			ruler_term = { character = fla_robrecht_i_van_vlaanderen start_date = 1071.2.22 end_date = 1093.10.13 regnal_number = 1 }
-			
-			#fla_robrecht_ii_van_vlaanderen 1093.10.13 - 1111.10.5
-			#fla_boudewijn_vii_van_vlaanderen 1111.10.5 - 1119.7.19
-			#fla_karel_i_van_vlaanderen 1119.7.19-1127.3.2 - son of cnut_iv_of_denmark and adela van vlaanderen, grandson of robert_i
-			#fla_willem_i_van_vlaanderen 1127.3.2 - 1128.7.28
-
+			ruler_term = { character = fla_robrecht_ii_van_vlaanderen start_date = 1093.10.13 end_date = 1111.10.5 regnal_number = 2 }
+			ruler_term = { character = fla_boudewijn_vii_van_vlaanderen start_date = 1111.10.5 end_date = 1119.7.19 regnal_number = 7 }
+			ruler_term = { character = fla_karel_van_vlaanderen start_date = 1119.7.19 end_date = 1127.3.2 regnal_number = 1 }
+			ruler_term = { character = fla_william_clito start_date = 1127.3.2 end_date = 1128.7.28 regnal_number = 1 }
 			ruler_term = { character = fla_thierry_alsace start_date = 1128.7.28 end_date = 1168.1.17 regnal_number = 1 }
 			ruler_term = { character = fla_philippe_i_alsace start_date = 1168.1.17 end_date = 1191.6.1 regnal_number = 1 }
 			ruler_term = { character = fla_marguerite_i_alsace start_date = 1191.6.1 end_date = 1194.11.15 regnal_number = 1 }
@@ -17861,13 +17874,9 @@ countries = {
 		government = {
 			ruler = lie_adolf_ii_von_der_mark
 			
-			
-			
-			
-			
 			#ruler_term = { character = LIE_henri_i_of_verdun    start_date = 1075.6.23  end_date = 1090.1.1     regnal_number = 1 }
 			ruler_term = { character = lie_albert_i_van_leuven  start_date = 1123.1.1  end_date = 1128.1.1     regnal_number = 1 }
-			ruler_term = { character = LIE_alexander_i_of_julich start_date = 1128.1.1 end_date = 1135.5.21    regnal_number = 1 }
+			ruler_term = { character = lie_alexander_julich start_date = 1128.1.1 end_date = 1135.5.21    regnal_number = 1 }
 			#ruler_term = { character = LIE_henri_ii_of_leez     start_date = 1145.1.1   end_date = 1164.8.15    regnal_number = 2 }
 			#ruler_term = { character = LIE_alexander_ii_of_oreye start_date = 1164.8.15 end_date = 1167.1.1     regnal_number = 2 }
 			#ruler_term = { character = LIE_rodolphe_of_zahringer start_date = 1167.1.1  end_date = 1191.8.5     regnal_number = 1 }
@@ -38479,7 +38488,7 @@ countries = {
 			ruler_term = {	character = jul_gerhard_ii_julich start_date = 1114.1.1 end_date = 1127.1.1 regnal_number = 2	}
 			ruler_term = {	character = jul_gerhard_iii_julich start_date = 1127.1.1 end_date = 1139.1.1 regnal_number = 3	}
 			ruler_term = {	character = jul_gerhard_iv_julich start_date = 1139.1.1 end_date = 1143.1.1 regnal_number = 4	}
-			ruler_term = {	character = jul_wilhelm_i_julich start_date = 1143.1.1 end_date = 1176.1.1 regnal_number = 1	}
+			ruler_term = {	character = jul_wilhelm_i_julich_count start_date = 1143.1.1 end_date = 1176.1.1 regnal_number = 1	}
 			ruler_term = {	character = jul_wilhelm_ii_julich start_date = 1176.1.1 end_date = 1207.1.1 regnal_number = 2	}
 			ruler_term = {	character = jul_wilhelm_iii_julich start_date = 1207.1.1 end_date = 1219.1.1 regnal_number = 3	}
 			ruler_term = {	character = jul_wilhelm_iv_julich start_date = 1219.1.1 end_date = 1278.3.16 regnal_number = 4	}

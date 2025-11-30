@@ -42,6 +42,115 @@ FRI = {
 	}
 }
 
+WSG = { #Westergo
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_bend_large.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { -1.0 1.0 } }
+	}
+}
+
+ESG = { #Eastergo
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_bars_02.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { -1.0 1.0 } }
+	}
+}
+
+ZVW = { # Zevenwouden
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+
+	colored_emblem = {
+		texture = "ce_checky_15_points.dds"
+		color1 = color1
+		color2 = color2
+	}
+}
+
+HSG = { #Hunsingo - possible flag, reoccuring theme found in multiple weapons
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+
+	colored_emblem = { #fix later with actual emblem without odd scaling
+		texture = "ce_bars_04_undy.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.5 -2.0 } }
+	}
+}
+
+#vredewolde: 
+#te_st_george_dragon_muscovy - possible silver background with emerald/green land? - red is used as background as well
+
+HSG_alternative = { #Hunsingo weapon based on Winsum
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+
+	textured_emblem = {
+		texture = "te_knight_dithmarschen.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }				
+	}
+}
+
+FVG_hunsingo_pattern = { #Fivelingo - possible flag, reoccuring theme found in multiple weapons
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+
+	colored_emblem = { #fix later with actual emblem without odd scaling
+		texture = "ce_bars_03_undy_shield.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.5 1.0 } }
+	}
+}
+
+FVG = { #Fivelingo - intermediate design, origination from around 1436
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+	color3 = "blue"
+
+	colored_emblem = {
+		texture = "ce_eagle_wide.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+oldambt = { #oldambt
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+	color3 = "blue"
+	#color4 = "" 
+
+	#colored_emblem = {
+	#	texture = "ce_tower_wall.dds"
+	#	color1 = color2
+	#	color2 = color3
+	#	color3 = color1
+	#	instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	#}
+}
+
 #ce_bends_03_thin_bjalbo
 #ce_bends_03_thin_semy_bjalbo
 #ce_bends_03_waterlilies_frisia

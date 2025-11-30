@@ -35897,23 +35897,6 @@ countries = {
 		capital = hachberg
 	}
 
-	#JEV = {  # Jever (North Germany)
-	#	own_control_core = {
-	#		jever
-	#	}
-	#	starting_technology_level = 3
-	#	include = "expl_western_europe"
-	#	include = "expl_northern_europe"
-	#	include = "catholic_monarchy"
-	#	include = "german_principality"
-	#	government = { ruler = random }
-	#	tolerated_cultures = {
-	#		westphalian
-	#	}
-	#	country_rank = rank_county
-	#	capital = jever
-	#}
-
 	SAW = {  # Saarwerden (South Germany)
 		own_control_core = {
 			saarwerden
@@ -39891,8 +39874,9 @@ countries = {
 
 	FRI = { #Frisia
 		own_control_core = {
-			leeuwarden sloten harlingen stavoren appingedam wedde
-			leer emden aurich wolvega winsum jever
+			#leeuwarden sloten harlingen stavoren appingedam wedde
+			#leer emden aurich wolvega winsum 
+			wedde emden aurich leer
 		}
 
 		starting_technology_level = 3
@@ -39949,6 +39933,373 @@ countries = {
 
 		country_rank = rank_county
 	}
+	
+	JEV = {  # Jever (North Germany)
+		own_control_core = {
+			jever
+		}
+		
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		capital = jever
+		government = {
+			type = republic
+			heir_selection = oligarchic_elective
+			ruler = random
+			parliament = {
+				parliament_type = council
+			}
+
+			privilege = {
+				peasants_free_peasantry
+			}
+
+			reforms = {
+				frisian_freedom_reform
+			}
+
+			laws = {
+				censorship = limited_censorship
+				republican_foundation_law = republicanism_policy
+				education_masses_law = basic_religious_education
+				administrative_system = local_courts_administration
+				cultural_traditions_law = civil_society
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+				legal_code_law = civil_law_policy
+				maritime_law = protect_trade_routes
+				piracy_law = anti_piracy_policy
+				distribution_of_power_law = dop_favor_the_commoners
+			}
+
+			centralization_vs_decentralization = 100
+			traditionalist_vs_innovative = -70
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 100
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = 30
+			capital_economy_vs_traditional_economy = 100
+			individualism_vs_communalism = 100
+			outward_vs_inward = 50
+		}
+
+		tolerated_cultures = {
+			low_franconian
+		}
+
+		country_rank = rank_county
+	}
+	
+	WSG = { #Westergo (Frisia)
+		own_control_core = {
+			harlingen stavoren
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		capital = harlingen
+		government = {
+			type = republic
+			heir_selection = oligarchic_elective
+			ruler = random
+			parliament = {
+				parliament_type = council
+			}
+
+			privilege = {
+				peasants_free_peasantry
+			}
+
+			reforms = {
+				frisian_freedom_reform
+			}
+
+			laws = {
+				censorship = limited_censorship
+				republican_foundation_law = republicanism_policy
+				education_masses_law = basic_religious_education
+				administrative_system = local_courts_administration
+				cultural_traditions_law = civil_society
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+				legal_code_law = civil_law_policy
+				maritime_law = protect_trade_routes
+				piracy_law = anti_piracy_policy
+				distribution_of_power_law = dop_favor_the_commoners
+			}
+
+			centralization_vs_decentralization = 100
+			traditionalist_vs_innovative = -70
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 100
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = 30
+			capital_economy_vs_traditional_economy = 100
+			individualism_vs_communalism = 100
+			outward_vs_inward = 50
+		}
+
+		tolerated_cultures = {
+			low_franconian
+		}
+
+		country_rank = rank_county
+	}
+	
+	ESG = { #Eastergo (Frisia)
+		own_control_core = {
+			leeuwarden
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		capital = leeuwarden
+		government = {
+			type = republic
+			heir_selection = oligarchic_elective
+			ruler = random
+			parliament = {
+				parliament_type = council
+			}
+
+			privilege = {
+				peasants_free_peasantry
+			}
+
+			reforms = {
+				frisian_freedom_reform
+			}
+
+			laws = {
+				censorship = limited_censorship
+				republican_foundation_law = republicanism_policy
+				education_masses_law = basic_religious_education
+				administrative_system = local_courts_administration
+				cultural_traditions_law = civil_society
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+				legal_code_law = civil_law_policy
+				maritime_law = protect_trade_routes
+				piracy_law = anti_piracy_policy
+				distribution_of_power_law = dop_favor_the_commoners
+			}
+
+			centralization_vs_decentralization = 100
+			traditionalist_vs_innovative = -70
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 100
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = 30
+			capital_economy_vs_traditional_economy = 100
+			individualism_vs_communalism = 100
+			outward_vs_inward = 50
+		}
+
+		tolerated_cultures = {
+			westphalian
+		}
+
+		country_rank = rank_county
+	}
+	
+	ZVW = { #Zevenwouden (Frisia)
+		own_control_core = {
+			sloten wolvega
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		capital = sloten
+		government = {
+			type = republic
+			heir_selection = oligarchic_elective
+			ruler = random
+			parliament = {
+				parliament_type = council
+			}
+
+			privilege = {
+				peasants_free_peasantry
+			}
+
+			reforms = {
+				frisian_freedom_reform
+			}
+
+			laws = {
+				censorship = limited_censorship
+				republican_foundation_law = republicanism_policy
+				education_masses_law = basic_religious_education
+				administrative_system = local_courts_administration
+				cultural_traditions_law = civil_society
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+				legal_code_law = civil_law_policy
+				maritime_law = protect_trade_routes
+				piracy_law = anti_piracy_policy
+				distribution_of_power_law = dop_favor_the_commoners
+			}
+
+			centralization_vs_decentralization = 100
+			traditionalist_vs_innovative = -70
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 100
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = 30
+			capital_economy_vs_traditional_economy = 100
+			individualism_vs_communalism = 100
+			outward_vs_inward = 50
+		}
+
+		tolerated_cultures = {
+			westphalian
+		}
+
+		country_rank = rank_county
+	}
+	
+	HSG = { #Hunsingo (Frisia)
+		own_control_core = {
+			winsum
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		capital = winsum
+		government = {
+			type = republic
+			heir_selection = oligarchic_elective
+			ruler = random
+			parliament = {
+				parliament_type = council
+			}
+
+			privilege = {
+				peasants_free_peasantry
+			}
+
+			reforms = {
+				frisian_freedom_reform
+			}
+
+			laws = {
+				censorship = limited_censorship
+				republican_foundation_law = republicanism_policy
+				education_masses_law = basic_religious_education
+				administrative_system = local_courts_administration
+				cultural_traditions_law = civil_society
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+				legal_code_law = civil_law_policy
+				maritime_law = protect_trade_routes
+				piracy_law = anti_piracy_policy
+				distribution_of_power_law = dop_favor_the_commoners
+			}
+
+			centralization_vs_decentralization = 100
+			traditionalist_vs_innovative = -70
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 100
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = 30
+			capital_economy_vs_traditional_economy = 100
+			individualism_vs_communalism = 100
+			outward_vs_inward = 50
+		}
+
+		tolerated_cultures = {
+			westphalian
+		}
+
+		country_rank = rank_county
+	}
+	
+	FVG = { #Fivelingo (Frisia)
+		own_control_core = {
+			appingedam
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		capital = appingedam
+		government = {
+			type = republic
+			heir_selection = oligarchic_elective
+			ruler = random
+			parliament = {
+				parliament_type = council
+			}
+
+			privilege = {
+				peasants_free_peasantry
+			}
+
+			reforms = {
+				frisian_freedom_reform
+			}
+
+			laws = {
+				censorship = limited_censorship
+				republican_foundation_law = republicanism_policy
+				education_masses_law = basic_religious_education
+				administrative_system = local_courts_administration
+				cultural_traditions_law = civil_society
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+				legal_code_law = civil_law_policy
+				maritime_law = protect_trade_routes
+				piracy_law = anti_piracy_policy
+				distribution_of_power_law = dop_favor_the_commoners
+			}
+
+			centralization_vs_decentralization = 100
+			traditionalist_vs_innovative = -70
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 100
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = 30
+			capital_economy_vs_traditional_economy = 100
+			individualism_vs_communalism = 100
+			outward_vs_inward = 50
+		}
+
+		tolerated_cultures = {
+			westphalian
+		}
+
+		country_rank = rank_county
+	}
+	
+	#Wedde/Oldambt
+	#Emden/Emsgo
+	#Leer/Moormerland
+	#Aurich/Brokmerland
+	#Jever/Östringen
+	#Elsfleth/Rüstringen
 	
 	GRN = {	#Free Imperial Groningen City
 		own_control_core = {

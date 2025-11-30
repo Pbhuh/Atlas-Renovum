@@ -157,6 +157,41 @@ FRI = {
 	religion_definition = catholic
 }
 
+WSG = {
+	color = rgb { 5 118 255 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}
+
+ESG = {
+	color = rgb { 15 128 255 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}
+
+HSG = {
+	color = rgb { 0 128 255 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}
+
+FVG = {
+	color = rgb { 15 108 255 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}
+
+ZVW = {
+	color = rgb { 5 118 255 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}
+
 STV = {
 	color = rgb { 182 95 165 }
 

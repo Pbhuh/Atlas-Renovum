@@ -95,8 +95,8 @@ countries = {
 		include = "expl_northern_europe"
 		include = "german_principality"
 		government = {
-
 			ruler = gel_reinoud_ii_van_gelre
+			
 			#ruler_term = { character = kle_arnold_van_kleve start_date = 1120.1.1 end_date = 1147.2.20 regnal_number = 1 }
 			#ruler_term = { character = kle_dirk_iii_van_kleve start_date = 1125.1.1 end_date = 1172.4.27 regnal_number = 3 }
 			#ruler_term = { character = hbg_gerard_i_van_wassenberg start_date = 1022.1.1 end_date = 1042.1.1 }
@@ -142,7 +142,6 @@ countries = {
 		include = "expl_northern_europe"
 		include = "german_principality"
 		government = {
-
 			ruler = gel_reinoud_ii_van_gelre
 			#otto 2 van zutphen - vader
 			#hendrik van zutphen - broer

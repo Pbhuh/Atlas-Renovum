@@ -136,7 +136,7 @@ FVG = { #Fivelingo - intermediate design, origination from around 1436
 	}
 }
 
-WED = {	#later design - likely when the city of groningen took over
+WED_citydesign = {	#later design - likely when the city of groningen took over
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"
 	color2 = "black"
@@ -176,7 +176,7 @@ WED_knightversion = { #unknown exact design
 	}
 }
 
-WED_modernversion = { 
+WED = {  #modernversion
 	pattern = "pattern_solid.dds"
 	color1 = "white"
 	color2 = "red"
@@ -188,6 +188,7 @@ WED_modernversion = {
 		texture = "ce_castle_scinawa.dds"
 		color1 = color2
 		color2 = color2
+		color3 = color2
 		instance = { position = { 0.25 0.5 } scale = { 0.5 1.0 } }				
 	}
 	colored_emblem = {

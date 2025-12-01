@@ -287,13 +287,7 @@ development = {
 	waterford_province = 3
 	mayo_province = 2
 
-	#Low countries
-	friesland_province = 3
-	drenthe_province = -2 
-	kempenland_province = -2
-
 	#Southern Germany
-	
 	pongau_province = -2
 	#North germany
 	koln_bucht_province = 2

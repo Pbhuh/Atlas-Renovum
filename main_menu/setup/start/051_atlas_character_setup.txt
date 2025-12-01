@@ -3,6 +3,24 @@ dynasty_manager = {
 	#		Atlas Dynasties		#
 	#############################
 	
+	julich_hengebach_dynasty = { #julich-hengebach
+		name = { name = julich_hengebach_dynasty }
+		home = duren #Jülich
+		dynasty_name_type = location
+	}
+
+	katzenelnbogen_dynasty = {
+		name = { name = katzenelnbogen_dynasty }
+		home = katzenelnbogen
+		dynasty_name_type = location
+	}
+	
+	loon_dynasty = {
+		name = { name = loon_dynasty }
+		home = borgloon
+		dynasty_name_type = location
+	}
+
 	vlaanderen_dynasty = {
 		name = { name = vlaanderen_dynasty }
 		home = bruges
@@ -54,6 +72,54 @@ dynasty_manager = {
 
 character_db={
 
+	#Vanilla characters RNG
+	
+	lor_ferry_iii_lorraine = {
+		first_name = { name = name_frederick }
+		culture = lorrain
+		religion = catholic
+		estate = nobles_estate
+		adm = 56 dip = 41 mil = 50
+		birth_date = 1240.1.1
+		death_date = 1303.12.31
+		birth = nancy
+		father = lor_mathieu_ii_lorraine
+		#mother = Catherine de Limbourg
+		dynasty = alsace_dynasty
+		tag = LOR
+		ruler_trait = sinner
+		ruler_trait = babbling_buffoon
+	}
+	#Henneberg	
+	#hnb_margaretha_of_holland = {
+	#	first_name = { name = name_margaret }
+	#	culture = low_franconian
+	#	female = yes
+	#	religion = catholic
+	#	birth_date = 1234.1.1
+	#	death_date = 1276.1.1
+	#	father = hol_floris_iv_gerulfing
+	#	mother = hol_machteld_van_brabant
+	#	birth = the_hague
+	#	dynasty = gerulfing_dynasty
+	#	spouse = hnb_hermann_i_henneberg_coburg
+	#	tag = HAI
+	#}	
+	#hnb_hermann_i_henneberg_coburg
+	#Henneberg
+	
+	spo_elisabeth_von_katzeneinbogen = { #Spouse of Nephew of Ruler
+		first_name = { name = name_elizabeth }
+		culture = westphalian
+		religion = catholic
+		female = yes
+		spouse = spo_walram_ii_sponheim_kreuznach
+		dynasty = katzenelnbogen_dynasty
+		birth_date = 1300.1.1
+		birth = kreuznach
+		tag = SPO
+	}
+
 	#################################################################
 	#							PRE 1200							#
 	#################################################################
@@ -73,6 +139,23 @@ character_db={
 		#mother = Ogive of Luxembourg
 		dynasty = vlaanderen_dynasty
 		tag = FLA		
+	}
+	
+	fla_adela_capet = {
+		first_name = { name = name_adela }
+		nickname = { name = nick_the_holy }
+		female = yes
+		culture = french
+		religion = catholic
+		birth_date = 1009.1.1 #round about
+		death_date = 1076.1.1
+		birth = reims
+		father = fra_robert_ii_capet
+		#mother = Constance Bosonid
+		#spouse = richard_iii_normandy
+		spouse = fla_boudewijn_v_van_vlaanderen
+		dynasty = capet_dynasty
+		tag = FRA
 	}
 	
 	fla_boudewijn_vi_van_vlaanderen = {
@@ -163,6 +246,63 @@ character_db={
 		#mother = clementia_of_burgundy - sister of pope callistus II - daughter of bur_william_i_of_burgundy
 		#spouse = 
 		dynasty = vlaanderen_dynasty
+		tag = FLA		
+	}
+	
+	nrm_robert_ii_curthose = {
+		first_name = { name = name_robert }
+		nickname = { name = "Curthose" }
+		culture = norman
+		religion = catholic
+		birth = caen
+		birth_date = 1051.1.1
+		death_date = 1134.2.3
+		dynasty = normandy_dynasty
+		father = eng_william_the_conquerer
+		tag = NRM
+	}
+	
+	fla_william_clito = {		
+		first_name = { name = name_william }
+		nickname = { name = "Clito" }
+		culture = norman
+		religion = catholic
+		birth = caen
+		birth_date = 1102.10.25
+		death_date = 1128.7.28
+		dynasty = normandy_dynasty
+		father = nrm_robert_ii_curthose
+		tag = NRM
+	}
+	dan_adela_van_vlaanderen = {
+		first_name = { name = name_adela }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1064.1.1
+		death_date = 1115.4.1
+		birth = bruges
+		father = fla_robrecht_i_van_vlaanderen
+		#mother = gertrude_of_saxony
+		spouse = dan_canute_iv
+		#spouse = apulia_roger_borsa
+		dynasty = vlaanderen_dynasty
+		tag = FLA
+	}
+	
+	fla_karel_van_vlaanderen = {
+		first_name = { name = name_charles }
+		nickname = { name = nick_the_good }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1084.1.1
+		death_date = 1127.3.2
+		birth = aarhus
+		father = dan_canute_iv
+		mother = dan_adela_van_vlaanderen
+		#spouse = amiens_margaret_clermont daughter of renaud_ii_clermont
+		dynasty = estrid_dynasty
 		tag = FLA		
 	}
 	
@@ -714,6 +854,20 @@ character_db={
 		#spouse = isolda of limburg - sister of jutta of limburg
 		#spouse = beatrice of kyrburg-dhaun
 		tag = HBG
+	}
+	eng_beatrix_von_valkenburg = { # Spouse of Richard of Cornwall
+		first_name = { name = name_beatrix }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1254.1.1
+		death_date = 1277.10.17
+		birth = maastricht
+		father = vbg_dirk_ii_von_valkenburg
+		spouse = eng_richard_of_cornwall
+		#mother = bertha van limburg-monschau or adelheid_of_loon
+		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
+		tag = ENG
 	}
 	#Guelders
 	gel_gerard_i_van_gelre = { #first count of gelre
@@ -1519,6 +1673,21 @@ character_db={
 		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
 		tag = FLA
 	}
+	fla_johanna_van_vlaanderen = { #of constantinople
+		first_name = { name = name_joanna }
+		female = yes
+		culture = flemish
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1194.1.1 #between and 1200
+		death_date = 1244.12.5
+		birth = bruges
+		father = fla_boudewijn_ix_van_vlaanderen #I of constantinople, VI of hainaut
+		spouse = fla_fernando_portugal
+		#spouse = sav_thomas_ii_piedmont - second marriage
+		dynasty = vlaanderen_dynasty #boudewijn_dynasty flanders_dynasty
+		tag = FLA
+	}
 	
 	nam_philip_van_vlaanderen = {		
 		first_name = { name = name_baldwin }
@@ -1663,6 +1832,20 @@ character_db={
 		#spouse = cunigunda of lorraine
 		#spouse = ermensinde of luxembourg
 		tag = LIM
+	}
+	lor_catherine_limbourg = {
+		first_name = { name = name_catherine }
+		female = yes
+		culture = walloon
+		religion = catholic
+		birth_date = 1215.1.1 
+		death_date = 1255.1.1
+		birth = arlon
+		father = lim_waleran_iii_of_limbourg
+		spouse = lor_mathieu_ii_lorraine
+		#mother = ermensinde_of_luxemburg
+		dynasty = limbourg_dynasty
+		tag = JUL
 	}
 	lim_ermensinde_namur = {
 		first_name = { name = name_ermesinde }
@@ -1873,6 +2056,20 @@ character_db={
 		tag = HOL
 		#he married Mathilde of brabant, a daughter of Henri I and Matilde of Flanders
 	}
+	hai_adelaide_of_holland = {
+		first_name = { name = name_adelaide }
+		culture = low_franconian
+		female = yes
+		religion = catholic
+		birth_date = 1230.1.1
+		death_date = 1284.1.1 #burial date
+		father = hol_floris_iv_gerulfing
+		mother = hol_machteld_van_brabant
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		spouse = hai_jean_i_avesnes
+		tag = HAI
+	}	
 	hol_machteld_van_brabant = {
 		first_name = { name = name_matilda }
 		culture = low_franconian
@@ -2538,6 +2735,38 @@ character_db={
 		dynasty = loon_dynasty
 		tag = LOO
 	}
+	bav_agnes_loon = {
+		first_name = { name = name_agnes }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1150.1.1
+		death_date = 1191.1.1
+		birth = borgloon
+		father = loo_lodewijk_i_loon
+		spouse = bav_otto_i_wittelsbach
+		#mother = agnes_of_metz
+		dynasty = loon_dynasty
+		tag = UBV
+	}
+	bav_ludwig_i_wittelsbach = {
+		first_name = { name = name_louis }
+		nickname = { name = nick_of_kelheim }
+		culture = danube_bavarian
+		religion = catholic
+		estate = nobles_estate
+		adm = 40 dip = 74 mil = 57
+		birth_date = 1173.12.23
+		death_date = 1231.9.15
+		birth = landshut
+		father = bav_otto_i_wittelsbach
+		mother = bav_agnes_loon
+		dynasty = wittelsbach_dynasty
+		tag = UBV # Should be BAV
+		ruler_trait = righteous
+		ruler_trait = zealot
+		ruler_trait = charismatic_negotiator
+	}
 	
 	loo_gerard_loon = {
 		first_name = { name = name_gerard }
@@ -2633,6 +2862,20 @@ character_db={
 		dynasty = loon_dynasty
 		tag = LOO
 	}	
+	#Rieneck
+	rie_ludwig_iii_rieneck = { 
+		first_name = { name = name_louis }
+		culture = east_franconian
+		religion = catholic
+		birth_date = 1236.1.1
+		death_date = 1291.5.1
+		birth = lohr
+		dynasty = rieneck_dynasty
+		father = loo_lodewijk_iii_loon
+		#mother = adelaide_of_henneberg
+		tag = RIE
+	}
+	
 	
 	loo_arnold_iv_loon = {
 		first_name = { name = name_arnold }
@@ -3406,6 +3649,21 @@ character_db={
 		dynasty = reginar_dynasty
 		tag = JUL
 	}
+	lbv_richardis_julich = { #spouse of otto iv
+		first_name = { name = name_ricarda }
+		female = yes
+		culture = westphalian
+		religion = catholic
+		birth_date = 1305.1.1 #around the date of her brother
+		#death_date = 1360.1.1
+		birth = duren
+		dynasty = julich_hengebach_dynasty
+		father = jul_gerhard_v_julich
+		mother = jul_elisabeth_van_brabant
+		spouse = lbv_otto_iv_wittelsbach
+		#2nd spouse = kle_dietrich_vii_von_kleve
+		tag = JUL
+	}
 	jul_wilhelm_i_julich = { #Ruler
 		first_name = { name = name_william }
 		culture = ripuarian_franconian
@@ -4133,6 +4391,18 @@ character_db={
 		#mother = anb_petronella_von_julich
 		tag = VIA
 	}
+	nss_adelheid_von_vianden = {
+		first_name = { name = name_adelaide }
+		female = yes
+		culture = walloon
+		religion = catholic
+		birth_date = 1310.1.1 
+		spouse = nss_otto_ii_nassau
+		birth = vianden
+		dynasty = vianden_dynasty #house of sponheim
+		father = via_philip_ii_von_vianden
+		tag = NSS
+	}
 	via_heinrich_ii_von_vianden = {
 		first_name = { name = name_henry }
 		culture = walloon
@@ -4795,7 +5065,7 @@ character_db={
 		birth_date = 1245.1.1
 		death_date = 1301.7.4
 		birth = mechelen
-		#father = hai_jean_i_avesnes
+		#father = 
 		dynasty = berthout_dynasty
 		tag = UTR
 	}
@@ -5053,6 +5323,609 @@ character_db={
 	#william_auvergne
 	#bouchard d'avesnes
 	
+
+	# HOUSE OF AVESNES (Counts of Hainaut, Holland & Zeeland)
+
+	hai_jacques_ii_avesnes = {
+		first_name = { name = name_james }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 35 dip = 35 mil = 66
+		birth_date = 1152.1.1
+		death_date = 1191.9.7
+		birth = maubeuge
+		#father = Nicolas d'Avesnes
+		#mother = Mathilde de la Roche
+		dynasty = avesnes_dynasty
+		tag = HAI
+	}
+
+	hai_gautier_ii_avesnes = {
+		first_name = { name = name_walter } # Should be alternative: Gautier
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 57 dip = 36 mil = 38
+		birth_date = 1170.1.1
+		death_date = 1244.1.1
+		birth = maubeuge
+		father = hai_jacques_ii_avesnes
+		#mother = Adeline de Guise
+		dynasty = avesnes_dynasty
+		tag = HAI
+	}
+
+	bls_marie_avesnes = {
+		first_name = { name = name_mary }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1200.1.1
+		death_date = 1241.1.1
+		birth = maubeuge
+		father = hai_gautier_ii_avesnes
+		mother = bls_marguerite_blois
+		dynasty = avesnes_dynasty
+		tag = BLS
+	}
+
+	hai_bouchard_avesnes = {
+		first_name = { name = name_burchard }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 38 dip = 30 mil = 47
+		birth_date = 1182.1.1
+		death_date = 1244.1.1
+		birth = maubeuge
+		father = hai_jacques_ii_avesnes
+		#mother = Adeline de Guise
+		dynasty = avesnes_dynasty
+		tag = HAI
+	}
+
+	# Grandfather of the Count of Hainaut, Holland & Zeeland
+	hai_jean_i_avesnes = {
+		first_name = { name = name_john }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 32 dip = 40 mil = 43
+		birth_date = 1218.5.1
+		death_date = 1257.12.24
+		birth = bastogne
+		father = hai_bouchard_avesnes
+		#mother = Marguerite II of Flanders
+		dynasty = avesnes_dynasty
+		tag = HAI
+	}
+	
+	# Father of the Count of Hainaut, Holland & Zeeland & Former Count
+	hai_jean_ii_de_hainault = {		
+		first_name = { name = name_john }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 41 dip = 50 mil = 84
+		birth_date = 1248.1.1
+		death_date = 1304.8.22
+		father = hai_jean_i_avesnes
+		#mother = Aleid van Holland
+		birth = valenciennes
+		dynasty = avesnes_dynasty
+		tag = HAI
+		ruler_trait = lawgiver
+		ruler_trait = charismatic_negotiator
+	}
+
+	# Duchess Consort of Bourbon & Sister of the Count of Hainaut, Holland & Zeeland
+	bou_marie_avesnes = {
+		first_name = { name = name_mary }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1280.1.1
+		birth = valenciennes
+		father = hai_jean_ii_de_hainault
+		mother = hai_philippa_luxembourg
+		spouse = bou_louis_i_bourbon
+		dynasty = avesnes_dynasty
+		tag = BOU
+	}
+	
+	# Count of Hainaut, Holland & Zeeland
+	hai_guillaume_de_hainault = {		
+		first_name = { name = name_william }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 77 dip = 75 mil = 60
+		birth_date = 1286.1.1
+		father = hai_jean_ii_de_hainault
+		mother = hai_philippa_luxembourg
+		birth = valenciennes
+		dynasty = avesnes_dynasty
+		tag = HAI
+		ruler_trait = lawgiver
+		ruler_trait = charismatic_negotiator
+	}
+
+	# Son & Heir of the Count of Hainaut, Holland & Zeeland
+	hai_guillaume_ii_de_hainault = {
+		first_name = { name = name_william }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 44 dip = 55 mil = 74
+		birth_date = 1307.1.1
+		birth = valenciennes
+		father = hai_guillaume_de_hainault
+		mother = hai_jeanne_valois
+		dynasty = avesnes_dynasty
+		tag = HAI
+		ruler_trait = zealot
+	}
+	
+	# Queen Consort of England & Daughter of the Count of Hainaut, Holland & Zeeland
+	eng_philippa_de_hainault = {		
+		first_name = { name = name_philippa }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 58 dip = 63 mil = 8
+		female = yes
+		birth_date = 1310.5.24
+		birth = valenciennes
+		father = hai_guillaume_de_hainault
+		mother = hai_jeanne_valois
+		spouse = eng_edward_iii
+		dynasty = avesnes_dynasty
+		tag = ENG
+		fertility = 100
+	}
+
+	# Empress Consort of the Holy Roman Emperor & Duchess Consort of Upper Bavaria & Daughter of the Count of Hainaut, Holland & Zeeland
+	ubv_margaret_avesnes = {
+		first_name = { name = name_margaret }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 29 dip = 43 mil = 15
+		female = yes
+		birth_date = 1311.1.1
+		birth = valenciennes
+		father = hai_guillaume_de_hainault
+		mother = hai_jeanne_valois
+		spouse = ubv_ludwig_iv_wittelsbach
+		dynasty = avesnes_dynasty
+		tag = UBV
+	}
+
+	# Countess Consort of Jülich & Daughter of the Count of Hainaut, Holland & Zeeland
+	jul_jeanne_de_hainaut = {
+		first_name = { name = name_joanna }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1313.1.1
+		birth = amsterdam
+		father = hai_guillaume_de_hainault
+		mother = hai_jeanne_valois
+		spouse = jul_wilhelm_i_julich
+		dynasty = avesnes_dynasty
+		tag = JUL
+	}
+
+	# Daughter of the Count of Hainaut, Holland & Zeeland
+	hai_isabelle_avesnes = {
+		first_name = { name = name_elizabeth }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1323.1.1
+		birth = valenciennes
+		father = hai_guillaume_de_hainault
+		mother = hai_jeanne_valois
+		dynasty = avesnes_dynasty
+		tag = HAI
+	}
+	
+	# Brother of the Count of Hainaut, Holland & Zeeland
+	fra_jean_beaumont = {		
+		first_name = { name = name_john }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 32 dip = 53 mil = 61
+		birth_date = 1288.1.1
+		birth = valenciennes
+		father = hai_jean_ii_de_hainault
+		mother = hai_philippa_luxembourg
+		dynasty = avesnes_dynasty
+		tag = FRA
+	}
+	
+	fra_marguerite_nesle = {		
+		first_name = { name = name_john }
+		last_name = { name = de_Nesle }
+		culture = french
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1306.1.1
+		birth = soissons
+		#father = Hugues de Nesle
+		#mother = Unknown
+		spouse = fra_jean_beaumont
+		tag = FRA
+	}
+	
+	# Spouse of the Heir to the County of Blois & Niece of the Count of Hainaut, Holland & Zeeland
+	bls_jeanne_beaumont = {		
+		first_name = { name = name_joanna }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1323.1.1
+		birth = soissons
+		father = fra_jean_beaumont
+		mother = fra_marguerite_nesle
+		spouse = bls_louis_i_chatillon
+		dynasty = avesnes_dynasty
+		tag = BLS
+	}
+
+	# Uncle of the Count of Hainaut, Holland & Zeeland & Former Bishop of Utrech
+	utr_guy_de_hainault = {
+		first_name = { name = name_wido }
+		culture = picard
+		religion = catholic
+		estate = clergy_estate
+		birth_date = 1253.1.1
+		death_date = 1317.5.29
+		birth = valenciennes
+		father = hai_jean_i_avesnes
+		#mother = Aleid van Holland
+		dynasty = avesnes_dynasty
+		tag = UTR
+		ruler_trait = sinner
+	}
+
+	# Uncle of the Count of Hainaut, Holland & Zeeland & Former Bishop of Cambrai
+	cam_guillaume_i_avesnes = {
+		first_name = { name = name_william }
+		culture = picard
+		religion = catholic
+		estate = clergy_estate
+		adm = 50 dip = 41 mil = 49
+		birth_date = 1254.1.1
+		death_date = 1296.1.1
+		birth = valenciennes
+		father = hai_jean_i_avesnes
+		#mother = Aleid van Holland
+		dynasty = avesnes_dynasty
+		tag = CAM
+		ruler_trait = malevolent
+	}
+
+	# Uncle of the Count of Hainaut, Holland & Zeeland & Former Prince of Achaea
+	ach_florent_avesnes = {
+		first_name = { name = name_florence }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 30 dip = 55 mil = 74
+		birth_date = 1255.1.1
+		death_date = 1297.1.23
+		birth = valenciennes
+		father = hai_jean_i_avesnes
+		#mother = Aleid van Holland
+		dynasty = avesnes_dynasty
+		tag = ACH
+		ruler_trait = charismatic_negotiator
+	}
+
+	# Niece of the Count of Hainaut, Holland & Zeeland & Former Princess of Achaea
+	ach_mathilde_avesnes = {
+		first_name = { name = name_matilda }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1293.11.30
+		death_date = 1331.1.1
+		birth = andravida
+		father = ach_florent_avesnes
+		#mother = Isabelle de Villehardouin
+		spouse = ach_louis_burgundy
+		dynasty = avesnes_dynasty
+		tag = ACH
+		ruler_trait = calm
+	}
+
+	hai_baudouin_avesnes = {
+		first_name = { name = name_baldwin }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		adm = 44 dip = 55 mil = 36
+		birth_date = 1219.7.1 # During 1219, but needed a time since brother's birth
+		death_date = 1295.4.10
+		birth = bastogne
+		father = hai_bouchard_avesnes
+		#mother = Marguerite II of Flanders
+		dynasty = avesnes_dynasty
+		tag = HAI
+	}
+
+	# Grandmother of the King of Bohemia & Count of Luxembourg & mother of the Archbishop-Elector of Trier
+	lux_beatrice_avesnes = {
+		first_name = { name = name_beatrix }
+		culture = picard
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1240.1.1
+		death_date = 1321.2.25
+		birth = valenciennes
+		father = hai_baudouin_avesnes
+		#mother = Felicité de Coucy
+		spouse = lux_henry_vi_luxembourg
+		dynasty = avesnes_dynasty
+		tag = HAI
+	}
+	
+	# HOUSE OF LUXEMBOURG (Kings of Bohemia & Counts of Luxembourg)
+
+	lux_henri_v_luxembourg = {
+		first_name = { name = name_henry }
+		nickname = { name = nick_the_blonde }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		adm = 38 dip = 61 mil = 72
+		birth_date = 1216.1.1
+		death_date = 1281.12.24
+		birth = arlon
+		#father = Waleram II de Limbourg
+		#mother = Ermessinde de Luxembourg
+		dynasty = luxembourg_dynasty
+		tag = LUX
+		ruler_trait = bold_fighter
+	}
+
+	# Grandfather of the King of Bohemia & Count of Luxembourg
+	lux_henry_vi_luxembourg = {
+		first_name = { name = name_henry }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		adm = 24 dip = 40 mil = 53
+		birth_date = 1240.1.1
+		death_date = 1288.6.5
+		birth = luxembourg
+		father = lux_henri_v_luxembourg
+		mother = lux_marguerite_scarpone
+		dynasty = luxembourg_dynasty
+		tag = LUX
+		ruler_trait = bold_fighter
+	}
+
+	# Father of the King of Bohemia & Count of Luxembourg & Former Count. First Luxembourg Emperor of the HRE
+	lux_henry_vii_luxembourg = { # https://en.wikipedia.org/wiki/Henry_VII,_Holy_Roman_Emperor
+		first_name = { name = name_henry }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		adm = 37 dip = 39 mil = 66
+		birth_date = 1273.1.1
+		death_date = 1313.8.24
+		birth = valenciennes
+		father = lux_henry_vi_luxembourg
+		mother = lux_beatrice_avesnes
+		dynasty = luxembourg_dynasty
+		tag = LUX
+		ruler_trait = bold_fighter
+		ruler_trait = just
+	}
+	
+	# King of Bohemia & Count of Luxembourg
+	boh_john_luxembourg = {
+		first_name = { name = name_john }
+		nickname = { name = the_blind }
+		dynasty = luxembourg_dynasty
+		culture = french
+		religion = catholic
+		estate = nobles_estate
+		adm = 64 dip = 47 mil = 59
+		birth_date = 1296.8.10
+		birth = luxembourg
+		father = lux_henry_vii_luxembourg
+		mother = lux_margaret_of_brabant
+		tag = BOH
+		ruler_trait = bold_fighter
+		ruler_trait = embezzler
+	}	
+	
+	# Duchess Consort of Lower Bavaria & Daughter of the King of Bohemia & Count of Luxembourg
+	lbv_margaret_luxembourg = {
+		first_name = { name = name_margaret }
+		culture = czech
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1313.7.8
+		birth = prague
+		father = boh_john_luxembourg
+		mother = boh_elisabeth_premyslid
+		spouse = lbv_heinrich_xiv_wittelsbach
+		dynasty = luxembourg_dynasty
+		tag = LBV
+	}
+
+	# Duchess Consort of Normandy & Daughter of the King of Bohemia & Count of Luxembourg
+	fra_jutta_luxembourg = {
+		first_name = { name = name_bonne }
+		culture = czech
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1315.5.20
+		birth = prague
+		spouse = fra_jean_ii_valois
+		father = boh_john_luxembourg
+		mother = boh_elisabeth_premyslid
+		dynasty = luxembourg_dynasty
+		tag = NRM
+	}
+
+	# Duke of Moravia & Son & Heir of the King of Bohemia & Count of Luxembourg
+	boh_charles_iv_luxembourg = {
+		first_name = { name = name_charles }
+		culture = czech
+		religion = catholic
+		estate = nobles_estate
+		adm = 93 dip = 91 mil = 83
+		birth_date = 1316.5.22
+		birth = prague
+		father = boh_john_luxembourg
+		mother = boh_elisabeth_premyslid
+		dynasty = luxembourg_dynasty
+		tag = MVA
+		ruler_trait = lawgiver
+	}	
+
+	# Daughter of the Duke of Moravia
+	boh_margaret_hungary = {
+		first_name = { name = name_margaret }
+		culture = czech
+		religion = catholic
+		estate = nobles_estate
+		adm = 0 dip = 1 mil = 0
+		female = yes
+		birth_date = 1335.5.24
+		birth = prague
+		father = boh_charles_iv_luxembourg
+		mother = boh_blanche_valois
+		dynasty = luxembourg_dynasty
+		tag = MVA
+	}
+
+	# Hated spouse of the Countess of Tyrol (technically, he is the ruler, but he was kept from power by his wife and tyrolean nobility). Son of the King of Bohemia & Count of Luxembourg
+	tir_jan_jindrich_luxembourg = {
+		first_name = { name = name_john.name_henry }
+		culture = czech
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1322.2.12
+		birth = prague
+		father = boh_john_luxembourg
+		mother = boh_elisabeth_premyslid
+		dynasty = luxembourg_dynasty # Should be dynasty = luxembourg_moravia_dynasty # Founder of the Moravia line of the House of Luxembourg
+		tag = TIR
+		fertility = 0 #will be raised if he is divorced in flavor_hab_tir.1 or flavor_hab_tir.1000
+	}
+	
+	# Co-Duchess Consort of Austria & Styria. Daughter of the King of Bohemia & Count of Luxembourg
+	boh_anne_luxembourg = {
+		first_name = { name = name_anna }
+		culture = czech
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1323.3.27
+		birth = cham
+		father = boh_john_luxembourg
+		mother = boh_elisabeth_premyslid
+		spouse = hab_otto_habsburg
+		dynasty = luxembourg_dynasty
+		tag = HAB
+	}
+	
+	# Son of the King of Bohemia & Count of Luxembourg. Future Count of Luxembourg
+	boh_wenceslaus_luxembourg = {
+		first_name = { name = name_wenceslas }
+		culture = czech
+		religion = catholic
+		estate = nobles_estate
+		adm = 0 dip = 1 mil = 0
+		birth_date = 1337.2.25
+		birth = prague
+		father = boh_john_luxembourg
+		mother = boh_beatrice_de_bourbon
+		dynasty = luxembourg_dynasty
+		tag = BOH
+	}
+
+	# Archbishop-Elector of Trier, Brother of the King of Bohemia & Count of Luxembourg
+	tri_balduin_von_luxembourg = {
+		first_name = { name = name_baldwin }
+		culture = walloon
+		religion = catholic
+		estate = clergy_estate
+		adm = 62 dip = 84 mil = 38
+		birth_date = 1285.1.1
+		birth = luxembourg
+		father = lux_henry_vi_luxembourg
+		mother = lux_beatrice_avesnes
+		dynasty = luxembourg_dynasty
+		tag = TRI
+		ruler_trait = midas_touched
+		ruler_trait = silver_tongue
+	}
+
+	fla_isabelle_luxembourg = {
+		first_name = { name = name_elizabeth }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1247.1.1
+		death_date = 1288.1.1
+		birth = luxembourg
+		father = lux_henri_v_luxembourg
+		mother = lux_marguerite_scarpone
+		spouse = fla_guy_i_dampierre
+		dynasty = luxembourg_dynasty
+		tag = FLA
+	}
+
+	fla_jacob_van_artevelde = {
+		first_name = { name = name_james }
+		last_name = { name = van_artevelde }
+		culture = low_franconian
+		religion = catholic
+		adm = 68 dip = 92 mil = 89
+		estate = burghers_estate
+		birth_date = 1290.6.1
+		birth = ghent
+		tag = FLA
+	}
+	
+	# Mother of the Count of Hainault & Holland
+	hai_philippa_luxembourg = {
+		first_name = { name = name_philippa }
+		culture = walloon
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1252.1.1
+		death_date = 1311.4.6
+		birth = luxembourg
+		father = lux_henri_v_luxembourg
+		mother = lux_marguerite_scarpone
+		spouse = hai_jean_ii_de_hainault
+		dynasty = luxembourg_dynasty
+		tag = HAI
+	}
+
+	
 	lie_jean_dampierre = {
 		first_name = { name = name_john }
 		culture = burgundian
@@ -5137,5 +6010,30 @@ character_db={
 		mother = jul_elisabeth_van_brabant
 		dynasty = julich_hengebach_dynasty
 		tag = KOL
+	}
+	# Bishop of Minden & Brother of the Prince of Lüneburg
+	mdn_gottfried_von_waldeck = { # Predecessor
+		first_name = { name = name_godfrey }
+		culture = rhine_franconian
+		religion = catholic
+		birth_date = 1255.1.1
+		birth = korbach
+		death_date = 1324.5.14
+		father = wde_henry_iii_von_waldeck
+		dynasty = waldeck_dynasty
+		tag = MDN
+	}
+	#Münster
+	mun_conrad_berg = { 
+		first_name = { name = name_conrad }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1247.1.1 #after
+		death_date = 1313.5.25
+		birth = dusseldorf
+		father = brg_adolf_vii_berg
+		#mother = margaret of hochstaden - daughter of lothar I of hochstaden
+		dynasty = limbourg_dynasty
+		tag = BRG
 	}
 }

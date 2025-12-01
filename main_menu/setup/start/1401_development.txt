@@ -1,0 +1,7 @@
+development = {
+	#Low Countries
+	friesland_province = 3
+	drenthe_province = -2 
+	kempenland_province = -2
+}
+

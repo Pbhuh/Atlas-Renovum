@@ -1,6 +1,28 @@
 countries = {
 	countries = {
 	
+	MDN = {	#Minden
+		own_control_core = {
+			minden
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_german_bishopric_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = mdn_ludwig_von_braunschweig_luneburg
+
+			ruler_term = { character = mdn_ludwig_von_braunschweig_luneburg start_date = 1324.5.14 regnal_number = 1 }
+			
+			reforms = {
+				prince_bishopric_reform
+			}
+		}
+		country_rank = rank_county
+		capital = minden
+	}
+	
 	KOL = {	#Cologne
 		own_control_core = {
 			cologne ahrweiler neuss attendorn brilon soest recklinghausen

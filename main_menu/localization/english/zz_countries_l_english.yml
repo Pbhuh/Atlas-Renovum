@@ -28,3 +28,23 @@
  FVG_ADJ: "Fivelingoer"
  ZVW: "Sânwalden"
  ZVW_ADJ: "Sânwaldian"
+ WED: "Wedde"
+ WED_ADJ: "Wedder"
+ EMD: "Emden"
+ EMD_ADJ: "Emdener"
+ LEE: "Leer"
+ LEE_ADJ: "Leerian"
+ AUR: "Aurich"
+ AUR_ADJ: "Auricher"
+ 
+ country_history_frisian_common: "$country_history_low_countries_common$\n\nEncircled by feudal lords, our society is currently divided between those who wish to retain our independence, and those that are slowly gaining power by adopting the foreign ways of the neighboring nations."
+ #a new unity between the independent countries of [ShowAreaName('eastern_switzerland_area')] was formed, and the [GetUniqueInternationalOrganization('swiss_confederation').GetName] stands strong with more and more members flocking to take up their banner. 
+ 
+ country_history_GRN: "$country_history_frisian_common$\n\nThe city of [GetCountry('GRN').GetLongName] seeks to receive imperial recognition as a Free City while expanding it's influence over the crumbling frisian freedom."
+ country_history_WSG: "$country_history_frisian_common$\n\nThe [GetCountry('WSG').GetLongName] has therefore arrived at a crossroads, while still dreaming of our past glory. Are we finally ready to step forward and declare ourselves for one side or the other?"
+ country_history_ESG: "$country_history_frisian_common$\n\nThe [GetCountry('ESG').GetLongName] has therefore arrived at a crossroads, while still dreaming of our past glory. Are we finally ready to step forward and declare ourselves for one side or the other?"
+ country_history_HSG: "$country_history_frisian_common$\n\nThe [GetCountry('HSG').GetLongName] has therefore arrived at a crossroads, while still dreaming of our past glory. Are we finally ready to step forward and declare ourselves for one side or the other?"
+ country_history_ZVW: "$country_history_frisian_common$\n\nThe [GetCountry('ZVW').GetLongName] has therefore arrived at a crossroads, while still dreaming of our past glory. Are we finally ready to step forward and declare ourselves for one side or the other?"
+ country_history_FVG: "$country_history_frisian_common$\n\nThe [GetCountry('FVG').GetLongName] has therefore arrived at a crossroads, while still dreaming of our past glory. Are we finally ready to step forward and declare ourselves for one side or the other?"
+ country_history_WED: "$country_history_frisian_common$\n\nThe [GetCountry('WED').GetLongName] has therefore arrived at a crossroads, while still dreaming of our past glory. Are we finally ready to step forward and declare ourselves for one side or the other?"
+ 

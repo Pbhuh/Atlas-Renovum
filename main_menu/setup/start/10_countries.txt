@@ -39872,11 +39872,9 @@ countries = {
 		capital = utrecht
 	}
 
-	FRI = { #Frisia
-		own_control_core = {
-			#leeuwarden sloten harlingen stavoren appingedam wedde
-			#leer emden aurich wolvega winsum 
-			wedde emden aurich leer
+	FRI = { #Frisia - turn it into a formable ?
+		our_cores_conquered_by_others = {
+			hoorn elsfleth #add in other tags later
 		}
 
 		starting_technology_level = 3
@@ -39934,7 +39932,7 @@ countries = {
 		country_rank = rank_county
 	}
 	
-	JEV = {  # Jever (North Germany)
+	JEV = {  # Jever (North Germany) - Either as peasant republic or as lordship
 		own_control_core = {
 			jever
 		}
@@ -39993,6 +39991,22 @@ countries = {
 
 		country_rank = rank_county
 	}
+	#JEV = {  # Jever (North Germany)
+	#	own_control_core = {
+	#		jever
+	#	}
+	#	starting_technology_level = 3
+	#	include = "expl_western_europe"
+	#	include = "expl_northern_europe"
+	#	include = "catholic_monarchy"
+	#	include = "german_principality"
+	#	government = { ruler = random }
+	#	tolerated_cultures = {
+	#		westphalian
+	#	}
+	#	country_rank = rank_county
+	#	capital = jever
+	#}
 	
 	WSG = { #Westergo (Frisia)
 		own_control_core = {
@@ -40033,7 +40047,7 @@ countries = {
 			}
 
 			centralization_vs_decentralization = 100
-			traditionalist_vs_innovative = -70
+			traditionalist_vs_innovative = -40
 			spiritualist_vs_humanist = 30
 			aristocracy_vs_plutocracy = 100
 			serfdom_vs_free_subjects = 100
@@ -40041,9 +40055,9 @@ countries = {
 			belligerent_vs_conciliatory = 50
 			quality_vs_quantity = 100
 			offensive_vs_defensive = 100
-			land_vs_naval = 30
-			capital_economy_vs_traditional_economy = 100
-			individualism_vs_communalism = 100
+			land_vs_naval = 50
+			capital_economy_vs_traditional_economy = 0
+			individualism_vs_communalism = 50
 			outward_vs_inward = 50
 		}
 
@@ -40102,8 +40116,8 @@ countries = {
 			quality_vs_quantity = 100
 			offensive_vs_defensive = 100
 			land_vs_naval = 30
-			capital_economy_vs_traditional_economy = 100
-			individualism_vs_communalism = 100
+			capital_economy_vs_traditional_economy = 50
+			individualism_vs_communalism = 50
 			outward_vs_inward = 50
 		}
 
@@ -40161,9 +40175,9 @@ countries = {
 			belligerent_vs_conciliatory = 50
 			quality_vs_quantity = 100
 			offensive_vs_defensive = 100
-			land_vs_naval = 30
+			land_vs_naval = -30
 			capital_economy_vs_traditional_economy = 100
-			individualism_vs_communalism = 100
+			individualism_vs_communalism = 75
 			outward_vs_inward = 50
 		}
 
@@ -40222,8 +40236,8 @@ countries = {
 			quality_vs_quantity = 100
 			offensive_vs_defensive = 100
 			land_vs_naval = 30
-			capital_economy_vs_traditional_economy = 100
-			individualism_vs_communalism = 100
+			capital_economy_vs_traditional_economy = 50
+			individualism_vs_communalism = 50
 			outward_vs_inward = 50
 		}
 
@@ -40282,8 +40296,8 @@ countries = {
 			quality_vs_quantity = 100
 			offensive_vs_defensive = 100
 			land_vs_naval = 30
-			capital_economy_vs_traditional_economy = 100
-			individualism_vs_communalism = 100
+			capital_economy_vs_traditional_economy = 50
+			individualism_vs_communalism = 50
 			outward_vs_inward = 50
 		}
 
@@ -40294,10 +40308,145 @@ countries = {
 		country_rank = rank_county
 	}
 	
-	#Wedde/Oldambt
-	#Emden/Emsgo
-	#Leer/Moormerland
-	#Aurich/Brokmerland
+	#ommelanden: possible compromise to make sure most frisian freedom has 2 locations?
+	
+	WED = {  # Wedde - only frisian peasant republic with a local lord
+		own_control_core = {
+			wedde
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = { 
+			ruler = random #eggo van wedde - first ruler in ~1362 - may just give it to Corvey or Osnabruck as fief	
+		
+			centralization_vs_decentralization = 80
+			traditionalist_vs_innovative = -70
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 80
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = -30
+			capital_economy_vs_traditional_economy = 50
+			individualism_vs_communalism = 50
+			outward_vs_inward = 50
+		}		
+		
+		tolerated_cultures = {
+			westphalian
+		}
+		country_rank = rank_county
+		capital = wedde
+	}	
+	
+	LEE = {  #Leer / Moormerland / Neermoor
+		own_control_core = {
+			leer
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = { 
+			ruler = random #ukena family
+		
+			centralization_vs_decentralization = 80
+			traditionalist_vs_innovative = -70
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 80
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = -25
+			capital_economy_vs_traditional_economy = 50
+			individualism_vs_communalism = 50
+			outward_vs_inward = 50
+		}		
+		
+		tolerated_cultures = {
+			westphalian lower_saxon
+		}
+		country_rank = rank_county
+		capital = leeer
+	}
+	
+	EMD = {  #Emden, Greetsiel, Emsigerland, Emsgo
+		own_control_core = {
+			emden
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = { 
+			ruler = random #abdena family - grietsiel by cirksena family
+		
+			centralization_vs_decentralization = 80
+			traditionalist_vs_innovative = -70
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 80
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = -25
+			capital_economy_vs_traditional_economy = 50
+			individualism_vs_communalism = 50
+			outward_vs_inward = 50
+		}		
+		
+		tolerated_cultures = {
+			westphalian lower_saxon
+		}
+		country_rank = rank_county
+		capital = emden
+	}
+	
+	AUR = {  #Aurich - Brokmerland
+		own_control_core = {
+			aurich
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "expl_northern_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = { 
+			ruler = random #tom brok family
+		
+			centralization_vs_decentralization = 80
+			traditionalist_vs_innovative = -70
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 80
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = -25
+			capital_economy_vs_traditional_economy = 50
+			individualism_vs_communalism = 50
+			outward_vs_inward = 50
+		}		
+		
+		tolerated_cultures = {
+			westphalian lower_saxon
+		}
+		country_rank = rank_county
+		capital = aurich
+	}
+	
+	#Norden
 	#Jever/Östringen
 	#Elsfleth/Rüstringen
 	

@@ -95,6 +95,7 @@ HSG = { #Hunsingo - possible flag, reoccuring theme found in multiple weapons
 
 #vredewolde: 
 #te_st_george_dragon_muscovy - possible silver background with emerald/green land? - red is used as background as well
+#westerkwartier - st george knight felling dragon
 
 HSG_alternative = { #Hunsingo weapon based on Winsum
 	pattern = "pattern_solid.dds"
@@ -102,7 +103,7 @@ HSG_alternative = { #Hunsingo weapon based on Winsum
 	color2 = "yellow"
 
 	textured_emblem = {
-		texture = "te_knight_dithmarschen.dds"
+		texture = "te_knight_dithmarschen.dds" #knight with lady with her legs to the left 
 		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }				
 	}
 }
@@ -135,11 +136,243 @@ FVG = { #Fivelingo - intermediate design, origination from around 1436
 	}
 }
 
-oldambt = { #oldambt
+WED = {	#later design - likely when the city of groningen took over
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red"
+	color4 = "white"
+	color5 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_eagle_doubleheaded_wide.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color4
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }				
+	}
+	colored_emblem = {
+		texture = "ce_shield_frame.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.51 } scale = { 0.40 0.40 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_escutcheon_charge_fess.dds" #change to tri color
+		color1 = color4
+		color2 = color5
+		instance = { position = { 0.5 0.498 } scale = { 0.345 0.385 } }		
+	}
+}
+
+WED_knightversion = { #unknown exact design
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+	
+	textured_emblem = {
+		texture = "te_knight_dithmarschen.dds" #geharnaste galopperende man te paard, zwaaiend met een zwaard boven de gepluimde helm, alles van goud. - gold knight 
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }				
+	}
+}
+
+WED_modernversion = { 
 	pattern = "pattern_solid.dds"
 	color1 = "white"
 	color2 = "red"
-	color3 = "blue"
+	color3 = "green"
+	color4 = "yellow"
+	color5 = "blue"
+		
+	colored_emblem = {
+		texture = "ce_castle_scinawa.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.25 0.5 } scale = { 0.5 1.0 } }				
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.75 0.25 } scale = { 0.5 0.5 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_shield.dds" #replace with actual haybale
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.75 0.25 } scale = { 0.5 -0.5 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_bars_03_undy_cortona.dds" #replace with 2 river design
+		color1 = color5
+		color2 = color5
+		instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }		
+	}
+}
+
+EMD = { #Emden - Emsigerland - Greetsiel - Cirksena
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+	color3 = "red"
+	color4 = "blue"
+
+	colored_emblem = {
+		texture = "ce_angel_cirksena_crown.dds" #angel technically
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_masoned_wall_ancient_battlements.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.70 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_water_in_base.dds" 
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.5 0.8 } scale = { 1.0 0.5 } }		
+	}
+	#ce_waterway_wall_gate
+}
+
+EMD_cirksena = { 
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+	color3 = "red"
+	color4 = "blue"
+
+	colored_emblem = {
+		texture = "ce_angel_cirksena_crown.dds" #attempt at creating this
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+LEE = { #
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_letter_l.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.55 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_06.dds" #ce_star_06_mena
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.25 0.5 } scale = { 0.25 0.25 } }
+		instance = { position = { 0.75 0.5 } scale = { 0.25 0.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_mon_sanjou.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.4 0.1 } scale = { 0.25 0.25 } }		
+	}
+}
+
+LEE_moormerland = { #
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_tower_small.dds"
+		color1 = color3
+		color2 = color3
+		color3 = color1
+		instance = { position = { 0.3 0.25 } scale = { 0.5 0.5 } }
+		instance = { position = { 0.7 0.25 } scale = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_lymphad_random.dds" #different type of ship
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.7 } scale = { 0.5 0.5 } }
+	}
+}
+
+LEE_ukena = { #Emden - Emsigerland - Greetsiel - Cirksena
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_lion_rampant_holding_variant.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown.dds" 
+		color1 = color3
+		color2 = color3
+		color3 = color3
+		instance = { position = { 0.5 0.31 } rotation = 210 scale = { 0.38 0.38 } }
+	}
+}
+
+AUR = { #Aurich district
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "red"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds" 
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.75 0.5 } scale = { 0.5 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_angel_cirksena_crown.dds" 
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+AUR_tom_brok = { #Aurich - tom brook - brokmerland
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_eagle_crowned_shield_short_tail.dds" 
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown.dds" 
+		color1 = color2
+		color2 = color2
+		color3 = color2
+		instance = { position = { 0.35 0.08 } scale = { 0.2 0.2 } }
+		instance = { position = { 0.65 0.08 } scale = { 0.2 0.2 } }
+	}
+}
+
+#oldambt = { #oldambt
+#	pattern = "pattern_solid.dds"
+#	color1 = "white"
+#	color2 = "red"
+#	color3 = "blue"
 	#color4 = "" 
 
 	#colored_emblem = {
@@ -149,7 +382,7 @@ oldambt = { #oldambt
 	#	color3 = color1
 	#	instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
 	#}
-}
+#}
 
 #ce_bends_03_thin_bjalbo
 #ce_bends_03_thin_semy_bjalbo
@@ -455,6 +688,7 @@ BDA = { # Breda
 	colored_emblem = {
 		#texture = "ce_vair_saltire.dds"
 		#texture = "ce_quinas_saltire.dds"
+		#ce_flanchis
 		texture = "ce_dutch_saltire.dds"
 		color1 = color2
 		color2 = color2

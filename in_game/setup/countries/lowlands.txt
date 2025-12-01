@@ -192,6 +192,34 @@ ZVW = {
 	religion_definition = catholic
 }
 
+WED = {
+	color = rgb { 5 89 205 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}
+
+LEE = {
+	color = rgb { 150 5 50 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}
+
+EMD = {
+	color = rgb { 165 5 65 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}
+
+AUR = {
+	color = rgb { 185 5 85 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}
+
 STV = {
 	color = rgb { 182 95 165 }
 
@@ -249,7 +277,7 @@ HBG = {
 }
 
 GRN = {
-	color = rgb { 45 101 150 }
+	color = rgb { 75 200 99 }
 	
 	culture_definition = westphalian
 	religion_definition = catholic

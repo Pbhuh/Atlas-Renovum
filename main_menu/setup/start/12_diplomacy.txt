@@ -201,7 +201,7 @@ diplomacy_manager = {
 
     #Vassals of vassals
     dependency = { first = ANJ second = MIE subject_type = fiefdom }
-    dependency = { first = FLA second = NAM subject_type = vassal }
+    #dependency = { first = FLA second = NAM subject_type = vassal } why pdx? union suffices
     dependency = { first = ARS second = STP subject_type = vassal }
     dependency = { first = FOI second = BRR subject_type = fiefdom }
     dependency = { first = FOI second = MDM subject_type = fiefdom }

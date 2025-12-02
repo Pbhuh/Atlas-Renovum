@@ -15,6 +15,44 @@
 @canton_scale_cross_x = @[ ( 333 / 768 ) + 0.001 ]
 @canton_scale_cross_y = @[ ( 205 / 512 ) + 0.001 ]
 
+##################################################
+#vanilla fixed
+
+BRG_Julich = { # Berg-Jülich (inversion of the design)
+#pete note: fixed it, wasn't correct in vanilla
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+	color3 = "red_secondary"
+	color4 = "white"
+	color5 = "red"
+
+    sub = {
+        parent = "sub_lion_cr_qf_flag" # Q1 Q4 Berg
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }
+		color1 = "white"
+		color2 = "red"
+		color3 = "blue" #"red_secondary"
+    }
+    sub = {
+        parent = "sub_lion_flag" # Q2 Q3 Jülich
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		color1 = "yellow"
+		color2 = "black"
+		color3 = "red_secondary"
+    }
+    sub = {
+        parent = "sub_quartered_bold"
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }
+}
+
+
+##################################################
+#New Uniques
+
 FRI = {
 	pattern = "pattern_solid.dds"
 	color1 = "blue"

@@ -18,6 +18,28 @@ default_dynasty = {
 }
 
 ###
+#Vanilla fix
+
+wassenberg_dynasty = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+	color3 = "blue"
+	color4 = "red"
+	color5 = "green"
+
+	colored_emblem = {
+		texture = "ce_rose_simple.dds"
+		color1 = color4
+		color2 = color5
+		color3 = color1
+		instance = { position = { 0.38 0.34 } scale = { 0.4 0.4 }  }
+		instance = { position = { 0.62 0.34 } scale = { 0.4 0.4 }  }
+		instance = { position = { 0.5 0.64 } scale = { 0.4 0.4 }  }	
+	}	
+}
+
+###
 
 vlaanderen_dynasty = {
 	pattern = "pattern_solid.dds"
@@ -77,24 +99,6 @@ wesemale_dynasty = {
 	}		
 }
 
-wassenberg_dynasty = {
-	pattern = "pattern_solid.dds"
-	color1 = "yellow"
-	color2 = "white"
-	color3 = "blue"
-	color4 = "red"
-	color5 = "green"
-
-	colored_emblem = {
-		texture = "ce_rose_simple.dds"
-		color1 = color4
-		color2 = color5
-		color3 = color1
-		instance = { position = { 0.38 0.34 } scale = { 0.4 0.4 }  }
-		instance = { position = { 0.62 0.34 } scale = { 0.4 0.4 }  }
-		instance = { position = { 0.5 0.64 } scale = { 0.4 0.4 }  }	
-	}	
-}
 
 arkel_dynasty = {
 	pattern = "pattern_solid.dds"
@@ -172,12 +176,7 @@ voorne_dynasty = {
 	}
 }
 
-julich_hengebach_dynasty = {
-	pattern = "pattern_solid.dds"
-	color1 = "yellow"
-	color2 = "black"
-	color3 = "red"
-	
+julich_hengebach_dynasty = {	
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"
 	color2 = "black"

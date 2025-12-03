@@ -1,5 +1,91 @@
 countries = {
 	countries = {
+		
+	#Normandy
+	NRM = {
+		own_control_core = {
+			bernay laigle louviers pont_audemer
+			caen argentan bayeux domfront falaise lisieux pont_douilly
+			cherbourg coutances avranches st_sauveur vire
+			rouen arques fecamp gisors tancarville
+		}
+
+		our_cores_conquered_by_others = {
+			jersey # England
+			evreux harcourt mortain #Evreux
+			longueville #Longueville
+			alencon domfront argentan #Alencon
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = fra_jean_ii_valois
+
+			ruler_term = { character = eng_william_the_conquerer start_date = 1035.7.2 end_date = 1087.9.9 regnal_number = 1 }
+			ruler_term = { character = nrm_robert_ii_curthose start_date = 1087.9.9 end_date = 1106.9.28 regnal_number = 2 }
+			ruler_term = { character = eng_henry_i start_date = 1106.9.28 end_date = 1135.12.1 regnal_number = 1 }
+
+			ruler_term = { character = eng_stephen_i start_date = 1135.12.22 end_date = 1144.1.19 regnal_number = 1 }
+
+			ruler_term = { character = anj_geoffroy_v_anjou start_date = 1144.1.19 end_date = 1151.9.7 regnal_number = 1 }
+			ruler_term = { character = eng_henry_ii_curtmantle start_date = 1151.9.7 end_date = 1189.7.6 regnal_number = 2 }
+			ruler_term = { character = eng_richard_i_lionheart start_date = 1189.9.3 end_date = 1199.4.6 regnal_number = 1 }
+			ruler_term = { character = eng_john_lackland start_date = 1199.5.27 end_date = 1204.4.28 regnal_number = 1 }
+			# Annexed to France 1204-1332
+
+			ruler_term = { character = fra_jean_ii_valois start_date = 1332.2.17 regnal_number = 2 }
+
+			regnal_numbers = {
+				#Rollo = 1
+				name_william = 2
+				name_richard = 3
+				name_robert = 2
+				name_henry = 2
+				name_stephen = 1
+				name_godfrey = 1
+				name_john = 2
+			}
+
+			laws = {
+				legal_code_law = couteume_de_normaundie
+			}
+
+			reforms = {
+				french_appanage_reform
+			}
+		}
+		country_rank = rank_duchy
+		capital = rouen
+	}
+	
+	
+	KTZ = {  # Katzenelnbogen (North Germany)
+		own_control_core = {
+			katzenelnbogen darmstadt
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = { 
+			ruler = ktz_johann_ii_von_katzenelnbogen
+
+			ruler_term = {	character = ktz_gerhard_i_von_katzenelnbogen start_date = 1311.1.1 end_date = 1312.1.1 regnal_number = 1 }
+			ruler_term = {	character = ktz_johann_ii_von_katzenelnbogen start_date = 1312.1.1 regnal_number = 2 } #
+			
+			regnal_numbers = {
+				name_john = 2
+				name_gerard = 1
+			}
+		}
+		country_rank = rank_county
+		capital = katzenelnbogen
+	}
 	
 	MDN = {	#Minden
 		own_control_core = {
@@ -496,6 +582,49 @@ countries = {
 
 		country_rank = rank_duchy
 	}
+	
+	BRG = {	#Berg
+		own_control_core = {
+			dusseldorf remscheid siegburg solingen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		government = {
+
+			ruler = brg_adolf_ix_berg
+			
+			ruler_term = {	character = brg_adolf_iv_berg start_date = 1152.10.12 end_date = 1160.1.1 regnal_number = 5	}
+			#ruler_term = {	character = brg_adolf_v_berg start_date = 1160.1.1 end_date = 1148.1.1 regnal_number = 5	}
+			ruler_term = {	character = brg_engelbert_i_berg start_date = 1160.1.1 end_date = 1189.1.1 regnal_number = 1	}
+			ruler_term = {	character = brg_adolf_vi_berg start_date = 1189.1.1 end_date = 1218.8.7 regnal_number = 6	}
+			ruler_term = { 	character = kol_engelbert_ii_berg start_date = 1218.8.7 end_date = 1225.11.7 regnal_number = 2 }
+			ruler_term = {	character = brg_irmgard_berg start_date = 1225.11.7 end_date = 1248.1.1 regnal_number = 4	}
+			ruler_term = {	character = lim_heinrich_iv_of_limbourg start_date = 1225.11.7 end_date = 1247.1.1 regnal_number = 4	}
+			ruler_term = {	character = brg_adolf_vii_berg start_date = 1247.1.1 end_date = 1259.4.22 regnal_number = 7	}
+			ruler_term = {	character = brg_adolf_viii_berg start_date = 1259.4.22 end_date = 1296.9.28 regnal_number = 8	}
+			ruler_term = {	character = brg_william_i_berg start_date = 1296.9.28 end_date = 1308.1.1 regnal_number = 1	}
+			ruler_term = {	character = brg_adolf_ix_berg start_date = 1308.1.1 regnal_number = 9	}
+
+			regnal_numbers = {
+				name_adolf = 9
+				name_engelbert = 2
+				name_henry = 4
+				name_william = 1
+			}
+		}
+
+		accepted_cultures = {
+			low_franconian
+		}
+
+		country_rank = rank_county
+		capital = dusseldorf
+		dynasty = limbourg_dynasty
+	}
 
 	NAM = { #Namur
 		own_control_core = {
@@ -593,6 +722,36 @@ countries = {
 		country_rank = rank_county
 		capital = hasselt
 		dynasty = heinsberg_dynasty
+	}
+	
+	RIE = {	#Rieneck
+		own_control_core = {
+			lohr
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "expl_northern_europe"
+		include = "german_principality"
+		capital = lohr
+		dynasty = rieneck_dynasty
+		government = {
+			ruler = rie_udelhild_rieneck
+
+			#arnold_ii was son of adelaide_of_metz, only daughter of gerard burgrave of metz and count of rieneck
+			ruler_term = { character = loo_arnold_ii_loon  	start_date = 1126.1.1	end_date = 1139.4.11	regnal_number = 2 } 
+			ruler_term = { character = loo_lodewijk_i_loon  start_date = 1139.4.11	end_date = 1171.8.11 	regnal_number = 1 }
+			ruler_term = { character = loo_gerard_loon     	start_date = 1171.8.11 	end_date = 1194.1.1		regnal_number = 1 } 
+			ruler_term = { character = loo_gerard_rheineck_loon start_date = 1194.1.1 end_date = 1216.1.1 	regnal_number = 2 }
+			ruler_term = { character = loo_arnold_iii_loon 	start_date = 1216.1.1	end_date = 1221.5.24 	regnal_number = 3 }
+			ruler_term = { character = loo_lodewijk_iii_loon  start_date = 1221.5.24 end_date = 1243.5.15	regnal_number = 2 }	
+			ruler_term = { character = rie_ludwig_iii_rieneck start_date = 1243.1.1 end_date = 1289.1.1 regnal_number = 3 }
+			ruler_term = { character = rie_thomas_i_rieneck start_date = 1289.1.1 end_date = 1293.1.1 regnal_number = 1 }
+			ruler_term = { character = rie_ludwig_v_rieneck start_date = 1293.1.1 end_date = 1333.7.3 regnal_number = 5 }
+			ruler_term = { character = rie_udelhild_rieneck start_date = 1333.7.3 regnal_number = 1 }
+		}
+		country_rank = rank_county
 	}
 
 	VBG = { #Valkenburg
@@ -846,11 +1005,785 @@ countries = {
 
 		capital = utrecht
 	}
-
-	FRI = { #Frisia - turn it into a formable ?
-		our_cores_conquered_by_others = {
-			hoorn elsfleth #add in other tags later
+	
+	
+	#Luxembourg
+	LUX = {
+		own_control_core = {
+			luxembourg bastogne bitburg la_roche orchimont neufchateau_luxembourg thionville
 		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+			ruler = boh_john_luxembourg
+
+			
+			#ruler_term = { character = conrad_i_luxembourg start_date = 1059.1.1 end_date = 1086.8.8 regnal_number = 1 } # deposed 1190, title lost 1195, died 1196
+			ruler_term = { character = nam_ermesinde_luxembourg start_date = 1086.8.8 end_date = 1139.8.19 regnal_number = 1 }
+			ruler_term = { character = nam_henry_i_namur 		start_date = 1139.8.19  end_date = 1196.8.14 regnal_number = 4 }
+			ruler_term = { character = fcb_otton_hohenstaufen 	start_date = 1196.8.14 end_date = 1197.1.1 regnal_number = 1 }
+			ruler_term = { character = lim_ermensinde_namur start_date = 1197.1.1 end_date = 1247.2.17  regnal_number = 2 }
+			ruler_term = { character = lux_henri_v_luxembourg 	start_date = 1247.2.17 end_date = 1281.12.24 regnal_number = 5 }
+			ruler_term = { character = lux_henry_vi_luxembourg	start_date = 1281.12.24 end_date = 1288.6.5 regnal_number = 6 }
+			ruler_term = { character = lux_henry_vii_luxembourg start_date = 1288.6.5 end_date = 1313.8.24 regnal_number = 7 }
+			ruler_term = { character = boh_john_luxembourg start_date = 1313.8.24 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_sigfrid = 1
+				name_henry = 7
+				name_gilbert = 1
+				name_conrad = 2
+				name_william = 1
+				name_ermesinde = 2
+				name_otto = 1
+				name_theobald = 1
+				name_waleram = 1
+				name_john = 1
+			}
+
+			aristocracy_vs_plutocracy = -20
+			capital_economy_vs_traditional_economy = -10
+			land_vs_naval = -20
+			outward_vs_inward = -40
+		}
+		country_rank = rank_county
+		capital = luxembourg
+
+		tolerated_cultures = {
+			walloon
+		}
+	}
+	
+	#La-roche-en-ardenne
+	LRO = {
+		own_control_core = {
+			la_roche
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+			ruler = boh_john_luxembourg
+			
+			ruler_term = { character = nam_henry_i_namur 		start_date = 1139.8.19  end_date = 1196.8.14 regnal_number = 4 }
+			ruler_term = { character = fcb_otton_hohenstaufen 	start_date = 1196.8.14 end_date = 1197.1.1 regnal_number = 1 }
+			ruler_term = { character = lim_ermensinde_namur start_date = 1197.1.1 end_date = 1247.2.17  regnal_number = 2 }
+			ruler_term = { character = lux_henri_v_luxembourg start_date = 1247.2.17 end_date = 1281.12.24 regnal_number = 5 }
+			ruler_term = { character = lux_henry_vi_luxembourg start_date = 1281.12.24 end_date = 1288.6.5 regnal_number = 6 }
+			ruler_term = { character = lux_henry_vii_luxembourg start_date = 1288.6.5 end_date = 1313.8.24 regnal_number = 7 }
+			ruler_term = { character = boh_john_luxembourg start_date = 1313.8.24 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_sigfrid = 1
+				name_henry = 7
+				name_gilbert = 1
+				name_conrad = 2
+				name_william = 1
+				name_ermesinde = 2
+				name_otto = 1
+				name_theobald = 1
+				name_waleram = 1
+				name_john = 1
+			}
+
+			aristocracy_vs_plutocracy = -20
+			capital_economy_vs_traditional_economy = -10
+			land_vs_naval = -20
+			outward_vs_inward = -40
+		}
+		country_rank = rank_county
+		capital = luxembourg
+
+		tolerated_cultures = {
+			walloon
+		}
+	}
+	
+	#Arlon
+	ARL = {
+		own_control_core = {
+			arlon
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+			ruler = boh_john_luxembourg
+			
+			ruler_term = { character = lim_waleran_ii_of_limbourg start_date = 1119.1.1 end_date = 1139.8.6 regnal_number = 2 }
+			ruler_term = { character = lim_heinrich_ii_of_limbourg start_date = 1139.8.6 end_date = 1167.8.1 regnal_number = 2 }
+			ruler_term = { character = lim_heinrich_iii_of_limbourg start_date = 1167.8.1 end_date = 1221.6.21 regnal_number = 3 }
+			ruler_term = { character = lim_waleran_iii_of_limbourg start_date = 1221.6.21 end_date = 1226.7.2 regnal_number = 3 }
+			ruler_term = { character = lux_henri_v_luxembourg start_date = 1226.7.2 end_date = 1281.12.24 regnal_number = 5 }
+			ruler_term = { character = lux_henry_vi_luxembourg start_date = 1281.12.24 end_date = 1288.6.5 regnal_number = 6 }
+			ruler_term = { character = lux_henry_vii_luxembourg start_date = 1288.6.5 end_date = 1313.8.24 regnal_number = 7 }
+			ruler_term = { character = boh_john_luxembourg start_date = 1313.8.24 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_sigfrid = 1
+				name_henry = 7
+				name_gilbert = 1
+				name_conrad = 2
+				name_william = 1
+				name_ermesinde = 2
+				name_otto = 1
+				name_theobald = 1
+				name_waleram = 1
+				name_john = 1
+			}
+
+			aristocracy_vs_plutocracy = -20
+			capital_economy_vs_traditional_economy = -10
+			land_vs_naval = -20
+			outward_vs_inward = -40
+		}
+		country_rank = rank_county
+		capital = arlon
+
+		tolerated_cultures = {
+			walloon
+		}
+	}
+	
+	#Vianden
+	VIA = {
+		own_control_core = {
+			vianden
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+			ruler = via_heinrich_ii_von_vianden
+
+			ruler_term = { character = via_philip_ii_von_vianden start_date = 1307.1.1 end_date = 1315.1.1 regnal_number = 2 }
+			ruler_term = { character = via_heinrich_ii_von_vianden start_date = 1315.1.1 regnal_number = 2 }
+
+			regnal_numbers = {
+				name_henry = 2
+			}
+
+			aristocracy_vs_plutocracy = -20
+			capital_economy_vs_traditional_economy = -10
+			land_vs_naval = -20
+			outward_vs_inward = -40
+		}
+		country_rank = rank_county
+		capital = vianden
+
+		tolerated_cultures = {
+			walloon
+		}
+	}
+
+	#Hainaut
+	HAI = {
+		own_control_core = {
+			valenciennes #France
+			ath chimay enghien maubeuge mons
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"
+		government = {
+			ruler = hai_guillaume_de_hainault
+			
+			#marquis of valenciennes: reinier of hasnon
+			#count of mons: herman_of_mons
+			#union of county of mons and march of valenciennes	
+			ruler_term = { character = hai_richilde_hainaut start_date = 1050.1.1 end_date = 1086.3.15 regnal_number = 1 }
+			ruler_term = { character = fla_boudewijn_vi_van_vlaanderen start_date = 1051.1.1 end_date = 1070.7.17 regnal_number = 1 }
+			ruler_term = { character = fla_arnulf_iii_van_vlaanderen start_date = 1070.7.17 end_date = 1071.2.22 regnal_number = 1 }
+			ruler_term = { character = hai_boudewijn_ii_hainaut start_date = 1071.2.22 end_date = 1098.1.1 regnal_number = 2 }
+			ruler_term = { character = hai_boudewijn_iii_hainaut start_date = 1098.1.1 end_date = 1120.1.1 regnal_number = 3 }
+			ruler_term = { character = hai_boudewijn_iv_hainaut start_date = 1120.1.1 end_date = 1171.11.9 regnal_number = 4 }
+			ruler_term = { character = hai_boudewijn_v_hainaut start_date = 1171.11.9 end_date = 1195.12.7 regnal_number = 5 }
+			ruler_term = { character = fla_boudewijn_ix_van_vlaanderen start_date = 1195.12.7 end_date = 1205.1.1 regnal_number = 6 }
+			ruler_term = { character = fla_johanna_van_vlaanderen start_date = 1205.1.1 end_date = 1212.1.1 regnal_number = 1 }
+			ruler_term = { #marriage
+				character = fla_johanna_van_vlaanderen start_date = 1205.1.1 end_date = 1233.7.27 regnal_number = 1
+				character = fla_fernando_portugal start_date = 1212.1.1 end_date = 1233.7.27 regnal_number = 1 
+			}
+			ruler_term = { #marriage
+				character = fla_johanna_van_vlaanderen start_date = 1233.7.27 end_date = 1244.12.5 regnal_number = 1
+				character = sav_thomas_ii_piedmont start_date = 1233.7.27 end_date = 1244.12.5 regnal_number = 1 
+			} 
+			#hai_bouchard_avesnes
+			ruler_term = { character = fla_margaretha_ii_van_vlaanderen start_date = 1244.12.5 end_date = 1253.11.29 regnal_number = 1 } 
+			ruler_term = { character = hai_jean_i_avesnes start_date = 1253.11.29 end_date = 1257.12.24 regnal_number = 1 }
+			ruler_term = { character = fla_margaretha_ii_van_vlaanderen start_date = 1257.12.24 end_date = 1280.1.1 regnal_number = 1 }
+			ruler_term = { character = hai_jean_ii_de_hainault start_date = 1280.1.1 end_date = 1304.8.22 regnal_number = 2 }
+			ruler_term = { character = hai_guillaume_de_hainault start_date = 1304.8.22 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_reginar = 5
+				#Sigard = 1
+				name_godfrey = 2
+				name_richard = 1
+				name_herman = 1
+				name_baldwin = 6
+				name_arnulf = 1
+				name_joanna = 1
+				name_margaret = 1
+				name_john = 2
+				name_william = 1
+			}
+
+			aristocracy_vs_plutocracy = -20
+			capital_economy_vs_traditional_economy = -10
+			land_vs_naval = -20
+
+			laws = {
+				mining_law = nobles_mining_law
+			}
+		}
+
+		tolerated_cultures = {
+			walloon
+		}
+
+		country_rank = rank_county
+		capital = valenciennes
+	}
+
+	#Flanders
+	FLA = {
+		own_control_core = {
+			cassel dunkirk oudenaarde ypres veurne
+			ostend bruges hulst ghent sint_niklaas aalst kortriik
+		}
+		our_cores_conquered_by_others = {
+			lille douai tournai
+			middelburg
+		}
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = fla_louis_i_dampierre
+			
+			ruler_term = { character = fla_boudewijn_v_van_vlaanderen start_date = 1035.5.30 end_date = 1051.1.1 regnal_number = 5 }
+			ruler_term = { character = fla_boudewijn_vi_van_vlaanderen start_date = 1051.1.1 end_date = 1070.7.17 regnal_number = 6 }
+			ruler_term = { character = fla_arnulf_iii_van_vlaanderen start_date = 1070.7.17 end_date = 1071.2.22 regnal_number = 3 }
+			ruler_term = { character = fla_robrecht_i_van_vlaanderen start_date = 1071.2.22 end_date = 1093.10.13 regnal_number = 1 }
+			ruler_term = { character = fla_robrecht_ii_van_vlaanderen start_date = 1093.10.13 end_date = 1111.10.5 regnal_number = 2 }
+			ruler_term = { character = fla_boudewijn_vii_van_vlaanderen start_date = 1111.10.5 end_date = 1119.7.19 regnal_number = 7 }
+			ruler_term = { character = fla_karel_van_vlaanderen start_date = 1119.7.19 end_date = 1127.3.2 regnal_number = 1 }
+			ruler_term = { character = fla_william_clito start_date = 1127.3.2 end_date = 1128.7.28 regnal_number = 1 }
+			ruler_term = { character = fla_thierry_alsace start_date = 1128.7.28 end_date = 1168.1.17 regnal_number = 1 }
+			ruler_term = { character = fla_philippe_i_alsace start_date = 1168.1.17 end_date = 1191.6.1 regnal_number = 1 }
+			ruler_term = { character = fla_marguerite_i_alsace start_date = 1191.6.1 end_date = 1194.11.15 regnal_number = 1 }
+			ruler_term = { character = fla_boudewijn_ix_van_vlaanderen start_date = 1194.11.15 end_date = 1205.1.1 regnal_number = 9 }
+			ruler_term = { character = fla_johanna_van_vlaanderen start_date = 1205.1.1 end_date = 1212.1.1 regnal_number = 1 }
+			ruler_term = { #marriage
+				character = fla_johanna_van_vlaanderen start_date = 1205.1.1 end_date = 1233.7.27 regnal_number = 1
+				character = fla_fernando_portugal start_date = 1212.1.1 end_date = 1233.7.27 regnal_number = 1 
+			}
+			ruler_term = { #marriage
+				character = fla_johanna_van_vlaanderen start_date = 1233.7.27 end_date = 1244.12.5 regnal_number = 1
+				character = sav_thomas_ii_piedmont start_date = 1233.7.27 end_date = 1244.12.5 regnal_number = 1 
+			}
+			ruler_term = { character = fla_margaretha_ii_van_vlaanderen start_date = 1244.12.5 end_date = 1247.1.1 regnal_number = 2 } 
+			ruler_term = { #with her son
+				character = fla_margaretha_ii_van_vlaanderen start_date = 1244.12.5 end_date = 1251.6.6 regnal_number = 2
+				character = fla_guillaume_iii_dampierre start_date = 1247.1.1 end_date = 1251.6.6 regnal_number = 2 
+			}
+			ruler_term = { #with her son
+				character = fla_margaretha_ii_van_vlaanderen start_date = 1251.6.6 end_date = 1278.12.29 regnal_number = 2
+				character = fla_guy_i_dampierre start_date = 1251.6.6 end_date = 1278.12.29 regnal_number = 1
+			}
+			ruler_term = { character = fla_guy_i_dampierre start_date = 1278.12.29 end_date = 1305.3.7 regnal_number = 1 }
+			ruler_term = { character = fla_robert_iii_dampierre start_date = 1305.3.7 end_date = 1322.9.17 regnal_number = 3 }
+			ruler_term = { character = fla_louis_i_dampierre start_date = 1322.9.17 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_arnulf = 3
+				name_baldwin = 9
+				name_charles = 1
+				name_joanna = 1
+				name_louis = 1
+				name_margaret = 2
+				name_robert = 3
+				name_wido = 1
+				name_william = 1
+			}
+
+			aristocracy_vs_plutocracy = 20
+			serfdom_vs_free_subjects = 10
+			mercantilism_vs_free_trade = 20
+			capital_economy_vs_traditional_economy = 0
+			individualism_vs_communalism = -20
+
+		}
+		capital = bruges
+		court_language = french_language
+	}
+	
+	#Holland - Union under Hainaut
+	HOL = {
+		own_control_core = {
+			the_hague leiden rotterdam amsterdam alkmaar dordrecht geertruidenberg hoorn haarlem gouda
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = {
+			ruler = hai_guillaume_de_hainault
+
+			ruler_term = { character = hol_dirk_i_gerulfing start_date = 896.1.1 end_date = 939.1.1 regnal_number = 1 }
+			ruler_term = { character = hol_dirk_ii_gerulfing start_date = 939.1.1 end_date = 988.1.1 regnal_number = 2 }
+			ruler_term = { character = hol_arnulf_gerulfing start_date = 988.1.1 end_date = 993.1.1 regnal_number = 1 }
+			ruler_term = { character = hol_dirk_iii_gerulfing start_date = 993.1.1 end_date = 1039.1.1 regnal_number = 3 }
+			ruler_term = { character = hol_dirk_iv_gerulfing start_date = 1039.1.1 end_date = 1049.1.1 regnal_number = 4 }
+			ruler_term = { character = hol_floris_i_gerulfing start_date = 1049.1.1 end_date = 1061.1.1 regnal_number = 1 }
+			ruler_term = { character = hol_dirk_v_gerulfing start_date = 1061.1.1 end_date = 1091.1.1 regnal_number = 5 }
+			ruler_term = { character = hol_floris_ii_gerulfing start_date = 1091.1.1 end_date = 1121.1.1 regnal_number = 2 }
+			ruler_term = { character = hol_dirk_vi_gerulfing start_date = 1121.1.1 end_date = 1157.1.1 regnal_number = 6 }
+			ruler_term = { character = hol_floris_iii_gerulfing start_date = 1157.1.1 end_date = 1190.1.1 regnal_number = 3 }
+			ruler_term = { character = hol_dirk_vii_gerulfing start_date = 1190.1.1 end_date = 1203.1.1 regnal_number = 7 }
+			ruler_term = {
+				character = hol_ada_gerulfing start_date = 1203.1.1 end_date = 1207.1.1  
+				character = hol_willem_i_gerulfing start_date = 1203.1.1 end_date = 1222.1.1 regnal_number = 1			
+			}
+			ruler_term = { character = hol_willem_i_gerulfing start_date = 1207.1.1 end_date = 1222.1.1 regnal_number = 1 }
+			ruler_term = { character = hol_floris_iv_gerulfing start_date = 1222.1.1 end_date = 1234.1.1 regnal_number = 4 }
+			ruler_term = { character = hol_willem_ii_gerulfing start_date = 1235.1.1 end_date = 1256.1.1 regnal_number = 2 }
+			ruler_term = { character = hol_floris_v_gerulfing start_date = 1256.1.1 end_date = 1296.1.1 regnal_number = 5 }
+			ruler_term = { character = hol_jan_i_gerulfing start_date = 1296.1.1 end_date = 1299.11.10 regnal_number = 1 }
+			ruler_term = { character = hai_jean_ii_de_hainault start_date = 1299.11.10 end_date = 1304.8.22 regnal_number = 2 }
+			ruler_term = { character = hai_guillaume_de_hainault start_date = 1304.8.22 regnal_number = 3 }
+
+			regnal_numbers = {
+				name_gerulf = 1
+				name_theodoric = 7
+				name_arnulf = 1
+				name_florence = 5
+				name_ada = 1
+				name_william = 3
+				name_john = 2
+			}
+
+			aristocracy_vs_plutocracy = 20
+			serfdom_vs_free_subjects = 20
+			mercantilism_vs_free_trade = 30
+			land_vs_naval = 20
+			capital_economy_vs_traditional_economy = -10
+			individualism_vs_communalism = -20
+			outward_vs_inward = 0
+
+			reforms = {
+				feudal_nobility
+			}
+		}
+		country_rank = rank_county
+		capital = the_hague
+
+		accepted_cultures = {
+			frisian
+		}
+	}
+	
+	#to be determined - for now: Lordship of Arkel
+	GRH = {
+		own_control_core = {
+			gorinchem
+		}		
+		
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = {
+			ruler = grh_jan_iv_van_arkel #John 4 - lord of arkel 
+
+			ruler_term = { character = grh_jan_iii_van_arkel start_date = 1297.1.1 end_date = 1324.12.24 regnal_number = 3 }
+			ruler_term = { character = grh_jan_iv_van_arkel start_date = 1326.1.1 regnal_number = 4 }
+
+			regnal_numbers = {
+				name_john = 3
+			}
+
+			aristocracy_vs_plutocracy = 20
+			mercantilism_vs_free_trade = 30
+			land_vs_naval = 20
+			capital_economy_vs_traditional_economy = -10
+			individualism_vs_communalism = -20
+			outward_vs_inward = 0
+
+		}
+
+		tolerated_cultures = {
+			frisian
+		}
+
+		capital = gorinchem
+	}
+
+	#Zeeland - Union under Holland
+	ZEE = {
+		own_control_core = {
+			middelburg zierikzee
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = {
+			ruler = hai_guillaume_de_hainault
+			
+			ruler_term = { character = fla_guy_i_dampierre start_date = 1279.1.1 end_date = 1299.11.10 regnal_number = 1 }
+			ruler_term = { character = hai_jean_ii_de_hainault start_date = 1299.11.10 end_date = 1304.8.22 regnal_number = 2 }
+			ruler_term = { character = hai_guillaume_de_hainault start_date = 1304.8.22 regnal_number = 5 }
+
+			regnal_numbers = {
+				name_baldwin = 5
+				name_arnulf = 1
+				name_robert = 2
+				name_charles = 1
+				name_william = 5
+				name_theodoric = 2
+				name_florence = 3
+				name_philip = 1
+				name_margaret = 2
+				name_ada = 1
+				name_joanna = 1
+				name_ferdinand = 1
+				name_thomas = 1
+				name_wido = 1
+				name_john = 2
+			}
+
+			aristocracy_vs_plutocracy = 20
+			mercantilism_vs_free_trade = 30
+			land_vs_naval = 20
+			capital_economy_vs_traditional_economy = -10
+			individualism_vs_communalism = -20
+			outward_vs_inward = 0
+
+		}
+
+		tolerated_cultures = {
+			frisian
+		}
+
+		country_rank = rank_county
+		capital = middelburg
+	}
+
+	#Lower Lorraine
+	LLR = {
+		our_cores_conquered_by_others = { }
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		include = "german_principality_not_present"
+		government = {
+			#type = monarchy
+			#heir_selection = cognatic_primogeniture
+			#ruler_term = { character = godfried_v_of_bouillon start_date = 1101.1.1 end_date = 1106.1.1 regnal_number = 6 }
+			ruler_term = { character = lim_heinrich_i_of_limbourg start_date = 1101.1.1 end_date = 1106.1.1 regnal_number = 6 }
+			ruler_term = { character = brb_godfried_i_van_leuven start_date = 1106.1.1 end_date = 1129.1.1  regnal_number = 6 }
+			ruler_term = { character = lim_waleran_ii_of_limbourg start_date = 1129.1.1 end_date = 1139.1.25 regnal_number = 2 }
+			ruler_term = { character = brb_godfried_ii_van_leuven start_date = 1139.1.25 end_date = 1142.6.13 regnal_number = 7 }
+			ruler_term = { character = brb_godfried_iii_van_leuven start_date = 1142.6.13 end_date = 1183.1.1 regnal_number = 8 }
+			
+			regnal_numbers = {
+				name_godfrey = 8
+				name_henry = 3
+			}
+		}
+		country_rank = rank_duchy
+		dynasty = reginar_dynasty
+		capital = brussels #not sure there was one
+
+		tolerated_cultures = {
+			walloon
+		}
+	}
+	
+	#Brabant
+	BRB = {
+		own_control_core = {
+			brussels nivelles leuven antwerp turnhout lier
+			hertogenbosch helmond eindhoven
+			bergen_zoom #breda 
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = {
+			ruler = brb_jan_iii_van_brabant
+
+			ruler_term = { character = brb_hendrik_ii_van_leuven start_date = 1020.1.1 end_date = 1078.1.1 regnal_number = 2 }
+			ruler_term = { character = brb_hendrik_iii_van_leuven start_date = 1078.1.1 end_date = 1095.1.1 regnal_number = 3 }
+			ruler_term = { character = brb_godfried_i_van_leuven start_date = 1095.1.1 end_date = 1139.1.25  regnal_number = 1 }
+			ruler_term = { character = brb_godfried_ii_van_leuven start_date = 1139.1.25 end_date = 1142.6.13 regnal_number = 2 }
+			ruler_term = { character = brb_godfried_iii_van_leuven start_date = 1142.6.13 end_date = 1183.1.1 regnal_number = 3 }
+			#raised to duchy for hendrik
+			ruler_term = { character = brb_hendrik_i_van_brabant start_date = 1183.1.1 end_date = 1235.9.5 regnal_number = 1 }
+			ruler_term = { character = brb_hendrik_ii_van_brabant start_date = 1235.9.5 end_date = 1248.2.1 regnal_number = 2 }
+			ruler_term = { character = brb_hendrik_iii_van_brabant start_date = 1248.2.1 end_date = 1261.2.28 regnal_number = 3 }
+			ruler_term = { character = brb_hendrik_iv_van_brabant start_date = 1261.2.28 end_date = 1267.1.1 regnal_number = 4 }
+			ruler_term = { character = brb_jan_i_van_brabant start_date = 1267.1.1 end_date = 1294.5.3 regnal_number = 1 }
+			ruler_term = { character = brb_jan_ii_van_brabant start_date = 1294.5.3 end_date = 1312.10.27 regnal_number = 2 }
+			ruler_term = { character = brb_jan_iii_van_brabant start_date = 1312.10.27 regnal_number = 3 }
+
+			regnal_numbers = {
+				name_henry = 4
+				name_john = 3
+			}
+
+			heir = brb_johanna_van_brabant
+
+			aristocracy_vs_plutocracy = -20
+			land_vs_naval = -20
+		}
+		country_rank = rank_duchy
+		dynasty = reginar_dynasty
+		capital = brussels
+
+		tolerated_cultures = {
+			walloon
+		}
+	}
+		
+	#Leuven
+	#LEV = {
+	#	own_control_core = {
+	#	}
+	#
+	#	starting_technology_level = 3
+	#	include = "expl_western_europe"
+	#	include = "catholic_monarchy"
+	#	include = "german_principality"
+	#	government = {
+	#		ruler = brb_jan_iii_van_brabant
+	#
+	#		ruler_term = { character = brb_hendrik_ii_van_leuven start_date = 1020.1.1 end_date = 1078.1.1 regnal_number = 2 }
+	#		ruler_term = { character = brb_hendrik_iii_van_leuven start_date = 1078.1.1 end_date = 1095.1.1 regnal_number = 3 }
+	#		ruler_term = { character = brb_godfried_i_van_leuven start_date = 1095.1.1 end_date = 1139.1.25  regnal_number = 6 }
+	#		ruler_term = { character = brb_godfried_ii_van_leuven start_date = 1139.1.25 end_date = 1142.6.13 regnal_number = 7 }
+	#		ruler_term = { character = brb_godfried_iii_van_leuven start_date = 1142.6.13 end_date = 1183.1.1 regnal_number = 8 }
+	#		
+	#		regnal_numbers = {
+	#			name_godfrey = 3
+	#			name_henry = 3
+	#		}
+	#
+	#		heir = brb_johanna_van_brabant
+	#
+	#		aristocracy_vs_plutocracy = -20
+	#		land_vs_naval = -20
+	#	}
+	#	country_rank = rank_duchy
+	#	dynasty = reginar_dynasty
+	#	capital = brussels
+	#
+	#	tolerated_cultures = {
+	#		walloon
+	#	}
+	#}
+	
+	#Breda
+	BDA = {
+		own_control_core = {
+			#bergen_zoom 
+			breda
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = {
+			ruler = brb_jan_iii_van_brabant
+			
+			ruler_term = { character = brb_jan_iii_van_brabant start_date = 1312.10.27 regnal_number = 3 }
+			ruler_term = { character = brb_jan_iii_van_brabant start_date = 1312.10.27 regnal_number = 3 }
+			
+			heir = brb_johanna_van_brabant
+			aristocracy_vs_plutocracy = -20
+			land_vs_naval = -20
+		}
+		country_rank = rank_county
+		dynasty = reginar_dynasty
+		capital = breda
+
+		tolerated_cultures = {
+			walloon
+		}
+	}
+	
+	#Bergen-Op-Zoom
+	BGZ = {
+		own_control_core = {
+			bergen_zoom
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = {
+			ruler = vbg_joanna_van_voorne
+			
+			#Creation, before part of Breda
+			ruler_term = { character = bgz_gerard_wesemale start_date = 1290.1.1 end_date = 1309.1.1 regnal_number = 1 }
+			ruler_term = { character = bgz_arnold_wesemale start_date = 1309.1.1 end_date = 1312.1.1 regnal_number = 1 }
+			ruler_term = { 
+				character = bgz_mathilde_wesemale start_date = 1313.1.1 end_date = 1337.1.1 regnal_number = 1
+				character = zee_albert_van_voorne start_date = 1313.1.1 end_date = 1331.9.25 regnal_number = 1
+			}
+			ruler_term = { 
+				character = vbg_joanna_van_voorne start_date = 1331.9.25 regnal_number = 1
+				#vbg_jan_von_valkenburg
+			}
+						
+			heir = brb_johanna_van_brabant
+			aristocracy_vs_plutocracy = -20
+			land_vs_naval = -20
+		}
+		country_rank = rank_county
+		#dynasty = reginar_dynasty
+		capital = bergen_zoom
+
+		tolerated_cultures = {
+			walloon
+		}
+	}
+	
+	#Mechelen
+	MEH = {
+		own_control_core = {
+			mechelen
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+		include = "german_principality"
+		government = {
+			ruler = fla_louis_i_dampierre
+			ruler_term = { character = meh_floris_berthout start_date = 1310.1.1 end_date = 1316.1.1 regnal_number = 1 }
+			ruler_term = { character = hai_guillaume_ii_de_hainault start_date = 1316.1.1 end_date = 1316.1.1 regnal_number = 1 }
+			ruler_term = { character = brb_jan_iii_van_brabant start_date = 1310.1.1 end_date = 1316.1.1 regnal_number = 1 }
+			#berthout dynasty
+
+			aristocracy_vs_plutocracy = -20
+			land_vs_naval = -20
+		}
+		dynasty = dampierre_dynasty
+		capital = mechelen
+
+		tolerated_cultures = {
+			walloon
+		}
+	}
+
+	#Liege
+	LIE = {
+		own_control_core = {
+			liege dinant walcourt
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_bishopric_no_coast"
+		government = {
+			ruler = lie_adolf_ii_von_der_mark
+			
+			#ruler_term = { character = LIE_henri_i_of_verdun    start_date = 1075.6.23  end_date = 1090.1.1     regnal_number = 1 }
+			ruler_term = { character = lie_albert_i_van_leuven  start_date = 1123.1.1  end_date = 1128.1.1     regnal_number = 1 }
+			ruler_term = { character = lie_alexander_julich start_date = 1128.1.1 end_date = 1135.5.21    regnal_number = 1 }
+			#ruler_term = { character = LIE_henri_ii_of_leez     start_date = 1145.1.1   end_date = 1164.8.15    regnal_number = 2 }
+			#ruler_term = { character = LIE_alexander_ii_of_oreye start_date = 1164.8.15 end_date = 1167.1.1     regnal_number = 2 }
+			#ruler_term = { character = LIE_rodolphe_of_zahringer start_date = 1167.1.1  end_date = 1191.8.5     regnal_number = 1 }
+			ruler_term = { character = lie_albert_ii_van_leuven    start_date = 1191.8.5   end_date = 1192.9.24    regnal_number = 1 }
+			#lothair van hochstaden
+			ruler_term = { character = lie_simon_of_limbourg    start_date = 1192.9.24  end_date = 1195.1.1     regnal_number = 1 }
+			ruler_term = { character = lie_albert_van_cuijk 	start_date = 1196.8.1 end_date = 1200.5.1 regnal_number = 2 }
+			#ruler_term = { character = lie_hugues_ii_of_pierrepont start_date = 1206.8.1 end_date = 1229.4.12  regnal_number = 1 }
+			ruler_term = { character = lie_guillaume_savoy   start_date = 1238.1.1   end_date = 1239.10.11   regnal_number = 1 }
+			#ruler_term = { character = LIE_robert_of_thourotte   start_date = 1239.10.11 end_date = 1246.10.16   regnal_number = 1 }
+			ruler_term = { character = lie_hendrik_van_wassenberg start_date = 1246.10.16 end_date = 1274.1.1   regnal_number = 3 }
+			ruler_term = { character = lie_jean_enghien 		start_date = 1274.1.1 	end_date = 1281.1.1     regnal_number = 1 }
+			ruler_term = { character = lie_jean_dampierre 		start_date = 1281.1.1 	end_date = 1291.1.1     regnal_number = 2 }
+			ruler_term = { character = lie_hugues_chalon  		start_date = 1291.1.1 	end_date = 1301.1.1     regnal_number = 2 }
+			ruler_term = { character = wde_adolph_ii_von_waldeck start_date = 1301.1.1 	end_date = 1302.12.13 regnal_number = 2 }
+			ruler_term = { character = lie_thibaut_of_bar 		start_date = 1302.12.13 end_date = 1313.1.1 regnal_number = 1 }
+			ruler_term = { character = lie_adolf_ii_von_der_mark start_date = 1313.1.1 regnal_number = 3 }
+
+			regnal_numbers = {
+				name_adolf = 2
+				name_henry = 2
+			}
+
+			reforms = {
+				prince_bishopric_reform
+			}
+
+			spiritualist_vs_humanist = -70
+			aristocracy_vs_plutocracy = -20
+			land_vs_naval = -20
+		}
+
+		tolerated_cultures = {
+			champenais
+		}
+
+		country_rank = rank_county
+		capital = liege
+	}
+
+	#Bouillon
+	BLL = {
+		own_control_core = {
+			bouillon
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy_no_coast"
+		government = {
+			ruler = lie_adolf_ii_von_der_mark
+
+			ruler_term = { character = lie_adolf_ii_von_der_mark start_date = 1313.1.1 regnal_number = 3 }
+
+			regnal_numbers = {
+				name_adolf = 2
+				name_frederick = 1
+				name_godfrey = 5
+				name_henry = 2
+			}
+		}
+
+		tolerated_cultures = {
+			champenais
+		}
+
+		country_rank = rank_county
+		capital = bouillon
+	}
+
+	FRI = { #Frisia - turn it into a formable 
 
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -1419,6 +2352,66 @@ countries = {
 		}
 		country_rank = rank_county
 		capital = aurich
+	}
+	
+	WFR = { #West-Friesland (Frisia)
+		our_cores_conquered_by_others = {
+			hoorn alkmaar
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		capital = harlingen
+		government = {
+			type = republic
+			heir_selection = oligarchic_elective
+			ruler = random
+			parliament = {
+				parliament_type = council
+			}
+
+			privilege = {
+				peasants_free_peasantry
+			}
+
+			reforms = {
+				frisian_freedom_reform
+			}
+
+			laws = {
+				censorship = limited_censorship
+				republican_foundation_law = republicanism_policy
+				education_masses_law = basic_religious_education
+				administrative_system = local_courts_administration
+				cultural_traditions_law = civil_society
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+				legal_code_law = civil_law_policy
+				maritime_law = protect_trade_routes
+				piracy_law = anti_piracy_policy
+				distribution_of_power_law = dop_favor_the_commoners
+			}
+
+			centralization_vs_decentralization = 100
+			traditionalist_vs_innovative = -40
+			spiritualist_vs_humanist = 30
+			aristocracy_vs_plutocracy = 100
+			serfdom_vs_free_subjects = 100
+			mercantilism_vs_free_trade = 100
+			belligerent_vs_conciliatory = 50
+			quality_vs_quantity = 100
+			offensive_vs_defensive = 100
+			land_vs_naval = 50
+			capital_economy_vs_traditional_economy = 0
+			individualism_vs_communalism = 50
+			outward_vs_inward = 50
+		}
+
+		tolerated_cultures = {
+			low_franconian
+		}
+
+		country_rank = rank_county
 	}
 	
 	#Norden

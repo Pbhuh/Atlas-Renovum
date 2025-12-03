@@ -1,6 +1,57 @@
 
 character_db={
 
+	#Lost characters needing to be inserted somewhere
+	
+	nrm_robert_ii_curthose = {
+		first_name = { name = name_robert }
+		nickname = { name = "Curthose" }
+		culture = norman
+		religion = catholic
+		birth = caen
+		birth_date = 1051.1.1
+		death_date = 1134.2.3
+		dynasty = normandy_dynasty
+		father = eng_william_the_conquerer
+		tag = NRM
+	}
+	
+	fla_william_clito = {		
+		first_name = { name = name_william }
+		nickname = { name = "Clito" }
+		culture = norman
+		religion = catholic
+		birth = caen
+		birth_date = 1102.10.25
+		death_date = 1128.7.28
+		dynasty = normandy_dynasty
+		father = nrm_robert_ii_curthose
+		tag = NRM
+	}
+	nss_adelheid_von_vianden = {
+		first_name = { name = name_adelaide }
+		female = yes
+		culture = walloon
+		religion = catholic
+		birth_date = 1310.1.1 
+		spouse = nss_otto_ii_nassau
+		birth = vianden
+		dynasty = vianden_dynasty #house of sponheim
+		father = via_philip_ii_von_vianden
+		tag = NSS
+	}
+	lpp_berhard_v_lippe = { #Son of Ruler
+		first_name = { name = Bernhard }
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1277.1.1
+		birth = lippstadt
+		dynasty = lippe_dynasty
+		father = lpp_simon_i_lippe
+		mother = lpp_adelheid_von_waldeck
+		tag = LPP
+	}
+
 	#################################################################
 	#							PRE 1200							#
 	#################################################################
@@ -21,7 +72,22 @@ character_db={
 		dynasty = vlaanderen_dynasty
 		tag = FLA		
 	}
-	
+	fla_adela_capet = {
+		first_name = { name = name_adela }
+		nickname = { name = nick_the_holy }
+		female = yes
+		culture = french
+		religion = catholic
+		birth_date = 1009.1.1 #round about
+		death_date = 1076.1.1
+		birth = reims
+		father = fra_robert_ii_capet
+		#mother = Constance Bosonid
+		#spouse = richard_iii_normandy
+		spouse = fla_boudewijn_v_van_vlaanderen
+		dynasty = capet_dynasty
+		tag = FRA
+	}
 	fla_boudewijn_vi_van_vlaanderen = {
 		first_name = { name = name_baldwin }
 		culture = low_franconian #walloon #picard
@@ -82,7 +148,37 @@ character_db={
 		dynasty = vlaanderen_dynasty
 		tag = FLA		
 	}
+	dan_adela_van_vlaanderen = {
+		first_name = { name = name_adela }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1064.1.1
+		death_date = 1115.4.1
+		birth = bruges
+		father = fla_robrecht_i_van_vlaanderen
+		#mother = gertrude_of_saxony
+		spouse = dan_canute_iv
+		#spouse = apulia_roger_borsa
+		dynasty = vlaanderen_dynasty
+		tag = FLA
+	}
 	
+	fla_karel_van_vlaanderen = {
+		first_name = { name = name_charles }
+		nickname = { name = nick_the_good }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1084.1.1
+		death_date = 1127.3.2
+		birth = aarhus
+		father = dan_canute_iv
+		mother = dan_adela_van_vlaanderen
+		#spouse = amiens_margaret_clermont daughter of renaud_ii_clermont
+		dynasty = estrid_dynasty
+		tag = FLA		
+	}
 	fla_robrecht_ii_van_vlaanderen = {
 		first_name = { name = name_robert }
 		culture = low_franconian
@@ -113,191 +209,6 @@ character_db={
 		tag = FLA		
 	}
 	
-	# HOUSE OF ALSACE (Dukes of Lorraine)
-
-	mtz_gerard_bouzonville = {
-		first_name = { name = name_gerard }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 993.1.1
-		death_date = 1045.1.1
-		birth = metz
-		#father = Adalbert II de Metz
-		dynasty = alsace_dynasty
-		tag = MTZ
-	}
-
-	lor_adalbert_alsace = {
-		first_name = { name = name_albert }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		adm = 34 dip = 38 mil = 51
-		birth_date = 1020.1.1
-		death_date = 1048.1.11
-		birth = metz
-		father = mtz_gerard_bouzonville
-		#mother = Gisela
-		dynasty = alsace_dynasty
-		tag = LOR
-	}
-
-	lor_gerard_alsace = {
-		first_name = { name = name_gerard }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		adm = 70 dip = 75 mil = 55
-		birth_date = 1030.1.1
-		death_date = 1070.4.14
-		birth = metz
-		father = mtz_gerard_bouzonville
-		#mother = Gisela
-		dynasty = alsace_dynasty
-		tag = LOR
-		ruler_trait = righteous
-		ruler_trait = cruel
-	}
-
-	lor_thierry_ii_lorraine = {
-		first_name = { name = name_theodoric }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		adm = 57 dip = 79 mil = 42
-		birth_date = 1045.1.1 # During 1040's
-		death_date = 1115.12.30
-		birth = nancy
-		father = lor_gerard_alsace
-		#mother = Hadwide de Namur
-		dynasty = alsace_dynasty
-		tag = LOR
-		ruler_trait = architectural_visionary
-		ruler_trait = entrepreneur
-		ruler_trait = zealot
-	}
-	
-	lor_gertrudis_van_vlaanderen = {
-		first_name = { name = name_gertrude  }
-		female = yes
-		religion = catholic
-		culture = low_franconian
-		birth_date = 1070.1.1
-		death_date = 1117.1.1
-		birth = bruges
-		father = fla_robrecht_i_van_vlaanderen
-		#mother = geertruida_van_saksen - daughter of bernhard_of_saxony
-		dynasty = vlaanderen_dynasty
-		spouse = brb_hendrik_iii_van_leuven
-		spouse = lor_thierry_ii_lorraine
-		tag = LOR
-	}
-
-	lor_simon_i_lorraine = {
-		first_name = { name = name_simeon }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		adm = 31 dip = 19 mil = 41
-		birth_date = 1076.1.1
-		death_date = 1139.1.13
-		birth = nancy
-		father = lor_thierry_ii_lorraine
-		#mother = Hedwig von Formbach
-		dynasty = alsace_dynasty
-		tag = LOR
-		ruler_trait = sinner
-		ruler_trait = embezzler
-	}
-
-	lor_mathieu_i_lorraine = {
-		first_name = { name = name_matthew }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		adm = 62 dip = 64 mil = 48
-		birth_date = 1119.1.1
-		death_date = 1176.5.13
-		birth = nancy
-		father = lor_simon_i_lorraine
-		#mother = Adélaide de Louvain
-		dynasty = alsace_dynasty
-		tag = LOR
-		ruler_trait = zealot
-		ruler_trait = bold_fighter
-		ruler_trait = intricate_web_weaver
-	}
-	
-	#Flanders d'Alsace
-	
-	fla_thierry_alsace = {
-		first_name = { name = name_theodoric }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		adm = 43 dip = 56 mil = 63
-		birth_date = 1100.1.1 #Between 1099 & 1101
-		death_date = 1168.1.17
-		birth = nancy
-		father = lor_thierry_ii_lorraine
-		mother = lor_gertrudis_van_vlaanderen
-		dynasty = alsace_dynasty # Should be dynasty = alsace_flanders_dynasty # Founder of the flemish line of the House of Alsace
-		tag = FLA
-		ruler_trait = pious
-		ruler_trait = righteous
-		ruler_trait = bold_fighter
-	}
-
-	fla_philippe_i_alsace = {
-		first_name = { name = name_philip }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		adm = 62 dip = 44 mil = 46
-		birth_date = 1143.1.1
-		death_date = 1191.6.1
-		birth = bruges
-		father = fla_thierry_alsace
-		#mother = Sybille d'Anjou
-		dynasty = alsace_dynasty # Should be dynasty = alsace_flanders_dynasty
-		tag = FLA
-		ruler_trait = expansionist
-		ruler_trait = pious
-	}
-
-	bgn_mathieu_alsace = {
-		first_name = { name = name_matthew }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		adm = 29 dip = 71 mil = 35
-		birth_date = 1144.1.1
-		death_date = 1173.7.25
-		birth = bruges
-		father = fla_thierry_alsace
-		#mother = Sybille d'Anjou
-		dynasty = alsace_dynasty # Should be dynasty = alsace_flanders_dynasty
-		tag = BGN
-		ruler_trait = intricate_web_weaver
-	}
-
-	bgn_ide_alsace = {
-		first_name = { name = name_ida }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1160.1.1
-		death_date = 1216.1.1
-		birth = boulogne_sur_mer
-		father = bgn_mathieu_alsace
-		mother = bgn_marie_blois
-		spouse = bgn_renaud_dammartin
-		dynasty = alsace_dynasty # Should be dynasty = alsace_flanders_dynasty
-		tag = BGN
-	}
-
 	#Flanders-Hainaut
 	
 	hai_boudewijn_ii_hainaut = {
@@ -373,22 +284,9 @@ character_db={
 		tag = FLA
 	}
 	
+	#test
 	fla_marguerite_i_alsace = {
-		first_name = { name = name_margaret }
-		culture = lorrain
-		religion = catholic
-		estate = nobles_estate
-		adm = 40 dip = 64 mil = 22
-		female = yes
-		birth_date = 1145.1.1
-		death_date = 1194.11.15
-		birth = bruges
-		father = fla_thierry_alsace
-		#mother = Sybille d'Anjou
 		spouse = hai_boudewijn_v_hainaut
-		dynasty = alsace_dynasty # Should be dynasty = alsace_flanders_dynasty
-		tag = FLA
-		ruler_trait = naive
 	}
 		
 	#Berg
@@ -1336,121 +1234,6 @@ character_db={
 	#							 1200-1300							#
 	#################################################################
 
-	# HOUSE OF DAMPIERRE (COUNTS OF FLANDERS & NAMUR)
-
-	chp_guy_ii_dampierre = {
-		first_name = { name = name_wido }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		adm = 57 dip = 56 mil = 81
-		birth_date = 1155.1.1
-		death_date = 1216.1.18
-		birth = troyes
-		#father = Guillaume I de Dampierre
-		#mother = Ermengarde de Toucy
-		dynasty = dampierre_dynasty
-		tag = CHP
-		general_trait = glory_seeker
-	}
-
-	# Line of the Counts of Bourbon
-
-	bou_archambaud_viii_bourbon = {
-		first_name = { name = name_archibald }
-		culture = berrichon
-		religion = catholic
-		estate = nobles_estate
-		adm = 60 dip = 71 mil = 28
-		birth_date = 1193.1.1 # Between 1189 & 1197
-		death_date = 1242.7.23
-		birth = troyes
-		father = chp_guy_ii_dampierre
-		#mother = Mathilde I de Bourbon
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty # Founder of the Bourbon line of the House of Dampierre
-		tag = BOU
-		ruler_trait = lawgiver
-	}
-
-	bou_archambaud_ix_bourbon = {
-		first_name = { name = name_archibald }
-		nickname = { name = the_young }
-		culture = berrichon
-		religion = catholic
-		estate = nobles_estate
-		adm = 60 dip = 39 mil = 46
-		birth_date = 1212.1.1
-		death_date = 1249.1.22
-		birth = bourbon
-		father = bou_archambaud_viii_bourbon
-		#mother = Béatrice de Montluçon
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
-		tag = BOU
-		ruler_trait = midas_touched
-	}
-
-	bou_mathilde_ii_bourbon = {
-		first_name = { name = name_matilda }
-		culture = berrichon
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1234.1.1
-		death_date = 1262.1.1
-		birth = bourbon
-		father = bou_archambaud_ix_bourbon
-		mother = bou_yolande_chatillon
-		spouse = bur_eudes_burgundian
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
-		tag = BOU
-	}
-
-	bur_agnes_bourbon = {
-		first_name = { name = name_agnes }
-		culture = berrichon
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1237.1.1
-		death_date = 1287.1.1
-		birth = bourbon
-		father = bou_archambaud_ix_bourbon
-		mother = bou_yolande_chatillon
-		spouse = bur_jean_burgundian
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
-		tag = BUR
-	}
-
-	dre_marie_bourbon = {
-		first_name = { name = name_mary }
-		culture = berrichon
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1220.1.1
-		death_date = 1274.1.1
-		birth = bourbon
-		father = bou_archambaud_viii_bourbon
-		#mother = Béatrice de Montluçon
-		spouse = dre_jean_i_dreux
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_bourbon_dynasty
-		tag = BOU
-	}
-
-	fla_guillaume_ii_dampierre = { #ruler through wife - isn't counted as regnal number
-		first_name = { name = name_william }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		adm = 43 dip = 76 mil = 58
-		birth_date = 1196.1.1
-		death_date = 1231.9.3
-		birth = troyes
-		father = chp_guy_ii_dampierre
-		#mother = Mathilde I de Bourbon
-		dynasty = dampierre_dynasty
-		tag = FLA
-	}
 	
 	fla_boudewijn_ix_van_vlaanderen = {		
 		first_name = { name = name_baldwin }
@@ -1466,7 +1249,21 @@ character_db={
 		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
 		tag = FLA
 	}
-	
+	fla_johanna_van_vlaanderen = { #of constantinople
+		first_name = { name = name_joanna }
+		female = yes
+		culture = flemish
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1194.1.1 #between and 1200
+		death_date = 1244.12.5
+		birth = bruges
+		father = fla_boudewijn_ix_van_vlaanderen #I of constantinople, VI of hainaut
+		spouse = fla_fernando_portugal
+		#spouse = sav_thomas_ii_piedmont - second marriage
+		dynasty = vlaanderen_dynasty #boudewijn_dynasty flanders_dynasty
+		tag = FLA
+	}
 	nam_philip_van_vlaanderen = {		
 		first_name = { name = name_baldwin }
 		nickname = { name = nick_the_noble }
@@ -1530,37 +1327,6 @@ character_db={
 		spouse = fla_guillaume_ii_dampierre
 		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
 		tag = FLA
-	}
-
-	fla_guillaume_iii_dampierre = {
-		first_name = { name = name_william }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		birth_date = 1224.1.1
-		death_date = 1251.6.6
-		birth = bruges
-		father = fla_guillaume_ii_dampierre
-		mother = fla_margaretha_ii_van_vlaanderen
-		dynasty = dampierre_dynasty
-		tag = FLA
-	}
-
-	fla_guy_i_dampierre = {
-		first_name = { name = name_wido }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		adm = 26 dip = 51 mil = 52
-		birth_date = 1226.1.1
-		death_date = 1305.3.7
-		birth = bruges
-		father = fla_guillaume_ii_dampierre
-		mother = fla_margaretha_ii_van_vlaanderen
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty # Founder of the Flanders line of the House of Dampierre
-		tag = FLA
-		ruler_trait = bold_fighter
-		ruler_trait = babbling_buffoon
 	}
 	
 	#BERG
@@ -1626,44 +1392,31 @@ character_db={
 		dynasty = namur_dynasty
 		tag = LIM
 	}
+	lor_catherine_limbourg = {
+		first_name = { name = name_catherine }
+		female = yes
+		culture = walloon
+		religion = catholic
+		birth_date = 1215.1.1 
+		death_date = 1255.1.1
+		birth = arlon
+		father = lim_waleran_iii_of_limbourg
+		spouse = lor_mathieu_ii_lorraine
+		mother = lim_ermensinde_namur
+		dynasty = limbourg_dynasty
+		tag = JUL
+	}
 	
 		#Waleran (c. 1200 – 1242), married Elisabeth of Bar, daughter of Ermesinde of Luxembourg and Theobald I, Count of Bar - bar_thiebaut_i_scarpone
 	
 	# HOUSE OF Limburg-Luxemburg (Kings of Bohemia & Counts (Dukes) of Luxembourg)
 
+	#test 2
 	lux_henri_v_luxembourg = {
-		first_name = { name = name_henry }
-		nickname = { name = nick_the_blonde }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		adm = 38 dip = 61 mil = 72
-		birth_date = 1216.1.1
-		death_date = 1281.12.24
-		birth = arlon
 		father = lim_waleran_iii_of_limbourg
 		mother = lim_ermensinde_namur
-		dynasty = luxembourg_dynasty
-		tag = LUX
-		ruler_trait = bold_fighter
 	}
 
-	# Grandfather of the King of Bohemia & Count of Luxembourg
-	lux_henry_vi_luxembourg = {
-		first_name = { name = name_henry }
-		culture = walloon
-		religion = catholic
-		estate = nobles_estate
-		adm = 24 dip = 40 mil = 53
-		birth_date = 1240.1.1
-		death_date = 1288.6.5
-		birth = luxembourg
-		father = lux_henri_v_luxembourg
-		mother = lux_marguerite_scarpone
-		dynasty = luxembourg_dynasty
-		tag = LUX
-		ruler_trait = bold_fighter
-	}
 	#Limbourg-Berg
 	lim_heinrich_iv_of_limbourg = {
 		first_name = { name = name_henry }
@@ -1702,6 +1455,18 @@ character_db={
 		dynasty = limbourg_dynasty
 		tag = BRG
 	}
+	mun_conrad_berg = { 
+		first_name = { name = name_conrad }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1247.1.1 #after
+		death_date = 1313.5.25
+		birth = dusseldorf
+		father = brg_adolf_vii_berg
+		#mother = margaret of hochstaden - daughter of lothar I of hochstaden
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}
 	brg_adolf_viii_berg = { #Uncle / Ruler
 		first_name = { name = name_adolf }
 		culture = ripuarian_franconian
@@ -1715,18 +1480,8 @@ character_db={
 		dynasty = limbourg_dynasty
 		tag = BRG
 	}
-	brg_heinrich_von_windeck = { #Father of Ruler
-		first_name = { name = name_henry }
-		culture = ripuarian_franconian
-		religion = catholic
-		birth_date = 1247.1.1 #before
-		death_date = 1298.1.1
-		#death_date = 1290.3.8 #or '96
-		birth = dusseldorf
+	brg_heinrich_von_windeck = { #Father of Ruler - test 3
 		father = brg_adolf_vii_berg
-		#mother = margaret of hochstaden - daughter of lothar I of hochstaden
-		dynasty = limbourg_dynasty
-		tag = BRG
 	}
 	#Limburg	
 	lim_waleran_iv_of_limbourg = { #walaran IV
@@ -1819,7 +1574,7 @@ character_db={
 		mother = hol_aleid_van_gelre
 		tag = HOL
 		#he married Mathilde of brabant, a daughter of Henri I and Matilde of Flanders
-	}
+	}	
 	hol_machteld_van_brabant = {
 		first_name = { name = name_matilda }
 		culture = low_franconian
@@ -1835,6 +1590,35 @@ character_db={
 		dynasty = reginar_dynasty
 		tag = HOL
 	}
+	#Henneberg	
+	#hnb_margaretha_of_holland = {
+	#	first_name = { name = name_margaret }
+	#	culture = low_franconian
+	#	female = yes
+	#	religion = catholic
+	#	birth_date = 1234.1.1
+	#	death_date = 1276.1.1
+	#	father = hol_floris_iv_gerulfing
+	#	mother = hol_machteld_van_brabant
+	#	birth = the_hague
+	#	dynasty = gerulfing_dynasty
+	#	spouse = hnb_hermann_i_henneberg_coburg
+	#	tag = HAI
+	#}
+	hai_adelaide_of_holland = {
+		first_name = { name = name_adelaide }
+		culture = low_franconian
+		female = yes
+		religion = catholic
+		birth_date = 1230.1.1
+		death_date = 1284.1.1 #burial date
+		father = hol_floris_iv_gerulfing
+		mother = hol_machteld_van_brabant
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		spouse = hai_jean_i_avesnes
+		tag = HAI
+	}	
 	hol_willem_ii_gerulfing = {
 		first_name = { name = name_william }
 		culture = low_franconian
@@ -1935,8 +1719,136 @@ character_db={
 		spouse = hol_jan_i_gerulfing
 		#spouse = humprey_de_bohun - 4th count of hereford & essex
 	}
-	
-	#
+	#Bentheim	
+	bnt_otto_i_gerulfing = { #greatgreatGreatGrandfather of Ruler - ruler of bentheim, burgrave of utrecht, regent of holland
+		first_name = { name = name_otto }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1135.1.1
+		death_date = 1208.1.1
+		birth = the_hague
+		dynasty = gerulfing_dynasty
+		#mother: sophie luxemburg - countess of bentheim
+		father = hol_dirk_vi_gerulfing
+		spouse = bnt_alveradis_van_cuijk
+		tag = BNT
+	}
+	bnt_alveradis_van_cuijk = {
+		first_name = { name = "Alveradis" }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1128.1.1
+		birth = cuijk
+		death_date = 1205.1.1
+		father = anb_godfried_i_van_cuijk
+		dynasty = cuijk_dynasty
+		tag = ANB
+	}
+	bnt_boudewijn_i_gerulfing = { #greatGreatGrandfather of Ruler - ruler of bentheim, burgrave of utrecht, regent of holland
+		first_name = { name = name_baldwin }
+		nickname = { name = the_bold } #brave
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1180.1.1
+		death_date = 1248.1.1
+		birth = bentheim
+		dynasty = gerulfing_dynasty
+		#spouse: jutta van limburg
+		father = bnt_otto_i_gerulfing
+		mother = bnt_alveradis_van_cuijk
+		tag = BNT
+	}
+	bnt_otto_ii_gerulfing = { #GreatGrandfather of Ruler - ruler of bentheim 12??-1279 ruler of tec. 126?-1279
+		first_name = { name = name_otto }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1210.1.1
+		death_date = 1379.1.1
+		birth = bentheim
+		dynasty = gerulfing_dynasty
+		#spouse = heilwich von tecklenburg
+		father = bnt_boudewijn_i_gerulfing
+		#mother jutta van limburg
+		tag = BNT
+	}
+	bnt_egbert_i_gerulfing = { #Grandfather of Ruler 1279-1311
+		first_name = { name = Egbert }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1250.1.1
+		death_date = 1311.1.1
+		birth = bentheim
+		father = bnt_otto_ii_gerulfing
+		dynasty = gerulfing_dynasty
+		tag = BNT
+	}
+	#Tecklenburg	
+	tck_otto_iii_gerulfing = { #Father
+		first_name = { name = name_otto }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1250.1.1
+		birth = tecklenburg
+		death_date = 1285.1.1
+		dynasty = gerulfing_dynasty
+		father = bnt_otto_ii_gerulfing
+		#mother = heilwich von tecklenburg
+		tag = TCK
+	}
+	tck_richarda_von_der_mark = { # Spouse of otto III
+		first_name = { name = name_ricarda } #? name_richilda
+		culture = low_franconian
+		female = yes
+		religion = catholic
+		female = yes
+		birth_date = 1255.1.1 #estimate
+		death_date = 1285.1.1
+		birth = kleve
+		spouse = tck_otto_iii_gerulfing
+		father = gmk_engelbert_i_von_der_mark
+		mother = gmk_elisabeth_von_valkenburg
+		dynasty = mark_dynasty
+		tag = MEH
+	}
+	tck_otto_iv_gerulfing = { #Father
+		first_name = { name = name_otto }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1278.1.1
+		birth = tecklenburg
+		death_date = 1307.1.1
+		dynasty = gerulfing_dynasty
+		father = tck_otto_iii_gerulfing
+		mother = tck_richarda_von_der_mark # (von_der_mark) - father: gmk_engelbert_i_von_der_mark
+		#spouse = beatrix von Rietberg
+		tag = TCK
+	}
+	tck_otto_v_gerulfing = { #Predecessor
+		first_name = { name = name_otto }
+		culture = westphalian #low_franconian
+		religion = catholic
+		birth_date = 1298.1.1
+		birth = tecklenburg
+		death_date = 1321.1.1
+		father = tck_otto_iv_gerulfing
+		dynasty = gerulfing_dynasty
+		#spouse = Cunegonde van Dale-Diepenheim - 1317
+		tag = TCK
+	}
+	tck_richardis_gerulfing = { #mother of ruler / sister of previous dynasty
+		first_name = { name = name_ricarda }
+		female = yes
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1298.1.1
+		birth = tecklenburg
+		death_date = 1330.1.1
+		father = tck_otto_iv_gerulfing
+		dynasty = gerulfing_dynasty
+		spouse = tck_gunzelin_vi_tecklenburg
+		tag = TCK
+	}
 	
 	#guelders
 	
@@ -2249,9 +2161,9 @@ character_db={
 		birth = heinsberg
 		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
 		father = vbg_goswin_iii_von_heinsberg_valkenburg
+	#married jutta van limburg daughter of hendrik 3 van limburg
 		tag = HBG
 	}
-	#vbg_goswin_iv_von_heinsberg_valkenburg - died childless, inherited by son of cousin - married jutta van limburg daughter of hendrik 3 van limburg
 	vbg_dirk_ii_von_valkenburg = {
 		first_name = { name = name_theodoric }
 		culture = low_franconian
@@ -2263,7 +2175,20 @@ character_db={
 		father = hbg_dirk_i_von_heinsberg
 		tag = VBG		
 	}	
-	
+	eng_beatrix_von_valkenburg = { # Spouse of Richard of Cornwall
+		first_name = { name = name_beatrix }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1254.1.1
+		death_date = 1277.10.17
+		birth = maastricht
+		father = vbg_dirk_ii_von_valkenburg
+		spouse = eng_richard_of_cornwall
+		#mother = bertha van limburg-monschau or adelheid_of_loon
+		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
+		tag = ENG
+	}
 	#Cuijk
 	cjk_hendrik_ii_van_cuijk = {
 		first_name = { name = name_henry }
@@ -2299,111 +2224,6 @@ character_db={
 		father = cjk_albert_van_cuijk
 		tag = CJK
 	}
-	
-	# HOUSE OF REGINAR (Dukes of Brabant & Limburg)
-
-	brb_hendrik_i_van_brabant = {
-		first_name = { name = name_henry }
-		nickname = { name = nick_the_courageous }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 39 dip = 26 mil = 75
-		birth_date = 1165.1.1
-		death_date = 1235.9.5
-		birth = leuven
-		father = brb_godfried_iii_van_leuven
-		#mother = Marguerite de Limbourg
-		#spouse = mathilde van flanders
-		dynasty = reginar_dynasty
-		tag = BRB
-		ruler_trait = bold_fighter
-		ruler_trait = zealot
-	}
-
-	brb_hendrik_ii_van_brabant = {
-		first_name = { name = name_henry }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 63 dip = 35 mil = 41
-		birth_date = 1207.1.1
-		death_date = 1248.2.1
-		birth = brussels
-		father = brb_hendrik_i_van_brabant
-		#mother = Mathilde de Boulogne
-		dynasty = reginar_dynasty
-		tag = BRB
-		ruler_trait = lawgiver
-	}
-
-	brb_hendrik_iii_van_brabant = {
-		first_name = { name = name_henry }
-		nickname = { name = nick_the_gallant }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 40 dip = 56 mil = 35
-		birth_date = 1231.1.1
-		death_date = 1261.2.28
-		birth = brussels
-		father = brb_hendrik_ii_van_brabant
-		#mother = Maria von Staufen
-		dynasty = reginar_dynasty
-		tag = BRB
-		ruler_trait = calm
-	}
-
-	brb_hendrik_iv_van_brabant = {
-		first_name = { name = name_henry }
-		culture = low_franconian
-		religion = catholic
-		estate = clergy_estate
-		birth_date = 1251.1.1
-		death_date = 1272.4.29
-		birth = brussels
-		father = brb_hendrik_iii_van_brabant
-		mother = brb_adelaide_burgundian
-		dynasty = reginar_dynasty
-		tag = BRB
-	}
-
-	# Grandfather of the Duke of Brabant & Limburg & Former Duke of Brabant
-	brb_jan_i_van_brabant = {
-		first_name = { name = name_john }
-		nickname = { name = nick_the_victorious }
-		culture = low_franconian
-		religion = catholic
-		estate = nobles_estate
-		adm = 25 dip = 73 mil = 71
-		birth_date = 1253.1.1
-		death_date = 1294.5.3
-		birth = leuven
-		father = brb_hendrik_iii_van_brabant
-		mother = brb_adelaide_burgundian
-		dynasty = reginar_dynasty
-		tag = BRB
-		ruler_trait = conqueror
-		ruler_trait = bold_fighter
-	}
-
-	# Grandmother of the Duke of Brabant
-	brb_marguerite_dampierre = {
-		first_name = { name = name_margaret }
-		culture = champenais
-		religion = catholic
-		estate = nobles_estate
-		female = yes
-		birth_date = 1251.1.1
-		death_date = 1285.7.3
-		birth = bruges
-		father = fla_guy_i_dampierre
-		#mother = Mahaut de Béthune
-		spouse = brb_jan_i_van_brabant
-		dynasty = dampierre_dynasty # Should be dynasty = dampierre_flanders_dynasty
-		tag = BRB
-	}
-	
 	
 	#Loon	
 	
@@ -2485,7 +2305,20 @@ character_db={
 		dynasty = loon_dynasty
 		tag = LOO
 	}
-	
+	bav_agnes_loon = {
+		first_name = { name = name_agnes }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1150.1.1
+		death_date = 1191.1.1
+		birth = borgloon
+		father = loo_lodewijk_i_loon
+		spouse = bav_otto_i_wittelsbach
+		#mother = agnes_of_metz
+		dynasty = loon_dynasty
+		tag = UBV
+	}
 	loo_gerard_loon = {
 		first_name = { name = name_gerard }
 		culture = low_franconian
@@ -3160,108 +2993,6 @@ character_db={
 		#mother = Philippa of Dammartin
 		tag = GEL
 	}
-
-	gel_reinoud_ii_van_gelre = { #Ruler
-		first_name = { name = name_reginald }
-		nickname = { name = "nick_the_black" }
-		culture = low_franconian
-		religion = catholic
-		adm = 57 dip = 47 mil = 65
-		birth_date = 1295.1.1
-		birth = geldern
-		dynasty = wassenberg_dynasty
-		father = gel_reinoud_i_van_gelre
-		mother = gel_marguerite_dampierre
-		tag = GEL
-	}
-	gel_sophia_berthout = { #First Spouse of Ruler
-		first_name = { name = name_sophia }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		spouse = gel_reinoud_ii_van_gelre
-		birth_date = 1300.1.1
-		birth = mechelen
-		death_date = 1329.5.6
-		father = meh_floris_berthout
-		mother = meh_mathilde_von_der_mark
-		dynasty = berthout_dynasty
-		tag = GEL
-	}
-	gel_mechteld_van_gelre = { #Daughter of Ruler
-		first_name = { name = Mechteld } #name_matilda
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1325.1.1
-		birth = geldern
-		dynasty = wassenberg_dynasty
-		father = gel_reinoud_ii_van_gelre
-		mother = gel_sophia_berthout
-		tag = GEL
-	}
-	gel_elisabeth_van_gelre = { #Daughter of Ruler
-		first_name = { name = name_elizabeth }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1326.1.1
-		birth = geldern
-		dynasty = wassenberg_dynasty
-		father = gel_reinoud_ii_van_gelre
-		mother = gel_sophia_berthout
-		tag = GEL
-	}
-	gel_maria_van_gelre = { #Daughter of Ruler
-		first_name = { name = name_mary }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1329.1.1
-		birth = geldern
-		dynasty = wassenberg_dynasty
-		father = gel_reinoud_ii_van_gelre
-		mother = gel_sophia_berthout
-		tag = GEL
-	}
-	gel_eleanor_of_woodstock = { #Spouse of Ruler
-		first_name = { name = name_eleanor }
-		culture = english
-		religion = catholic
-		female = yes
-		spouse = gel_reinoud_ii_van_gelre
-		birth_date = 1318.6.18
-		birth = carnarvon
-		dynasty = plantagenet_dynasty
-		father = eng_edward_ii
-		mother = eng_isabella_of_france
-		tag = GEL
-	}
-	gel_reinoud_iii_van_gelre = { #Son of Ruler
-		first_name = { name = name_reginald }
-		culture = low_franconian
-		religion = catholic
-		adm = 62 dip = 56 mil = 61
-		birth_date = 1333.1.1
-		birth = geldern
-		dynasty = wassenberg_dynasty
-		father = gel_reinoud_ii_van_gelre
-		mother = gel_eleanor_of_woodstock
-		tag = GEL
-	}
-	gel_eduard_van_gelre = { #Son of Ruler
-		first_name = { name = name_edward }
-		culture = low_franconian
-		religion = catholic
-		adm = 69 dip = 46 mil = 64
-		birth_date = 1336.1.1
-		birth = geldern
-		dynasty = wassenberg_dynasty
-		father = gel_reinoud_ii_van_gelre
-		mother = gel_eleanor_of_woodstock
-		tag = GEL
-	}
-	
 	
 	#Jülich
 	
@@ -3353,15 +3084,19 @@ character_db={
 		dynasty = reginar_dynasty
 		tag = JUL
 	}
-	jul_wilhelm_i_julich = { #Ruler
-		first_name = { name = name_william }
-		culture = ripuarian_franconian
+	lbv_richardis_julich = { #spouse of otto iv
+		first_name = { name = name_ricarda }
+		female = yes
+		culture = westphalian
 		religion = catholic
-		birth_date = 1299.1.1
+		birth_date = 1305.1.1 #around the date of her brother
+		#death_date = 1360.1.1
 		birth = duren
 		dynasty = julich_hengebach_dynasty
 		father = jul_gerhard_v_julich
 		mother = jul_elisabeth_van_brabant
+		spouse = lbv_otto_iv_wittelsbach
+		#2nd spouse = kle_dietrich_vii_von_kleve
 		tag = JUL
 	}
 	jul_marie_julich = { #Sister of ruler
@@ -3377,17 +3112,6 @@ character_db={
 		mother = jul_elisabeth_van_brabant
 		#spouse = heinrich_ii_von_virneburg - died 1338
 		#2nd spouse = kle_dietrich_vii_von_kleve
-		tag = JUL
-	}
-	jul_gerhard_vi_julich = { #Son of Ruler
-		first_name = { name = name_gerard }
-		culture = ripuarian_franconian
-		religion = catholic
-		birth_date = 1330.1.1
-		birth = duren
-		dynasty = julich_hengebach_dynasty
-		father = jul_wilhelm_i_julich
-		mother = jul_jeanne_de_hainaut
 		tag = JUL
 	}
 	
@@ -3673,83 +3397,8 @@ character_db={
 		father = kyb_eberhard_i_kyburg
 		tag = KLE
 	}
-	kle_otto_von_kleve = { #Previous Ruler / Brother
-		first_name = { name = name_otto }
-		#nickname = { the_peaceful }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1278.1.1
-		birth = kleve
-		death_date = 1310.1.1
-		dynasty = kleve_dynasty #wassenberg
-		father = kle_dietrich_vi_von_kleve
-		#mother = margaretha_van_gelre
-		tag = KLE
-	}	###
-	kle_irmgard_von_kleve = { #Previous Ruler's daugther
-		first_name = { name = Irmgard }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1305.1.1
-		birth = kleve
-		dynasty = kleve_dynasty #wassenberg
-		father = kle_otto_von_kleve
-		mother = kle_machteld_von_virneburg
-		#mother = kle_adelheid_von_der_mark
-		#spouse = adolf_ii_von_der_mark
-		spouse = grh_jan_iv_van_arkel
-		tag = GRH
-	}
-	kle_dietrich_vii_von_kleve = { #Ruler - ruler number is 7 & 9
-		first_name = { name = name_theodoric }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1291.1.1
-		birth = kleve
-		dynasty = kleve_dynasty #wassenberg
-		father = kle_dietrich_vi_von_kleve
-		mother = kle_margareta_kyburg
-		tag = KLE
-	}
-	kle_margaretha_van_gelre = { #Spouse of Ruler
-		first_name = { name = name_margaret }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		spouse = kle_dietrich_vii_von_kleve
-		birth_date = 1292.1.1
-		death_date = 1333.1.1
-		birth = geldern
-		dynasty = wassenberg_dynasty
-		father = gel_reinoud_i_van_gelre
-		mother = gel_marguerite_dampierre
-		tag = KLE
-	}
 	#kle_maria_von_julich = { #second spouse - married 1340
-	kle_elisabeth_von_kleve = { #Daugther of Ruler
-		first_name = { name = name_elizabeth }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1307.1.1
-		birth = kleve
-		dynasty = kleve_dynasty #wassenberg
-		father = kle_dietrich_vii_von_kleve
-		mother = kle_margaretha_van_gelre
-		tag = KLE
-	}
-	kle_johann_von_kleve = { #Brother of Ruler
-		first_name = { name = name_john } 
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1293.1.1
-		birth = kleve
-		dynasty = kleve_dynasty #wassenberg
-		father = kle_dietrich_vi_von_kleve
-		mother = kle_margareta_kyburg
-		tag = KLE
-	}
+	
 	#kle_adelheid_von_der_mark = { # Spouse of Otto I
 	##peter note: incorrect, not the spouse of Otto I
 	#	first_name = { name = name_adelaide }
@@ -3900,121 +3549,7 @@ character_db={
 	#	spouse = hbg_godfried_i_von_heinsberg
 	#	tag = CHN
 	#}
-	gmk_engelbert_ii_von_der_mark = { #Father of Ruler
-		first_name = { name = name_engelbert }
-		culture = westphalian
-		religion = catholic
-		birth_date = 1279.1.1
-		birth = hamm
-		death_date = 1328.7.18
-		dynasty = mark_dynasty
-		father = gmk_eberhard_i_von_der_mark
-		mother = brg_irmgard_von_berg
-		tag = GMK
-	}
 	#Margaretha, in 1299 gehuwd met graaf Gerard van Katzenelnbogen (-1312)
-	gmk_adolf_ii_von_der_mark = { #Ruler
-		first_name = { name = name_adolf }
-		culture = westphalian
-		religion = catholic
-		birth_date = 1300.1.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_engelbert_ii_von_der_mark
-		mother = brg_irmgard_von_berg
-		tag = GMK
-	}
-	gmk_eberhard_i_von_der_marck_arenberg = { #Brother of Ruler
-		first_name = { name = name_everard }
-		culture = westphalian
-		religion = catholic
-		birth_date = 1303.1.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_engelbert_ii_von_der_mark
-		tag = GMK
-	}
-	gmk_engelbert_iii_von_der_mark_kologne = { #Brother of Ruler, https://de.wikipedia.org/wiki/Engelbert_III._von_der_Mark_(K%C3%B6ln)
-		first_name = { name = name_engelbert }
-		culture = westphalian
-		estate = clergy_estate #
-		religion = catholic
-		birth_date = 1304.1.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_engelbert_ii_von_der_mark
-		tag = GMK
-	}
-	gmk_margarete_von_kleve = { #Spouse of Ruler
-		first_name = { name = name_margaret }
-		culture = westphalian
-		religion = catholic
-		female = yes
-		spouse = gmk_adolf_ii_von_der_mark
-		birth_date = 1310.1.1
-		birth = kleve
-		dynasty = kleve_dynasty
-		father = kle_dietrich_vii_von_kleve
-		mother = kle_margaretha_van_gelre
-		tag = GMK
-	}
-	gmk_engelbert_iii_von_der_mark = { #Son of Ruler
-		first_name = { name = name_engelbert }
-		culture = westphalian
-		religion = catholic
-		birth_date = 1333.1.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_adolf_ii_von_der_mark
-		mother = gmk_margarete_von_kleve
-		tag = GMK
-	}
-	gmk_margarete_von_der_mark = { #Daugther of Ruler
-		first_name = { name = name_margaret }
-		culture = westphalian
-		religion = catholic
-		female = yes
-		birth_date = 1333.1.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_adolf_ii_von_der_mark
-		mother = gmk_margarete_von_kleve
-		tag = GMK
-	}
-	gmk_mechthild_von_der_mark = { #Daugther of Ruler
-		first_name = { name = name_matilda } # Should be diminutive: Mechthild
-		culture = westphalian
-		religion = catholic
-		female = yes
-		birth_date = 1334.1.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_adolf_ii_von_der_mark
-		mother = gmk_margarete_von_kleve
-		tag = GMK
-	}
-	gmk_adolf_iii_von_der_mark = { #Son of Ruler
-		first_name = { name = name_adolf }
-		culture = westphalian
-		religion = catholic
-		birth_date = 1334.1.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_adolf_ii_von_der_mark
-		mother = gmk_margarete_von_kleve
-		tag = GMK
-	}
-	gmk_dietrich_i_von_der_mark = { #Son of Ruler
-		first_name = { name = name_theodoric }
-		culture = westphalian
-		religion = catholic
-		birth_date = 1336.1.1
-		birth = hamm
-		dynasty = mark_dynasty
-		father = gmk_adolf_ii_von_der_mark
-		mother = gmk_margarete_von_kleve
-		tag = GMK
-	}
 
 	#Katzenelnbogen	
 	ktz_gerhard_i_von_katzenelnbogen = { #Father
@@ -4122,120 +3657,6 @@ character_db={
 	}
 	#Sponheim-Vianden
 	
-
-	#Horne
-	hrn_gerard_i_van_horne = { #Father of Ruler
-		first_name = { name = name_gerard }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1270.1.1
-		birth = weert
-		death_date = 1330.1.1
-		dynasty = horne_dynasty
-		tag = HRN
-	}
-	hrn_willem_iv_van_horne = { #Ruler
-		first_name = { name = name_william }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1302.1.1
-		birth = weert
-		dynasty = horne_dynasty
-		father = hrn_gerard_i_van_horne
-		tag = HRN
-	}
-	hrn_oda_van_putten = { #First Spouse of Ruler
-		first_name = { name = name_oda }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		spouse = hrn_willem_iv_van_horne
-		birth_date = 1295.1.1
-		birth = weert
-		death_date = 1330.1.1
-		dynasty = putten_dynasty
-		tag = HRN
-	}
-	hrn_johanna_van_horne = { #Daughter of Ruler
-		first_name = { name = name_joanna }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1320.1.1
-		birth = weert
-		dynasty = horne_dynasty
-		father = hrn_willem_iv_van_horne
-		mother = hrn_oda_van_putten
-		tag = HRN
-	}
-	hrn_gerard_ii_van_horne = { #Son of Ruler
-		first_name = { name = name_gerard }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1321.1.1
-		birth = weert
-		dynasty = horne_dynasty
-		father = hrn_willem_iv_van_horne
-		mother = hrn_oda_van_putten
-		tag = HRN
-	}
-	hrn_oda_van_horne = { #Daughter of Ruler
-		first_name = { name = name_oda }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1322.1.1
-		birth = weert
-		dynasty = horne_dynasty
-		father = hrn_willem_iv_van_horne
-		mother = hrn_oda_van_putten
-		tag = HRN
-	}
-	hrn_elisabeth_van_horne = { #Daughter of Ruler
-		first_name = { name = name_elizabeth }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1326.1.1
-		birth = weert
-		dynasty = horne_dynasty
-		father = hrn_willem_iv_van_horne
-		mother = hrn_oda_van_putten
-		tag = HRN
-	}
-	hrn_agnes_van_horne = { #Daughter of Ruler
-		first_name = { name = name_agnes }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1330.1.1
-		birth = weert
-		dynasty = horne_dynasty
-		father = hrn_willem_iv_van_horne
-		mother = hrn_oda_van_putten
-		tag = HRN
-	}
-	hrn_elisabeth_kleef_hulchrath = { #Second Spouse of Ruler
-		first_name = { name = name_elizabeth }
-		culture = westphalian
-		religion = catholic
-		female = yes
-		spouse = hrn_willem_iv_van_horne
-		birth_date = 1315.1.1
-		birth = wesel
-		tag = HRN
-	}
-	hrn_willem_v_van_horne = { #Son of Ruler
-		first_name = { name = name_william }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1335.1.1
-		birth = weert
-		dynasty = horne_dynasty
-		father = hrn_willem_iv_van_horne
-		mother = hrn_elisabeth_kleef_hulchrath
-		tag = HRN
-	}
 	#Cuijk
 	cjk_jan_i_van_cuijk = { #Father of Ruler
 		first_name = { name = name_john }
@@ -4293,17 +3714,6 @@ character_db={
 		dynasty = cuijk_dynasty
 		father = anb_gottfried_iii_von_arnsberg
 		#spouse = anb_petronella_von_julich
-		tag = ANB
-	}
-	anb_wilhelm_i_arnsberg = { #Ruler
-		first_name = { name = name_william }
-		culture = lower_saxon
-		religion = catholic
-		birth_date = 1277.1.1
-		birth = arnsberg
-		dynasty = cuijk_dynasty
-		father = anb_ludwig_i_arnsberg
-		#mother = anb_petronella_von_julich
 		tag = ANB
 	}
 	
@@ -4445,6 +3855,34 @@ character_db={
 		dynasty = reginar_dynasty
 		tag = BRB
 	}
+	
+	#Berthout Family, lords of Mechelen	
+	meh_floris_berthout = { #Last Lord
+		first_name = { name = name_florence }
+		last_name = { name = name_berthold }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1275.1.1
+		birth = mechelen
+		death_date = 1331.1.1
+		dynasty = berthout_dynasty
+		tag = MEH
+	}
+	meh_mathilde_von_der_mark = { # Spouse of Floris
+		first_name = { name = name_matilda }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1264.1.1 #estimate
+		death_date = 1315.1.1
+		birth = kleve
+		spouse = meh_floris_berthout
+		father = gmk_engelbert_i_von_der_mark
+		mother = gmk_elisabeth_von_valkenburg
+		dynasty = mark_dynasty
+		tag = MEH
+	}
+	#Berthout van Berlair Family, Lords of Helmond
 	
 	#########################################
 	#					Clergy				#
@@ -4787,16 +4225,6 @@ character_db={
 		tag = UTR
 	}
 
-	utr_jan_van_diest = { #Ruler
-		first_name = { name = name_john }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1295.1.1
-		birth = oldenzaal
-		dynasty = von_Diest_dynasty
-		tag = VRD
-	}
-
 	#Essen
 	ess_katharina_von_der_mark = { #Ruler
 		first_name = { name = Katharina }
@@ -5074,15 +4502,26 @@ character_db={
 		dynasty = virneburg_dynasty
 		tag = KOL
 	}
-	kol_walram_von_julich = { #Ruler
-		first_name = { name = Walram }
+	#kol_walram_von_julich = { #Ruler
+	#	first_name = { name = Walram }
+	#	culture = rhine_franconian
+	#	religion = catholic
+	#	birth_date = 1304.1.1
+	#	birth = duren
+	#	father = jul_gerhard_v_julich
+	#	mother = jul_elisabeth_van_brabant
+	#	dynasty = julich_hengebach_dynasty
+	#	tag = KOL
+	#}
+	mdn_gottfried_von_waldeck = { # Predecessor
+		first_name = { name = name_godfrey }
 		culture = rhine_franconian
 		religion = catholic
-		birth_date = 1304.1.1
-		birth = duren
-		father = jul_gerhard_v_julich
-		mother = jul_elisabeth_van_brabant
-		dynasty = julich_hengebach_dynasty
-		tag = KOL
+		birth_date = 1255.1.1
+		birth = korbach
+		death_date = 1324.5.14
+		father = wde_henry_iii_von_waldeck
+		dynasty = waldeck_dynasty
+		tag = MDN
 	}
 }

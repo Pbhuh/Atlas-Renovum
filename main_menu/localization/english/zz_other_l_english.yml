@@ -7,9 +7,7 @@
  wesemale_dynasty: "Wesemale"
  namur_dynasty: "Namur"
  julich_hengebach_dynasty: "Jülich-Heimbach"
- #
- nick_hierosolymita: "Hierosolymita"
- nick_the_frisian: "the Frisian"
+ katzenelnbogen_dynasty: "Katzenelnbogen dynasty"
  #
  OUTLINER_CATEGORY_MILITARY_RAISE_LEVIES:1 "[Root.RaiseLevies_Militia]"
  raise_levies_normal: "Raise Levies"
@@ -24,3 +22,16 @@
  diplomatic_status_frisian_freedom_name: "Diplomatic status Frisian Freedom name"
  diplomatic_status_frisian_freedom_tooltip: "Diplomatic status Frisian Freedom tooltip"
  frisian_freedom_list_who_tt: "Frisian Freedom list who tt"
+ #
+ schieringers_and_vetkopers: "Schieringers and vetkoper
+ schieringers_and_vetkopers_desc: "TODO : Write a desc"
+ #
+ Goswin: "Goswin"
+ Imagina: "Imagina"
+ the_pagan: "The Pagan"
+ Curthose: "Curthose"
+ Clito: "Clito"
+ nick_hierosolymita: "Hierosolymita"
+ nick_the_frisian: "the Frisian" 
+ Alveradis: "Alveradis"
+ Egbert: "Egbert"

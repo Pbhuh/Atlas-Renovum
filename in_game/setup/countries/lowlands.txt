@@ -172,28 +172,28 @@ ESG = {
 }
 
 HSG = {
-	color = rgb { 0 128 255 }
+	color = rgb { 5 178 255 }
 
 	culture_definition = frisian
 	religion_definition = catholic
 }
 
 FVG = {
-	color = rgb { 15 108 255 }
+	color = rgb { 35 208 255 }
 
 	culture_definition = frisian
 	religion_definition = catholic
 }
 
 ZVW = {
-	color = rgb { 5 118 255 }
+	color = rgb { 5 158 245 }
 
 	culture_definition = frisian
 	religion_definition = catholic
 }
 
 WED = {
-	color = rgb { 5 89 205 }
+	color = rgb { 80 89 205 }
 
 	culture_definition = frisian
 	religion_definition = catholic
@@ -219,6 +219,14 @@ AUR = {
 	culture_definition = frisian
 	religion_definition = catholic
 }
+
+WFR = {
+	color = rgb { 0 128 255 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}
+
 
 STV = {
 	color = rgb { 182 95 165 }

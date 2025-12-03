@@ -36,6 +36,8 @@
  LEE_ADJ: "Leerian"
  AUR: "Aurich"
  AUR_ADJ: "Auricher"
+ WFR: "Westfriesland"
+ WFR_ADJ: "Westfrisian"
  
  country_history_frisian_common: "$country_history_low_countries_common$\n\nEncircled by feudal lords, our society is currently divided between those who wish to retain our independence, and those that are slowly gaining power by adopting the foreign ways of the neighboring nations."
  #a new unity between the independent countries of [ShowAreaName('eastern_switzerland_area')] was formed, and the [GetUniqueInternationalOrganization('swiss_confederation').GetName] stands strong with more and more members flocking to take up their banner. 

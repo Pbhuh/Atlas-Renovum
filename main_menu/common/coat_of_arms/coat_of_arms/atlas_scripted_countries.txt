@@ -457,7 +457,7 @@ FRI_monarchy = { #Monarchy Friesland
 	}
 }
 
-FRI_westfriesland = { #Monarchy Friesland
+WFR = {
 	pattern = "pattern_solid.dds"
 	color1 = "blue"
 	color2 = "white"

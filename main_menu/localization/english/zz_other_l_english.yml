@@ -18,3 +18,9 @@
  rank_county_lordship:1 "Lordship"
  rank_duchy_bishopric:1 "Archbishopric"
  rank_duchy_bishopric_ruler_male:1 "Archbishop"
+ #
+ frisian_freedom: "Frisian Freedom"
+ frisian_freedom_desc: "TODO : Write a desc"
+ diplomatic_status_frisian_freedom_name: "Diplomatic status Frisian Freedom name"
+ diplomatic_status_frisian_freedom_tooltip: "Diplomatic status Frisian Freedom tooltip"
+ frisian_freedom_list_who_tt: "Frisian Freedom list who tt"

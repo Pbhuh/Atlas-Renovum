@@ -39335,7 +39335,7 @@ countries = {
 		}
 
 		tolerated_cultures = {
-			ripuarian_franconian
+			ripuarian_franconian walloon
 		}
 
 		country_rank = rank_county
@@ -39548,10 +39548,7 @@ countries = {
 		capital = utrecht
 	}
 
-	FRI = { #Frisia - turn it into a formable ?
-		our_cores_conquered_by_others = {
-			hoorn elsfleth #add in other tags later
-		}
+	FRI = { #Frisia - historical for now, formable later?
 
 		starting_technology_level = 3
 		include = "expl_western_europe"

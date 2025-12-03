@@ -858,6 +858,10 @@ countries = {
 		government = {
 			ruler = random
 		}
+		
+		tolerated_cultures = {
+			frisian
+		}
 	}
 	
 	}

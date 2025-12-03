@@ -233,6 +233,10 @@ character_db={
 		tag = FLA
 	}
 	
+	#test
+	fla_marguerite_i_alsace = {
+		spouse = hai_boudewijn_v_hainaut
+	}
 		
 	#Berg
 	#house of ezzonen
@@ -1178,6 +1182,101 @@ character_db={
 	#################################################################
 	#							 1200-1300							#
 	#################################################################
+
+	
+	fla_boudewijn_ix_van_vlaanderen = {		
+		first_name = { name = name_baldwin }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1172.7.1
+		death_date = 1205.1.1
+		birth = bruges
+		father = hai_boudewijn_v_hainaut
+		mother = fla_marguerite_i_alsace
+		#spouse = marie_of_champagne
+		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
+		tag = FLA
+	}
+	fla_johanna_van_vlaanderen = { #of constantinople
+		first_name = { name = name_joanna }
+		female = yes
+		culture = flemish
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1194.1.1 #between and 1200
+		death_date = 1244.12.5
+		birth = bruges
+		father = fla_boudewijn_ix_van_vlaanderen #I of constantinople, VI of hainaut
+		spouse = fla_fernando_portugal
+		#spouse = sav_thomas_ii_piedmont - second marriage
+		dynasty = vlaanderen_dynasty #boudewijn_dynasty flanders_dynasty
+		tag = FLA
+	}
+	nam_philip_van_vlaanderen = {		
+		first_name = { name = name_baldwin }
+		nickname = { name = nick_the_noble }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1172.7.1
+		death_date = 1212.10.9
+		birth = bruges
+		father = hai_boudewijn_v_hainaut
+		mother = fla_marguerite_i_alsace
+		#spouse = marie_of_champagne
+		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
+		tag = FLA
+	}
+	
+	lat_hendrik_van_vlaanderen = {		
+		first_name = { name = name_henry }
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1178.1.1
+		death_date = 1216.6.11
+		birth = bruges
+		father = hai_boudewijn_v_hainaut
+		mother = fla_marguerite_i_alsace
+		#spouse = agnes_of_montferrat
+		#spouse = maria of bulgaria
+		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
+		tag = FLA
+	}
+	
+	lat_yolanda_van_vlaanderen = {		
+		first_name = { name = name_yolande }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1175.1.1
+		death_date = 1219.9.1
+		birth = bruges
+		father = hai_boudewijn_v_hainaut
+		mother = fla_marguerite_i_alsace
+		#spouse = lat_pierre_ii_courtenay
+		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
+		tag = LAT
+	}
+	
+	fla_margaretha_ii_van_vlaanderen = { #of constantinople
+		first_name = { name = name_margaret }
+		nickname = { name = nick_the_black }
+		female = yes
+		culture = low_franconian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1202.1.1
+		death_date = 1280.2.10
+		birth = bruges
+		father = fla_boudewijn_ix_van_vlaanderen #I of constantinople, VI of hainaut
+		spouse = hai_bouchard_avesnes
+		spouse = fla_guillaume_ii_dampierre
+		dynasty = vlaanderen_dynasty #technically vlaanderen_hainaut_dynasty
+		tag = FLA
+	}
 	
 	#BERG
 	brg_adolf_vi_berg = {	
@@ -1257,6 +1356,17 @@ character_db={
 		tag = JUL
 	}
 	
+		#Waleran (c. 1200 – 1242), married Elisabeth of Bar, daughter of Ermesinde of Luxembourg and Theobald I, Count of Bar - bar_thiebaut_i_scarpone
+	
+	# HOUSE OF Limburg-Luxemburg (Kings of Bohemia & Counts (Dukes) of Luxembourg)
+
+	#test 2
+	lux_henri_v_luxembourg = {
+		father = lim_waleran_iii_of_limbourg
+		mother = lim_ermensinde_namur
+	}
+
+	#Limbourg-Berg
 	lim_heinrich_iv_of_limbourg = {
 		first_name = { name = name_henry }
 		culture = ripuarian_franconian
@@ -1268,7 +1378,6 @@ character_db={
 		dynasty = limbourg_dynasty
 		tag = BRG
 	}
-	
 	brg_irmgard_berg = { #last heiress
 		first_name = { name = name_ermengard }
 		female = yes
@@ -1283,35 +1392,6 @@ character_db={
 		dynasty = berg_dynasty
 		tag = BRG
 	}
-	
-	lim_waleran_iv_of_limbourg = { #walaran IV
-		first_name = { name = name_waleram }
-		culture = ripuarian_franconian
-		religion = catholic
-		birth_date = 1220.1.1
-		death_date = 1279.1.1
-		birth = dusseldorf
-		father = lim_heinrich_iv_of_limbourg
-		mother = brg_irmgard_berg
-		dynasty = limbourg_dynasty
-		tag = BRG
-	}
-	
-	lim_irmgard_of_limbourg = {
-		first_name = { name = name_ermengard }
-		female = yes
-		culture = ripuarian_franconian
-		religion = catholic
-		birth_date = 1245.1.1
-		death_date = 1283.1.1
-		birth = dusseldorf
-		father = lim_waleran_iv_of_limbourg
-		spouse = gel_reinoud_i_van_gelre
-		dynasty = limbourg_dynasty
-		tag = BRG
-	}
-	
-	#Limbourg-Berg
 	brg_adolf_vii_berg = { #grandfather
 		first_name = { name = name_adolf }
 		culture = ripuarian_franconian
@@ -1324,7 +1404,6 @@ character_db={
 		dynasty = limbourg_dynasty
 		tag = BRG
 	}
-	
 	mun_conrad_berg = { 
 		first_name = { name = name_conrad }
 		culture = ripuarian_franconian
@@ -1337,7 +1416,6 @@ character_db={
 		dynasty = limbourg_dynasty
 		tag = BRG
 	}
-	
 	brg_adolf_viii_berg = { #Uncle / Ruler
 		first_name = { name = name_adolf }
 		culture = ripuarian_franconian
@@ -1351,28 +1429,35 @@ character_db={
 		dynasty = limbourg_dynasty
 		tag = BRG
 	}
-	
+	brg_heinrich_von_windeck = { #Father of Ruler - test 3
+		father = brg_adolf_vii_berg
+	}
 	#Limburg	
-	#Waleran (c. 1200 – 1242), married Elisabeth of Bar, daughter of Ermesinde of Luxembourg and Theobald I, Count of Bar - bar_thiebaut_i_scarpone
-	
-	# HOUSE OF Limburg-Luxemburg (Kings of Bohemia & Counts (Dukes) of Luxembourg) - cadet of Limburg
-	
-	#lux_henri_v_luxembourg = { #DUPLICATED - NEEDS FIX
-	#	first_name = { name = name_henry }
-	#	nickname = { name = nick_the_blonde }
-	#	culture = walloon
-	#	religion = catholic
-	#	estate = nobles_estate
-	#	adm = 38 dip = 61 mil = 72
-	#	birth_date = 1216.1.1
-	#	death_date = 1281.12.24
-	#	birth = arlon
-	#	father = lim_waleran_iii_of_limbourg
-	#	mother = lim_ermensinde_namur
-	#	dynasty = luxembourg_dynasty
-	#	tag = LUX
-	#	ruler_trait = bold_fighter
-	#}
+	lim_waleran_iv_of_limbourg = { #walaran IV
+		first_name = { name = name_waleram }
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1220.1.1
+		death_date = 1279.1.1
+		birth = dusseldorf
+		father = lim_heinrich_iv_of_limbourg
+		mother = brg_irmgard_berg
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}
+	lim_irmgard_of_limbourg = {
+		first_name = { name = name_ermengard }
+		female = yes
+		culture = ripuarian_franconian
+		religion = catholic
+		birth_date = 1245.1.1
+		death_date = 1283.1.1
+		birth = dusseldorf
+		father = lim_waleran_iv_of_limbourg
+		spouse = gel_reinoud_i_van_gelre
+		dynasty = limbourg_dynasty
+		tag = BRG
+	}	
 	
 	#Holland Gerulfing
 	
@@ -1782,7 +1867,6 @@ character_db={
 		tag = GEL
 	}
 	
-	
 	#Sponheim-Heinsberg	
 	hbg_hendrik_von_sponheim = { #first count of Sponheim-Heinsberg
 		first_name = { name = name_henry }
@@ -1825,7 +1909,7 @@ character_db={
 		#spouse = hedwig of meissen
 		tag = KLE
 	}
-	kle_dirk_v_van_kleve = { #Grandfather of Ruler - Of Meissen - V / VII
+	kle_dirk_v_van_kleve = { #True Dirk VI #Grandfather of Ruler - Of Meissen - V / VII
 		first_name = { name = name_theodoric }
 		culture = low_franconian
 		religion = catholic
@@ -1837,37 +1921,6 @@ character_db={
 		#spouse = Adelaide of Sponheim-Heinsberg
 		#mother = hedwig of meissen
 		tag = KLE
-	}
-	hbg_adelheid_von_heinsberg = { # Spouse of Arnold ii van kleve
-		first_name = { name = name_adelaide }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1172.1.1
-		death_date = 1217.2.11
-		birth = heinsberg
-		spouse = kle_arnold_ii_van_kleve
-		father = hbg_godfried_von_heinsberg_valkenburg
-		#mother = sophia of loon
-		#child: agnes_of_cleves
-		#child: arnold of cleves d. 1218 damietta
-		dynasty = wassenberg_dynasty
-		tag = KLE
-	}
-	
-	hbg_dirk_i_von_heinsberg = { #Last male ruler of wassenberg
-		first_name = { name = name_theodoric }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1190.1.1
-		death_date = 1227.11.4
-		birth = heinsberg
-		dynasty = kleve_dynasty #heinsberg-valkenburg branch
-		father = kle_arnold_ii_van_kleve
-		mother = hbg_adelheid_von_heinsberg
-		#spouse = isolda of limburg - sister of jutta of limburg
-		#spouse = beatrice of kyrburg-dhaun
-		tag = HBG
 	}
 	#Virneburg, nobles in Trier - counts of virneburg
 	tri_heinrich_i_von_virneburg = {
@@ -1884,7 +1937,6 @@ character_db={
 		dynasty = virneburg_dynasty
 		tag = TRI
 	}
-	
 	#Mark
 	gmk_adolf_i_von_der_mark = { #Greatgreatgrandfather of Ruler
 		first_name = { name = name_adolf }
@@ -1923,7 +1975,8 @@ character_db={
 		mother = gmk_irmgard_van_gelre
 		#spouse = kunegonde von blieskastel
 		tag = GMK
-	}
+	}		
+	#BERG INTERMISSION
 	brg_agnes_von_der_mark = {
 		first_name = { name = name_agnes }
 		female = yes
@@ -1938,44 +1991,7 @@ character_db={
 		dynasty = mark_dynasty
 		tag = BRG
 	}
-	
-	#Valkenburg - Cleves branch
-	#vbg_goswin_iii_von_heinsberg - father: hbg_goswin_ii_von_heinsberg
-	vbg_goswin_iii_von_heinsberg_valkenburg = {
-		first_name = { name = "Goswin" }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1125.1.1
-		death_date = 1180.1.1
-		birth = heinsberg
-		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
-		father = hbg_goswin_ii_von_heinsberg
-		#spouse = sophia_of_loon ?
-		tag = HBG
-	}
-	vbg_goswin_iv_von_heinsberg_valkenburg = {
-		first_name = { name = "Goswin" }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1150.1.1 #unknown
-		death_date = 1212.1.1
-		birth = heinsberg
-		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
-		father = vbg_goswin_iii_von_heinsberg_valkenburg
-	#married jutta van limburg daughter of hendrik 3 van limburg
-		tag = HBG
-	}
-	vbg_dirk_ii_von_valkenburg = {
-		first_name = { name = name_theodoric }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1221.1.1
-		birth = maastricht
-		death_date = 1268.10.15
-		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
-		father = hbg_dirk_i_von_heinsberg
-		tag = VBG		
-	}	
+	#END INTERMISSION	
 	gmk_elisabeth_von_valkenburg = { # Spouse of Engelbert I
 		first_name = { name = name_elizabeth }
 		culture = low_franconian
@@ -1989,20 +2005,6 @@ character_db={
 		#mother = bertha van limburg
 		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
 		tag = GMK
-	}
-	eng_beatrix_von_valkenburg = { # Spouse of Richard of Cornwall
-		first_name = { name = name_beatrix }
-		culture = low_franconian
-		religion = catholic
-		female = yes
-		birth_date = 1254.1.1
-		death_date = 1277.10.17
-		birth = maastricht
-		father = vbg_dirk_ii_von_valkenburg
-		spouse = eng_richard_of_cornwall
-		#mother = bertha van limburg-monschau or adelheid_of_loon
-		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
-		tag = ENG
 	}
 	#Arnsberg
 	anb_hendrik_i_van_arnsberg = {
@@ -2040,6 +2042,102 @@ character_db={
 		dynasty = cuijk_dynasty
 		tag = ANB
 	}	
+	
+	#Cleves
+	
+	#Loon-Heinsberg-Chiny
+	#johanna von loon - mother of arnold van rummen ruler of chiny
+	#Heinsberg
+	#hbg_goswin_i_van_wassenberg look up gelre
+	#hbg_gerard_i_von_heinsberg = { father = hbg_goswin_i_van_wassenberg = confusion with -? #hbg_gerard_ii_von_heinsberg = { father = goswin_i
+	#hbg_goswin_ii_von_heinsberg  = { father = hbg_goswin_i_van_wassenberg    #(and valkenburg)
+	#hbg_siegfried_von_heinsberg = { father = gerard i or ii
+	#hbg_godfried_von_heinsberg = { father = goswin_ii
+	#hbg_mechtilde_von_heinsberg = { father = goswin_ii		
+	
+	hbg_adelheid_von_heinsberg = { # Spouse of Arnold ii van kleve
+		first_name = { name = name_adelaide }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1172.1.1
+		death_date = 1217.2.11
+		birth = heinsberg
+		spouse = kle_arnold_ii_van_kleve
+		father = hbg_godfried_von_heinsberg_valkenburg
+		#mother = sophia of loon
+		#child: agnes_of_cleves
+		#child: arnold of cleves d. 1218 damietta
+		dynasty = wassenberg_dynasty
+		tag = KLE
+	}
+	
+	hbg_dirk_i_von_heinsberg = { #Last male ruler of wassenberg
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1190.1.1
+		death_date = 1227.11.4
+		birth = heinsberg
+		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
+		father = kleve_dynasty #wassenberg
+		mother = hbg_adelheid_von_heinsberg
+		#spouse = isolda of limburg - sister of jutta of limburg
+		#spouse = beatrice of kyrburg-dhaun
+		tag = HBG
+	}
+	#Valkenburg - Cleves branch
+	#vbg_goswin_iii_von_heinsberg - father: hbg_goswin_ii_von_heinsberg
+	
+	vbg_goswin_iii_von_heinsberg_valkenburg = {
+		first_name = { name = "Goswin" }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1125.1.1
+		death_date = 1180.1.1
+		birth = heinsberg
+		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
+		father = hbg_goswin_ii_von_heinsberg
+		#spouse = sophia_of_loon ?
+		tag = HBG
+	}
+	vbg_goswin_iv_von_heinsberg_valkenburg = {
+		first_name = { name = "Goswin" }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1150.1.1 #unknown
+		death_date = 1212.1.1
+		birth = heinsberg
+		dynasty = wassenberg_dynasty #heinsberg-valkenburg branch
+		father = vbg_goswin_iii_von_heinsberg_valkenburg
+	#married jutta van limburg daughter of hendrik 3 van limburg
+		tag = HBG
+	}
+	vbg_dirk_ii_von_valkenburg = {
+		first_name = { name = name_theodoric }
+		culture = low_franconian
+		religion = catholic
+		birth_date = 1221.1.1
+		birth = maastricht
+		death_date = 1268.10.15
+		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
+		father = hbg_dirk_i_von_heinsberg
+		tag = VBG		
+	}	
+	eng_beatrix_von_valkenburg = { # Spouse of Richard of Cornwall
+		first_name = { name = name_beatrix }
+		culture = low_franconian
+		religion = catholic
+		female = yes
+		birth_date = 1254.1.1
+		death_date = 1277.10.17
+		birth = maastricht
+		father = vbg_dirk_ii_von_valkenburg
+		spouse = eng_richard_of_cornwall
+		#mother = bertha van limburg-monschau or adelheid_of_loon
+		dynasty = wassenberg_dynasty #valkenburg-heinsberg_dynasty - branch of wassenberg dynasty
+		tag = ENG
+	}
 	#Cuijk
 	cjk_hendrik_ii_van_cuijk = {
 		first_name = { name = name_henry }

@@ -57,6 +57,7 @@ LLR = {
 
 	culture_definition = moselle_franconian
 	religion_definition = catholic
+	is_historic = yes
 }
 
 LRO = {
@@ -155,6 +156,7 @@ FRI = {
 
 	culture_definition = frisian
 	religion_definition = catholic
+	is_historic = yes
 }
 
 WSG = {

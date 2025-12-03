@@ -148,16 +148,16 @@
 			every_owned_location = {
 				limit = {
 					OR = {
+						location = hoorn
+						location = alkmaar
+						location = elsfleth
+						location = ritzebuttel
+						location = gestenthorpe
+						location = heide
+						location = husum
 						province = province:east_friesland_province
 						province = province:ommelanden_province
 						province = province:friesland_province
-						location = location:hoorn
-						location = location:alkmaar
-						location = location:elsfleth
-						location = location:ritzebuttel
-						location = location:gestenthorpe
-						location = location:heide
-						location = location:husum
 					}
 				}
 				scope:recipient = { add_location_to_international_organization = prev }

@@ -280,20 +280,6 @@ character_db={
 		tag = GRH
 	}
 	
-	gel_reinoud_i_van_gelre = { #Father of Ruler
-		first_name = { name = name_reginald }
-		#nickname = { name = "the bellicose" }
-		culture = low_franconian
-		religion = catholic
-		birth_date = 1255.1.1
-		birth = geldern
-		death_date = 1326.10.9
-		dynasty = wassenberg_dynasty
-		father = gel_otto_ii_van_gelre
-		#mother = Philippa of Dammartin
-		tag = GEL
-	}
-	
 	#Jülich
 	
 	jul_wilhelm_iv_julich = { #Grandfather
@@ -1183,6 +1169,22 @@ character_db={
 		tag = MEH
 	}
 	#Berthout van Berlair Family, Lords of Helmond
+	
+	#Tecklenburg / Bentheim - Gerulfing
+	
+	tck_richardis_gerulfing = { #mother of ruler / sister of previous dynasty
+		first_name = { name = name_ricarda }
+		female = yes
+		culture = lower_saxon
+		religion = catholic
+		birth_date = 1298.1.1
+		birth = tecklenburg
+		death_date = 1330.1.1
+		father = tck_otto_iv_gerulfing
+		dynasty = gerulfing_dynasty
+		spouse = tck_gunzelin_vi_tecklenburg
+		tag = TCK
+	}
 	
 	#########################################
 	#					Clergy				#

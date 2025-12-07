@@ -77410,7 +77410,7 @@ adm = 31 dip = 34 mil = 24
 	#Tecklenburg	
 	tck_gunzelin_vi_tecklenburg = { #Father of Ruler
 		first_name = { name = Gunzelin }
-		culture = lower_saxon
+		culture = westphalian #low_franconian
 		religion = catholic
 		birth_date = 1275.1.1
 		birth = tecklenburg
@@ -77419,7 +77419,6 @@ adm = 31 dip = 34 mil = 24
 		dynasty = schwerin_dynasty
 		tag = TCK
 	}
-
 	tck_nikolaus_i_tecklenburg = { #Ruler
 		first_name = { name = Nikolaus }
 		culture = lower_saxon
@@ -77427,24 +77426,27 @@ adm = 31 dip = 34 mil = 24
 		birth_date = 1300.1.1
 		birth = tecklenburg
 		father = tck_gunzelin_vi_tecklenburg
+		mother = tck_richardis_gerulfing
 		dynasty = schwerin_dynasty
 		tag = TCK
 	}
 
 	#Bentheim	
-	bnt_john_ii_gerulfing = { #Father of Ruler
+	bnt_john_ii_gerulfing = { #Father of Ruler 1311-1333
 		first_name = { name = name_john }
-		culture = lower_saxon
+		culture = westphalian #low_franconian
 		religion = catholic
 		birth_date = 1280.1.1
+		death_date = 1333.7.21
 		birth = bentheim
+		father = bnt_egbert_i_gerulfing
 		dynasty = gerulfing_dynasty
 		tag = BNT
 	}
 
 	bnt_simon_i_gerulfing = { #Ruler
 		first_name = { name = name_simeon }
-		culture = lower_saxon
+		culture = westphalian #low_franconian
 		religion = catholic
 		birth_date = 1308.1.1 #unknown
 		birth = bentheim
@@ -85301,12 +85303,15 @@ adm = 31 dip = 34 mil = 24
 	#Guelders
 	gel_reinoud_i_van_gelre = { #Father of Ruler
 		first_name = { name = name_reginald }
+		#nickname = { name = "the bellicose" }
 		culture = low_franconian
 		religion = catholic
 		birth_date = 1255.1.1
 		birth = geldern
 		death_date = 1326.10.9
 		dynasty = wassenberg_dynasty
+		father = gel_otto_ii_van_gelre
+		#mother = Philippa of Dammartin
 		tag = GEL
 	}
 

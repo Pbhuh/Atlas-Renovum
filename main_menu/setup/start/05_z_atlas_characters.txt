@@ -1184,55 +1184,6 @@ character_db={
 	}
 	#Berthout van Berlair Family, Lords of Helmond
 	
-	#Gerulfing Dynasty - Vanilla Duplicates
-	
-	#Tecklenburg	
-	tck_gunzelin_vi_tecklenburg_2 = { #Father of Ruler
-		first_name = { name = Gunzelin }
-		culture = lower_saxon
-		religion = catholic
-		birth_date = 1275.1.1
-		birth = tecklenburg
-		death_date = 1327.1.1
-		father = swr_niklot_i
-		dynasty = schwerin_dynasty
-		tag = TCK
-	}
-
-	tck_nikolaus_i_tecklenburg_2 = { #Ruler
-		first_name = { name = Nikolaus }
-		culture = lower_saxon
-		religion = catholic
-		birth_date = 1300.1.1
-		birth = tecklenburg
-		father = tck_gunzelin_vi_tecklenburg
-		dynasty = schwerin_dynasty
-		tag = TCK
-	}
-
-	#Bentheim	
-	bnt_john_ii_gerulfing_2 = { #Father of Ruler
-		first_name = { name = name_john }
-		culture = lower_saxon
-		religion = catholic
-		birth_date = 1280.1.1
-		birth = bentheim
-		dynasty = gerulfing_dynasty_2
-		tag = BNT
-	}
-
-	bnt_simon_i_gerulfing_2 = { #Ruler
-		first_name = { name = name_simeon }
-		culture = lower_saxon
-		religion = catholic
-		birth_date = 1308.1.1 #unknown
-		birth = bentheim
-		father = bnt_john_ii_gerulfing
-		dynasty = gerulfing_dynasty_2
-		tag = BNT
-	}
-
-	
 	#########################################
 	#					Clergy				#
 	#@bottom? can only have fathers/mothers #
@@ -1398,7 +1349,7 @@ character_db={
 		birth = the_hague
 		father = hol_dirk_vi_gerulfing
 		#mother = sophie_of_rheineck
-		dynasty = gerulfing_dynasty_2
+		dynasty = gerulfing_dynasty
 		tag = UTR
 	}
 	
@@ -1413,7 +1364,7 @@ character_db={
 		birth = the_hague
 		father = hol_dirk_vi_gerulfing
 		#mother = sophie_of_rheineck
-		dynasty = gerulfing_dynasty_2
+		dynasty = gerulfing_dynasty
 		tag = UTR
 	}
 
@@ -1476,7 +1427,7 @@ character_db={
 		birth = mechelen
 		father = hol_willem_i_gerulfing
 		#mother = hol_ada_van_gelre
-		dynasty = gerulfing_dynasty_2
+		dynasty = gerulfing_dynasty
 		tag = UTR
 	}
 

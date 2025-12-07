@@ -38612,13 +38612,13 @@ countries = {
 		include = "german_principality"
 		government = {
 
-			ruler = tck_nikolaus_i_tecklenburg
+			ruler = tck_nikolaus_i_tecklenburg_2
 			ruler_term = {	character = tck_otto_iii_gerulfing start_date = 1277.1.1 end_date = 1289.1.1 regnal_number = 3 }
 			ruler_term = {	character = tck_otto_iv_gerulfing start_date = 1285.1.1 end_date = 1307.1.1 regnal_number = 4 }
 			ruler_term = {	character = tck_otto_v_gerulfing start_date = 1307.1.1 end_date = 1321.1.1 regnal_number = 5 }
 			#ruler_term = {	character = tck_richardis start_date = 1328.1.1 end_date = 1338.1.1 regnal_number = 6 }
-			ruler_term = {	character = tck_gunzelin_vi_tecklenburg start_date = 1321.1.1 end_date = 1328.1.1 regnal_number = 6 }
-			ruler_term = {	character = tck_nikolaus_i_tecklenburg start_date = 1328.1.1 regnal_number = 1	}
+			ruler_term = {	character = tck_gunzelin_vi_tecklenburg_2 start_date = 1321.1.1 end_date = 1328.1.1 regnal_number = 6 }
+			ruler_term = {	character = tck_nikolaus_i_tecklenburg_2 start_date = 1328.1.1 regnal_number = 1	}
 			
 			regnal_numbers = {
 				name_john = 2
@@ -38645,15 +38645,15 @@ countries = {
 		include = "german_principality"
 		government = {
 
-			ruler = bnt_simon_i_gerulfing
+			ruler = bnt_simon_i_gerulfing_2
 			#ruler_term = {	character = sophia start_date = 1149.1.1 end_date = 1176.1.1 regnal_number = 2 }
 			ruler_term = {	character = hol_dirk_vi_gerulfing 		start_date = 1149.1.1 end_date = 1157.1.1 regnal_number = 6 }
 			ruler_term = {	character = bnt_otto_i_gerulfing 		start_date = 1176.1.1 end_date = 1207.1.1 regnal_number = 1 }
 			ruler_term = {	character = bnt_boudewijn_i_gerulfing 	start_date = 1207.1.1 end_date = 1247.1.1 }
 			ruler_term = {	character = bnt_otto_ii_gerulfing 		start_date = 1247.1.1 end_date = 1277.1.1 regnal_number = 2 }
 			ruler_term = {	character = bnt_egbert_i_gerulfing 		start_date = 1277.1.1 end_date = 1305.1.1 }
-			ruler_term = {	character = bnt_john_ii_gerulfing 		start_date = 1305.1.1 end_date = 1333.1.1 regnal_number = 2 }
-			ruler_term = {	character = bnt_simon_i_gerulfing 		start_date = 1333.1.1 regnal_number = 1 }
+			ruler_term = {	character = bnt_john_ii_gerulfing_2 		start_date = 1305.1.1 end_date = 1333.1.1 regnal_number = 2 }
+			ruler_term = {	character = bnt_simon_i_gerulfing_2 		start_date = 1333.1.1 regnal_number = 1 }
 
 			regnal_numbers = {
 				name_baldwin = 1

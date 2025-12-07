@@ -8565,4 +8565,11 @@ dynasty_manager = {
 		home = namur
 		dynasty_name_type = location
 	}
+	
+	#Duplicates
+	
+	gerulfing_dynasty_2 = {
+		name = { name = gerulfing_dynasty }
+		home = the_hague
+	}
 }
